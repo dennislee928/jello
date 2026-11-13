@@ -1,8 +1,156 @@
 {
-  "schema_version": 1,
+  "candidates": [
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [],
+      "confidence": "unknown",
+      "duplicate_prs": [],
+      "evidence_path": "02-opentelemetry/evidence/opentelemetry-collector-contrib-50908.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 50908,
+      "issue_updated_at": "2026-11-13T14:36:42Z",
+      "kind": "pull_request",
+      "labels": [
+        "processor/k8sattributes"
+      ],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [],
+      "next_action": "只當上下文。不選為實作候選。",
+      "org": "open-telemetry",
+      "repo": "opentelemetry-collector-contrib",
+      "score_rationale": "不是實作候選。已依 live 狀態重抓，不沿用計畫分數。",
+      "skills_match": [
+        "Go"
+      ],
+      "sources": [
+        "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50908"
+      ],
+      "status": "DISCOVERED",
+      "title": "[processor/k8sattributes] Support extracting labels and annotations from HPA",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50908"
+    },
+    {
+      "acceptance_score": 2,
+      "assignees": [],
+      "blocking_dependencies": [
+        "code owner approval unconfirmed",
+        "generated HPA symbols unconfirmed"
+      ],
+      "confidence": "low",
+      "duplicate_prs": [],
+      "evidence_path": "02-opentelemetry/evidence/opentelemetry-collector-contrib-52509.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": 3,
+      "issue_number": 52509,
+      "issue_updated_at": "2026-11-06T18:01:02Z",
+      "kind": "issue",
+      "labels": [
+        "good first issue",
+        "priority:p2",
+        "processor/k8sattributes"
+      ],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [
+        "#50908 metadata was fetched; overlap waits on the diff",
+        "#52631 is an issue (Weekly Report: 2026-10-27 - 2026-11-03), not a pull request diff",
+        "comment from github-actions[bot] (author_association CONTRIBUTOR)",
+        "comment from nikhilred2619 (author_association CONTRIBUTOR)",
+        "comment from shahithmohamed202-collab (author_association NONE)",
+        "ignored unrelated cross-reference o11y-dev/opentelemetry-skill#105",
+        "same-repo issue cross-reference #52631"
+      ],
+      "next_action": "確認產生的 HPA 符號與 Code Owner 之前維持 BLOCKED。#50908 的 overlap 等 diff。",
+      "org": "open-telemetry",
+      "repo": "opentelemetry-collector-contrib",
+      "score_rationale": "計畫估算 acceptance 2、impact 3，信心 low。這次 live issue 仍開放，所以保留低信心估計；這不是使用量。硬門檻覆寫分數，不能進入 READY_TO_IMPLEMENT。",
+      "skills_match": [
+        "Go"
+      ],
+      "sources": [
+        "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52509",
+        "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50908"
+      ],
+      "status": "BLOCKED",
+      "title": "Use generated semantic conventions references instead of local ones",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52509"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [],
+      "confidence": "unknown",
+      "duplicate_prs": [],
+      "evidence_path": "02-opentelemetry/evidence/opentelemetry-collector-contrib-52631.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 52631,
+      "issue_updated_at": "2026-11-03T01:00:46Z",
+      "kind": "issue",
+      "labels": [
+        "report"
+      ],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [
+        "same-repo issue cross-reference #52905"
+      ],
+      "next_action": "這是 issue，不是 pull request，沒有 diff 檔案清單。只當 #52509 的交叉引用上下文。",
+      "org": "open-telemetry",
+      "repo": "opentelemetry-collector-contrib",
+      "score_rationale": "不是實作候選。已依 live 狀態重抓，不沿用計畫分數。",
+      "skills_match": [
+        "Go"
+      ],
+      "sources": [
+        "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52631"
+      ],
+      "status": "DISCOVERED",
+      "title": "Weekly Report: 2026-10-27 - 2026-11-03",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52631"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [],
+      "confidence": "unknown",
+      "duplicate_prs": [],
+      "evidence_path": "02-opentelemetry/evidence/semantic-conventions-4100.md",
+      "github_state": "closed",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 4100,
+      "issue_updated_at": "2026-11-09T22:33:36Z",
+      "kind": "pull_request",
+      "labels": [
+        "area:k8s",
+        "enhancement"
+      ],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [
+        "upstream merged"
+      ],
+      "next_action": "重抓時已關閉或合併。不沿用計畫分數，也不選為實作。",
+      "org": "open-telemetry",
+      "repo": "semantic-conventions",
+      "score_rationale": "不是實作候選。已依 live 狀態重抓，不沿用計畫分數。",
+      "skills_match": [
+        "Go"
+      ],
+      "sources": [
+        "https://github.com/open-telemetry/semantic-conventions/pull/4100"
+      ],
+      "status": "CLOSED",
+      "title": "[k8s] Introduce semantic conventions for k8s HPA labels and annotations",
+      "url": "https://github.com/open-telemetry/semantic-conventions/pull/4100"
+    }
+  ],
   "directory": "02-opentelemetry",
-  "last_verified_at": null,
-  "partial": false,
   "errors": [],
-  "candidates": []
+  "last_verified_at": "2026-11-13T16:42:51Z",
+  "partial": false,
+  "schema_version": 1
 }

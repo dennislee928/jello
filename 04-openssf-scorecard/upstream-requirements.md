@@ -10,10 +10,14 @@
 
 ## 本次驗證
 
-last_verified_at: null
+last_verified_at: 2026-11-13T16:42:51Z
 
 <!-- policy-shas:start -->
-尚未以 `gh api` 重抓政策檔 blob SHA。
+| 儲存庫 | 分支 | 路徑 | blob SHA |
+| --- | --- | --- | --- |
+| `ossf/scorecard` | `main` | `AGENTS.md` | `adea0b1be7485871fb981331dd8a9f1cdf4997c8` |
+| `ossf/scorecard` | `main` | `CONTRIBUTING.md` | `5567b477885534fbc831d212bcf2ab04857b74ae` |
+| `ossf/scorecard` | `main` | `SECURITY.md` | `45773d1a3ef892ea92fbf772d168230c90c8a91a` |
 <!-- policy-shas:end -->
 
 ## #2161 的範圍

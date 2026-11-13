@@ -1,8 +1,43 @@
 {
-  "schema_version": 1,
+  "candidates": [
+    {
+      "acceptance_score": 1,
+      "assignees": [],
+      "blocking_dependencies": [
+        "dennislee928 is not in .github/VOUCHED.td"
+      ],
+      "confidence": "unknown",
+      "duplicate_prs": [],
+      "evidence_path": "05-cloudflare-workers-sdk/evidence/vouch.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": null,
+      "issue_updated_at": null,
+      "kind": "qualification",
+      "labels": [],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [
+        "`dennislee928` 是否在 `.github/VOUCHED.td`：否。"
+      ],
+      "next_action": "資格或依賴未確認。不選實作 issue。",
+      "org": "cloudflare",
+      "repo": "workers-sdk",
+      "score_rationale": "Vouch 未通過。acceptance 只反映資格缺口。impact 不評，使用量維持 unknown。",
+      "skills_match": [
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/cloudflare/workers-sdk/blob/main/.github/VOUCHED.td"
+      ],
+      "status": "BLOCKED",
+      "title": "Vouch gate for dennislee928",
+      "url": "https://github.com/cloudflare/workers-sdk/blob/main/.github/VOUCHED.td"
+    }
+  ],
   "directory": "05-cloudflare-workers-sdk",
-  "last_verified_at": null,
-  "partial": false,
   "errors": [],
-  "candidates": []
+  "last_verified_at": "2026-11-13T16:42:51Z",
+  "partial": false,
+  "schema_version": 1
 }

@@ -1,8 +1,83 @@
 {
-  "schema_version": 1,
+  "candidates": [
+    {
+      "acceptance_score": 2,
+      "assignees": [],
+      "blocking_dependencies": [
+        "duplicate check is incomplete"
+      ],
+      "confidence": "low",
+      "duplicate_prs": [],
+      "evidence_path": "01-apache-superset/evidence/superset-46196.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": 3,
+      "issue_number": 46196,
+      "issue_updated_at": "2026-11-13T09:22:41Z",
+      "kind": "issue",
+      "labels": [
+        "#bug"
+      ],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [
+        "timeline has no same-repo pull cross-reference; that is not proof of no duplicate"
+      ],
+      "next_action": "核對 description 與 description_markdown。不可信描述不得進 dangerouslySetInnerHTML。",
+      "org": "apache",
+      "repo": "superset",
+      "score_rationale": "計畫估算 acceptance 2、impact 3，信心 low。這次 live issue 仍開放，所以保留低信心估計；這不是使用量。硬門檻覆寫分數，不能進入 READY_TO_IMPLEMENT。",
+      "skills_match": [
+        "React",
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/apache/superset/issues/46196"
+      ],
+      "status": "UNVERIFIED",
+      "title": "Descriptions do not show",
+      "url": "https://github.com/apache/superset/issues/46196"
+    },
+    {
+      "acceptance_score": 3,
+      "assignees": [],
+      "blocking_dependencies": [
+        "duplicate check is incomplete"
+      ],
+      "confidence": "low",
+      "duplicate_prs": [],
+      "evidence_path": "01-apache-superset/evidence/superset-46197.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": 3,
+      "issue_number": 46197,
+      "issue_updated_at": "2026-11-13T10:38:54Z",
+      "kind": "issue",
+      "labels": [
+        "#bug"
+      ],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [
+        "timeline has no same-repo pull cross-reference; that is not proof of no duplicate"
+      ],
+      "next_action": "讀 TableChart.tsx、其測試與 dashboard Chart.tsx。需要執行中的 UI 才能斷言時維持 REPRO_PENDING。",
+      "org": "apache",
+      "repo": "superset",
+      "score_rationale": "計畫估算 acceptance 3、impact 3，信心 low。這次 live issue 仍開放，所以保留低信心估計；這不是使用量。硬門檻覆寫分數，不能進入 READY_TO_IMPLEMENT。",
+      "skills_match": [
+        "React",
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/apache/superset/issues/46197"
+      ],
+      "status": "UNVERIFIED",
+      "title": "Cross-filter entry appears when clicking table cells even when cross-filtering is disabled at chart level",
+      "url": "https://github.com/apache/superset/issues/46197"
+    }
+  ],
   "directory": "01-apache-superset",
-  "last_verified_at": null,
-  "partial": false,
   "errors": [],
-  "candidates": []
+  "last_verified_at": "2026-11-13T16:42:51Z",
+  "partial": false,
+  "schema_version": 1
 }

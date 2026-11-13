@@ -10,10 +10,15 @@
 
 ## 本次驗證
 
-last_verified_at: null
+last_verified_at: 2026-11-13T16:42:51Z
 
 <!-- policy-shas:start -->
-尚未以 `gh api` 重抓 `CONTRIBUTING.md` 與 `.github/VOUCHED.td` 的 blob SHA。
+| 儲存庫 | 分支 | 路徑 | blob SHA |
+| --- | --- | --- | --- |
+| `cloudflare/workers-sdk` | `main` | `.github/VOUCHED.td` | `07e70847237830bfe929b0c7480e5e5a38a729ad` |
+| `cloudflare/workers-sdk` | `main` | `CONTRIBUTING.md` | `a111550aec4e1a918dd7de4bfa055faa32d4eff9` |
+
+`dennislee928` 是否在 `.github/VOUCHED.td`：否。
 <!-- policy-shas:end -->
 
 ## 現在不做的事

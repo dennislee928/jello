@@ -8,10 +8,14 @@
 
 ## 本次驗證
 
-last_verified_at: null
+last_verified_at: 2026-11-13T16:42:51Z
 
 <!-- policy-shas:start -->
-尚未以 `gh api` 重抓政策檔 blob SHA。
+| 儲存庫 | 分支 | 路徑 | blob SHA |
+| --- | --- | --- | --- |
+| `apache/superset` | `master` | `AGENTS.md` | `5215a70bf032e0503c4ea3e8d0ee28f8976c46ef` |
+| `apache/superset` | `master` | `CONTRIBUTING.md` | `d715949be7177f3922faa22abb5197f1efe70624` |
+| `apache/superset` | `master` | `SECURITY.md` | `8e5b8a6076fdc65d81473d43bb0de60a9074104b` |
 <!-- policy-shas:end -->
 
 ## 測試與 PR

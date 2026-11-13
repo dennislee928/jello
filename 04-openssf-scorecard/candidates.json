@@ -1,8 +1,127 @@
 {
-  "schema_version": 1,
+  "candidates": [
+    {
+      "acceptance_score": 2,
+      "assignees": [],
+      "blocking_dependencies": [
+        "maintainer agreement before any score-semantics change"
+      ],
+      "confidence": "low",
+      "duplicate_prs": [],
+      "evidence_path": "04-openssf-scorecard/evidence/scorecard-2161.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": 3,
+      "issue_number": 2161,
+      "issue_updated_at": "2026-11-12T03:47:02Z",
+      "kind": "issue",
+      "labels": [
+        "check/Branch-Protection",
+        "good first issue",
+        "kind/bug"
+      ],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [
+        "comment from Adel-AlZahrani-Cyber (author_association NONE)",
+        "ignored unrelated cross-reference ossf/scorecard-action#895",
+        "timeline has no same-repo pull cross-reference; that is not proof of no duplicate"
+      ],
+      "next_action": "只寫設計筆記，把刪除的 release branch、改名的 default branch、API 權限不足與真正未保護分開。不改分數語意。",
+      "org": "ossf",
+      "repo": "scorecard",
+      "score_rationale": "計畫估算 acceptance 2、impact 3，信心 low。這次 live issue 仍開放，所以保留低信心估計；這不是使用量。硬門檻覆寫分數，不能進入 READY_TO_IMPLEMENT。",
+      "skills_match": [
+        "Go"
+      ],
+      "sources": [
+        "https://github.com/ossf/scorecard/issues/2161"
+      ],
+      "status": "NEEDS_MAINTAINER",
+      "title": "Improve Score Reporting: Branch-Protection check fails with -1",
+      "url": "https://github.com/ossf/scorecard/issues/2161"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping pull request is already tracked"
+      ],
+      "confidence": "low",
+      "duplicate_prs": [
+        {
+          "fixes_reference": true,
+          "number": 5455,
+          "org": "ossf",
+          "overlap": "definite_duplicate",
+          "rationale": "PR 內文有關閉關鍵字指向這個編號。這是交叉引用，不是搜尋雜訊。",
+          "repo": "scorecard",
+          "url": "https://github.com/ossf/scorecard/pull/5455"
+        }
+      ],
+      "evidence_path": "04-openssf-scorecard/evidence/scorecard-5450.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 5450,
+      "issue_updated_at": "2026-11-09T07:58:40Z",
+      "kind": "issue",
+      "labels": [
+        "kind/bug",
+        "needs triage"
+      ],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [
+        "same-repo issue cross-reference #5452"
+      ],
+      "next_action": "已知重疊或已有人處理。停止實作，只留去重紀錄。",
+      "org": "ossf",
+      "repo": "scorecard",
+      "score_rationale": "已知碰撞或已有人在處理。不計實作分數。",
+      "skills_match": [
+        "Go"
+      ],
+      "sources": [
+        "https://github.com/ossf/scorecard/issues/5450",
+        "https://github.com/ossf/scorecard/pull/5455"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "Issue: branchesAreProtected reports False when protection is unknown",
+      "url": "https://github.com/ossf/scorecard/issues/5450"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [],
+      "confidence": "unknown",
+      "duplicate_prs": [],
+      "evidence_path": "04-openssf-scorecard/evidence/scorecard-5455.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 5455,
+      "issue_updated_at": "2026-11-09T16:54:05Z",
+      "kind": "pull_request",
+      "labels": [],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [],
+      "next_action": "只當上下文。不選為實作候選。",
+      "org": "ossf",
+      "repo": "scorecard",
+      "score_rationale": "不是實作候選。已依 live 狀態重抓，不沿用計畫分數。",
+      "skills_match": [
+        "Go"
+      ],
+      "sources": [
+        "https://github.com/ossf/scorecard/pull/5455"
+      ],
+      "status": "DISCOVERED",
+      "title": ":bug: Report unknown branch protection as not available",
+      "url": "https://github.com/ossf/scorecard/pull/5455"
+    }
+  ],
   "directory": "04-openssf-scorecard",
-  "last_verified_at": null,
-  "partial": false,
   "errors": [],
-  "candidates": []
+  "last_verified_at": "2026-11-13T16:42:51Z",
+  "partial": false,
+  "schema_version": 1
 }

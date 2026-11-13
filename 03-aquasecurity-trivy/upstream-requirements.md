@@ -8,7 +8,7 @@
 
 驗證命令以文件為準：`mage build`、`mage lint:run`、`mage tidy`、`mage test:unit`，適用時 `mage test:integration`。標題格式 `type(scope): subject`。這些命令只在外部 checkout 對過文件後才跑。
 
-已知碰撞（含 closed-unmerged）維持 `DUPLICATE_OR_IN_PROGRESS`，只當去重 fixture：`#11482`、`#11573`、`#11523`、`#11627`、`#11576`、`#11575`、`#11602`、`#11633`、`#11428`。issue `#11502` 與 `#11568` 是沒有 `Fixes #ID` 時仍要能判成 `definite_duplicate` 的對照。新候選另外排除已有人處理的 `#11383`、`#11411`、`#11389`、`#11447`。
+已知碰撞（含 closed-unmerged）維持 `DUPLICATE_OR_IN_PROGRESS`，只當去重 fixture：`#11482`、`#11573`、`#11523`、`#11627`、`#11576`、`#11575`、`#11602`、`#11633`、`#11428`。`2026-11-13T16:42:51Z` 的 live 內文裡，`#11482` 有 `Close #11502`，`#11573` 有 `Fixes #11502`，`#11523` 有 `Close #11568`。單元測試仍要覆蓋拿掉關閉關鍵字、只靠路徑與符號時的 `definite_duplicate`。新候選另外排除已有人處理的 `#11383`、`#11411`、`#11389`、`#11447`。
 
 ## aquasecurity/trivy-action
 
@@ -24,10 +24,18 @@
 
 ## 本次驗證
 
-last_verified_at: null
+last_verified_at: 2026-11-13T16:42:51Z
 
 <!-- policy-shas:start -->
-尚未以 `gh api` 重抓四個儲存庫的政策檔或表面檔 blob SHA。
+| 儲存庫 | 分支 | 路徑 | blob SHA |
+| --- | --- | --- | --- |
+| `aquasecurity/setup-trivy` | `main` | `action.yaml` | `20f4b93b77109dfcbad1d0d70b41398bb039abd7` |
+| `aquasecurity/trivy` | `main` | `CONTRIBUTING.md` | `b31eff4a97e3dda540f68de564abf8e0dee76894` |
+| `aquasecurity/trivy-action` | `master` | `Makefile` | `b82f13503a2e822bbbd987079fbda51493b2a534` |
+| `aquasecurity/trivy-action` | `master` | `action.yaml` | `612a3a566101a33dd4599f5b8ca6372819c22459` |
+| `aquasecurity/trivy-action` | `master` | `entrypoint.sh` | `f0fbfb45f45abc8b8e1d87527ffb3d980f2cf2e3` |
+| `aquasecurity/trivy-db` | `main` | `Makefile` | `2b606890743eeeaff40b8398ad2c0edd218b2376` |
+| `aquasecurity/trivy-db` | `main` | `go.mod` | `9eefe2e057c6a8cd848194d4867f0f0fdab5d193` |
 <!-- policy-shas:end -->
 
 ## 新候選怎麼找

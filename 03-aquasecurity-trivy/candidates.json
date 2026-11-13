@@ -1,8 +1,582 @@
 {
-  "schema_version": 1,
+  "candidates": [
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [],
+      "confidence": "unknown",
+      "duplicate_prs": [],
+      "evidence_path": "03-aquasecurity-trivy/evidence/setup-trivy-40.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 40,
+      "issue_updated_at": "2026-07-29T10:49:27Z",
+      "kind": "pull_request",
+      "labels": [],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [],
+      "next_action": "只當上下文。不選為實作候選。",
+      "org": "aquasecurity",
+      "repo": "setup-trivy",
+      "score_rationale": "不是實作候選。已依 live 狀態重抓，不沿用計畫分數。",
+      "skills_match": [
+        "GitHub Actions"
+      ],
+      "sources": [
+        "https://github.com/aquasecurity/setup-trivy/pull/40"
+      ],
+      "status": "DISCOVERED",
+      "title": "fix: install from the release archive instead of an authenticated clone",
+      "url": "https://github.com/aquasecurity/setup-trivy/pull/40"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [],
+      "confidence": "unknown",
+      "duplicate_prs": [],
+      "evidence_path": "03-aquasecurity-trivy/evidence/setup-trivy-43.md",
+      "github_state": "closed",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 43,
+      "issue_updated_at": "2026-11-05T07:54:15Z",
+      "kind": "pull_request",
+      "labels": [],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [
+        "closed unmerged"
+      ],
+      "next_action": "重抓時已關閉或合併。不沿用計畫分數，也不選為實作。",
+      "org": "aquasecurity",
+      "repo": "setup-trivy",
+      "score_rationale": "不是實作候選。已依 live 狀態重抓，不沿用計畫分數。",
+      "skills_match": [
+        "GitHub Actions"
+      ],
+      "sources": [
+        "https://github.com/aquasecurity/setup-trivy/pull/43"
+      ],
+      "status": "CLOSED",
+      "title": "fix: install Trivy from the release archive, not get.trivy.dev (#42)",
+      "url": "https://github.com/aquasecurity/setup-trivy/pull/43"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping pull request is already tracked"
+      ],
+      "confidence": "low",
+      "duplicate_prs": [],
+      "evidence_path": "03-aquasecurity-trivy/evidence/trivy-11428.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 11428,
+      "issue_updated_at": "2026-11-04T07:24:30Z",
+      "kind": "pull_request",
+      "labels": [],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [],
+      "next_action": "已知重疊或已有人處理。停止實作，只留去重紀錄。",
+      "org": "aquasecurity",
+      "repo": "trivy",
+      "score_rationale": "已知碰撞或已有人在處理。不計實作分數。",
+      "skills_match": [
+        "Go"
+      ],
+      "sources": [
+        "https://github.com/aquasecurity/trivy/pull/11428"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix(nodejs): treat pnpm v9 importer optionalDependencies as production",
+      "url": "https://github.com/aquasecurity/trivy/pull/11428"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping pull request is already tracked"
+      ],
+      "confidence": "low",
+      "duplicate_prs": [],
+      "evidence_path": "03-aquasecurity-trivy/evidence/trivy-11482.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 11482,
+      "issue_updated_at": "2026-10-30T19:05:27Z",
+      "kind": "pull_request",
+      "labels": [],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [],
+      "next_action": "已知重疊或已有人處理。停止實作，只留去重紀錄。",
+      "org": "aquasecurity",
+      "repo": "trivy",
+      "score_rationale": "已知碰撞或已有人在處理。不計實作分數。",
+      "skills_match": [
+        "Go"
+      ],
+      "sources": [
+        "https://github.com/aquasecurity/trivy/pull/11482"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix(nodejs): parse 4-element git entries in bun.lock",
+      "url": "https://github.com/aquasecurity/trivy/pull/11482"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping pull request is already tracked"
+      ],
+      "confidence": "low",
+      "duplicate_prs": [
+        {
+          "fixes_reference": true,
+          "number": 11482,
+          "org": "aquasecurity",
+          "overlap": "definite_duplicate",
+          "rationale": "PR 內文有關閉關鍵字指向這個編號。這是交叉引用，不是搜尋雜訊。",
+          "repo": "trivy",
+          "url": "https://github.com/aquasecurity/trivy/pull/11482"
+        },
+        {
+          "fixes_reference": true,
+          "number": 11573,
+          "org": "aquasecurity",
+          "overlap": "definite_duplicate",
+          "rationale": "PR 內文有關閉關鍵字指向這個編號。這是交叉引用，不是搜尋雜訊。",
+          "repo": "trivy",
+          "url": "https://github.com/aquasecurity/trivy/pull/11573"
+        }
+      ],
+      "evidence_path": "03-aquasecurity-trivy/evidence/trivy-11502.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 11502,
+      "issue_updated_at": "2026-10-29T12:04:26Z",
+      "kind": "issue",
+      "labels": [
+        "kind/bug"
+      ],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [
+        "ignored unrelated cross-reference draugr-dev/draugr#1740"
+      ],
+      "next_action": "已知重疊或已有人處理。停止實作，只留去重紀錄。",
+      "org": "aquasecurity",
+      "repo": "trivy",
+      "score_rationale": "已知碰撞或已有人在處理。不計實作分數。",
+      "skills_match": [
+        "Go"
+      ],
+      "sources": [
+        "https://github.com/aquasecurity/trivy/issues/11502",
+        "https://github.com/aquasecurity/trivy/pull/11482",
+        "https://github.com/aquasecurity/trivy/pull/11573"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix(nodejs): bun.lock with 4-element git entries fails to parse",
+      "url": "https://github.com/aquasecurity/trivy/issues/11502"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping pull request is already tracked"
+      ],
+      "confidence": "low",
+      "duplicate_prs": [],
+      "evidence_path": "03-aquasecurity-trivy/evidence/trivy-11523.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 11523,
+      "issue_updated_at": "2026-11-10T21:32:30Z",
+      "kind": "pull_request",
+      "labels": [],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [],
+      "next_action": "已知重疊或已有人處理。停止實作，只留去重紀錄。",
+      "org": "aquasecurity",
+      "repo": "trivy",
+      "score_rationale": "已知碰撞或已有人在處理。不計實作分數。",
+      "skills_match": [
+        "Go"
+      ],
+      "sources": [
+        "https://github.com/aquasecurity/trivy/pull/11523"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix(nodejs): link yarn dependencies to a version pinned by resolutions",
+      "url": "https://github.com/aquasecurity/trivy/pull/11523"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping pull request is already tracked"
+      ],
+      "confidence": "low",
+      "duplicate_prs": [
+        {
+          "fixes_reference": true,
+          "number": 11523,
+          "org": "aquasecurity",
+          "overlap": "definite_duplicate",
+          "rationale": "PR 內文有關閉關鍵字指向這個編號。這是交叉引用，不是搜尋雜訊。",
+          "repo": "trivy",
+          "url": "https://github.com/aquasecurity/trivy/pull/11523"
+        }
+      ],
+      "evidence_path": "03-aquasecurity-trivy/evidence/trivy-11568.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 11568,
+      "issue_updated_at": "2026-11-06T08:35:07Z",
+      "kind": "issue",
+      "labels": [
+        "kind/bug"
+      ],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [],
+      "next_action": "已知重疊或已有人處理。停止實作，只留去重紀錄。",
+      "org": "aquasecurity",
+      "repo": "trivy",
+      "score_rationale": "已知碰撞或已有人在處理。不計實作分數。",
+      "skills_match": [
+        "Go"
+      ],
+      "sources": [
+        "https://github.com/aquasecurity/trivy/issues/11568",
+        "https://github.com/aquasecurity/trivy/pull/11523"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "bug(yarn): packages pinned by `resolutions` are marked as production dependencies",
+      "url": "https://github.com/aquasecurity/trivy/issues/11568"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping pull request is already tracked"
+      ],
+      "confidence": "low",
+      "duplicate_prs": [],
+      "evidence_path": "03-aquasecurity-trivy/evidence/trivy-11573.md",
+      "github_state": "closed",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 11573,
+      "issue_updated_at": "2026-11-06T13:02:46Z",
+      "kind": "pull_request",
+      "labels": [],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [
+        "closed unmerged"
+      ],
+      "next_action": "已知重疊或已有人處理。停止實作，只留去重紀錄。",
+      "org": "aquasecurity",
+      "repo": "trivy",
+      "score_rationale": "已知碰撞或已有人在處理。不計實作分數。",
+      "skills_match": [
+        "Go"
+      ],
+      "sources": [
+        "https://github.com/aquasecurity/trivy/pull/11573"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix(nodejs): parse Bun 1.4 four-element git entries in bun.lock",
+      "url": "https://github.com/aquasecurity/trivy/pull/11573"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping pull request is already tracked"
+      ],
+      "confidence": "low",
+      "duplicate_prs": [],
+      "evidence_path": "03-aquasecurity-trivy/evidence/trivy-11575.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 11575,
+      "issue_updated_at": "2026-11-06T15:25:03Z",
+      "kind": "pull_request",
+      "labels": [],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [],
+      "next_action": "已知重疊或已有人處理。停止實作，只留去重紀錄。",
+      "org": "aquasecurity",
+      "repo": "trivy",
+      "score_rationale": "已知碰撞或已有人在處理。不計實作分數。",
+      "skills_match": [
+        "Go"
+      ],
+      "sources": [
+        "https://github.com/aquasecurity/trivy/pull/11575"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix(sbom): skip unsupported CycloneDX metadata component types",
+      "url": "https://github.com/aquasecurity/trivy/pull/11575"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping pull request is already tracked"
+      ],
+      "confidence": "low",
+      "duplicate_prs": [],
+      "evidence_path": "03-aquasecurity-trivy/evidence/trivy-11576.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 11576,
+      "issue_updated_at": "2026-11-06T15:26:36Z",
+      "kind": "pull_request",
+      "labels": [],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [],
+      "next_action": "已知重疊或已有人處理。停止實作，只留去重紀錄。",
+      "org": "aquasecurity",
+      "repo": "trivy",
+      "score_rationale": "已知碰撞或已有人在處理。不計實作分數。",
+      "skills_match": [
+        "Go"
+      ],
+      "sources": [
+        "https://github.com/aquasecurity/trivy/pull/11576"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix(sbom): tolerate multiple orphan OS package types",
+      "url": "https://github.com/aquasecurity/trivy/pull/11576"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping pull request is already tracked"
+      ],
+      "confidence": "low",
+      "duplicate_prs": [],
+      "evidence_path": "03-aquasecurity-trivy/evidence/trivy-11602.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 11602,
+      "issue_updated_at": "2026-11-13T09:58:10Z",
+      "kind": "pull_request",
+      "labels": [],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [],
+      "next_action": "已知重疊或已有人處理。停止實作，只留去重紀錄。",
+      "org": "aquasecurity",
+      "repo": "trivy",
+      "score_rationale": "已知碰撞或已有人在處理。不計實作分數。",
+      "skills_match": [
+        "Go"
+      ],
+      "sources": [
+        "https://github.com/aquasecurity/trivy/pull/11602"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix(secret): find AWS access key IDs followed by punctuation",
+      "url": "https://github.com/aquasecurity/trivy/pull/11602"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping pull request is already tracked"
+      ],
+      "confidence": "low",
+      "duplicate_prs": [],
+      "evidence_path": "03-aquasecurity-trivy/evidence/trivy-11627.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 11627,
+      "issue_updated_at": "2026-11-12T11:12:16Z",
+      "kind": "pull_request",
+      "labels": [],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [],
+      "next_action": "已知重疊或已有人處理。停止實作，只留去重紀錄。",
+      "org": "aquasecurity",
+      "repo": "trivy",
+      "score_rationale": "已知碰撞或已有人在處理。不計實作分數。",
+      "skills_match": [
+        "Go"
+      ],
+      "sources": [
+        "https://github.com/aquasecurity/trivy/pull/11627"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix(php): compare Composer versions in Composer's version order",
+      "url": "https://github.com/aquasecurity/trivy/pull/11627"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping pull request is already tracked"
+      ],
+      "confidence": "low",
+      "duplicate_prs": [],
+      "evidence_path": "03-aquasecurity-trivy/evidence/trivy-11633.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 11633,
+      "issue_updated_at": "2026-11-13T08:01:23Z",
+      "kind": "pull_request",
+      "labels": [],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [],
+      "next_action": "已知重疊或已有人處理。停止實作，只留去重紀錄。",
+      "org": "aquasecurity",
+      "repo": "trivy",
+      "score_rationale": "已知碰撞或已有人在處理。不計實作分數。",
+      "skills_match": [
+        "Go"
+      ],
+      "sources": [
+        "https://github.com/aquasecurity/trivy/pull/11633"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix(secret): detect AWS access key IDs followed by quotes or commas",
+      "url": "https://github.com/aquasecurity/trivy/pull/11633"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping pull request is already tracked"
+      ],
+      "confidence": "low",
+      "duplicate_prs": [],
+      "evidence_path": "03-aquasecurity-trivy/evidence/trivy-action-521.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 521,
+      "issue_updated_at": "2026-03-07T18:59:58Z",
+      "kind": "pull_request",
+      "labels": [],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [],
+      "next_action": "已知重疊或已有人處理。停止實作，只留去重紀錄。",
+      "org": "aquasecurity",
+      "repo": "trivy-action",
+      "score_rationale": "已知碰撞或已有人在處理。不計實作分數。",
+      "skills_match": [
+        "GitHub Actions"
+      ],
+      "sources": [
+        "https://github.com/aquasecurity/trivy-action/pull/521"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "chore: add top-level permissions: {} to all workflow files",
+      "url": "https://github.com/aquasecurity/trivy-action/pull/521"
+    },
+    {
+      "acceptance_score": 2,
+      "assignees": [],
+      "blocking_dependencies": [
+        "maintainer agreement on which repo owns the download feature"
+      ],
+      "confidence": "low",
+      "duplicate_prs": [
+        {
+          "fixes_reference": false,
+          "number": 40,
+          "org": "aquasecurity",
+          "overlap": "possible_overlap",
+          "rationale": "沒有同儲存庫的關閉關鍵字。下載路徑尚未逐行對過，所以只標 possible_overlap，不是 definite_duplicate。",
+          "repo": "setup-trivy",
+          "url": "https://github.com/aquasecurity/setup-trivy/pull/40"
+        },
+        {
+          "fixes_reference": false,
+          "number": 43,
+          "org": "aquasecurity",
+          "overlap": "possible_overlap",
+          "rationale": "沒有同儲存庫的關閉關鍵字。下載路徑尚未逐行對過，所以只標 possible_overlap，不是 definite_duplicate。",
+          "repo": "setup-trivy",
+          "url": "https://github.com/aquasecurity/setup-trivy/pull/43"
+        }
+      ],
+      "evidence_path": "03-aquasecurity-trivy/evidence/trivy-action-551.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": 4,
+      "issue_number": 551,
+      "issue_updated_at": "2026-10-02T11:22:56Z",
+      "kind": "issue",
+      "labels": [],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [
+        "comment from Kushal-39 (author_association NONE)",
+        "ignored unrelated cross-reference alexanderwanyoike/the0#272",
+        "timeline has no same-repo pull cross-reference; that is not proof of no duplicate"
+      ],
+      "next_action": "對照 setup-trivy #40 與 #43 的下載路徑，只寫版本釘選、SHA-256、簽章、快取、架構與發布流程。",
+      "org": "aquasecurity",
+      "repo": "trivy-action",
+      "score_rationale": "計畫估算 acceptance 2、impact 4，信心 low。這次 live issue 仍開放，所以保留低信心估計；這不是使用量。硬門檻覆寫分數，不能進入 READY_TO_IMPLEMENT。",
+      "skills_match": [
+        "GitHub Actions"
+      ],
+      "sources": [
+        "https://github.com/aquasecurity/trivy-action/issues/551"
+      ],
+      "status": "NEEDS_MAINTAINER",
+      "title": "Feature request: support checksum verification for Trivy binary (`version` + `sha256`)",
+      "url": "https://github.com/aquasecurity/trivy-action/issues/551"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping pull request is already tracked"
+      ],
+      "confidence": "low",
+      "duplicate_prs": [],
+      "evidence_path": "03-aquasecurity-trivy/evidence/trivy-db-702.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 702,
+      "issue_updated_at": "2026-10-18T07:29:48Z",
+      "kind": "pull_request",
+      "labels": [],
+      "last_verified_at": "2026-11-13T16:42:51Z",
+      "maintainer_signals": [],
+      "next_action": "已知重疊或已有人處理。停止實作，只留去重紀錄。",
+      "org": "aquasecurity",
+      "repo": "trivy-db",
+      "score_rationale": "已知碰撞或已有人在處理。不計實作分數。",
+      "skills_match": [
+        "Go"
+      ],
+      "sources": [
+        "https://github.com/aquasecurity/trivy-db/pull/702"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix: keep the highest fixed version when a secdb source lists a CVE under several",
+      "url": "https://github.com/aquasecurity/trivy-db/pull/702"
+    }
+  ],
   "directory": "03-aquasecurity-trivy",
-  "last_verified_at": null,
-  "partial": false,
   "errors": [],
-  "candidates": []
+  "last_verified_at": "2026-11-13T16:42:51Z",
+  "partial": false,
+  "schema_version": 1
 }

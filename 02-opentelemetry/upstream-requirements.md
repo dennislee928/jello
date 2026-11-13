@@ -12,10 +12,13 @@
 
 ## 本次驗證
 
-last_verified_at: null
+last_verified_at: 2026-11-13T16:42:51Z
 
 <!-- policy-shas:start -->
-尚未以 `gh api` 重抓政策檔 blob SHA。
+| 儲存庫 | 分支 | 路徑 | blob SHA |
+| --- | --- | --- | --- |
+| `open-telemetry/opentelemetry-collector-contrib` | `main` | `AGENTS.md` | `0e2335037978da4d790a87fd9c8960b6a3bda4b8` |
+| `open-telemetry/opentelemetry-collector-contrib` | `main` | `CONTRIBUTING.md` | `d0ba48866c71dc9a06d0db05b4688d67d27a3e32` |
 <!-- policy-shas:end -->
 
 ## 與 semantic-conventions 的界線
