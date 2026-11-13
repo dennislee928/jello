@@ -1,0 +1,83 @@
+{
+  "baseline_path": "tests/fixtures/scan_fixture.json",
+  "baseline_verified_at": "2026-11-01T00:00:00Z",
+  "errors": [
+    {
+      "detail": "HTTP 429",
+      "http_status": 429,
+      "org": "aquasecurity",
+      "repo": "trivy"
+    }
+  ],
+  "generated_at": "2026-11-14T01:00:00Z",
+  "material_changes": [
+    {
+      "after": "octocat",
+      "before": "",
+      "change": "assignees",
+      "number": 101,
+      "org": "apache",
+      "repo": "superset",
+      "url": "https://github.com/apache/superset/issues/101"
+    },
+    {
+      "after": "2",
+      "before": "1",
+      "change": "comment_count",
+      "number": 101,
+      "org": "apache",
+      "repo": "superset",
+      "url": "https://github.com/apache/superset/issues/101"
+    }
+  ],
+  "new_qualifying": [
+    {
+      "kind": "issue",
+      "number": 200,
+      "org": "apache",
+      "reason": "在 2026-11-01T00:00:00Z 之後新開，標題符合關鍵字 React",
+      "repo": "superset",
+      "signals": [
+        "keyword:React",
+        "bonus:good first issue"
+      ],
+      "title": "React dashboard drops API values `unsafe`",
+      "url": "https://github.com/apache/superset/issues/200"
+    },
+    {
+      "kind": "pull_request",
+      "number": 400,
+      "org": "ossf",
+      "reason": "在 2026-11-01T00:00:00Z 之後新開，標題符合關鍵字 SBOM",
+      "repo": "scorecard",
+      "signals": [
+        "keyword:SBOM"
+      ],
+      "title": "supply chain SBOM parser check",
+      "url": "https://github.com/ossf/scorecard/pull/400"
+    }
+  ],
+  "partial": true,
+  "rate_limit_remaining": null,
+  "schema_version": 1,
+  "stale_skipped": 2,
+  "targets": [
+    "apache/superset",
+    "open-telemetry/opentelemetry-collector-contrib",
+    "aquasecurity/trivy",
+    "aquasecurity/trivy-action",
+    "aquasecurity/setup-trivy",
+    "aquasecurity/trivy-db",
+    "ossf/scorecard",
+    "cloudflare/workers-sdk"
+  ],
+  "uncertainties": [
+    {
+      "detail": "這個儲存庫讀取失敗，受影響項目維持 UNVERIFIED",
+      "number": null,
+      "org": "aquasecurity",
+      "repo": "trivy"
+    }
+  ],
+  "verified_at": "2026-11-14T01:00:00Z"
+}
