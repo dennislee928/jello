@@ -1,0 +1,43 @@
+name: oss-monitor
+
+on:
+  schedule:
+    - cron: "0 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: read
+    steps:
+      - name: Check out coordination repo
+        uses: actions/checkout@v4
+        with:
+          persist-credentials: false
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Read-only scan
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          mkdir -p reports/daily
+          python3 scripts/scan.py --root . --baseline reports/state/baseline.json --verified-at "$(date -u +%Y-%m-%dT%H:%M:%SZ)" --out reports/daily/report.json
+          python3 scripts/render_report.py --input reports/daily/report.json --out reports/daily/report.md
+
+      - name: Publish job summary
+        run: cat reports/daily/report.md >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Upload report artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: oss-monitor-report
+          path: reports/daily/
+          if-no-files-found: error
