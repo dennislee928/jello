@@ -1,0 +1,6 @@
+{
+  "schema_version": 1,
+  "verified_at": null,
+  "note": "Human-reviewed baseline. The workflow must not commit updates. A null verified_at means there is no watermark yet; do not treat the historical backlog as new alerts.",
+  "items": []
+}
