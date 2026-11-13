@@ -29,6 +29,8 @@ last_verified_at: 2026-11-13T16:42:51Z
 
 `#52509`：`processor/k8sattributes`。blocking dependency 是產生符號與 Code Owner 同意，兩者缺一就停。
 
-`#50908`：仍需讀 diff 與檔案清單後才判斷和 `#52509` 是 `possible_overlap` 還是 `definite_duplicate`。另讀 `#52631` 的檔案清單。交叉引用存在只代表要讀，不代表已經重複。
+`#50908`：檔案清單已讀，21 個檔集中在 HPA label / annotation 擷取，沒有 semantic-conventions 產生檔。對 `#52509` 記 `possible_overlap`，不是 `definite_duplicate`。`#52631` 是週報 issue，沒有 PR diff。交叉引用存在只代表要讀，不代表已經重複。
 
-本目錄不改 semconv 產生器，也不在符號未確認時起草 processor 補丁。
+investigation_verified_at: 2026-11-13T16:55:05Z
+
+processor `go.mod` 沒有 semantic-conventions require。`attributes.go` 用手寫 label helper，沒有 HPA 產生符號。`CODEOWNERS` 列了 owner，同意未出現。`#52509` 維持 `BLOCKED`。本目錄不改 semconv 產生器，也不起草 processor 補丁。

@@ -16,9 +16,11 @@
       "labels": [
         "processor/k8sattributes"
       ],
-      "last_verified_at": "2026-11-13T16:42:51Z",
-      "maintainer_signals": [],
-      "next_action": "只當上下文。不選為實作候選。",
+      "last_verified_at": "2026-11-13T16:55:05Z",
+      "maintainer_signals": [
+        "21 files under k8sattributesprocessor; no semantic-conventions migration"
+      ],
+      "next_action": "檔案清單已讀。對 #52509 是 possible_overlap，不是 definite_duplicate。不選為實作。",
       "org": "open-telemetry",
       "repo": "opentelemetry-collector-contrib",
       "score_rationale": "不是實作候選。已依 live 狀態重抓，不沿用計畫分數。",
@@ -40,7 +42,17 @@
         "generated HPA symbols unconfirmed"
       ],
       "confidence": "low",
-      "duplicate_prs": [],
+      "duplicate_prs": [
+        {
+          "fixes_reference": false,
+          "number": 50908,
+          "org": "open-telemetry",
+          "overlap": "possible_overlap",
+          "rationale": "檔案清單是 HPA label / annotation 擷取，沒有 semantic-conventions 產生檔。同元件、同主題，不是同一修復。",
+          "repo": "opentelemetry-collector-contrib",
+          "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50908"
+        }
+      ],
       "evidence_path": "02-opentelemetry/evidence/opentelemetry-collector-contrib-52509.md",
       "github_state": "open",
       "hard_gate_failed": true,
@@ -53,26 +65,33 @@
         "priority:p2",
         "processor/k8sattributes"
       ],
-      "last_verified_at": "2026-11-13T16:42:51Z",
+      "last_verified_at": "2026-11-13T16:55:05Z",
       "maintainer_signals": [
-        "#50908 metadata was fetched; overlap waits on the diff",
         "#52631 is an issue (Weekly Report: 2026-10-27 - 2026-11-03), not a pull request diff",
         "comment from github-actions[bot] (author_association CONTRIBUTOR)",
         "comment from nikhilred2619 (author_association CONTRIBUTOR)",
         "comment from shahithmohamed202-collab (author_association NONE)",
         "ignored unrelated cross-reference o11y-dev/opentelemetry-skill#105",
-        "same-repo issue cross-reference #52631"
+        "same-repo issue cross-reference #52631",
+        "#50908 file list is HPA extraction, recorded as possible_overlap",
+        "processor go.mod has semconvtest v0.165.1 and no semantic-conventions require",
+        "CODEOWNERS lists k8sattributes owners; approval not observed"
       ],
-      "next_action": "確認產生的 HPA 符號與 Code Owner 之前維持 BLOCKED。#50908 的 overlap 等 diff。",
+      "next_action": "產生的 HPA 符號未在 processor 模組引用，Code Owner 同意未出現。維持 BLOCKED。不寫補丁。",
       "org": "open-telemetry",
       "repo": "opentelemetry-collector-contrib",
-      "score_rationale": "計畫估算 acceptance 2、impact 3，信心 low。這次 live issue 仍開放，所以保留低信心估計；這不是使用量。硬門檻覆寫分數，不能進入 READY_TO_IMPLEMENT。",
+      "score_rationale": "計畫估算 acceptance 2、impact 3，信心 low。2026-11-13T16:55:05Z 已讀 go.mod、attributes.go 與 CODEOWNERS。產生符號與 Code Owner 同意仍缺。#50908 是 possible_overlap。分數不提高，也不是使用量。硬門檻覆寫分數，不能進入 READY_TO_IMPLEMENT。",
       "skills_match": [
         "Go"
       ],
       "sources": [
         "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52509",
-        "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50908"
+        "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50908",
+        "https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/go.mod",
+        "https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/processor/k8sattributesprocessor/go.mod",
+        "https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/processor/k8sattributesprocessor/internal/kube/attributes.go",
+        "https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/processor/k8sattributesprocessor/metadata.yaml",
+        "https://github.com/open-telemetry/opentelemetry-collector-contrib/blob/main/.github/CODEOWNERS"
       ],
       "status": "BLOCKED",
       "title": "Use generated semantic conventions references instead of local ones",
@@ -94,9 +113,10 @@
       "labels": [
         "report"
       ],
-      "last_verified_at": "2026-11-13T16:42:51Z",
+      "last_verified_at": "2026-11-13T16:55:05Z",
       "maintainer_signals": [
-        "same-repo issue cross-reference #52905"
+        "same-repo issue cross-reference #52905",
+        "re-read: weekly report issue, no pull request file list"
       ],
       "next_action": "這是 issue，不是 pull request，沒有 diff 檔案清單。只當 #52509 的交叉引用上下文。",
       "org": "open-telemetry",
