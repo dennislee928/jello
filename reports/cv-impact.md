@@ -31,6 +31,7 @@ last_verified_at：`2026-11-13T16:42:51Z`
 | release | 無 | 同上 |
 | 測試紀錄 | 無上游命令輸出 | 外部 checkout 尚未用來跑修復 |
 | 使用量 | unknown | 沒有可歸因的變更 |
+| 調查重讀 | `2026-11-13T16:55:05Z` | 仍無 `MERGED` 或 `RELEASED` |
 
 ## Inferred
 

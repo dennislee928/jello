@@ -2,7 +2,7 @@
 
 這個索引把已驗證事實與推論分開。它不是上游專案的下載統計。候選 issue 與尚未合併的 PR 不計入影響。
 
-最後對過協調庫現況的時間是 `2026-11-13T16:42:51Z`（唯讀快照的 `last_verified_at`）。那天沒有本儲存庫作者合併到上游的 pull request。
+最後對過協調庫現況的時間是 `2026-11-13T16:42:51Z`（唯讀快照的 `last_verified_at`）。調查重讀是 `2026-11-13T16:55:05Z`。兩次都沒有本儲存庫作者合併到上游的 pull request。
 
 ## 總表
 
@@ -23,6 +23,6 @@
 
 ## Inferred
 
-推論欄目前沒有可以安全寫下的影響。已知碰撞與仍在 `BLOCKED`、`NEEDS_MAINTAINER`、`UNVERIFIED` 的候選都還沒有修復可以歸因。
+推論欄目前沒有可以安全寫下的影響。已知碰撞，以及仍在 `BLOCKED`、`NEEDS_MAINTAINER`、`REPRO_PENDING`、`UNVERIFIED` 的候選，都還沒有修復可以歸因。讀過上游檔案不是合併，也不產生使用量。
 
 詳細的空白紀錄在 `reports/cv-impact.md`。
