@@ -20,21 +20,28 @@
         "good first issue",
         "kind/bug"
       ],
-      "last_verified_at": "2026-11-13T16:42:51Z",
+      "last_verified_at": "2026-11-13T16:55:05Z",
       "maintainer_signals": [
         "comment from Adel-AlZahrani-Cyber (author_association NONE)",
         "ignored unrelated cross-reference ossf/scorecard-action#895",
-        "timeline has no same-repo pull cross-reference; that is not proof of no duplicate"
+        "timeline has no same-repo pull cross-reference; that is not proof of no duplicate",
+        "raw release-branch-err expects GetBranch errors to fail the check",
+        "#5455 makes unknown inconclusive and fixes #5450, not the four #2161 cases"
       ],
-      "next_action": "只寫設計筆記，把刪除的 release branch、改名的 default branch、API 權限不足與真正未保護分開。不改分數語意。",
+      "next_action": "設計筆記已寫。四種情況分開。不改分數語意，維持 NEEDS_MAINTAINER。",
       "org": "ossf",
       "repo": "scorecard",
-      "score_rationale": "計畫估算 acceptance 2、impact 3，信心 low。這次 live issue 仍開放，所以保留低信心估計；這不是使用量。硬門檻覆寫分數，不能進入 READY_TO_IMPLEMENT。",
+      "score_rationale": "計畫估算 acceptance 2、impact 3，信心 low。2026-11-13T16:55:05Z 已讀 raw、evaluation 與 #5455 diff。unknown 與 unprotected 仍分開。分數語意未改，也不是使用量。硬門檻覆寫分數，不能進入 READY_TO_IMPLEMENT。",
       "skills_match": [
         "Go"
       ],
       "sources": [
-        "https://github.com/ossf/scorecard/issues/2161"
+        "https://github.com/ossf/scorecard/issues/2161",
+        "https://github.com/ossf/scorecard/blob/main/checks/raw/branch_protection.go",
+        "https://github.com/ossf/scorecard/blob/main/checks/raw/branch_protection_test.go",
+        "https://github.com/ossf/scorecard/blob/main/checks/evaluation/branch_protection.go",
+        "https://github.com/ossf/scorecard/blob/main/checks/evaluation/branch_protection_test.go",
+        "https://github.com/ossf/scorecard/pull/5455"
       ],
       "status": "NEEDS_MAINTAINER",
       "title": "Improve Score Reporting: Branch-Protection check fails with -1",
@@ -102,9 +109,11 @@
       "issue_updated_at": "2026-11-09T16:54:05Z",
       "kind": "pull_request",
       "labels": [],
-      "last_verified_at": "2026-11-13T16:42:51Z",
-      "maintainer_signals": [],
-      "next_action": "只當上下文。不選為實作候選。",
+      "last_verified_at": "2026-11-13T16:55:05Z",
+      "maintainer_signals": [
+        "diff records unknown branches as inconclusive instead of unprotected"
+      ],
+      "next_action": "diff 已讀。修的是 #5450 的 unknown，不是 #2161。不選為實作。",
       "org": "ossf",
       "repo": "scorecard",
       "score_rationale": "不是實作候選。已依 live 狀態重抓，不沿用計畫分數。",

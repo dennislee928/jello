@@ -22,7 +22,9 @@ last_verified_at: 2026-11-13T16:42:51Z
 
 ## #2161 的範圍
 
-`#2161` 是 Branch-Protection check。timeline 上 2022 年的 `ossf/scorecard-action#895` 不是這個 issue 的修復 PR。`#5455` 仍需與 `#5450` 一起讀：它處理的是 `#5450`，不能把它記成 `#2161` 的 `definite_duplicate`，除非 diff 真的覆蓋 `#2161` 的失敗模式。
+`#2161` 是 Branch-Protection check。timeline 上 2022 年的 `ossf/scorecard-action#895` 不是這個 issue 的修復 PR。`#5455` 的 diff 已讀：它修 `#5450`，把 unknown 收成 inconclusive，沒有覆蓋已刪除的 release branch、其他 default branch 改名，或 API 權限錯誤。不能把它記成 `#2161` 的 `definite_duplicate`。
+
+investigation_verified_at: 2026-11-13T16:55:05Z
 
 閱讀範圍是 `checks/raw/branch_protection.go`、其測試、`checks/evaluation/branch_protection.go`，以及 `#5455` 的 diff。只挑一個可控案例寫預期行為，例如已刪除的 release branch。不要在同一則筆記裡把「分支已刪除」「預設分支改名」「token 權限不足」「分支真的沒有保護」收成同一個分數。
 
