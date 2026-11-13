@@ -1,0 +1,15 @@
+{
+  "acceptance_weight": 0.5,
+  "impact_weight": 0.5,
+  "hard_gates_override": true,
+  "score_min": 0,
+  "score_max": 5,
+  "hard_gate_statuses": [
+    "DISCOVERED",
+    "UNVERIFIED",
+    "DUPLICATE_OR_IN_PROGRESS",
+    "BLOCKED",
+    "NEEDS_MAINTAINER",
+    "REPRO_PENDING"
+  ]
+}

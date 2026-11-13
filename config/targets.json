@@ -1,0 +1,206 @@
+{
+  "checkout_root": "/Users/dennis/Desktop/upstream-src",
+  "keywords": [
+    "TypeScript",
+    "React",
+    "Go",
+    "API",
+    "dashboard",
+    "security",
+    "MCP",
+    "SBOM",
+    "parser",
+    "supply chain"
+  ],
+  "bonus_labels": [
+    "good first issue",
+    "help wanted"
+  ],
+  "targets": [
+    {
+      "id": "01-apache-superset",
+      "org": "apache",
+      "repo": "superset",
+      "default_branch": "master",
+      "local_dir": "01-apache-superset",
+      "policy_files": [
+        "AGENTS.md",
+        "SECURITY.md",
+        "CONTRIBUTING.md"
+      ],
+      "keywords": [
+        "TypeScript",
+        "React",
+        "dashboard",
+        "API",
+        "chart"
+      ],
+      "seeds": [
+        {"kind": "issue", "number": 46197, "role": "revalidate"},
+        {"kind": "issue", "number": 46196, "role": "revalidate"}
+      ]
+    },
+    {
+      "id": "02-opentelemetry",
+      "org": "open-telemetry",
+      "repo": "opentelemetry-collector-contrib",
+      "default_branch": "main",
+      "local_dir": "02-opentelemetry",
+      "policy_files": [
+        "CONTRIBUTING.md",
+        "AGENTS.md"
+      ],
+      "keywords": [
+        "Go",
+        "API",
+        "security",
+        "parser"
+      ],
+      "seeds": [
+        {"kind": "issue", "number": 52509, "role": "blocked_symbols"},
+        {"kind": "pull_request", "number": 50908, "role": "comparison"},
+        {"kind": "pull_request", "number": 52631, "role": "comparison"},
+        {
+          "kind": "pull_request",
+          "number": 4100,
+          "org": "open-telemetry",
+          "repo": "semantic-conventions",
+          "role": "comparison"
+        }
+      ]
+    },
+    {
+      "id": "03-aquasecurity-trivy",
+      "org": "aquasecurity",
+      "repo": "trivy",
+      "default_branch": "main",
+      "local_dir": "03-aquasecurity-trivy",
+      "policy_files": [
+        "CONTRIBUTING.md"
+      ],
+      "keywords": [
+        "Go",
+        "security",
+        "SBOM",
+        "parser",
+        "supply chain"
+      ],
+      "excluded_numbers": [11383, 11411, 11389, 11447],
+      "seeds": [
+        {"kind": "pull_request", "number": 11482, "role": "known_collision"},
+        {"kind": "pull_request", "number": 11573, "role": "known_collision"},
+        {"kind": "pull_request", "number": 11523, "role": "known_collision"},
+        {"kind": "pull_request", "number": 11627, "role": "known_collision"},
+        {"kind": "pull_request", "number": 11576, "role": "known_collision"},
+        {"kind": "pull_request", "number": 11575, "role": "known_collision"},
+        {"kind": "pull_request", "number": 11602, "role": "known_collision"},
+        {"kind": "pull_request", "number": 11633, "role": "known_collision"},
+        {"kind": "pull_request", "number": 11428, "role": "known_collision"},
+        {"kind": "issue", "number": 11502, "role": "known_collision"},
+        {"kind": "issue", "number": 11568, "role": "known_collision"}
+      ]
+    },
+    {
+      "id": "03-aquasecurity-trivy-action",
+      "org": "aquasecurity",
+      "repo": "trivy-action",
+      "default_branch": "main",
+      "local_dir": "03-aquasecurity-trivy",
+      "policy_files": [
+        "Makefile",
+        "entrypoint.sh",
+        "action.yaml"
+      ],
+      "keywords": [
+        "security",
+        "supply chain",
+        "GitHub Action"
+      ],
+      "seeds": [
+        {"kind": "pull_request", "number": 521, "role": "known_collision"},
+        {"kind": "issue", "number": 551, "role": "needs_maintainer"}
+      ]
+    },
+    {
+      "id": "03-aquasecurity-setup-trivy",
+      "org": "aquasecurity",
+      "repo": "setup-trivy",
+      "default_branch": "main",
+      "local_dir": "03-aquasecurity-trivy",
+      "policy_files": [
+        "action.yaml"
+      ],
+      "keywords": [
+        "security",
+        "supply chain",
+        "GitHub Action"
+      ],
+      "seeds": [
+        {"kind": "pull_request", "number": 40, "role": "comparison"},
+        {"kind": "pull_request", "number": 43, "role": "comparison"}
+      ]
+    },
+    {
+      "id": "03-aquasecurity-trivy-db",
+      "org": "aquasecurity",
+      "repo": "trivy-db",
+      "default_branch": "main",
+      "local_dir": "03-aquasecurity-trivy",
+      "policy_files": [
+        "Makefile",
+        "go.mod"
+      ],
+      "keywords": [
+        "Go",
+        "security",
+        "vulnerability"
+      ],
+      "seeds": [
+        {"kind": "pull_request", "number": 702, "role": "known_collision"}
+      ]
+    },
+    {
+      "id": "04-openssf-scorecard",
+      "org": "ossf",
+      "repo": "scorecard",
+      "default_branch": "main",
+      "local_dir": "04-openssf-scorecard",
+      "policy_files": [
+        "CONTRIBUTING.md",
+        "AGENTS.md",
+        "SECURITY.md"
+      ],
+      "keywords": [
+        "Go",
+        "security",
+        "supply chain",
+        "Branch-Protection"
+      ],
+      "seeds": [
+        {"kind": "issue", "number": 2161, "role": "needs_maintainer"},
+        {"kind": "pull_request", "number": 5455, "role": "comparison"},
+        {"kind": "issue", "number": 5450, "role": "comparison"}
+      ]
+    },
+    {
+      "id": "05-cloudflare-workers-sdk",
+      "org": "cloudflare",
+      "repo": "workers-sdk",
+      "default_branch": "main",
+      "local_dir": "05-cloudflare-workers-sdk",
+      "policy_files": [
+        "CONTRIBUTING.md",
+        ".github/VOUCHED.td"
+      ],
+      "keywords": [
+        "TypeScript",
+        "API",
+        "MCP"
+      ],
+      "vouch_login": "dennislee928",
+      "seeds": [
+        {"kind": "qualification", "number": null, "role": "blocked_vouch"}
+      ]
+    }
+  ]
+}

@@ -1,0 +1,147 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/dennislee928/jello/schemas/candidate.schema.json",
+  "title": "CandidateFile",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "directory",
+    "last_verified_at",
+    "partial",
+    "errors",
+    "candidates"
+  ],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "directory": {"type": "string"},
+    "last_verified_at": {"type": ["string", "null"]},
+    "partial": {"type": "boolean"},
+    "errors": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/fetch_error"}
+    },
+    "candidates": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/candidate"}
+    }
+  },
+  "$defs": {
+    "fetch_error": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["org", "repo", "number", "detail"],
+      "properties": {
+        "org": {"type": "string"},
+        "repo": {"type": "string"},
+        "number": {"type": ["integer", "null"]},
+        "http_status": {"type": ["integer", "null"]},
+        "rate_limit_remaining": {"type": ["integer", "null"]},
+        "detail": {"type": "string"}
+      }
+    },
+    "duplicate_pr": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["org", "repo", "number", "url", "overlap", "fixes_reference", "rationale"],
+      "properties": {
+        "org": {"type": "string"},
+        "repo": {"type": "string"},
+        "number": {"type": "integer"},
+        "url": {"type": "string"},
+        "overlap": {
+          "type": "string",
+          "enum": ["definite_duplicate", "possible_overlap", "unverified", "none"]
+        },
+        "fixes_reference": {"type": "boolean"},
+        "rationale": {"type": "string"}
+      }
+    },
+    "candidate": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "org",
+        "repo",
+        "kind",
+        "issue_number",
+        "url",
+        "title",
+        "labels",
+        "assignees",
+        "github_state",
+        "issue_updated_at",
+        "last_verified_at",
+        "status",
+        "duplicate_prs",
+        "maintainer_signals",
+        "blocking_dependencies",
+        "skills_match",
+        "acceptance_score",
+        "impact_score",
+        "confidence",
+        "score_rationale",
+        "hard_gate_failed",
+        "sources",
+        "next_action",
+        "evidence_path"
+      ],
+      "properties": {
+        "org": {"type": "string"},
+        "repo": {"type": "string"},
+        "kind": {
+          "type": "string",
+          "enum": ["issue", "pull_request", "qualification"]
+        },
+        "issue_number": {"type": ["integer", "null"]},
+        "url": {"type": "string"},
+        "title": {"type": "string"},
+        "labels": {"type": "array", "items": {"type": "string"}},
+        "assignees": {"type": "array", "items": {"type": "string"}},
+        "github_state": {
+          "type": "string",
+          "enum": ["open", "closed", "unknown"]
+        },
+        "issue_updated_at": {"type": ["string", "null"]},
+        "last_verified_at": {"type": "string"},
+        "status": {
+          "type": "string",
+          "enum": [
+            "DISCOVERED",
+            "UNVERIFIED",
+            "DUPLICATE_OR_IN_PROGRESS",
+            "BLOCKED",
+            "NEEDS_MAINTAINER",
+            "REPRO_PENDING",
+            "REPRODUCED",
+            "READY_TO_IMPLEMENT",
+            "IMPLEMENTING",
+            "READY_FOR_HUMAN_PR",
+            "PR_OPEN",
+            "MERGED",
+            "RELEASED",
+            "CLOSED"
+          ]
+        },
+        "duplicate_prs": {
+          "type": "array",
+          "items": {"$ref": "#/$defs/duplicate_pr"}
+        },
+        "maintainer_signals": {"type": "array", "items": {"type": "string"}},
+        "blocking_dependencies": {"type": "array", "items": {"type": "string"}},
+        "skills_match": {"type": "array", "items": {"type": "string"}},
+        "acceptance_score": {"type": ["integer", "null"], "minimum": 0, "maximum": 5},
+        "impact_score": {"type": ["integer", "null"], "minimum": 0, "maximum": 5},
+        "confidence": {
+          "type": "string",
+          "enum": ["low", "medium", "high", "unknown"]
+        },
+        "score_rationale": {"type": "string"},
+        "hard_gate_failed": {"type": "boolean"},
+        "sources": {"type": "array", "items": {"type": "string"}},
+        "next_action": {"type": "string"},
+        "evidence_path": {"type": "string"}
+      }
+    }
+  }
+}

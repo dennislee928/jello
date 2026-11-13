@@ -1,0 +1,103 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/dennislee928/jello/schemas/report.schema.json",
+  "title": "DailyReport",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "generated_at",
+    "verified_at",
+    "partial",
+    "baseline_path",
+    "baseline_verified_at",
+    "targets",
+    "new_qualifying",
+    "material_changes",
+    "uncertainties",
+    "errors",
+    "stale_skipped",
+    "rate_limit_remaining"
+  ],
+  "properties": {
+    "schema_version": {"type": "integer", "const": 1},
+    "generated_at": {"type": "string"},
+    "verified_at": {"type": "string"},
+    "partial": {"type": "boolean"},
+    "baseline_path": {"type": "string"},
+    "baseline_verified_at": {"type": ["string", "null"]},
+    "targets": {"type": "array", "items": {"type": "string"}},
+    "new_qualifying": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/item"}
+    },
+    "material_changes": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/change"}
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/note"}
+    },
+    "errors": {
+      "type": "array",
+      "items": {"$ref": "#/$defs/error"}
+    },
+    "stale_skipped": {"type": "integer", "minimum": 0},
+    "rate_limit_remaining": {"type": ["integer", "null"]}
+  },
+  "$defs": {
+    "item": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["org", "repo", "number", "kind", "url", "title", "reason", "signals"],
+      "properties": {
+        "org": {"type": "string"},
+        "repo": {"type": "string"},
+        "number": {"type": "integer"},
+        "kind": {"type": "string", "enum": ["issue", "pull_request"]},
+        "url": {"type": "string"},
+        "title": {"type": "string"},
+        "reason": {"type": "string"},
+        "signals": {"type": "array", "items": {"type": "string"}}
+      }
+    },
+    "change": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["org", "repo", "number", "url", "change", "before", "after"],
+      "properties": {
+        "org": {"type": "string"},
+        "repo": {"type": "string"},
+        "number": {"type": "integer"},
+        "url": {"type": "string"},
+        "change": {"type": "string"},
+        "before": {"type": "string"},
+        "after": {"type": "string"}
+      }
+    },
+    "note": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["org", "repo", "number", "detail"],
+      "properties": {
+        "org": {"type": "string"},
+        "repo": {"type": "string"},
+        "number": {"type": ["integer", "null"]},
+        "detail": {"type": "string"}
+      }
+    },
+    "error": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["org", "repo", "detail"],
+      "properties": {
+        "org": {"type": "string"},
+        "repo": {"type": "string"},
+        "http_status": {"type": ["integer", "null"]},
+        "rate_limit_remaining": {"type": ["integer", "null"]},
+        "detail": {"type": "string"}
+      }
+    }
+  }
+}
