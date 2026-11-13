@@ -1,2 +1,42 @@
-/.ignore
-/.ignore
+# 本機計畫筆記。較早的副本已在公開歷史裡，停止追蹤後不要再加回來。
+.ignore/
+
+# 秘密與 token。不要提交憑證。
+.env
+.env.*
+*.env
+*.pem
+*.key
+id_rsa
+id_ed25519
+gh_token
+GH_TOKEN
+.gh_token
+secrets.json
+credentials.json
+.secrets/
+
+# 快取與本機測試產物
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.cache/
+*.log
+.venv/
+venv/
+
+# 誤放進本儲存庫的上游 checkout。
+# 正式位置是 /Users/dennis/Desktop/upstream-src/<org>/<repo>。
+upstream-src/
+/superset/
+/opentelemetry-collector-contrib/
+/opentelemetry-collector/
+/semantic-conventions/
+/trivy/
+/trivy-action/
+/setup-trivy/
+/trivy-db/
+/scorecard/
+/workers-sdk/
