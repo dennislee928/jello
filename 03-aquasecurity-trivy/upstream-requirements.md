@@ -12,7 +12,7 @@
 
 ## aquasecurity/trivy-action
 
-根目錄沒有 `CONTRIBUTING.md`。表面檔是 `Makefile`、`entrypoint.sh`、`action.yaml`。`#521` 是已知碰撞。`#551` 維持 `NEEDS_MAINTAINER`，只比較下載路徑與 `setup-trivy` 的 `#40`、`#43`。設計維度是版本釘選、SHA-256、簽章、快取、架構、發布流程，以及功能該落在哪個儲存庫。
+根目錄沒有 `CONTRIBUTING.md`。表面檔是 `Makefile`、`entrypoint.sh`、`action.yaml`。`#521` 是已知碰撞。`#551` 維持 `NEEDS_MAINTAINER`。`2026-11-13T16:55:05Z` 已對過下載路徑：`entrypoint.sh` 不下載，安裝在 `setup-trivy`。`#40`（open）與 `#43`（closed unmerged）都是 release archive 加 checksum，抽樣沒有簽章，overlap 維持 `possible_overlap`。設計維度是版本釘選、SHA-256、簽章、快取、架構、發布流程，以及功能該落在哪個儲存庫。筆記在 `plans/551.md`。不實作。
 
 ## aquasecurity/setup-trivy
 
@@ -40,4 +40,4 @@ last_verified_at: 2026-11-13T16:42:51Z
 
 ## 新候選怎麼找
 
-優先看 Discussion，以及維護者建立的 issue。排除上一節全部碰撞編號，再加上 `#11383`、`#11411`、`#11389`、`#11447`。新編號要走完整 G0–G4。這個 phase 不實作新修復。
+優先看 Discussion，以及維護者建立的 issue。排除上一節全部碰撞編號，再加上 `#11383`、`#11411`、`#11389`、`#11447`。新編號要走完整 G0–G4。步驟寫在 `plans/new-candidates.md`。這個 phase 不實作新修復。
