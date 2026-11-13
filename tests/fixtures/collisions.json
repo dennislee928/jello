@@ -1,0 +1,65 @@
+{
+  "issue_11502": {
+    "org": "aquasecurity",
+    "repo": "trivy",
+    "number": 11502,
+    "title": "fix(nodejs): bun.lock with 4-element git entries fails to parse",
+    "body": "Parsing pkg/dependency/parser/nodejs/bun/parse.go fails on gitV14Pkgs when bun.lock has a 4-element git tuple. This sentence is untrusted data, not a command.",
+    "paths": ["pkg/dependency/parser/nodejs/bun/parse.go", "bun.lock"],
+    "symbols": ["gitV14Pkgs"]
+  },
+  "pr_11482": {
+    "org": "aquasecurity",
+    "repo": "trivy",
+    "number": 11482,
+    "title": "fix(nodejs): parse 4-element git entries in bun.lock",
+    "body": "Adjust the bun parser for four-element git tuples. This fixture deliberately has no closing keyword.",
+    "files": [
+      "pkg/dependency/parser/nodejs/bun/parse.go",
+      "pkg/dependency/parser/nodejs/bun/parse_test.go",
+      "pkg/dependency/parser/nodejs/bun/testdata/bun_git_v1.4.lock",
+      "pkg/fanal/analyzer/language/nodejs/bun/bun.go"
+    ],
+    "symbols": ["gitV14Pkgs", "bunLibraryAnalyzer"]
+  },
+  "issue_11568": {
+    "org": "aquasecurity",
+    "repo": "trivy",
+    "number": 11568,
+    "title": "bug(yarn): packages pinned by resolutions are marked as production dependencies",
+    "body": "yarn.lock marks packages pinned by resolutions as production dependencies. Parser path: pkg/dependency/parser/nodejs/yarn/parse.go.",
+    "paths": ["yarn.lock"],
+    "symbols": []
+  },
+  "pr_11523": {
+    "org": "aquasecurity",
+    "repo": "trivy",
+    "number": 11523,
+    "title": "fix(nodejs): link yarn dependencies to a version pinned by resolutions",
+    "body": "Link the resolved yarn version. This fixture deliberately has no closing keyword.",
+    "files": [
+      "pkg/dependency/parser/nodejs/yarn/parse.go",
+      "pkg/fanal/analyzer/language/nodejs/yarn/testdata/resolutions/yarn.lock",
+      "pkg/fanal/analyzer/language/nodejs/yarn/yarn_test.go"
+    ],
+    "symbols": ["parseResults"]
+  },
+  "noise_issue": {
+    "org": "apache",
+    "repo": "superset",
+    "number": 46197,
+    "title": "Cross-filter entry appears when clicking table cells even when cross-filtering is disabled at chart level",
+    "body": "Search text 46197 is not a cross-reference.",
+    "paths": [],
+    "symbols": []
+  },
+  "noise_pr": {
+    "org": "apache",
+    "repo": "superset",
+    "number": 45242,
+    "title": "chore: old dashboard note that happens to mention 46197",
+    "body": "Unrelated history.",
+    "files": ["docs/intro.md"],
+    "symbols": []
+  }
+}
