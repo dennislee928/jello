@@ -31,3 +31,9 @@ last_verified_at: 2026-11-13T16:42:51Z
 `#46196` 要核對 Chart、Dataset、Column 三種 description、API 欄位、`isExpanded`，以及 `description` 與 `description_markdown` 是否走不同路徑。選單若讀 `slice.description`、展開內容若只讀 `description_markdown`，把差異記成證據，不要先寫補丁。
 
 搜尋字串 `46197` 若命中舊 PR，先當成搜尋雜訊。timeline 沒有 cross-reference 也不能當成沒有重複工作。
+
+## 調查重讀
+
+investigation_verified_at: 2026-11-13T16:55:05Z
+
+指定檔案已用 `gh api` GET 讀過。`#46197` 與 `#46196` 都是 `REPRO_PENDING`。`emitCrossFilters` 只反映 dashboard 的 `crossFiltersEnabled`；`setDataMask` 的 `ownState` 路徑另外存在。`description` 與 `description_markdown` 在 hydrate 時分開。沒有補丁，也沒有把不可信描述放進 `dangerouslySetInnerHTML`。紀錄在 `plans/46197.md` 與 `plans/46196.md`。

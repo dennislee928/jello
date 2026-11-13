@@ -4,7 +4,8 @@
       "acceptance_score": 2,
       "assignees": [],
       "blocking_dependencies": [
-        "duplicate check is incomplete"
+        "duplicate check is incomplete",
+        "live chart or API sample still required"
       ],
       "confidence": "low",
       "duplicate_prs": [],
@@ -18,22 +19,26 @@
       "labels": [
         "#bug"
       ],
-      "last_verified_at": "2026-11-13T16:42:51Z",
+      "last_verified_at": "2026-11-13T16:55:05Z",
       "maintainer_signals": [
-        "timeline has no same-repo pull cross-reference; that is not proof of no duplicate"
+        "timeline has no same-repo pull cross-reference; that is not proof of no duplicate",
+        "description and description_markdown are copied separately; expanded HTML uses description_markdown only"
       ],
-      "next_action": "核對 description 與 description_markdown。不可信描述不得進 dangerouslySetInnerHTML。",
+      "next_action": "等 live chart 或 API 樣本。不可信 description 不得進 dangerouslySetInnerHTML。",
       "org": "apache",
       "repo": "superset",
-      "score_rationale": "計畫估算 acceptance 2、impact 3，信心 low。這次 live issue 仍開放，所以保留低信心估計；這不是使用量。硬門檻覆寫分數，不能進入 READY_TO_IMPLEMENT。",
+      "score_rationale": "計畫估算 acceptance 2、impact 3，信心 low。2026-11-13T16:55:05Z 已讀 Chart.tsx、sliceEntities.ts 與 hydrate.ts：description 與 description_markdown 分開。還沒有 live 樣本，所以維持 REPRO_PENDING。分數不因讀到原始碼而提高，也不是使用量。硬門檻覆寫分數，不能進入 READY_TO_IMPLEMENT。",
       "skills_match": [
         "React",
         "TypeScript"
       ],
       "sources": [
-        "https://github.com/apache/superset/issues/46196"
+        "https://github.com/apache/superset/issues/46196",
+        "https://github.com/apache/superset/blob/master/superset-frontend/src/dashboard/components/gridComponents/Chart/Chart.tsx",
+        "https://github.com/apache/superset/blob/master/superset-frontend/src/dashboard/actions/sliceEntities.ts",
+        "https://github.com/apache/superset/blob/master/superset-frontend/src/dashboard/actions/hydrate.ts"
       ],
-      "status": "UNVERIFIED",
+      "status": "REPRO_PENDING",
       "title": "Descriptions do not show",
       "url": "https://github.com/apache/superset/issues/46196"
     },
@@ -41,7 +46,8 @@
       "acceptance_score": 3,
       "assignees": [],
       "blocking_dependencies": [
-        "duplicate check is incomplete"
+        "duplicate check is incomplete",
+        "running UI repro required"
       ],
       "confidence": "low",
       "duplicate_prs": [],
@@ -55,22 +61,27 @@
       "labels": [
         "#bug"
       ],
-      "last_verified_at": "2026-11-13T16:42:51Z",
+      "last_verified_at": "2026-11-13T16:55:05Z",
       "maintainer_signals": [
-        "timeline has no same-repo pull cross-reference; that is not proof of no duplicate"
+        "timeline has no same-repo pull cross-reference; that is not proof of no duplicate",
+        "emitCrossFilters reads only dashboard crossFiltersEnabled; ownState setDataMask does not check that flag"
       ],
-      "next_action": "讀 TableChart.tsx、其測試與 dashboard Chart.tsx。需要執行中的 UI 才能斷言時維持 REPRO_PENDING。",
+      "next_action": "需要執行中的 UI。斷言看 filterState / extraFormData，不是 setDataMask 零呼叫。不寫補丁。",
       "org": "apache",
       "repo": "superset",
-      "score_rationale": "計畫估算 acceptance 3、impact 3，信心 low。這次 live issue 仍開放，所以保留低信心估計；這不是使用量。硬門檻覆寫分數，不能進入 READY_TO_IMPLEMENT。",
+      "score_rationale": "計畫估算 acceptance 3、impact 3，信心 low。2026-11-13T16:55:05Z 已讀 TableChart.tsx、其測試與 Chart.tsx。dashboard 旗標與 ownState 路徑分得開，chart 層級關閉仍要 UI。維持 REPRO_PENDING。分數不因讀到原始碼而提高，也不是使用量。硬門檻覆寫分數，不能進入 READY_TO_IMPLEMENT。",
       "skills_match": [
         "React",
         "TypeScript"
       ],
       "sources": [
-        "https://github.com/apache/superset/issues/46197"
+        "https://github.com/apache/superset/issues/46197",
+        "https://github.com/apache/superset/blob/master/superset-frontend/plugins/plugin-chart-table/src/TableChart.tsx",
+        "https://github.com/apache/superset/blob/master/superset-frontend/plugins/plugin-chart-table/test/TableChart.test.tsx",
+        "https://github.com/apache/superset/blob/master/superset-frontend/plugins/plugin-chart-table/src/DataTable/utils/externalAPIs.ts",
+        "https://github.com/apache/superset/blob/master/superset-frontend/src/dashboard/components/gridComponents/Chart/Chart.tsx"
       ],
-      "status": "UNVERIFIED",
+      "status": "REPRO_PENDING",
       "title": "Cross-filter entry appears when clicking table cells even when cross-filtering is disabled at chart level",
       "url": "https://github.com/apache/superset/issues/46197"
     }
