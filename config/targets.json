@@ -59,7 +59,7 @@
       "seeds": [
         {"kind": "issue", "number": 52509, "role": "blocked_symbols"},
         {"kind": "pull_request", "number": 50908, "role": "comparison"},
-        {"kind": "pull_request", "number": 52631, "role": "comparison"},
+        {"kind": "issue", "number": 52631, "role": "comparison"},
         {
           "kind": "pull_request",
           "number": 4100,
@@ -104,7 +104,7 @@
       "id": "03-aquasecurity-trivy-action",
       "org": "aquasecurity",
       "repo": "trivy-action",
-      "default_branch": "main",
+      "default_branch": "master",
       "local_dir": "03-aquasecurity-trivy",
       "policy_files": [
         "Makefile",

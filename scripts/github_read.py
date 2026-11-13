@@ -359,6 +359,7 @@ def _next_action(status, repo, number):
         ("superset", 46196): "核對 description 與 description_markdown。不可信描述不得進 dangerouslySetInnerHTML。",
         ("scorecard", 2161): "只寫設計筆記，把刪除的 release branch、改名的 default branch、API 權限不足與真正未保護分開。不改分數語意。",
         ("opentelemetry-collector-contrib", 52509): "確認產生的 HPA 符號與 Code Owner 之前維持 BLOCKED。#50908 的 overlap 等 diff。",
+        ("opentelemetry-collector-contrib", 52631): "這是 issue，不是 pull request，沒有 diff 檔案清單。只當 #52509 的交叉引用上下文。",
         ("trivy-action", 551): "對照 setup-trivy #40 與 #43 的下載路徑，只寫版本釘選、SHA-256、簽章、快取、架構與發布流程。",
         ("semantic-conventions", 4100): "只核對 collector 依賴的 semconv 版本。這不是本協調庫要開的 PR。",
     }
@@ -599,13 +600,18 @@ def link_candidates(candidates, payloads, hard_gates=None):
     for key, candidate in by_key.items():
         if key not in DEFER_OVERLAP:
             continue
-        for other_number, label in ((50908, "#50908"), (52631, "#52631")):
-            other = payloads.get((key[0], key[1], other_number))
-            if other and other.get("ok"):
-                candidate["maintainer_signals"] = sorted(
-                    set(candidate["maintainer_signals"])
-                    | {f"{label} metadata was fetched; overlap waits on the diff"}
-                )
+        other = payloads.get((key[0], key[1], 50908))
+        if other and other.get("ok"):
+            candidate["maintainer_signals"] = sorted(
+                set(candidate["maintainer_signals"])
+                | {"#50908 metadata was fetched; overlap waits on the diff"}
+            )
+        weekly = by_key.get((key[0], key[1], 52631))
+        if weekly and weekly.get("title"):
+            candidate["maintainer_signals"] = sorted(
+                set(candidate["maintainer_signals"])
+                | {f"#52631 is an issue ({weekly['title']}), not a pull request diff"}
+            )
         candidate["duplicate_prs"] = []
 
     for candidate in candidates:
