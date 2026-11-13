@@ -16,11 +16,11 @@
       "issue_updated_at": null,
       "kind": "qualification",
       "labels": [],
-      "last_verified_at": "2026-11-13T16:42:51Z",
+      "last_verified_at": "2026-11-13T16:55:05Z",
       "maintainer_signals": [
-        "`dennislee928` 是否在 `.github/VOUCHED.td`：否。"
+        "`dennislee928` 是否在 `.github/VOUCHED.td`：否。2026-11-13T16:55:05Z 重讀同一 blob `07e70847237830bfe929b0c7480e5e5a38a729ad`。"
       ],
-      "next_action": "資格或依賴未確認。不選實作 issue。",
+      "next_action": "Vouch 仍未通過。不選實作 issue。",
       "org": "cloudflare",
       "repo": "workers-sdk",
       "score_rationale": "Vouch 未通過。acceptance 只反映資格缺口。impact 不評，使用量維持 unknown。",
@@ -28,7 +28,8 @@
         "TypeScript"
       ],
       "sources": [
-        "https://github.com/cloudflare/workers-sdk/blob/main/.github/VOUCHED.td"
+        "https://github.com/cloudflare/workers-sdk/blob/main/.github/VOUCHED.td",
+        "https://github.com/cloudflare/workers-sdk/blob/main/CONTRIBUTING.md"
       ],
       "status": "BLOCKED",
       "title": "Vouch gate for dennislee928",

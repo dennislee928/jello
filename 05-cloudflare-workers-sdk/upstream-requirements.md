@@ -18,7 +18,7 @@ last_verified_at: 2026-11-13T16:42:51Z
 | `cloudflare/workers-sdk` | `main` | `.github/VOUCHED.td` | `07e70847237830bfe929b0c7480e5e5a38a729ad` |
 | `cloudflare/workers-sdk` | `main` | `CONTRIBUTING.md` | `a111550aec4e1a918dd7de4bfa055faa32d4eff9` |
 
-`dennislee928` 是否在 `.github/VOUCHED.td`：否。
+`dennislee928` 是否在 `.github/VOUCHED.td`：否。`2026-11-13T16:55:05Z` 重讀同一 blob，結論不變。`CONTRIBUTING.md` 的 Vouch 小節仍要求先註冊才能開 PR。不選實作 issue。
 <!-- policy-shas:end -->
 
 ## 現在不做的事
