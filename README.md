@@ -110,7 +110,7 @@ python3 scripts/scan.py --root . --baseline reports/state/baseline.json \
 - 權限只有 `contents: read`，checkout 不保留 credential
 - 結果寫進 job summary 和 artifact，不 commit、不 push、不通知
 - artifact 會過期，長期狀態以人審後提交的 `reports/state/baseline.json` 為準
-- 基線的 `verified_at` 是 `null` 時，掃描不重播歷史 issue，報告會是空的
+- 基線的 `verified_at` 是起點水位（目前 `2026-11-14T11:10:28Z`）：只報告之後新開的 issue；水位之前的 issue 由人工初篩。`null` 時不呼叫清單 API，報告會是空的
 
 ## 提交與推送
 

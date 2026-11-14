@@ -6,6 +6,6 @@
 
 不提交的東西：`GH_TOKEN`、`.env`、`.cache/`、以及 issue 或 PR 內文的原始傾印。內文是不可信資料，報告只留標題、編號、狀態與我們自己寫的理由。
 
-基線的 `verified_at` 仍是 `null` 時，日掃不得把歷史 issue 全數列成新警報。那代表還沒有審查過的水位。`scripts/scan.py` 在沒有水位時不呼叫清單 API。
+`2026-11-14T11:10:28Z` 起基線有了水位，日掃只報告之後新開的 issue；水位之前已存在的 issue 改由人工初篩，紀錄在各目錄的 `evidence/`。基線的 `verified_at` 是 `null` 時，日掃不得把歷史 issue 全數列成新警報。那代表還沒有審查過的水位。`scripts/scan.py` 在沒有水位時不呼叫清單 API。
 
 `reports/examples/fixture-daily.md` 與 `reports/examples/fixture-daily.json` 是固定 fixture 的 dry-run，兩次執行應得到同一組位元組。`.github/workflows/oss-monitor.yml` 在每天 01:00 UTC 與手動觸發時跑唯讀掃描，權限只有 `contents: read`，結果進 job summary 與 artifact，不 commit、不 push。

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "verified_at": null,
-  "note": "Human-reviewed baseline. The workflow must not commit updates. A null verified_at means there is no watermark yet; do not treat the historical backlog as new alerts.",
+  "verified_at": "2026-11-14T11:10:28Z",
+  "note": "Human-reviewed baseline. The workflow must not commit updates. Watermark set on approval of the 2026-11-14 target-expansion plan; only issues created after it are reported as new. Issues that already existed were triaged by hand (see 06-owasp and 03-aquasecurity-trivy evidence).",
   "items": []
 }

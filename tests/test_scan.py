@@ -78,8 +78,7 @@ class ScanTests(unittest.TestCase):
 
     def test_missing_watermark_does_not_list_history(self):
         config = _config()
-        baseline = json.loads((ROOT / "reports" / "state" / "baseline.json").read_text(encoding="utf-8"))
-        self.assertIsNone(baseline["verified_at"])
+        baseline = {"schema_version": 1, "verified_at": None, "items": []}
         report = scan.build_report(
             observations=[
                 {
