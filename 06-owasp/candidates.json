@@ -1,8 +1,853 @@
 {
-  "candidates": [],
+  "candidates": [
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [],
+      "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 420,
+      "issue_updated_at": "2026-11-13T16:12:28Z",
+      "kind": "issue",
+      "labels": [
+        "enhancement",
+        "help wanted",
+        "good first issue",
+        "refactor"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "maintainer said on 2026-05-24 the audit is reserved for the maintainer; on 2026-09-19 split bullets between named contributors"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "score_rationale": "維護者保留，並已分給具名貢獻者。不計實作分數。",
+      "skills_match": [
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/OWASP/cve-lite-cli/issues/420"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "chore: fix TypeScript code quality violations from May 2026 audit",
+      "url": "https://github.com/OWASP/cve-lite-cli/issues/420"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [
+        {
+          "org": "OWASP",
+          "repo": "cve-lite-cli",
+          "number": 1651,
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1651",
+          "overlap": "definite_duplicate",
+          "fixes_reference": false,
+          "rationale": "merged 2026-11-13T22:06:35Z，維護者把 #1353 的 commit 原樣帶進來。沒有關閉關鍵字，所以 issue 仍是 open。"
+        },
+        {
+          "org": "OWASP",
+          "repo": "cve-lite-cli",
+          "number": 1353,
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1353",
+          "overlap": "definite_duplicate",
+          "fixes_reference": true,
+          "rationale": "closed unmerged，內文有關閉關鍵字；內容已併入 #1651。"
+        }
+      ],
+      "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 1344,
+      "issue_updated_at": "2026-10-17T18:28:10Z",
+      "kind": "issue",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "fixed by merged #1651 without a closing keyword; #1546 cross-reference is an unrelated Python parser PR (noise)"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "score_rationale": "已由合併的 #1651 修好，issue 只是沒自動關閉。不計實作分數。",
+      "skills_match": [
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/OWASP/cve-lite-cli/issues/1344",
+        "https://github.com/OWASP/cve-lite-cli/pull/1651",
+        "https://github.com/OWASP/cve-lite-cli/pull/1353"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix(scan): a scan that finds nothing to parse exits 0, even under --fail-on",
+      "url": "https://github.com/OWASP/cve-lite-cli/issues/1344"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [],
+      "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 1461,
+      "issue_updated_at": "2026-11-04T13:03:00Z",
+      "kind": "issue",
+      "labels": [
+        "help wanted",
+        "research"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "research-only issue; maintainer asked for no implementation PRs; named contributors already posted findings that the maintainer is reviewing"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "score_rationale": "研究題，已有具名貢獻者在做，維護者要求不開實作 PR。不計實作分數。",
+      "skills_match": [
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/OWASP/cve-lite-cli/issues/1461"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "research: .NET (NuGet) support",
+      "url": "https://github.com/OWASP/cve-lite-cli/issues/1461"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [],
+      "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 1462,
+      "issue_updated_at": "2026-11-03T16:45:22Z",
+      "kind": "issue",
+      "labels": [
+        "help wanted",
+        "research"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "research-only issue; maintainer asked for no implementation PRs; named contributors already posted findings that the maintainer is reviewing"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "score_rationale": "研究題，已有具名貢獻者在做，維護者要求不開實作 PR。不計實作分數。",
+      "skills_match": [
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/OWASP/cve-lite-cli/issues/1462"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "research: Java (Maven and Gradle) support",
+      "url": "https://github.com/OWASP/cve-lite-cli/issues/1462"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [],
+      "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 1463,
+      "issue_updated_at": "2026-11-02T17:44:14Z",
+      "kind": "issue",
+      "labels": [
+        "help wanted",
+        "research"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "research-only issue; maintainer asked for no implementation PRs; named contributors already posted findings that the maintainer is reviewing"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "score_rationale": "研究題，已有具名貢獻者在做，維護者要求不開實作 PR。不計實作分數。",
+      "skills_match": [
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/OWASP/cve-lite-cli/issues/1463"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "research: Go modules support",
+      "url": "https://github.com/OWASP/cve-lite-cli/issues/1463"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [],
+      "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 1464,
+      "issue_updated_at": "2026-11-03T16:51:22Z",
+      "kind": "issue",
+      "labels": [
+        "help wanted",
+        "research"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "research-only issue; maintainer asked for no implementation PRs; named contributors already posted findings that the maintainer is reviewing"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "score_rationale": "研究題，已有具名貢獻者在做，維護者要求不開實作 PR。不計實作分數。",
+      "skills_match": [
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/OWASP/cve-lite-cli/issues/1464"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "research: Rust (Cargo) support",
+      "url": "https://github.com/OWASP/cve-lite-cli/issues/1464"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [
+        {
+          "org": "OWASP",
+          "repo": "cve-lite-cli",
+          "number": 1468,
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1468",
+          "overlap": "definite_duplicate",
+          "fixes_reference": true,
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1465。"
+        }
+      ],
+      "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 1465,
+      "issue_updated_at": "2026-11-01T15:11:32Z",
+      "kind": "issue",
+      "labels": [
+        "bug",
+        "enhancement",
+        "help wanted"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "open pull request with a closing keyword already exists"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "score_rationale": "已有 open PR 以關閉關鍵字指向這個 issue。不計實作分數。",
+      "skills_match": [
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/OWASP/cve-lite-cli/issues/1465",
+        "https://github.com/OWASP/cve-lite-cli/pull/1468"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix(output): keep stdout report-only in one place and print the gate reason to stderr",
+      "url": "https://github.com/OWASP/cve-lite-cli/issues/1465"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [
+        {
+          "org": "OWASP",
+          "repo": "cve-lite-cli",
+          "number": 1539,
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1539",
+          "overlap": "definite_duplicate",
+          "fixes_reference": true,
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1537。"
+        }
+      ],
+      "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 1537,
+      "issue_updated_at": "2026-11-06T18:26:01Z",
+      "kind": "issue",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "open pull request with a closing keyword already exists"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "score_rationale": "已有 open PR 以關閉關鍵字指向這個 issue。不計實作分數。",
+      "skills_match": [
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/OWASP/cve-lite-cli/issues/1537",
+        "https://github.com/OWASP/cve-lite-cli/pull/1539"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix(yarn): Berry fix commands use yarn upgrade, which Berry does not support",
+      "url": "https://github.com/OWASP/cve-lite-cli/issues/1537"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [
+        {
+          "org": "OWASP",
+          "repo": "cve-lite-cli",
+          "number": 1541,
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1541",
+          "overlap": "definite_duplicate",
+          "fixes_reference": true,
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1538。"
+        }
+      ],
+      "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 1538,
+      "issue_updated_at": "2026-11-06T13:46:17Z",
+      "kind": "issue",
+      "labels": [
+        "bug",
+        "help wanted",
+        "parser"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "open pull request with a closing keyword already exists"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "score_rationale": "已有 open PR 以關閉關鍵字指向這個 issue。不計實作分數。",
+      "skills_match": [
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/OWASP/cve-lite-cli/issues/1538",
+        "https://github.com/OWASP/cve-lite-cli/pull/1541"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix(yarn): negated workspace patterns are ignored on Yarn Berry",
+      "url": "https://github.com/OWASP/cve-lite-cli/issues/1538"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [
+        {
+          "org": "OWASP",
+          "repo": "cve-lite-cli",
+          "number": 1587,
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1587",
+          "overlap": "definite_duplicate",
+          "fixes_reference": true,
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1582。"
+        }
+      ],
+      "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 1582,
+      "issue_updated_at": "2026-11-12T17:19:14Z",
+      "kind": "issue",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "open pull request with a closing keyword already exists"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "score_rationale": "已有 open PR 以關閉關鍵字指向這個 issue。不計實作分數。",
+      "skills_match": [
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/OWASP/cve-lite-cli/issues/1582",
+        "https://github.com/OWASP/cve-lite-cli/pull/1587"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix: pnpm fix commands for workspace-root dependencies omit -w",
+      "url": "https://github.com/OWASP/cve-lite-cli/issues/1582"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [
+        {
+          "org": "OWASP",
+          "repo": "cve-lite-cli",
+          "number": 1586,
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1586",
+          "overlap": "definite_duplicate",
+          "fixes_reference": true,
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1583。"
+        }
+      ],
+      "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 1583,
+      "issue_updated_at": "2026-11-12T17:19:18Z",
+      "kind": "issue",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "open pull request with a closing keyword already exists"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "score_rationale": "已有 open PR 以關閉關鍵字指向這個 issue。不計實作分數。",
+      "skills_match": [
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/OWASP/cve-lite-cli/issues/1583",
+        "https://github.com/OWASP/cve-lite-cli/pull/1586"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix: recommendedAction says npm install on pnpm, Yarn and Bun projects",
+      "url": "https://github.com/OWASP/cve-lite-cli/issues/1583"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [
+        {
+          "org": "OWASP",
+          "repo": "cve-lite-cli",
+          "number": 1588,
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1588",
+          "overlap": "definite_duplicate",
+          "fixes_reference": true,
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1584。"
+        }
+      ],
+      "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 1584,
+      "issue_updated_at": "2026-11-10T02:21:14Z",
+      "kind": "issue",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "open pull request with a closing keyword already exists"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "score_rationale": "已有 open PR 以關閉關鍵字指向這個 issue。不計實作分數。",
+      "skills_match": [
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/OWASP/cve-lite-cli/issues/1584",
+        "https://github.com/OWASP/cve-lite-cli/pull/1588"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix: workspace names that look like options reach npm, Yarn and Bun fix commands",
+      "url": "https://github.com/OWASP/cve-lite-cli/issues/1584"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [
+        {
+          "org": "OWASP",
+          "repo": "cve-lite-cli",
+          "number": 1593,
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1593",
+          "overlap": "definite_duplicate",
+          "fixes_reference": false,
+          "rationale": "open PR，標題 use refresh commands in within-range advice 對上 issue 症狀；作者在 issue 留言 ill work on this。沒有關閉關鍵字。"
+        }
+      ],
+      "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 1590,
+      "issue_updated_at": "2026-11-10T13:44:40Z",
+      "kind": "issue",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "contributor claimed on 2026-11-10 and opened #1593"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "score_rationale": "具名貢獻者已開 PR。不計實作分數。",
+      "skills_match": [
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/OWASP/cve-lite-cli/issues/1590",
+        "https://github.com/OWASP/cve-lite-cli/pull/1593"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "Within-range advice says 'install', which does not move a pinned child",
+      "url": "https://github.com/OWASP/cve-lite-cli/issues/1590"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [
+        {
+          "org": "OWASP",
+          "repo": "cve-lite-cli",
+          "number": 1594,
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1594",
+          "overlap": "definite_duplicate",
+          "fixes_reference": true,
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1592。"
+        }
+      ],
+      "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 1592,
+      "issue_updated_at": "2026-11-10T13:59:14Z",
+      "kind": "issue",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "open pull request with a closing keyword already exists"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "score_rationale": "已有 open PR 以關閉關鍵字指向這個 issue。不計實作分數。",
+      "skills_match": [
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/OWASP/cve-lite-cli/issues/1592",
+        "https://github.com/OWASP/cve-lite-cli/pull/1594"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "pnpm: root and member declaring the same vulnerable package only gets the member's fix command",
+      "url": "https://github.com/OWASP/cve-lite-cli/issues/1592"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [
+        {
+          "org": "OWASP",
+          "repo": "cve-lite-cli",
+          "number": 1630,
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1630",
+          "overlap": "definite_duplicate",
+          "fixes_reference": true,
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1627。"
+        },
+        {
+          "org": "OWASP",
+          "repo": "cve-lite-cli",
+          "number": 1650,
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1650",
+          "overlap": "definite_duplicate",
+          "fixes_reference": true,
+          "rationale": "closed PR，內文或標題有關閉關鍵字指向 #1627。"
+        }
+      ],
+      "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 1627,
+      "issue_updated_at": "2026-11-14T04:03:23Z",
+      "kind": "issue",
+      "labels": [
+        "enhancement",
+        "help wanted"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "open pull request with a closing keyword already exists"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "score_rationale": "已有 open PR 以關閉關鍵字指向這個 issue。不計實作分數。",
+      "skills_match": [
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/OWASP/cve-lite-cli/issues/1627",
+        "https://github.com/OWASP/cve-lite-cli/pull/1630",
+        "https://github.com/OWASP/cve-lite-cli/pull/1650"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "refactor: one install-command mapping for the fix plan, --fix and the phantom hints",
+      "url": "https://github.com/OWASP/cve-lite-cli/issues/1627"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [
+        {
+          "org": "OWASP",
+          "repo": "cve-lite-cli",
+          "number": 1631,
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1631",
+          "overlap": "definite_duplicate",
+          "fixes_reference": true,
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1628。"
+        }
+      ],
+      "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 1628,
+      "issue_updated_at": "2026-11-13T04:10:31Z",
+      "kind": "issue",
+      "labels": [
+        "bug",
+        "help wanted"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "open pull request with a closing keyword already exists"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "score_rationale": "已有 open PR 以關閉關鍵字指向這個 issue。不計實作分數。",
+      "skills_match": [
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/OWASP/cve-lite-cli/issues/1628",
+        "https://github.com/OWASP/cve-lite-cli/pull/1631"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix: chain-resolution upgrades of a dev dependency print without the dev flag",
+      "url": "https://github.com/OWASP/cve-lite-cli/issues/1628"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [
+        {
+          "org": "OWASP",
+          "repo": "cve-lite-cli",
+          "number": 1633,
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1633",
+          "overlap": "definite_duplicate",
+          "fixes_reference": true,
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1629。"
+        }
+      ],
+      "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 1629,
+      "issue_updated_at": "2026-11-13T04:10:52Z",
+      "kind": "issue",
+      "labels": [
+        "bug",
+        "help wanted",
+        "parser"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "open pull request with a closing keyword already exists"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "score_rationale": "已有 open PR 以關閉關鍵字指向這個 issue。不計實作分數。",
+      "skills_match": [
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/OWASP/cve-lite-cli/issues/1629",
+        "https://github.com/OWASP/cve-lite-cli/pull/1633"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "fix: alias tarball fallback accepts registry-shaped paths on any host",
+      "url": "https://github.com/OWASP/cve-lite-cli/issues/1629"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [
+        {
+          "org": "OWASP",
+          "repo": "cve-lite-cli",
+          "number": 1644,
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1644",
+          "overlap": "definite_duplicate",
+          "fixes_reference": true,
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1642。"
+        },
+        {
+          "org": "OWASP",
+          "repo": "cve-lite-cli",
+          "number": 1645,
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1645",
+          "overlap": "definite_duplicate",
+          "fixes_reference": true,
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1642。"
+        }
+      ],
+      "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 1642,
+      "issue_updated_at": "2026-11-13T15:37:05Z",
+      "kind": "issue",
+      "labels": [
+        "bug",
+        "good first issue"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "open pull request with a closing keyword already exists"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "score_rationale": "已有 open PR 以關閉關鍵字指向這個 issue。不計實作分數。",
+      "skills_match": [
+        "TypeScript"
+      ],
+      "sources": [
+        "https://github.com/OWASP/cve-lite-cli/issues/1642",
+        "https://github.com/OWASP/cve-lite-cli/pull/1644",
+        "https://github.com/OWASP/cve-lite-cli/pull/1645"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "--osv-url prints a password in the URL in plain text",
+      "url": "https://github.com/OWASP/cve-lite-cli/issues/1642"
+    }
+  ],
   "directory": "06-owasp",
   "errors": [],
-  "last_verified_at": "2026-11-14T11:07:34Z",
+  "last_verified_at": "2026-11-14T11:15:59Z",
   "partial": false,
   "schema_version": 1
 }

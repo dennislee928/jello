@@ -579,6 +579,115 @@
       "status": "DUPLICATE_OR_IN_PROGRESS",
       "title": "fix: keep the highest fixed version when a secdb source lists a CVE under several",
       "url": "https://github.com/aquasecurity/trivy-db/pull/702"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [
+        {
+          "org": "aquasecurity",
+          "repo": "trivy-operator",
+          "number": 3001,
+          "url": "https://github.com/aquasecurity/trivy-operator/pull/3001",
+          "overlap": "definite_duplicate",
+          "fixes_reference": false,
+          "rationale": "open，非 draft，作者即 issue 作者；在 pkg/operator/workload/helper.go 的 markReportTTL 對 IsNotFound 回傳 nil，對上 main 上 CI 仍出現的 failed marking old reports … not found。沒有 Fixes #2736。mergeable_state dirty，無 review，2026-06-17 後未更新。"
+        }
+      ],
+      "evidence_path": "03-aquasecurity-trivy/evidence/trivy-operator-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 2736,
+      "issue_updated_at": "2025-09-03T07:21:54Z",
+      "kind": "issue",
+      "labels": [
+        "good first issue",
+        "kind/testing"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "2025 symptom (failed checking current revision) absent from main CI run 42596607470 at 689215d; same NotFound race now appears as failed marking old reports … exposedsecretreports not found",
+        "PR #3001 stalled with conflicts; taking it over would need maintainer agreement"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "aquasecurity",
+      "repo": "trivy-operator",
+      "score_rationale": "#3001 已是同一修法，停滯中。接手要維護者同意，由人決定。不計實作分數。",
+      "skills_match": [
+        "Go",
+        "Kubernetes"
+      ],
+      "sources": [
+        "https://github.com/aquasecurity/trivy-operator/issues/2736",
+        "https://github.com/aquasecurity/trivy-operator/pull/3001"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "chore(test): there are errors in integration tests",
+      "url": "https://github.com/aquasecurity/trivy-operator/issues/2736"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping work is already in progress or merged"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [
+        {
+          "org": "aquasecurity",
+          "repo": "trivy-operator",
+          "number": 2914,
+          "url": "https://github.com/aquasecurity/trivy-operator/pull/2914",
+          "overlap": "definite_duplicate",
+          "fixes_reference": true,
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #2896。"
+        },
+        {
+          "org": "aquasecurity",
+          "repo": "trivy-operator",
+          "number": 3024,
+          "url": "https://github.com/aquasecurity/trivy-operator/pull/3024",
+          "overlap": "definite_duplicate",
+          "fixes_reference": true,
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #2896。"
+        }
+      ],
+      "evidence_path": "03-aquasecurity-trivy/evidence/trivy-operator-triage-2026-11-14.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 2896,
+      "issue_updated_at": "2026-07-21T13:14:58Z",
+      "kind": "issue",
+      "labels": [
+        "good first issue",
+        "kind/cleanup"
+      ],
+      "last_verified_at": "2026-11-14T11:15:59Z",
+      "maintainer_signals": [
+        "open pull request with a closing keyword already exists"
+      ],
+      "next_action": "已有人處理或已修好。停止實作，只留去重紀錄。",
+      "org": "aquasecurity",
+      "repo": "trivy-operator",
+      "score_rationale": "已有 open PR 以關閉關鍵字指向這個 issue。不計實作分數。",
+      "skills_match": [
+        "Go",
+        "Kubernetes"
+      ],
+      "sources": [
+        "https://github.com/aquasecurity/trivy-operator/issues/2896",
+        "https://github.com/aquasecurity/trivy-operator/pull/2914",
+        "https://github.com/aquasecurity/trivy-operator/pull/3024"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "Deprecated `--slow`, support for `--parallel 1` in trivy-operator Helm chart",
+      "url": "https://github.com/aquasecurity/trivy-operator/issues/2896"
     }
   ],
   "directory": "03-aquasecurity-trivy",

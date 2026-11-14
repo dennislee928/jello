@@ -8,7 +8,7 @@
 | `aquasecurity/trivy-action` | GitHub Action。`#551` 只做設計筆記 |
 | `aquasecurity/setup-trivy` | 另一個 Action。`#40` 與 `#43` 用來對照下載路徑 |
 | `aquasecurity/trivy-db` | 漏洞資料庫。`#702` 是已知碰撞 |
-| `aquasecurity/trivy-operator` | Kubernetes operator。`2026-11-14` 加入；issue 規則和 `trivy` 不同，任何人可開 issue |
+| `aquasecurity/trivy-operator` | Kubernetes operator。`2026-11-14` 加入；issue 規則和 `trivy` 不同，任何人可開 issue。`#2736` 與 `#2896` 都已有 PR（`evidence/trivy-operator-triage-2026-11-14.md`） |
 
 外部 checkout 分別是 `/Users/dennis/Desktop/upstream-src/aquasecurity/trivy`、`trivy-action`、`setup-trivy`、`trivy-db`、`trivy-operator`。不要為了協調庫去建置 Trivy。
 

@@ -39,7 +39,7 @@ python3 scripts/scan.py --root . --baseline reports/state/baseline.json \
 | `03-aquasecurity-trivy` | `aquasecurity/trivy`、`trivy-action`、`setup-trivy`、`trivy-db`、`trivy-operator`（`main`；`trivy-action` 是 `master`） | `trivy-action#551` | `NEEDS_MAINTAINER` | checksum 驗證屬於 Action 還是 `setup-trivy`，由維護者決定；已知碰撞全部排除 |
 | `04-openssf-scorecard` | `ossf/scorecard`（`main`） | `#2161` | `NEEDS_MAINTAINER` | 分數語意（`unknown` 與 `unprotected`）需要維護者同意 |
 | `05-cloudflare-workers-sdk` | `cloudflare/workers-sdk`（`main`） | 尚未選定 | `BLOCKED` | Vouch 資格未通過 |
-| `06-owasp` | `OWASP/cve-lite-cli`（`main`）、`CycloneDX/cyclonedx-go`（`master`） | 尚未選定 | — | 尚未做 G2 去重 |
+| `06-owasp` | `OWASP/cve-lite-cli`（`main`）、`CycloneDX/cyclonedx-go`（`master`） | `cve-lite-cli` 18 個 starter issue | `DUPLICATE_OR_IN_PROGRESS` | 全部已有 PR、已被認領或已修好；`cyclonedx-go` 尚未初篩 |
 
 `open-telemetry/semantic-conventions` 只當交叉引用，不是掃描目標。CycloneDX 是 OWASP 專案，但 GitHub org 是 `CycloneDX`，所以放在 `06-owasp`。
 
