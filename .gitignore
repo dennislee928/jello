@@ -40,3 +40,6 @@ upstream-src/
 /trivy-db/
 /scorecard/
 /workers-sdk/
+
+# Generated security scanner output
+reports/security/

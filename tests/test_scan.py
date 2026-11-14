@@ -27,7 +27,8 @@ class ScanTests(unittest.TestCase):
         second = scan.report_from_fixture(ROOT / "tests" / "fixtures" / "scan_fixture.json", config)
         self.assertEqual(first, second)
         self.assertEqual(render_report.render_markdown(first), render_report.render_markdown(second))
-        self.assertEqual(len(first["targets"]), 13)
+        expected_targets = sorted({f"{target['org']}/{target['repo']}" for target in config["targets"]})
+        self.assertEqual(sorted(first["targets"]), expected_targets)
         self.assertNotIn("example/not-a-target", first["targets"])
         numbers = {item["number"] for item in first["new_qualifying"]}
         self.assertEqual(numbers, {200, 400})
@@ -125,7 +126,13 @@ class ScanTests(unittest.TestCase):
             runner=runner,
             sleeper=lambda _delay: None,
         )
-        self.assertEqual(len(calls), len(scan.target_names(config)))
+        expected_paths = sorted(
+            f"repos/{target['org']}/{target['repo']}/issues"
+            for target in config["targets"]
+        )
+        self.assertEqual(sorted(call[-1].split("?", 1)[0] for call in calls), expected_paths)
+        for call in calls:
+            self.assertEqual(call[:5], ["gh", "api", "--include", "--method", "GET"])
         joined = "\n".join(" ".join(call) for call in calls)
         self.assertIn("--method GET", joined)
         self.assertNotIn("POST", joined)
