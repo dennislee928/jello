@@ -1,6 +1,6 @@
 # OSS Contribution Hub
 
-協調五個上游組織貢獻的公開筆記庫。這裡放門檻、候選清單、調查筆記、證據、唯讀腳本與 CV 帳本。上游原始碼不放這裡。
+協調六個上游組織貢獻的公開筆記庫（日掃 13 個儲存庫）。這裡放門檻、候選清單、調查筆記、證據、唯讀腳本與 CV 帳本。上游原始碼不放這裡。
 
 - GitHub：[dennislee928/jello](https://github.com/dennislee928/jello)（不改名）
 - 本機：`/Users/dennis/Desktop/jello`
@@ -30,17 +30,20 @@ python3 scripts/scan.py --root . --baseline reports/state/baseline.json \
 
 ## 目前狀態
 
-以各目錄的 `candidates.json` 為準。下表是 `2026-11-14T10:24:51Z` 的摘要。目前沒有任何候選是 `READY_TO_IMPLEMENT`，也沒有本庫作者合併到上游的 PR。
+以各目錄的 `candidates.json` 為準。下表是 `2026-11-14T11:07:34Z` 的摘要。目前沒有任何候選是 `READY_TO_IMPLEMENT`，也沒有本庫作者合併到上游的 PR。
 
 | 目錄 | 上游（預設分支） | 主要候選 | 狀態 | 卡在 |
 | --- | --- | --- | --- | --- |
 | `01-apache-superset` | `apache/superset`（`master`） | `#46197`、`#46196` | `DUPLICATE_OR_IN_PROGRESS` | `#46197`：他人的 open PR `#46202`；`#46196`：已由他人合併的 `#41453` 修好 |
-| `02-opentelemetry` | `open-telemetry/opentelemetry-collector-contrib`（`main`） | `#52509` | `BLOCKED` | 產生的 HPA semconv 符號還沒被 processor 引用；Code Owner 尚未同意 |
-| `03-aquasecurity-trivy` | `aquasecurity/trivy`、`trivy-action`、`setup-trivy`、`trivy-db`（`main`） | `trivy-action#551` | `NEEDS_MAINTAINER` | checksum 驗證屬於 Action 還是 `setup-trivy`，由維護者決定；已知碰撞全部排除 |
+| `02-opentelemetry` | `open-telemetry/opentelemetry-collector-contrib`、`opentelemetry-go`、`opentelemetry-js`（`main`） | `#52509` | `BLOCKED` | 產生的 HPA semconv 符號還沒被 processor 引用；Code Owner 尚未同意。Go / JS SDK 尚無候選 |
+| `03-aquasecurity-trivy` | `aquasecurity/trivy`、`trivy-action`、`setup-trivy`、`trivy-db`、`trivy-operator`（`main`；`trivy-action` 是 `master`） | `trivy-action#551` | `NEEDS_MAINTAINER` | checksum 驗證屬於 Action 還是 `setup-trivy`，由維護者決定；已知碰撞全部排除 |
 | `04-openssf-scorecard` | `ossf/scorecard`（`main`） | `#2161` | `NEEDS_MAINTAINER` | 分數語意（`unknown` 與 `unprotected`）需要維護者同意 |
 | `05-cloudflare-workers-sdk` | `cloudflare/workers-sdk`（`main`） | 尚未選定 | `BLOCKED` | Vouch 資格未通過 |
+| `06-owasp` | `OWASP/cve-lite-cli`（`main`）、`CycloneDX/cyclonedx-go`（`master`） | 尚未選定 | — | 尚未做 G2 去重 |
 
-`open-telemetry/semantic-conventions` 只當交叉引用，不是第九個掃描目標。
+`open-telemetry/semantic-conventions` 只當交叉引用，不是掃描目標。CycloneDX 是 OWASP 專案，但 GitHub org 是 `CycloneDX`，所以放在 `06-owasp`。
+
+`2026-11-14` 新增的五個儲存庫，是依外部 PR 的合併率與合併速度挑的（數據在各目錄的 README 與 `upstream-requirements.md`）。`opentelemetry-collector` 的 starter issue 保留給 ContribFest，`opentelemetry-operator` 的都已有 PR，所以這兩個不收。
 
 ## 目錄地圖
 
@@ -48,7 +51,7 @@ python3 scripts/scan.py --root . --baseline reports/state/baseline.json \
 | --- | --- |
 | `AGENTS.md` | 代理界限：上游一律唯讀、狀態機、草稿規則。必讀 |
 | `CONTRIBUTIONS.md` | CV 貢獻索引，verified 與 inferred 分開 |
-| `config/targets.json` | 八個掃描儲存庫、關鍵字、標籤、排除編號、種子候選 |
+| `config/targets.json` | 13 個掃描儲存庫、關鍵字、標籤、排除編號、種子候選 |
 | `config/scoring.json` | acceptance 與 impact 的權重（預設 50/50，只用於計畫估算） |
 | `schemas/` | `candidate.schema.json`（`candidates.json` 的格式）、`report.schema.json`（日報格式） |
 | `scripts/github_read.py` | 透過 `gh api` 的唯讀快照。只送 `GET`，遇到 429/403 退避 |

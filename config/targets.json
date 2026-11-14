@@ -70,6 +70,41 @@
       ]
     },
     {
+      "id": "02-opentelemetry-go",
+      "org": "open-telemetry",
+      "repo": "opentelemetry-go",
+      "default_branch": "main",
+      "local_dir": "02-opentelemetry",
+      "policy_files": [
+        "CONTRIBUTING.md",
+        "AGENTS.md"
+      ],
+      "keywords": [
+        "Go",
+        "API",
+        "telemetry",
+        "SDK"
+      ],
+      "seeds": []
+    },
+    {
+      "id": "02-opentelemetry-js",
+      "org": "open-telemetry",
+      "repo": "opentelemetry-js",
+      "default_branch": "main",
+      "local_dir": "02-opentelemetry",
+      "policy_files": [
+        "CONTRIBUTING.md"
+      ],
+      "keywords": [
+        "TypeScript",
+        "API",
+        "telemetry",
+        "SDK"
+      ],
+      "seeds": []
+    },
+    {
       "id": "03-aquasecurity-trivy",
       "org": "aquasecurity",
       "repo": "trivy",
@@ -160,6 +195,23 @@
       ]
     },
     {
+      "id": "03-aquasecurity-trivy-operator",
+      "org": "aquasecurity",
+      "repo": "trivy-operator",
+      "default_branch": "main",
+      "local_dir": "03-aquasecurity-trivy",
+      "policy_files": [
+        "CONTRIBUTING.md"
+      ],
+      "keywords": [
+        "Go",
+        "Kubernetes",
+        "security",
+        "SBOM"
+      ],
+      "seeds": []
+    },
+    {
       "id": "04-openssf-scorecard",
       "org": "ossf",
       "repo": "scorecard",
@@ -201,6 +253,39 @@
       "seeds": [
         {"kind": "qualification", "number": null, "role": "blocked_vouch"}
       ]
+    },
+    {
+      "id": "06-owasp-cve-lite-cli",
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "default_branch": "main",
+      "local_dir": "06-owasp",
+      "policy_files": [
+        "CONTRIBUTING.md"
+      ],
+      "keywords": [
+        "TypeScript",
+        "security",
+        "SCA",
+        "vulnerability"
+      ],
+      "seeds": []
+    },
+    {
+      "id": "06-owasp-cyclonedx-go",
+      "org": "CycloneDX",
+      "repo": "cyclonedx-go",
+      "default_branch": "master",
+      "local_dir": "06-owasp",
+      "policy_files": [
+        "README.md"
+      ],
+      "keywords": [
+        "Go",
+        "SBOM",
+        "CycloneDX"
+      ],
+      "seeds": []
     }
   ]
 }

@@ -12,12 +12,17 @@
 
 - `apache/superset`
 - `open-telemetry/opentelemetry-collector-contrib`
+- `open-telemetry/opentelemetry-go`
+- `open-telemetry/opentelemetry-js`
 - `aquasecurity/trivy`
 - `aquasecurity/trivy-action`
 - `aquasecurity/setup-trivy`
 - `aquasecurity/trivy-db`
+- `aquasecurity/trivy-operator`
 - `ossf/scorecard`
 - `cloudflare/workers-sdk`
+- `OWASP/cve-lite-cli`
+- `CycloneDX/cyclonedx-go`
 
 ## 新的合格項目
 

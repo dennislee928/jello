@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """Daily scan against a human-reviewed baseline.
 
-Only the eight repos in ``config/targets.json`` are read. Historical issues
+Only the repos listed in ``config/targets.json`` are read. Historical issues
 are not replayed when the baseline has no watermark, and a matching keyword
 is required before a new issue is reported. Issue bodies are dropped and
 never passed to a shell.

@@ -41,3 +41,20 @@ last_verified_at: 2026-11-13T16:42:51Z
 ## 新候選怎麼找
 
 優先看 Discussion，以及維護者建立的 issue。排除上一節全部碰撞編號，再加上 `#11383`、`#11411`、`#11389`、`#11447`。新編號要走完整 G0–G4。步驟寫在 `plans/new-candidates.md`。這個 phase 不實作新修復。
+
+## aquasecurity/trivy-operator
+
+investigation_verified_at: 2026-11-14T11:07:34Z
+
+`2026-11-14` 加入日掃。最近 100 個 closed PR 中，外部作者（排除 bot）23 / 36 合併，中位 2.0 天。
+
+- 和 `trivy` 不同：任何人都可以開 issue（寫清楚是 bug、feature、proposal 或 comment）；只有提問與一般討論要改去 Discussions。開之前先查重複。
+- PR：除非是很小的修正，都要有對應的 issue；一個 PR 只做一件事；標題用 `fix`、`add`、`improve`、`remove` 開頭較好；Conventional Commits 不強制，squash merge。
+- 測試不是必要，但附上會被感謝。本協調庫仍要求回歸測試（G4、G6）。
+- 命令：`mage test:unit`；另有 envtest、integration、E2E 段落，只在外部 checkout 對過文件後才跑。CRD 變更要重新產生程式碼與 manifests，並更新 helm docs。
+- 根目錄沒有 `AGENTS.md`，CONTRIBUTING 沒有 AI 條款。不視為允許代理撰寫 PR。
+
+| 儲存庫 | 分支 | 路徑 | blob SHA |
+| --- | --- | --- | --- |
+| `aquasecurity/trivy-operator` | `main` | `CONTRIBUTING.md` | `22cf3a81de55815fe03ea5c270c14dee26c63db9` |
+| `aquasecurity/trivy-operator` | `main` | `AGENTS.md` | 404 |
