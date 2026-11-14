@@ -43,45 +43,63 @@
       "url": "https://github.com/apache/superset/issues/46196"
     },
     {
-      "acceptance_score": 3,
+      "acceptance_score": null,
       "assignees": [],
       "blocking_dependencies": [
-        "duplicate check is incomplete",
-        "running UI repro required"
+        "overlapping pull request is already tracked"
       ],
       "confidence": "low",
-      "duplicate_prs": [],
+      "duplicate_prs": [
+        {
+          "fixes_reference": true,
+          "number": 46202,
+          "org": "apache",
+          "overlap": "definite_duplicate",
+          "rationale": "PR 內文有 Fixes #46197。這是同儲存庫的關閉關鍵字與 timeline 交叉引用，不是搜尋雜訊。",
+          "repo": "superset",
+          "url": "https://github.com/apache/superset/pull/46202"
+        }
+      ],
       "evidence_path": "01-apache-superset/evidence/superset-46197.md",
       "github_state": "open",
       "hard_gate_failed": true,
-      "impact_score": 3,
+      "impact_score": null,
       "issue_number": 46197,
-      "issue_updated_at": "2026-11-13T10:38:54Z",
+      "issue_updated_at": "2026-11-13T18:19:33Z",
       "kind": "issue",
       "labels": [
-        "#bug"
+        "#bug",
+        "review:checkpoint",
+        "🦾 ai-candidate"
       ],
-      "last_verified_at": "2026-11-13T16:55:05Z",
+      "last_verified_at": "2026-11-14T02:09:58Z",
       "maintainer_signals": [
-        "timeline has no same-repo pull cross-reference; that is not proof of no duplicate",
-        "emitCrossFilters reads only dashboard crossFiltersEnabled; ownState setDataMask does not check that flag"
+        "PR 46202 changes Chart.tsx emitCrossFilters and Chart.test.tsx",
+        "PR 46202 is open, not draft, and not merged",
+        "PR body contains Fixes #46197",
+        "assignees are empty; that is not evidence that nobody is working on it",
+        "draft PR 41548 only relocates the dashboard crossFiltersEnabled flag",
+        "keyword hits 21523, 21821, 21958, and 45242 do not mention 46197",
+        "open PR 44665 still passes emitCrossFilters and does not gate chart scope",
+        "timeline has same-repo pull cross-reference #46202"
       ],
-      "next_action": "需要執行中的 UI。斷言看 filterState / extraFormData，不是 setDataMask 零呼叫。不寫補丁。",
+      "next_action": "已知重疊或已有人處理。停止實作，只留去重紀錄。",
       "org": "apache",
       "repo": "superset",
-      "score_rationale": "計畫估算 acceptance 3、impact 3，信心 low。2026-11-13T16:55:05Z 已讀 TableChart.tsx、其測試與 Chart.tsx。dashboard 旗標與 ownState 路徑分得開，chart 層級關閉仍要 UI。維持 REPRO_PENDING。分數不因讀到原始碼而提高，也不是使用量。硬門檻覆寫分數，不能進入 READY_TO_IMPLEMENT。",
+      "score_rationale": "2026-11-14T02:09:58Z 確認 #46202 為 open、非 draft、未合併，且內文有 Fixes #46197。已知碰撞或已有人在處理。不計實作分數。",
       "skills_match": [
         "React",
         "TypeScript"
       ],
       "sources": [
-        "https://github.com/apache/superset/issues/46197",
+        "https://github.com/apache/superset/blob/master/superset-frontend/plugins/plugin-chart-table/src/DataTable/utils/externalAPIs.ts",
         "https://github.com/apache/superset/blob/master/superset-frontend/plugins/plugin-chart-table/src/TableChart.tsx",
         "https://github.com/apache/superset/blob/master/superset-frontend/plugins/plugin-chart-table/test/TableChart.test.tsx",
-        "https://github.com/apache/superset/blob/master/superset-frontend/plugins/plugin-chart-table/src/DataTable/utils/externalAPIs.ts",
-        "https://github.com/apache/superset/blob/master/superset-frontend/src/dashboard/components/gridComponents/Chart/Chart.tsx"
+        "https://github.com/apache/superset/blob/master/superset-frontend/src/dashboard/components/gridComponents/Chart/Chart.tsx",
+        "https://github.com/apache/superset/issues/46197",
+        "https://github.com/apache/superset/pull/46202"
       ],
-      "status": "REPRO_PENDING",
+      "status": "DUPLICATE_OR_IN_PROGRESS",
       "title": "Cross-filter entry appears when clicking table cells even when cross-filtering is disabled at chart level",
       "url": "https://github.com/apache/superset/issues/46197"
     }

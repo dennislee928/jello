@@ -26,7 +26,7 @@ last_verified_at: 2026-11-13T16:42:51Z
 
 ## 種子候選的調查範圍
 
-`#46197` 要分開看 chart 的 `emitCrossFilters` 與 dashboard 的 `crossFiltersEnabled`。相關檔案是 `superset-frontend/plugins/plugin-chart-table/src/TableChart.tsx`、它的測試，以及 `superset-frontend/src/dashboard/components/gridComponents/Chart/Chart.tsx`。斷言對象是沒有 cross-filter 時的 `filterState` / `extraFormData`，不是「`setDataMask` 完全沒被呼叫」。`setDataMask` 仍可能送出 `ownState`。需要執行中的 UI 才能下結論時，狀態維持 `REPRO_PENDING`。
+`#46197` 要分開看 chart 的 `emitCrossFilters` 與 dashboard 的 `crossFiltersEnabled`。相關檔案是 `superset-frontend/plugins/plugin-chart-table/src/TableChart.tsx`、它的測試，以及 `superset-frontend/src/dashboard/components/gridComponents/Chart/Chart.tsx`。斷言對象是沒有 cross-filter 時的 `filterState` / `extraFormData`，不是「`setDataMask` 完全沒被呼叫」。`setDataMask` 仍可能送出 `ownState`。需要執行中的 UI 才能下結論時，狀態維持 `REPRO_PENDING`。2026-11-14 的 G2 已找到未合併的 `#46202`，所以這筆停在 `DUPLICATE_OR_IN_PROGRESS`，沒有進入重現。
 
 `#46196` 要核對 Chart、Dataset、Column 三種 description、API 欄位、`isExpanded`，以及 `description` 與 `description_markdown` 是否走不同路徑。選單若讀 `slice.description`、展開內容若只讀 `description_markdown`，把差異記成證據，不要先寫補丁。
 
@@ -36,4 +36,10 @@ last_verified_at: 2026-11-13T16:42:51Z
 
 investigation_verified_at: 2026-11-13T16:55:05Z
 
-指定檔案已用 `gh api` GET 讀過。`#46197` 與 `#46196` 都是 `REPRO_PENDING`。`emitCrossFilters` 只反映 dashboard 的 `crossFiltersEnabled`；`setDataMask` 的 `ownState` 路徑另外存在。`description` 與 `description_markdown` 在 hydrate 時分開。沒有補丁，也沒有把不可信描述放進 `dangerouslySetInnerHTML`。紀錄在 `plans/46197.md` 與 `plans/46196.md`。
+指定檔案已用 `gh api` GET 讀過。當時 `#46197` 與 `#46196` 都是 `REPRO_PENDING`。`emitCrossFilters` 只反映 dashboard 的 `crossFiltersEnabled`；`setDataMask` 的 `ownState` 路徑另外存在。`description` 與 `description_markdown` 在 hydrate 時分開。沒有補丁，也沒有把不可信描述放進 `dangerouslySetInnerHTML`。紀錄在 `plans/46197.md` 與 `plans/46196.md`。
+
+## 重疊 PR
+
+investigation_verified_at: 2026-11-14T02:09:58Z
+
+`#46197` 改為 `DUPLICATE_OR_IN_PROGRESS`。timeline 交叉引用 open PR `#46202`（非 draft、未合併），內文有 `Fixes #46197`，改的是 `Chart.tsx` 的 `emitCrossFilters`。被替換的 selector 只讀 dashboard `crossFiltersEnabled`。新條件在該旗標為真時才看 `chartsInScope`。這份 PR 沒有改 `ownState`。搜尋字串 `46197` 另外命中已合併的 `#45242`、`#21958`、`#21821`、`#21523`，那些 PR 內文沒有這個編號，記成搜尋雜訊。沒有 clone，沒有補丁，沒有上游留言、認領、fork、推送或開 PR。`#46196` 這次沒有重抓。
