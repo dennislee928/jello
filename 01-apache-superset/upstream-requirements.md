@@ -43,3 +43,9 @@ investigation_verified_at: 2026-11-13T16:55:05Z
 investigation_verified_at: 2026-11-14T02:09:58Z
 
 `#46197` 改為 `DUPLICATE_OR_IN_PROGRESS`。timeline 交叉引用 open PR `#46202`（非 draft、未合併），內文有 `Fixes #46197`，改的是 `Chart.tsx` 的 `emitCrossFilters`。被替換的 selector 只讀 dashboard `crossFiltersEnabled`。新條件在該旗標為真時才看 `chartsInScope`。這份 PR 沒有改 `ownState`。搜尋字串 `46197` 另外命中已合併的 `#45242`、`#21958`、`#21821`、`#21523`，那些 PR 內文沒有這個編號，記成搜尋雜訊。沒有 clone，沒有補丁，沒有上游留言、認領、fork、推送或開 PR。`#46196` 這次沒有重抓。
+
+## 已合併的修復
+
+investigation_verified_at: 2026-11-14T10:24:51Z
+
+`#46196` 改為 `DUPLICATE_OR_IN_PROGRESS`。已合併的 `#41453`（`834ccf2`，2026-06-26）把 `hydrate.ts` 的 store key 從 `description_markeddown` 改成 `description_markdown`，正是這個 issue 的根因。`#41453` 沒有 `Fixes #46196`，timeline 也沒有交叉引用，靠路徑、符號與症狀判定。回報者的 `6.1.0` tag 不含這個修復，`6.1` 分支與 `master` 已含。有寫版本的 issue，先比對那個 tag，不只讀 master。沒有 clone，沒有補丁，沒有上游留言、認領、fork、推送或開 PR。
