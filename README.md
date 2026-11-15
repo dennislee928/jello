@@ -30,12 +30,12 @@ python3 scripts/scan.py --root . --baseline reports/state/baseline.json \
 
 ## 目前狀態
 
-以各目錄的 `candidates.json` 為準。下表是 `2026-11-14T11:07:34Z` 的摘要。目前沒有任何候選是 `READY_TO_IMPLEMENT`，也沒有本庫作者合併到上游的 PR。
+以各目錄的 `candidates.json` 為準。下表是 `2026-11-15T01:53:10Z` 的摘要。collector-contrib `#31140` 是 `READY_FOR_HUMAN_PR`：修復與回歸測試留在外部 checkout 的本機分支，等人簽 CLA、自己寫 PR 描述後開 PR。目前還沒有本庫作者合併到上游的 PR。
 
 | 目錄 | 上游（預設分支） | 主要候選 | 狀態 | 卡在 |
 | --- | --- | --- | --- | --- |
 | `01-apache-superset` | `apache/superset`（`master`） | `#46197`、`#46196` | `DUPLICATE_OR_IN_PROGRESS` | `#46197`：他人的 open PR `#46202`；`#46196`：已由他人合併的 `#41453` 修好 |
-| `02-opentelemetry` | `open-telemetry/opentelemetry-collector-contrib`、`opentelemetry-go`、`opentelemetry-js`（`main`） | `#52509` | `BLOCKED` | 產生的 HPA semconv 符號還沒被 processor 引用；Code Owner 尚未同意。Go / JS SDK 尚無候選 |
+| `02-opentelemetry` | `open-telemetry/opentelemetry-collector-contrib`、`opentelemetry-go`、`opentelemetry-js`（`main`） | `#31140`、`#52509` | `READY_FOR_HUMAN_PR`、`BLOCKED` | `#31140` 等人開 PR（`plans/31140-pr-draft.md`）；`#52509` 的 HPA semconv 符號還沒被引用。Go / JS SDK 的 bug 都已有人處理 |
 | `03-aquasecurity-trivy` | `aquasecurity/trivy`、`trivy-action`、`setup-trivy`、`trivy-db`、`trivy-operator`（`main`；`trivy-action` 是 `master`） | `trivy-action#551` | `NEEDS_MAINTAINER` | checksum 驗證屬於 Action 還是 `setup-trivy`，由維護者決定；已知碰撞全部排除 |
 | `04-openssf-scorecard` | `ossf/scorecard`（`main`） | `#2161` | `NEEDS_MAINTAINER` | 分數語意（`unknown` 與 `unprotected`）需要維護者同意 |
 | `05-cloudflare-workers-sdk` | `cloudflare/workers-sdk`（`main`） | 尚未選定 | `BLOCKED` | Vouch 資格未通過 |

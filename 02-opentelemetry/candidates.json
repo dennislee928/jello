@@ -1,6 +1,69 @@
 {
   "candidates": [
     {
+      "acceptance_score": 4,
+      "assignees": [],
+      "blocking_dependencies": [
+        "human must sign the OpenTelemetry CLA (EasyCLA) before opening the PR",
+        "human writes the PR description and commit message per upstream AGENTS.md"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [
+        {
+          "org": "open-telemetry",
+          "repo": "opentelemetry-collector-contrib",
+          "number": 47841,
+          "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/47841",
+          "overlap": "possible_overlap",
+          "fixes_reference": true,
+          "rationale": "closed unmerged by the stale bot on 2026-06-29; same fix direction, not rejected. Superseded, not an active overlap."
+        },
+        {
+          "org": "open-telemetry",
+          "repo": "opentelemetry-collector-contrib",
+          "number": 50150,
+          "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50150",
+          "overlap": "possible_overlap",
+          "fixes_reference": true,
+          "rationale": "closed unmerged by the stale bot on 2026-11-11; code owner reviewed; same fix direction, not rejected. Superseded, not an active overlap."
+        }
+      ],
+      "evidence_path": "02-opentelemetry/evidence/opentelemetry-collector-contrib-31140.md",
+      "github_state": "open",
+      "hard_gate_failed": false,
+      "impact_score": 2,
+      "issue_number": 31140,
+      "issue_updated_at": "2024-04-16T13:40:28Z",
+      "kind": "issue",
+      "labels": [
+        "bug",
+        "processor/logstransform",
+        "never stale"
+      ],
+      "last_verified_at": "2026-11-15T01:53:10Z",
+      "maintainer_signals": [
+        "code owner dehaansa reviewed #50150 (2026-08-31)",
+        "atoulme reviewed #47841 and asked for a simpler wg.Go version",
+        "no open, draft or merged overlapping PR; issue unassigned"
+      ],
+      "next_action": "外部 checkout 的本機分支已備好修復與回歸測試。人簽 CLA、自己寫 commit 與 PR 描述，再 fork、推送、開 PR。",
+      "org": "open-telemetry",
+      "repo": "opentelemetry-collector-contrib",
+      "score_rationale": "acceptance 4：code owner 兩度參與，範圍小，可測。impact 2：issue 自述實務上沒有明顯負面效果；這是合約與健壯性修正，不主張使用量。",
+      "skills_match": [
+        "Go",
+        "telemetry"
+      ],
+      "sources": [
+        "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/31140",
+        "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/47841",
+        "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50150"
+      ],
+      "status": "READY_FOR_HUMAN_PR",
+      "title": "[processor/logstransform]: Long running tasks uses the wrong context",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/31140"
+    },
+    {
       "acceptance_score": null,
       "assignees": [],
       "blocking_dependencies": [],
