@@ -69,6 +69,17 @@ of the user; the human author must check it themselves before the PR is ready fo
   - Copilot 說 `wg.Go` 無法編譯也不正確：模組是 `go 1.26.0`，本機 `go1.27.1` 編譯並測試通過。
 - 實際跑過的命令與結果：`evidence/opentelemetry-collector-contrib-31140.md`。
 
+### Reference facts in English (not PR text — write the description yourself)
+
+- **Bug:** `Start(ctx)` passes its context to `startConverterLoop`, and `converterLoop` returns on `<-ctx.Done()`. The `component.Component` docs say the context passed to `Start` must not be used for long-running work. If it is cancelled, the processor silently stops forwarding logs.
+- **Change:** the converter loop gets its own context from `context.WithCancel(context.Background())`. The `sync.WaitGroup` stays local and uses `wg.Go`. On shutdown the loop is waited on first and cancelled after. `FromPdataConverter.Stop()` closes the entries channel, so the loop drains it before exiting and buffered logs are not dropped. `Start` now ignores its context parameter (`_`).
+- **Test added:** `TestProcessorKeepsConvertingAfterStartContextIsCancelled` cancels the Start context, sends one log, and expects it at the sink. It failed 3/3 on unmodified `d1da3bd8` (`Condition never satisfied`) and passes with the change.
+- **Commands run on this branch:**
+  - In `processor/logstransformprocessor`: `go test -race -count=1 ./...`, `go test -race -count=20 ./`, `go vet ./...`, `make test` (12 tests, 1 skipped by the existing #9761 skip), `make lint` (exit 0).
+  - At the repo root: `make chlog-validate` (PASS).
+- **Prior work:** #47841 and #50150 took the same approach and were closed by the stale bot, not rejected. This version keeps the WaitGroup local and uses `wg.Go`, as reviewers asked. It waits before cancelling, so the shutdown drain is preserved.
+- **Documentation:** no docs change. Changelog entry `.chloggen/31140-logstransform-converter-context.yaml` (`bug_fix`, `subtext` left empty per upstream AGENTS.md).
+
 ## 建議的 commit message（人可改寫）
 
 上游要求用 `Assisted-by:` 揭露 AI 協助，**不要**用 `Co-authored-by:`，否則 EasyCLA 檢查會失敗。
