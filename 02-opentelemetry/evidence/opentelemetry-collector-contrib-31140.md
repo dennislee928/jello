@@ -1,7 +1,7 @@
 # 證據：open-telemetry/opentelemetry-collector-contrib #31140
 
 - status：`PR_OPEN`（[#53246](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/53246)）
-- last_verified_at：`2026-11-17T15:32:44Z`
+- last_verified_at：`2026-11-17T15:37:27Z`
 - 外部 checkout：`/Users/dennis/Desktop/upstream-src/open-telemetry/opentelemetry-collector-contrib`
   - `git clone --filter=blob:none --sparse`
   - sparse 目錄：`processor/logstransformprocessor`、`extension/storage`、`internal/coreinternal`、`pkg/stanza`、`pkg/pdatatest`、`pkg/golden`、`internal/common`、`pkg/semconvtest`、`.chloggen`、`internal/tools`、`.github`
@@ -20,6 +20,7 @@
 | `2026-11-15T01:53:10Z` | `READY_FOR_HUMAN_PR` | 修復後測試、race、vet、lint、chlog-validate 都通過；交給人 |
 | `2026-11-17T14:20:11Z` | `READY_FOR_HUMAN_PR`（重驗） | rebase 到 `71ed4c2993` 後重新重現、重跑全部檢查，都通過；見「2026-11-17 重新驗證」 |
 | `2026-11-17T15:32:22Z` | `PR_OPEN` | 人開了 #53246（head `fa8b316c81`，base `main`），已自動請 `dehaansa` review。EasyCLA 為 failure（尚未簽）。歡迎 bot 提醒：首次貢獻者在第一個 PR 合併前，最多只能有一個 ready for review 的 PR |
+| `2026-11-17T15:37:27Z` | `PR_OPEN` | 人從 GitHub 把 main 合進分支（merge commit `99afabc622`）。EasyCLA 轉為 success。`fa8b316c81` 的 CI workflow 都是 `action_required`，因為首次貢獻者要等維護者核准才會跑；Copilot review 因配額不足沒跑 |
 
 ## 未修改程式碼上的基線
 

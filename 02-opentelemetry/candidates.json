@@ -4,7 +4,7 @@
       "acceptance_score": 4,
       "assignees": [],
       "blocking_dependencies": [
-        "EasyCLA check is failing until the human signs the CLA via the bot link on #53246",
+        "CI workflows are action_required until a maintainer approves runs for a first-time contributor",
         "first-time contributors may keep at most one PR ready for review until the first one merges"
       ],
       "confidence": "high",
@@ -40,14 +40,14 @@
         "processor/logstransform",
         "never stale"
       ],
-      "last_verified_at": "2026-11-17T15:32:44Z",
+      "last_verified_at": "2026-11-17T15:37:27Z",
       "maintainer_signals": [
         "code owner dehaansa reviewed #50150 (2026-08-31)",
         "atoulme reviewed #47841 and asked for a simpler wg.Go version",
         "no open, draft or merged overlapping PR; issue unassigned",
         "2026-11-17: PR #53246 opened by a human; review requested from code owner dehaansa"
       ],
-      "next_action": "人簽 EasyCLA。等 review，回覆由人自己寫。在第一個 PR 合併前，不要再把其他 OTel PR 標成 ready for review。",
+      "next_action": "等維護者核准 CI 並 review。不要再按 Update branch，回覆由人自己寫。在第一個 PR 合併前，不要再把其他 OTel PR 標成 ready for review。",
       "org": "open-telemetry",
       "repo": "opentelemetry-collector-contrib",
       "score_rationale": "acceptance 4：code owner 兩度參與，範圍小，可測。impact 2：issue 自述實務上沒有明顯負面效果；這是合約與健壯性修正，不主張使用量。",
