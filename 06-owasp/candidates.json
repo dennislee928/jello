@@ -1,6 +1,83 @@
 {
   "candidates": [
     {
+      "acceptance_score": 2,
+      "assignees": [],
+      "blocking_dependencies": [
+        "human signs off each commit (DCO, git commit -s)",
+        "human writes the PR description"
+      ],
+      "confidence": "medium",
+      "duplicate_prs": [],
+      "evidence_path": "06-owasp/evidence/cyclonedx-go-281.md",
+      "github_state": "open",
+      "hard_gate_failed": false,
+      "impact_score": 2,
+      "issue_number": 281,
+      "issue_updated_at": "2026-08-07T05:58:21Z",
+      "kind": "issue",
+      "labels": [],
+      "last_verified_at": "2026-11-17T14:20:11Z",
+      "maintainer_signals": [
+        "no maintainer comment on the issue",
+        "master 自 2026-09-07 未動；外部 PR #268、#271、#299、#305 自 2026-06 起 0 review；最後合併外部 PR 是 2026-08-15",
+        "in-repo timeline: no cyclonedx-go PR; interlynk-io/sbomasm #340 (open) is a downstream workaround"
+      ],
+      "next_action": "外部 worktree 分支 fix-escape-html-281 已備好修復與回歸測試。人以 git commit -s 提交、自己寫 PR 描述，再 fork、推送、開 PR。",
+      "org": "CycloneDX",
+      "repo": "cyclonedx-go",
+      "score_rationale": "acceptance 2：改動只在 cyclonedx_json.go，預設輸出不變，但維護者近 2 個月沒 review 外部 PR。impact 2：下游 sbomasm/sbomqs 有回報；不主張使用量。硬門檻全部通過。",
+      "skills_match": [
+        "Go",
+        "SBOM"
+      ],
+      "sources": [
+        "https://github.com/CycloneDX/cyclonedx-go/issues/281",
+        "https://github.com/interlynk-io/sbomasm/issues/337"
+      ],
+      "status": "READY_FOR_HUMAN_PR",
+      "title": "Custom `MarshalJSON` methods ignore `SetEscapeHTML(false)`: `&` always escaped to `\\u0026`",
+      "url": "https://github.com/CycloneDX/cyclonedx-go/issues/281"
+    },
+    {
+      "acceptance_score": 2,
+      "assignees": [],
+      "blocking_dependencies": [
+        "human signs off each commit (DCO, git commit -s)",
+        "human writes the PR description"
+      ],
+      "confidence": "medium",
+      "duplicate_prs": [],
+      "evidence_path": "06-owasp/evidence/cyclonedx-go-291.md",
+      "github_state": "open",
+      "hard_gate_failed": false,
+      "impact_score": 2,
+      "issue_number": 291,
+      "issue_updated_at": "2026-09-02T12:05:07Z",
+      "kind": "issue",
+      "labels": [],
+      "last_verified_at": "2026-11-17T14:20:11Z",
+      "maintainer_signals": [
+        "no maintainer comment on the issue",
+        "master 自 2026-09-07 未動；外部 PR #268、#271、#299、#305 自 2026-06 起 0 review；最後合併外部 PR 是 2026-08-15",
+        "in-repo timeline: no cyclonedx-go PR; anchore/syft #5246 and #5493 (closed) are downstream workarounds"
+      ],
+      "next_action": "外部 checkout 分支 fix-extref-downgrade-291 已備好修復與回歸測試。人以 git commit -s 提交、自己寫 PR 描述，再 fork、推送、開 PR。",
+      "org": "CycloneDX",
+      "repo": "cyclonedx-go",
+      "score_rationale": "acceptance 2：修復小、可用 schema 驗證，但維護者近 2 個月沒 review 外部 PR。impact 2：降版輸出會違反目標 schema；不主張使用量。硬門檻全部通過。",
+      "skills_match": [
+        "Go",
+        "SBOM"
+      ],
+      "sources": [
+        "https://github.com/CycloneDX/cyclonedx-go/issues/291"
+      ],
+      "status": "READY_FOR_HUMAN_PR",
+      "title": "[bug] externalReference types introduced in 1.6 not downgraded when encoding to 1.5 or below",
+      "url": "https://github.com/CycloneDX/cyclonedx-go/issues/291"
+    },
+    {
       "acceptance_score": null,
       "assignees": [],
       "blocking_dependencies": [
@@ -48,22 +125,22 @@
       "confidence": "high",
       "duplicate_prs": [
         {
-          "org": "OWASP",
-          "repo": "cve-lite-cli",
-          "number": 1651,
-          "url": "https://github.com/OWASP/cve-lite-cli/pull/1651",
-          "overlap": "definite_duplicate",
           "fixes_reference": false,
-          "rationale": "merged 2026-11-13T22:06:35Z，維護者把 #1353 的 commit 原樣帶進來。沒有關閉關鍵字，所以 issue 仍是 open。"
+          "number": 1651,
+          "org": "OWASP",
+          "overlap": "definite_duplicate",
+          "rationale": "merged 2026-11-13T22:06:35Z，維護者把 #1353 的 commit 原樣帶進來。沒有關閉關鍵字，所以 issue 仍是 open。",
+          "repo": "cve-lite-cli",
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1651"
         },
         {
-          "org": "OWASP",
-          "repo": "cve-lite-cli",
-          "number": 1353,
-          "url": "https://github.com/OWASP/cve-lite-cli/pull/1353",
-          "overlap": "definite_duplicate",
           "fixes_reference": true,
-          "rationale": "closed unmerged，內文有關閉關鍵字；內容已併入 #1651。"
+          "number": 1353,
+          "org": "OWASP",
+          "overlap": "definite_duplicate",
+          "rationale": "closed unmerged，內文有關閉關鍵字；內容已併入 #1651。",
+          "repo": "cve-lite-cli",
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1353"
         }
       ],
       "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
@@ -254,13 +331,13 @@
       "confidence": "high",
       "duplicate_prs": [
         {
-          "org": "OWASP",
-          "repo": "cve-lite-cli",
-          "number": 1468,
-          "url": "https://github.com/OWASP/cve-lite-cli/pull/1468",
-          "overlap": "definite_duplicate",
           "fixes_reference": true,
-          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1465。"
+          "number": 1468,
+          "org": "OWASP",
+          "overlap": "definite_duplicate",
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1465。",
+          "repo": "cve-lite-cli",
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1468"
         }
       ],
       "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
@@ -303,13 +380,13 @@
       "confidence": "high",
       "duplicate_prs": [
         {
-          "org": "OWASP",
-          "repo": "cve-lite-cli",
-          "number": 1539,
-          "url": "https://github.com/OWASP/cve-lite-cli/pull/1539",
-          "overlap": "definite_duplicate",
           "fixes_reference": true,
-          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1537。"
+          "number": 1539,
+          "org": "OWASP",
+          "overlap": "definite_duplicate",
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1537。",
+          "repo": "cve-lite-cli",
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1539"
         }
       ],
       "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
@@ -351,13 +428,13 @@
       "confidence": "high",
       "duplicate_prs": [
         {
-          "org": "OWASP",
-          "repo": "cve-lite-cli",
-          "number": 1541,
-          "url": "https://github.com/OWASP/cve-lite-cli/pull/1541",
-          "overlap": "definite_duplicate",
           "fixes_reference": true,
-          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1538。"
+          "number": 1541,
+          "org": "OWASP",
+          "overlap": "definite_duplicate",
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1538。",
+          "repo": "cve-lite-cli",
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1541"
         }
       ],
       "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
@@ -400,13 +477,13 @@
       "confidence": "high",
       "duplicate_prs": [
         {
-          "org": "OWASP",
-          "repo": "cve-lite-cli",
-          "number": 1587,
-          "url": "https://github.com/OWASP/cve-lite-cli/pull/1587",
-          "overlap": "definite_duplicate",
           "fixes_reference": true,
-          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1582。"
+          "number": 1587,
+          "org": "OWASP",
+          "overlap": "definite_duplicate",
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1582。",
+          "repo": "cve-lite-cli",
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1587"
         }
       ],
       "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
@@ -448,13 +525,13 @@
       "confidence": "high",
       "duplicate_prs": [
         {
-          "org": "OWASP",
-          "repo": "cve-lite-cli",
-          "number": 1586,
-          "url": "https://github.com/OWASP/cve-lite-cli/pull/1586",
-          "overlap": "definite_duplicate",
           "fixes_reference": true,
-          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1583。"
+          "number": 1586,
+          "org": "OWASP",
+          "overlap": "definite_duplicate",
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1583。",
+          "repo": "cve-lite-cli",
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1586"
         }
       ],
       "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
@@ -496,13 +573,13 @@
       "confidence": "high",
       "duplicate_prs": [
         {
-          "org": "OWASP",
-          "repo": "cve-lite-cli",
-          "number": 1588,
-          "url": "https://github.com/OWASP/cve-lite-cli/pull/1588",
-          "overlap": "definite_duplicate",
           "fixes_reference": true,
-          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1584。"
+          "number": 1588,
+          "org": "OWASP",
+          "overlap": "definite_duplicate",
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1584。",
+          "repo": "cve-lite-cli",
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1588"
         }
       ],
       "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
@@ -544,13 +621,13 @@
       "confidence": "high",
       "duplicate_prs": [
         {
-          "org": "OWASP",
-          "repo": "cve-lite-cli",
-          "number": 1593,
-          "url": "https://github.com/OWASP/cve-lite-cli/pull/1593",
-          "overlap": "definite_duplicate",
           "fixes_reference": false,
-          "rationale": "open PR，標題 use refresh commands in within-range advice 對上 issue 症狀；作者在 issue 留言 ill work on this。沒有關閉關鍵字。"
+          "number": 1593,
+          "org": "OWASP",
+          "overlap": "definite_duplicate",
+          "rationale": "open PR，標題 use refresh commands in within-range advice 對上 issue 症狀；作者在 issue 留言 ill work on this。沒有關閉關鍵字。",
+          "repo": "cve-lite-cli",
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1593"
         }
       ],
       "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
@@ -592,13 +669,13 @@
       "confidence": "high",
       "duplicate_prs": [
         {
-          "org": "OWASP",
-          "repo": "cve-lite-cli",
-          "number": 1594,
-          "url": "https://github.com/OWASP/cve-lite-cli/pull/1594",
-          "overlap": "definite_duplicate",
           "fixes_reference": true,
-          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1592。"
+          "number": 1594,
+          "org": "OWASP",
+          "overlap": "definite_duplicate",
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1592。",
+          "repo": "cve-lite-cli",
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1594"
         }
       ],
       "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
@@ -640,22 +717,22 @@
       "confidence": "high",
       "duplicate_prs": [
         {
-          "org": "OWASP",
-          "repo": "cve-lite-cli",
-          "number": 1630,
-          "url": "https://github.com/OWASP/cve-lite-cli/pull/1630",
-          "overlap": "definite_duplicate",
           "fixes_reference": true,
-          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1627。"
+          "number": 1630,
+          "org": "OWASP",
+          "overlap": "definite_duplicate",
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1627。",
+          "repo": "cve-lite-cli",
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1630"
         },
         {
-          "org": "OWASP",
-          "repo": "cve-lite-cli",
-          "number": 1650,
-          "url": "https://github.com/OWASP/cve-lite-cli/pull/1650",
-          "overlap": "definite_duplicate",
           "fixes_reference": true,
-          "rationale": "closed PR，內文或標題有關閉關鍵字指向 #1627。"
+          "number": 1650,
+          "org": "OWASP",
+          "overlap": "definite_duplicate",
+          "rationale": "closed PR，內文或標題有關閉關鍵字指向 #1627。",
+          "repo": "cve-lite-cli",
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1650"
         }
       ],
       "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
@@ -698,13 +775,13 @@
       "confidence": "high",
       "duplicate_prs": [
         {
-          "org": "OWASP",
-          "repo": "cve-lite-cli",
-          "number": 1631,
-          "url": "https://github.com/OWASP/cve-lite-cli/pull/1631",
-          "overlap": "definite_duplicate",
           "fixes_reference": true,
-          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1628。"
+          "number": 1631,
+          "org": "OWASP",
+          "overlap": "definite_duplicate",
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1628。",
+          "repo": "cve-lite-cli",
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1631"
         }
       ],
       "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
@@ -746,13 +823,13 @@
       "confidence": "high",
       "duplicate_prs": [
         {
-          "org": "OWASP",
-          "repo": "cve-lite-cli",
-          "number": 1633,
-          "url": "https://github.com/OWASP/cve-lite-cli/pull/1633",
-          "overlap": "definite_duplicate",
           "fixes_reference": true,
-          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1629。"
+          "number": 1633,
+          "org": "OWASP",
+          "overlap": "definite_duplicate",
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1629。",
+          "repo": "cve-lite-cli",
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1633"
         }
       ],
       "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
@@ -795,22 +872,22 @@
       "confidence": "high",
       "duplicate_prs": [
         {
-          "org": "OWASP",
-          "repo": "cve-lite-cli",
-          "number": 1644,
-          "url": "https://github.com/OWASP/cve-lite-cli/pull/1644",
-          "overlap": "definite_duplicate",
           "fixes_reference": true,
-          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1642。"
+          "number": 1644,
+          "org": "OWASP",
+          "overlap": "definite_duplicate",
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1642。",
+          "repo": "cve-lite-cli",
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1644"
         },
         {
-          "org": "OWASP",
-          "repo": "cve-lite-cli",
-          "number": 1645,
-          "url": "https://github.com/OWASP/cve-lite-cli/pull/1645",
-          "overlap": "definite_duplicate",
           "fixes_reference": true,
-          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1642。"
+          "number": 1645,
+          "org": "OWASP",
+          "overlap": "definite_duplicate",
+          "rationale": "open PR，內文或標題有關閉關鍵字指向 #1642。",
+          "repo": "cve-lite-cli",
+          "url": "https://github.com/OWASP/cve-lite-cli/pull/1645"
         }
       ],
       "evidence_path": "06-owasp/evidence/cve-lite-cli-triage-2026-11-14.md",
@@ -847,7 +924,7 @@
   ],
   "directory": "06-owasp",
   "errors": [],
-  "last_verified_at": "2026-11-14T11:15:59Z",
+  "last_verified_at": "2026-11-17T14:20:11Z",
   "partial": false,
   "schema_version": 1
 }

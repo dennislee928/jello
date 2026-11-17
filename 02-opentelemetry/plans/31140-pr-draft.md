@@ -13,7 +13,7 @@ DRAFT
 ## 位置
 
 - 外部 checkout：`/Users/dennis/Desktop/upstream-src/open-telemetry/opentelemetry-collector-contrib`
-- 本機分支：`fix-logstransform-start-context-31140`，base 是 `d1da3bd8ee6d532978dee00cb276b8511cab0409`
+- 本機分支：`fix-logstransform-start-context-31140`，base 是 `71ed4c2993`（`2026-11-17` 從 `d1da3bd8` rebase 過來，全部檢查重跑通過）
 - 改動**尚未 commit**：
   - `processor/logstransformprocessor/processor.go`
   - `processor/logstransformprocessor/processor_test.go`
@@ -73,7 +73,7 @@ of the user; the human author must check it themselves before the PR is ready fo
 
 - **Bug:** `Start(ctx)` passes its context to `startConverterLoop`, and `converterLoop` returns on `<-ctx.Done()`. The `component.Component` docs say the context passed to `Start` must not be used for long-running work. If it is cancelled, the processor silently stops forwarding logs.
 - **Change:** the converter loop gets its own context from `context.WithCancel(context.Background())`. The `sync.WaitGroup` stays local and uses `wg.Go`. On shutdown the loop is waited on first and cancelled after. `FromPdataConverter.Stop()` closes the entries channel, so the loop drains it before exiting and buffered logs are not dropped. `Start` now ignores its context parameter (`_`).
-- **Test added:** `TestProcessorKeepsConvertingAfterStartContextIsCancelled` cancels the Start context, sends one log, and expects it at the sink. It failed 3/3 on unmodified `d1da3bd8` (`Condition never satisfied`) and passes with the change.
+- **Test added:** `TestProcessorKeepsConvertingAfterStartContextIsCancelled` cancels the Start context, sends one log, and expects it at the sink. It failed 3/3 on unmodified `d1da3bd8` and again on `71ed4c2993` (`Condition never satisfied`), and passes with the change.
 - **Commands run on this branch:**
   - In `processor/logstransformprocessor`: `go test -race -count=1 ./...`, `go test -race -count=20 ./`, `go vet ./...`, `make test` (12 tests, 1 skipped by the existing #9761 skip), `make lint` (exit 0).
   - At the repo root: `make chlog-validate` (PASS).
@@ -91,6 +91,8 @@ Assisted-by: Claude Opus 5.5
 ```
 
 ## 開 PR 前（只有人能做）
+
+0. **待決**：上游 `AGENTS.md` 要求實作方向先在 issue 上和維護者對齊，而 `#31140` 目前沒有這樣的維護者留言。要先在 issue 留言等回覆，還是直接開 PR、引用 `#47841`／`#50150` 的 review，由人決定。
 
 1. 簽 OpenTelemetry CLA（EasyCLA）。commit 的 email 要和簽 CLA 的帳號一致。
 2. 上游 AGENTS.md 要求實作方向先在 issue 上和維護者對齊。兩個舊 PR 都已有維護者 review，方向沒有被否決；要不要先在 #31140 留言，由人決定，代理不能代為留言。

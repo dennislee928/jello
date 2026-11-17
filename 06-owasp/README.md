@@ -20,4 +20,6 @@
 
 這是接受度的 proxy，不是保證。同一輪也量過 `OWASP/threat-dragon`（3 / 10）、`OWASP/Nest`（12 / 41）、`OWASP/wrongsecrets`（9 / 11，但主要是 Java 與 HTML），這輪不收。星數與下載數只算生態系層級的 proxy，不歸因到單一修復。
 
-目前沒有 `READY_TO_IMPLEMENT` 候選。`2026-11-14T11:15:59Z` 初篩 `cve-lite-cli` 的 18 個 starter issue，全部是 `DUPLICATE_OR_IN_PROGRESS`（`evidence/cve-lite-cli-triage-2026-11-14.md`）。這個 repo 撞車快：新 issue 常在一兩天內就有 PR，所以要靠日掃的新 issue，不要靠舊清單。`cyclonedx-go` 只有兩個舊的 starter issue，尚未初篩。規則在 `upstream-requirements.md`。
+`2026-11-17T14:20:11Z` 初篩了 `cyclonedx-go`：`#291`（降版時 externalReference 類型沒有改寫）和 `#281`（`SetEscapeHTML(false)` 沒有生效）是 `READY_FOR_HUMAN_PR`。修復在外部 checkout，交付檔是 `plans/cyclonedx-go-291-pr-draft.md` 與 `plans/cyclonedx-go-281-pr-draft.md`。接受度風險：master 從 `2026-09-07` 之後就沒動過，外部 PR 都沒有 review。其他 issue 的判定在 `evidence/recheck-2026-11-17.md`。
+
+`2026-11-14T11:15:59Z` 初篩 `cve-lite-cli` 的 18 個 starter issue，全部是 `DUPLICATE_OR_IN_PROGRESS`（`evidence/cve-lite-cli-triage-2026-11-14.md`）。這個 repo 撞車快：新 issue 常在一兩天內就有 PR，所以要靠日掃的新 issue，不要靠舊清單。規則在 `upstream-requirements.md`。

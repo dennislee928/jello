@@ -30,16 +30,16 @@ python3 scripts/scan.py --root . --baseline reports/state/baseline.json \
 
 ## 目前狀態
 
-以各目錄的 `candidates.json` 為準。下表是 `2026-11-15T01:53:10Z` 的摘要。collector-contrib `#31140` 是 `READY_FOR_HUMAN_PR`：修復與回歸測試留在外部 checkout 的本機分支，等人簽 CLA、自己寫 PR 描述後開 PR。目前還沒有本庫作者合併到上游的 PR。
+以各目錄的 `candidates.json` 為準。下表是 `2026-11-17T14:20:11Z` 的摘要。有三件是 `READY_FOR_HUMAN_PR`：collector-contrib `#31140`，以及 cyclonedx-go `#291`、`#281`。修復與回歸測試都放在外部 checkout 的本機分支，等人簽 CLA 或 DCO、自己寫 PR 描述後開 PR。其他目錄在 `2026-11-17` 重驗後，仍卡在硬門檻（`06-owasp/evidence/recheck-2026-11-17.md`）。目前還沒有本庫作者合併到上游的 PR。
 
 | 目錄 | 上游（預設分支） | 主要候選 | 狀態 | 卡在 |
 | --- | --- | --- | --- | --- |
 | `01-apache-superset` | `apache/superset`（`master`） | `#46197`、`#46196` | `DUPLICATE_OR_IN_PROGRESS` | `#46197`：他人的 open PR `#46202`；`#46196`：已由他人合併的 `#41453` 修好 |
-| `02-opentelemetry` | `open-telemetry/opentelemetry-collector-contrib`、`opentelemetry-go`、`opentelemetry-js`（`main`） | `#31140`、`#52509` | `READY_FOR_HUMAN_PR`、`BLOCKED` | `#31140` 等人開 PR（`plans/31140-pr-draft.md`）；`#52509` 的 HPA semconv 符號還沒被引用。Go / JS SDK 的 bug 都已有人處理 |
+| `02-opentelemetry` | `open-telemetry/opentelemetry-collector-contrib`、`opentelemetry-go`、`opentelemetry-js`（`main`） | `#31140`、`#52509` | `READY_FOR_HUMAN_PR`、`BLOCKED` | `#31140` 已 rebase 到 `71ed4c29`，等人開 PR；方向還沒在 issue 上和維護者對齊（`plans/31140-pr-draft.md`）；`#52509` 的 HPA semconv 符號還沒被引用。Go / JS SDK 的 bug 都已有人處理 |
 | `03-aquasecurity-trivy` | `aquasecurity/trivy`、`trivy-action`、`setup-trivy`、`trivy-db`、`trivy-operator`（`main`；`trivy-action` 是 `master`） | `trivy-action#551` | `NEEDS_MAINTAINER` | checksum 驗證屬於 Action 還是 `setup-trivy`，由維護者決定；已知碰撞全部排除 |
 | `04-openssf-scorecard` | `ossf/scorecard`（`main`） | `#2161` | `NEEDS_MAINTAINER` | 分數語意（`unknown` 與 `unprotected`）需要維護者同意 |
 | `05-cloudflare-workers-sdk` | `cloudflare/workers-sdk`（`main`） | 尚未選定 | `BLOCKED` | Vouch 資格未通過 |
-| `06-owasp` | `OWASP/cve-lite-cli`（`main`）、`CycloneDX/cyclonedx-go`（`master`） | `cve-lite-cli` 18 個 starter issue | `DUPLICATE_OR_IN_PROGRESS` | 全部已有 PR、已被認領或已修好；`cyclonedx-go` 尚未初篩 |
+| `06-owasp` | `OWASP/cve-lite-cli`（`main`）、`CycloneDX/cyclonedx-go`（`master`） | `cyclonedx-go#291`、`#281`；`cve-lite-cli` | `READY_FOR_HUMAN_PR`；`DUPLICATE_OR_IN_PROGRESS` | cyclonedx-go 兩件等人開 PR（`plans/cyclonedx-go-*-pr-draft.md`），但上游從 9/7 之後就沒有合併；cve-lite-cli 的新 issue 都已有 PR、已關閉或標了 `in-house` |
 
 `open-telemetry/semantic-conventions` 只當交叉引用，不是掃描目標。CycloneDX 是 OWASP 專案，但 GitHub org 是 `CycloneDX`，所以放在 `06-owasp`。
 

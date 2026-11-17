@@ -4,7 +4,7 @@
 
 | 儲存庫 | 本目錄怎麼對待 |
 | --- | --- |
-| `open-telemetry/opentelemetry-collector-contrib` | `#31140`（logstransform 用了 Start 的 context）是 `READY_FOR_HUMAN_PR`，交付檔在 `plans/31140-pr-draft.md`。`#52509` 等語意約定依賴，維持 `BLOCKED` |
+| `open-telemetry/opentelemetry-collector-contrib` | `#31140`（logstransform 用了 Start 的 context）是 `READY_FOR_HUMAN_PR`（`2026-11-17` rebase 到 `71ed4c29` 後重驗通過；方向還沒在 issue 上和維護者對齊），交付檔在 `plans/31140-pr-draft.md`。`#52509` 等語意約定依賴，維持 `BLOCKED` |
 | `open-telemetry/opentelemetry-go` | Go SDK。`2026-11-14` 加入，外部 PR 合併率高；尚無候選 |
 | `open-telemetry/opentelemetry-js` | JS/TS SDK。`2026-11-14` 加入，外部 PR 合併快；尚無候選 |
 

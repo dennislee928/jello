@@ -5,27 +5,28 @@
       "assignees": [],
       "blocking_dependencies": [
         "human must sign the OpenTelemetry CLA (EasyCLA) before opening the PR",
-        "human writes the PR description and commit message per upstream AGENTS.md"
+        "human writes the PR description and commit message per upstream AGENTS.md",
+        "upstream AGENTS.md asks that the implementation direction be agreed with maintainers on the issue first; #31140 has no such maintainer comment, so the human decides whether to comment there before opening the PR"
       ],
       "confidence": "high",
       "duplicate_prs": [
         {
-          "org": "open-telemetry",
-          "repo": "opentelemetry-collector-contrib",
-          "number": 47841,
-          "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/47841",
-          "overlap": "possible_overlap",
           "fixes_reference": true,
-          "rationale": "closed unmerged by the stale bot on 2026-06-29; same fix direction, not rejected. Superseded, not an active overlap."
+          "number": 47841,
+          "org": "open-telemetry",
+          "overlap": "possible_overlap",
+          "rationale": "closed unmerged by the stale bot on 2026-06-29; same fix direction, not rejected. Superseded, not an active overlap.",
+          "repo": "opentelemetry-collector-contrib",
+          "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/47841"
         },
         {
-          "org": "open-telemetry",
-          "repo": "opentelemetry-collector-contrib",
-          "number": 50150,
-          "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50150",
-          "overlap": "possible_overlap",
           "fixes_reference": true,
-          "rationale": "closed unmerged by the stale bot on 2026-11-11; code owner reviewed; same fix direction, not rejected. Superseded, not an active overlap."
+          "number": 50150,
+          "org": "open-telemetry",
+          "overlap": "possible_overlap",
+          "rationale": "closed unmerged by the stale bot on 2026-11-11; code owner reviewed; same fix direction, not rejected. Superseded, not an active overlap.",
+          "repo": "opentelemetry-collector-contrib",
+          "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/50150"
         }
       ],
       "evidence_path": "02-opentelemetry/evidence/opentelemetry-collector-contrib-31140.md",
@@ -40,13 +41,13 @@
         "processor/logstransform",
         "never stale"
       ],
-      "last_verified_at": "2026-11-15T01:53:10Z",
+      "last_verified_at": "2026-11-17T14:20:11Z",
       "maintainer_signals": [
         "code owner dehaansa reviewed #50150 (2026-08-31)",
         "atoulme reviewed #47841 and asked for a simpler wg.Go version",
         "no open, draft or merged overlapping PR; issue unassigned"
       ],
-      "next_action": "外部 checkout 的本機分支已備好修復與回歸測試。人簽 CLA、自己寫 commit 與 PR 描述，再 fork、推送、開 PR。",
+      "next_action": "分支已 rebase 到 main 71ed4c29，全部檢查重跑通過。開 PR 前：人決定是否先在 #31140 對齊方向、簽 CLA、自己寫 commit 與 PR 描述，再 fork、推送、開 PR。",
       "org": "open-telemetry",
       "repo": "opentelemetry-collector-contrib",
       "score_rationale": "acceptance 4：code owner 兩度參與，範圍小，可測。impact 2：issue 自述實務上沒有明顯負面效果；這是合約與健壯性修正，不主張使用量。",
