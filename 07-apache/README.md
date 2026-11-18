@@ -4,7 +4,7 @@
 
 | repo | 候選 | 狀態 |
 | --- | --- | --- |
-| `apache/iceberg-go` | `#2425` dictionary 欄位的 row filter 失敗 | `DISCOVERED`：要先由人認領並等維護者回應；新貢獻者一次只做一件 |
-| `apache/airflow` | `#77244` OdbcHook driver 警告條件寫反 | `DISCOVERED`：bot 表示不用等核准；PR 要揭露 Gen-AI 協助 |
+| `apache/iceberg-go` | `#2425` dictionary 欄位的 row filter 失敗 | `DUPLICATE_OR_IN_PROGRESS`：main 已因 arrow-go v18.9.0（`#2632`）修好，見 `evidence/iceberg-go-2425.md` |
+| `apache/airflow` | `#77244` OdbcHook driver 警告條件寫反 | `READY_FOR_HUMAN_PR`：一行修正加測試，交付檔 `plans/airflow-77244-pr-draft.md` |
 
 篩選過程與排除原因：`evidence/replacement-selection-2026-11-18.md`。

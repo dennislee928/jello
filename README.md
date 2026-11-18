@@ -35,12 +35,12 @@ python3 scripts/scan.py --root . --baseline reports/state/baseline.json \
 | 目錄 | 上游（預設分支） | 主要候選 | 狀態 | 卡在 |
 | --- | --- | --- | --- | --- |
 | `01-apache-superset` | `apache/superset`（`master`） | `#46197`、`#46196` | `DUPLICATE_OR_IN_PROGRESS` | `#46197`：他人的 open PR `#46202`；`#46196`：已由他人合併的 `#41453` 修好 |
-| `02-opentelemetry` | `open-telemetry/opentelemetry-collector-contrib`、`opentelemetry-go`、`opentelemetry-js`、`opentelemetry-python-contrib`（`main`） | `#31140`、`#52509`、python-contrib `#5353` | `PR_OPEN`、`BLOCKED`、`DISCOVERED` | `#31140` 是 `PR_OPEN`（[#53246](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/53246)），等 EasyCLA 和 review；`#52509` 的 HPA semconv 符號還沒被引用。Go / JS SDK 的 bug 都已有人處理 |
+| `02-opentelemetry` | `open-telemetry/opentelemetry-collector-contrib`、`opentelemetry-go`、`opentelemetry-js`、`opentelemetry-python-contrib`（`main`） | `#31140`、`#52509`、python-contrib `#5353` | `PR_OPEN`、`BLOCKED`、`REPRODUCED` | `#31140` 是 `PR_OPEN`（[#53246](https://github.com/open-telemetry/opentelemetry-collector-contrib/pull/53246)），等 EasyCLA 和 review；`#52509` 的 HPA semconv 符號還沒被引用。Go / JS SDK 的 bug 都已有人處理 |
 | `03-aquasecurity-trivy` | `aquasecurity/trivy`、`trivy-action`、`setup-trivy`、`trivy-db`、`trivy-operator`（`main`；`trivy-action` 是 `master`） | `trivy-action#551` | `NEEDS_MAINTAINER` | checksum 驗證屬於 Action 還是 `setup-trivy`，由維護者決定；已知碰撞全部排除 |
 | `04-openssf-scorecard` | `ossf/scorecard`（`main`） | `#2161` | `NEEDS_MAINTAINER` | 分數語意（`unknown` 與 `unprotected`）需要維護者同意 |
 | `05-cloudflare-workers-sdk` | `cloudflare/workers-sdk`（`main`） | 尚未選定 | `BLOCKED` | Vouch 資格未通過 |
 | `06-owasp` | `OWASP/cve-lite-cli`（`main`）、`CycloneDX/cyclonedx-go`（`master`） | `cyclonedx-go#291`、`#281`；`cve-lite-cli` | `READY_FOR_HUMAN_PR`；`DUPLICATE_OR_IN_PROGRESS` | cyclonedx-go 兩件等人開 PR（`plans/cyclonedx-go-*-pr-draft.md`），但上游從 9/7 之後就沒有合併；cve-lite-cli 的新 issue 都已有 PR、已關閉或標了 `in-house` |
-| `07-apache` | `apache/iceberg-go`（`main`）、`apache/airflow`（`main`） | `iceberg-go#2425`、`airflow#77244` | `DISCOVERED` | 尚未重現；iceberg-go 要先認領並等維護者回應 |
+| `07-apache` | `apache/iceberg-go`（`main`）、`apache/airflow`（`main`） | `iceberg-go#2425`、`airflow#77244` | `DUPLICATE_OR_IN_PROGRESS`、`READY_FOR_HUMAN_PR` | `#2425` 已因 arrow-go 升級在 main 修好；`#77244` 等人開 PR（`plans/airflow-77244-pr-draft.md`） |
 
 `open-telemetry/semantic-conventions` 只當交叉引用，不是掃描目標。CycloneDX 是 OWASP 專案，但 GitHub org 是 `CycloneDX`，所以放在 `06-owasp`。
 
