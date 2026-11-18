@@ -30,3 +30,12 @@ DRAFT
   - 比照 Java 的 `testUpdateAddedColumnType` 與 `testUpdateAddedColumnDoc`
   - 加一個「rename 新加欄位仍然失敗」的 case
 - 命令：`make test`、`make lint`；commit 要有 `Signed-off-by`
+
+## 接手時的認領留言要點（只在條件成立時用，由人撰寫）
+
+使用條件：回報者 `Shruthirdy` 明說不做，或維護者在 issue 上表示開放給別人；而且你在 iceberg-go 沒有其他進行中的 issue（新貢獻者一次一件）。條件不成立時不要留。
+
+1. 開頭："I'd like to work on this"（`CONTRIBUTING.md` 的建議格式），並說明看到回報者已不做（附連結）
+2. 範圍：讓 `UpdateColumn` 能更新同一次 `UpdateSchema` 新加的欄位（比照 Java `findForUpdate`），`RenameColumn` 維持回傳錯誤
+3. 測試：比照 Java 的 `testUpdateAddedColumnType`、`testUpdateAddedColumnDoc`，再加一個 rename 新欄位仍失敗的 case
+4. 說明會等維護者回應才開始寫程式；commit 會加 `Signed-off-by`
