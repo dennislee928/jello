@@ -51,3 +51,19 @@
 1. `open-telemetry/opentelemetry-python-contrib#5353`：`dennislee928` 已在 `2026-11-18T15:00:15Z` 留言認領，等維護者回覆
 2. `apache/iceberg-go#2425`：要先由人留言認領，等維護者回應才寫程式
 3. `apache/airflow#77244`：bot 明說不用等核准；PR 要依 airflow 規定揭露 Gen-AI 協助
+
+## 追加篩選（search API 恢復後）
+
+範圍：`aquasecurity/trivy`、`open-telemetry/opentelemetry-js`、`open-telemetry/opentelemetry-python`、`OWASP/cve-lite-cli`。條件和上面相同。
+
+| issue | 原因 |
+| --- | --- |
+| `open-telemetry/opentelemetry-js#4642` | 維護者 `adityareddy-dev` 在 `2026-11-05` 測過：舊版會失敗，但用目前的 commit 自己打包的 resources `3.0.0` 可以正常載入。看起來已經不存在 |
+| `open-telemetry/opentelemetry-js#4630`、`#5812` | 標了 `needs:reproducer`；`#5812` 的 PR 提及搜尋被 403 擋掉，無法驗證 |
+| `open-telemetry/opentelemetry-js#4721` | PR 提及搜尋被 403 擋掉，無法驗證 |
+| `open-telemetry/opentelemetry-js#3735`、`#3171` | 2022–2023 年的 issue，留言多，需要先確認現況與方向 |
+| `OWASP/cve-lite-cli#1717` | 已有對應的 PR `#1716`（"fix(scripts): typecheck-changed-tests extracts the base tree on Windows"） |
+| `OWASP/cve-lite-cli#1707`、`#1548` | 分別已有合併 PR `#1711`、open PR `#1539` |
+| `aquasecurity/trivy`、`open-telemetry/opentelemetry-python` | 沒有符合條件的 issue |
+
+結論不變：可做的替補只有 `apache/airflow#77244`。
