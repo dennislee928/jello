@@ -72,3 +72,27 @@ investigation_verified_at: 2026-11-14T11:07:34Z
 ### 不收錄
 
 `open-telemetry/opentelemetry-collector` 的 `good first issue` 在 `2026-11-14` 讀到的樣本（`#16370`）寫明保留給 KubeCon NA 2026 ContribFest，活動前開的 PR 會被關閉。`open-telemetry/opentelemetry-operator` 的 8 個 `good first issue` 都已經有 open PR（`#5847`、`#5926`–`#5932`）。兩者都不加入日掃。
+
+## OpenTelemetry Python Contrib
+
+`2026-11-18` 讀過 `open-telemetry/opentelemetry-python-contrib` 的 `main`（`7a554d4e`）。外部 checkout 是 `/Users/dennis/Desktop/upstream-src/open-telemetry/opentelemetry-python-contrib`。
+
+| 路徑 | blob SHA |
+| --- | --- |
+| `AGENTS.md` | `261d794f190fa1a008f327fc6a674e2da77891d6` |
+| `CONTRIBUTING.md` | `09014dad50fe81002089de89bb0a58d5f53aee82` |
+| `.github/pull_request_template.md` | `40594f7dc38b12540aad0eff633e0ac72ddac985` |
+
+- AI 規則（`AGENTS.md`）：
+  - 不得在 issue 或 PR 張貼 AI 產生的留言，也不能替使用者留言
+  - 實作方向要先在 issue 上和維護者談定，有不確定的地方先在 issue 上討論
+  - PR 描述照模板寫，要簡短；AI 產生的分析不放進 PR 描述
+- 範圍：一個 PR 只做一件邏輯變更，不夾帶無關的清理
+- 型別：不加 `type: ignore`；函式簽名要有型別註記
+- CLA：要簽 EasyCLA，OTel 各 repo 共用，你已在 collector-contrib `#53246` 簽過
+- changelog：用 towncrier，在根目錄的 `.changelog/` 新增 `<PR 編號>.fixed`，內容一行，以套件名開頭，例如 `` `opentelemetry-instrumentation-logging`: ... ``
+- 命令：
+  - `uv sync --frozen --all-packages`
+  - `uv run pre-commit run ruff --all-files`
+  - `uv run tox -e py312-test-instrumentation-logging`、`uv run tox -e py312-test-instrumentation-structlog-latest`
+  - `uv run tox -e lint-instrumentation-logging`、`uv run tox -e typecheck`
