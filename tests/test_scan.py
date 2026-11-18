@@ -160,14 +160,32 @@ class ScanTests(unittest.TestCase):
 
 
 class WorkflowTests(unittest.TestCase):
-    def test_workflow_is_read_only_and_scheduled(self):
+    def test_workflow_only_commits_the_dated_report(self):
         text = (ROOT / ".github" / "workflows" / "oss-monitor.yml").read_text(encoding="utf-8")
         self.assertIn('cron: "0 1 * * *"', text)
         self.assertIn("workflow_dispatch:", text)
-        self.assertIn("contents: read", text)
-        for forbidden in ("contents: write", "issues: write", "pull-requests: write"):
-            self.assertNotIn(forbidden, text)
-        for forbidden in ("git push", "git commit", "gh pr create", "gh issue create", "--method POST"):
+        # Top level stays read-only; only the job may write repo contents.
+        top = text.split("\njobs:", 1)[0]
+        self.assertIn("contents: read", top)
+        self.assertNotIn("contents: write", top)
+        self.assertEqual(text.count("contents: write"), 1)
+        self.assertIn("persist-credentials: false", text)
+        self.assertIn('git add -- "$md" "$js"', text)
+        self.assertIn("git pull -q --rebase", text)
+        self.assertIn("HEAD:main", text)
+        for forbidden in (
+            "issues: write",
+            "pull-requests: write",
+            "git add -A",
+            "git add .",
+            "--force",
+            "push -f",
+            "gh pr create",
+            "gh issue create",
+            "--method POST",
+            "github.event.issue",
+            "github.event.pull_request",
+        ):
             self.assertNotIn(forbidden, text)
 
 

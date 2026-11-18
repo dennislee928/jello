@@ -12,7 +12,14 @@
 
 允許的 GitHub 操作只有透過 `gh api` 的唯讀請求：讀 issue、pull request、timeline、檔案內容與 git blob。`scripts/` 只送 `GET`。429 與 403 最多退避 4 次；仍失敗就把該筆標成 `UNVERIFIED`，不補猜測。
 
-`.github/workflows/oss-monitor.yml` 的權限只有 `contents: read`。workflow 把結果放進 job summary 與 artifact，不 commit、不 push、不呼叫上游寫入 API。
+`.github/workflows/oss-monitor.yml` 的權限是 `contents: write`，只用來把當天的報告 commit 並推到本協調庫的 `main`。限制如下：
+
+- 只能 `git add` 當天的 `reports/daily/<YYYY-MM-DD>.md` 與 `reports/daily/<YYYY-MM-DD>.json`，不得改其他檔案
+- commit 身分是 `github-actions[bot]`，這是第 3 行「既有 git 身分」的唯一例外
+- 推送前先 `git pull --rebase`；不 force-push、不改寫歷史、不開分支或 PR
+- 掃描步驟拿到的 token 仍只送 `GET`；寫入權限只在 commit 步驟使用，checkout 不保留 credential
+- 結果同時放進 job summary 與 artifact
+- 不得對上游呼叫任何寫入 API；上面列出的上游禁止事項全部照舊
 
 ## 狀態機
 

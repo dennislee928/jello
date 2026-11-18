@@ -66,7 +66,7 @@ python3 scripts/scan.py --root . --baseline reports/state/baseline.json \
 | `reports/state/baseline.json` | 人審後提交的基線。workflow 只讀不寫 |
 | `reports/examples/` | 固定 fixture 的 dry-run 產出，重跑結果應逐位元組相同 |
 | `reports/cv-impact.md` | 影響帳本；沒有合併就留空，不填估計 |
-| `.github/workflows/oss-monitor.yml` | 每天的唯讀 org 監視（`scripts/org_monitor.py`） |
+| `.github/workflows/oss-monitor.yml` | 每天的 org 監視（`scripts/org_monitor.py`），把當天報告 commit 到 `reports/daily/` |
 
 每個目標目錄的結構相同：
 
@@ -114,7 +114,8 @@ python3 scripts/scan.py --root . --baseline reports/state/baseline.json \
   - `修復`：`low`、`medium`、`high`，看標籤（如 `good first issue`、`documentation` 屬 low；`enhancement`、`proposal` 屬 high）、標題關鍵字與內文長度
   - `接受`：`low`、`medium`、`high`、`blocked`。已指派、已有連結 PR、標了 `in-house`／`wontfix` 等，或 repo 有資格門檻，一律 `blocked`；`help wanted`、`accepted` 屬 low；`needs-triage`、`question` 屬 high；維護者自己開的 issue 不會是 low
 - 產出：`reports/daily/<YYYY-MM-DD>.md` 與 `.json`，依「優先看／可以看／難／不收」分組，附分類矩陣與每筆的依據
-- 權限只有 `contents: read`，checkout 不保留 credential。結果寫進 job summary 和 artifact `oss-monitor-<YYYY-MM-DD>`（保留 90 天），不 commit、不 push、不通知
+- 跑完後由 `github-actions[bot]` 把當天的 `reports/daily/<YYYY-MM-DD>.md` 與 `.json` commit 並推到 `main`，只會動這兩個檔案（規則見 `AGENTS.md`）。同一份也放進 job summary 和 artifact `oss-monitor-<YYYY-MM-DD>`（保留 90 天）
+- job 權限是 `contents: write`（頂層仍是 `contents: read`），checkout 不保留 credential；掃描只送 GET，不對上游寫入、不通知
 - 分類是啟發式提示，不是狀態轉移；要進 `READY_TO_IMPLEMENT`，仍要人跑完硬門檻
 - 搜尋被限流或結果不完整時，該 org 標成 `UNVERIFIED`，報告標 `partial`
 - 舊的 `scripts/scan.py`（13 個 repo 對基線比對）留著給本機手動用；基線 `reports/state/baseline.json` 的水位仍是 `2026-11-14T11:10:28Z`
