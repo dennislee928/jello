@@ -1,5 +1,12 @@
 name: oss-monitor
 
+# Daily read-only monitor of every public repo in the orgs listed in
+# config/org-monitor.json. Each new open issue is classified by fix difficulty
+# and acceptance difficulty, and written to reports/daily/<YYYY-MM-DD>.md.
+# Per AGENTS.md the job only reads: results go to the job summary and an
+# artifact named oss-monitor-<YYYY-MM-DD>. It never commits, pushes, or calls
+# an upstream write API.
+
 on:
   schedule:
     - cron: "0 1 * * *"
@@ -8,36 +15,57 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: oss-monitor
+  cancel-in-progress: false
+
 jobs:
   monitor:
     runs-on: ubuntu-latest
+    timeout-minutes: 30
     permissions:
       contents: read
     steps:
       - name: Check out coordination repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # same pin as ci-sec.yml
         with:
           persist-credentials: false
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # same pin as ci-sec.yml
         with:
           python-version: "3.12"
 
-      - name: Read-only scan
+      - name: Unit tests
+        run: python3 -m unittest discover -s tests
+
+      - name: Pick the report date
+        id: date
+        run: |
+          echo "verified_at=$(date -u +%Y-%m-%dT%H:%M:%SZ)" >> "$GITHUB_OUTPUT"
+          echo "day=$(date -u +%Y-%m-%d)" >> "$GITHUB_OUTPUT"
+
+      - name: Read-only org scan
         env:
           GH_TOKEN: ${{ github.token }}
+          VERIFIED_AT: ${{ steps.date.outputs.verified_at }}
         run: |
-          mkdir -p reports/daily
-          python3 scripts/scan.py --root . --baseline reports/state/baseline.json --verified-at "$(date -u +%Y-%m-%dT%H:%M:%SZ)" --out reports/daily/report.json
-          python3 scripts/render_report.py --input reports/daily/report.json --out reports/daily/report.md
+          python3 scripts/org_monitor.py \
+            --config config/org-monitor.json \
+            --verified-at "$VERIFIED_AT" \
+            --out-dir reports/daily
 
       - name: Publish job summary
-        run: cat reports/daily/report.md >> "$GITHUB_STEP_SUMMARY"
+        env:
+          DAY: ${{ steps.date.outputs.day }}
+        run: cat "reports/daily/${DAY}.md" >> "$GITHUB_STEP_SUMMARY"
 
-      - name: Upload report artifact
-        uses: actions/upload-artifact@v4
+      - name: Upload dated report
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # same pin as ci-sec.yml
         with:
-          name: oss-monitor-report
-          path: reports/daily/
+          name: oss-monitor-${{ steps.date.outputs.day }}
+          path: |
+            reports/daily/${{ steps.date.outputs.day }}.md
+            reports/daily/${{ steps.date.outputs.day }}.json
           if-no-files-found: error
+          retention-days: 90

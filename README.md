@@ -52,10 +52,12 @@ python3 scripts/scan.py --root . --baseline reports/state/baseline.json \
 | `AGENTS.md` | 代理界限：上游一律唯讀、狀態機、草稿規則。必讀 |
 | `CONTRIBUTIONS.md` | CV 貢獻索引，verified 與 inferred 分開 |
 | `config/targets.json` | 13 個掃描儲存庫、關鍵字、標籤、排除編號、種子候選 |
+| `config/org-monitor.json` | 每日 org 監視：要看的 org、時間視窗、修復與接受難度的分類規則、repo 例外（例如 workers-sdk 的 Vouch） |
 | `config/scoring.json` | acceptance 與 impact 的權重（預設 50/50，只用於計畫估算） |
 | `schemas/` | `candidate.schema.json`（`candidates.json` 的格式）、`report.schema.json`（日報格式） |
 | `scripts/github_read.py` | 透過 `gh api` 的唯讀快照。只送 `GET`，遇到 429/403 退避 |
-| `scripts/scan.py` | 拿日掃結果和人審過的基線比對，找出新項目與實質變化 |
+| `scripts/org_monitor.py` | 每日 org 監視：用 search `org:` 涵蓋各 org 所有 public repo，把新 issue 依修復難度與接受難度分類，輸出 `<日期>.md` 與 `<日期>.json` |
+| `scripts/scan.py` | 拿 13 個目標 repo 的掃描結果和人審過的基線比對，找出新項目與實質變化（本機手動用） |
 | `scripts/dedup.py` | 比對 issue 和 PR：編號、路徑、符號、標題，區分 `definite_duplicate` 與 `possible_overlap` |
 | `scripts/score.py` | 兩個分數分開算，硬門檻優先 |
 | `scripts/render_report.py` | 把 JSON 日報轉成 Markdown，標題壓成單行並視為不可信 |
@@ -64,7 +66,7 @@ python3 scripts/scan.py --root . --baseline reports/state/baseline.json \
 | `reports/state/baseline.json` | 人審後提交的基線。workflow 只讀不寫 |
 | `reports/examples/` | 固定 fixture 的 dry-run 產出，重跑結果應逐位元組相同 |
 | `reports/cv-impact.md` | 影響帳本；沒有合併就留空，不填估計 |
-| `.github/workflows/oss-monitor.yml` | 每天的唯讀掃描 |
+| `.github/workflows/oss-monitor.yml` | 每天的唯讀 org 監視（`scripts/org_monitor.py`） |
 
 每個目標目錄的結構相同：
 
@@ -105,12 +107,17 @@ python3 scripts/scan.py --root . --baseline reports/state/baseline.json \
 
 ## 日掃
 
-`.github/workflows/oss-monitor.yml` 每天 01:00 UTC（台北 09:00）執行，也可以手動觸發：
+`.github/workflows/oss-monitor.yml` 每天 01:00 UTC（台北 09:00）執行，也可以手動觸發。它跑 `scripts/org_monitor.py`，監視 `config/org-monitor.json` 列出的 org（目前是 apache、open-telemetry、aquasecurity、ossf、cloudflare、OWASP、CycloneDX）底下所有 public、未封存的 repo：
 
-- 權限只有 `contents: read`，checkout 不保留 credential
-- 結果寫進 job summary 和 artifact，不 commit、不 push、不通知
-- artifact 會過期，長期狀態以人審後提交的 `reports/state/baseline.json` 為準
-- 基線的 `verified_at` 是起點水位（目前 `2026-11-14T11:10:28Z`）：只報告之後新開的 issue；水位之前的 issue 由人工初篩。`null` 時不呼叫清單 API，報告會是空的
+- 範圍：每個 org 送一次 GitHub search（`org:<org> is:issue is:open archived:false created:>=<24 小時前>`），不必逐一列 repo；再用 `linked:pr` 查一次，標出已有 PR 的 issue
+- 分類：每個 issue 有兩個欄位
+  - `修復`：`low`、`medium`、`high`，看標籤（如 `good first issue`、`documentation` 屬 low；`enhancement`、`proposal` 屬 high）、標題關鍵字與內文長度
+  - `接受`：`low`、`medium`、`high`、`blocked`。已指派、已有連結 PR、標了 `in-house`／`wontfix` 等，或 repo 有資格門檻，一律 `blocked`；`help wanted`、`accepted` 屬 low；`needs-triage`、`question` 屬 high；維護者自己開的 issue 不會是 low
+- 產出：`reports/daily/<YYYY-MM-DD>.md` 與 `.json`，依「優先看／可以看／難／不收」分組，附分類矩陣與每筆的依據
+- 權限只有 `contents: read`，checkout 不保留 credential。結果寫進 job summary 和 artifact `oss-monitor-<YYYY-MM-DD>`（保留 90 天），不 commit、不 push、不通知
+- 分類是啟發式提示，不是狀態轉移；要進 `READY_TO_IMPLEMENT`，仍要人跑完硬門檻
+- 搜尋被限流或結果不完整時，該 org 標成 `UNVERIFIED`，報告標 `partial`
+- 舊的 `scripts/scan.py`（13 個 repo 對基線比對）留著給本機手動用；基線 `reports/state/baseline.json` 的水位仍是 `2026-11-14T11:10:28Z`
 
 ## 提交與推送
 

@@ -4,7 +4,7 @@ Scope: this coordination repository, not the referenced upstream projects.
 
 | Finding | Evidence | Impact / recommendation |
 |---|---|---|
-| Mutable CI action references | `.github/workflows/oss-monitor.yml` uses checkout@v4, setup-python@v5, upload-artifact@v4 | Supply-chain hardening gap, not a confirmed compromise. Pin reviewed commit SHAs. New CI-SEC actions use SHAs. |
+| Mutable CI action references | Fixed 2026-11-18: `.github/workflows/oss-monitor.yml` now pins checkout, setup-python and upload-artifact to the same commit SHAs as `ci-sec.yml` (was checkout@v4, setup-python@v5, upload-artifact@v4) | Supply-chain hardening gap, not a confirmed compromise. Pin reviewed commit SHAs. New CI-SEC actions use SHAs. |
 | No subprocess timeout | `scripts/github_read.py`, `default_runner` | A stalled gh process can exhaust job time. Set a subprocess timeout and handle TimeoutExpired as UNVERIFIED. This is an availability concern, not proven remote code execution. |
 | Markdown links survive title sanitization | `scripts/render_report.py`, `plain` strips several metacharacters but preserves `[text](URL)` | Untrusted titles can render misleading links in summaries. Escape Markdown punctuation if plain text is intended. No demonstrated script execution. |
 
