@@ -181,31 +181,6 @@
       "url": "https://github.com/apache/airflow/issues/77201"
     },
     {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "hutiefang76"
-      ],
-      "author_association": "NONE",
-      "comments": 1,
-      "created_at": "2026-11-17T13:54:36Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "title:bug"
-      ],
-      "labels": [
-        "type:bug"
-      ],
-      "linked_pr": true,
-      "number": 4514,
-      "org": "apache",
-      "repo": "amoro",
-      "title": "[Bug]: Dashboard shows no files when selecting a partition of a table partitioned by years()",
-      "url": "https://github.com/apache/amoro/issues/4514"
-    },
-    {
       "acceptance": "medium",
       "acceptance_reasons": [
         "default"
@@ -267,27 +242,6 @@
       "repo": "apisix",
       "title": "bug: healthcheck initialization does not retry failed target additions",
       "url": "https://github.com/apache/apisix/issues/14217"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-17T13:52:17Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "title:bug"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 2916,
-      "org": "apache",
-      "repo": "apisix-ingress-controller",
-      "title": "bug: ingress controller versioning is incorrect for major release",
-      "url": "https://github.com/apache/apisix-ingress-controller/issues/2916"
     },
     {
       "acceptance": "medium",
@@ -701,27 +655,6 @@
       "url": "https://github.com/apache/arrow-rs/issues/12305"
     },
     {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-17T13:50:21Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 12302,
-      "org": "apache",
-      "repo": "arrow-rs",
-      "title": "[Variant] Add a canonicalize operation so equal values have equal bytes",
-      "url": "https://github.com/apache/arrow-rs/issues/12302"
-    },
-    {
       "acceptance": "medium",
       "acceptance_reasons": [
         "default"
@@ -815,32 +748,6 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "tkaymak"
-      ],
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-17T13:49:04Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "title:bug"
-      ],
-      "labels": [
-        "P2",
-        "spark"
-      ],
-      "linked_pr": false,
-      "number": 41425,
-      "org": "apache",
-      "repo": "beam",
-      "title": "[Bug]: Spark 4 streaming runner runs a stateful operator once per consumer, each with its own state",
-      "url": "https://github.com/apache/beam/issues/41425"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
         "linked_pr"
       ],
       "assignees": [],
@@ -918,7 +825,7 @@
         "davsclaus"
       ],
       "author_association": "CONTRIBUTOR",
-      "comments": 3,
+      "comments": 4,
       "created_at": "2026-11-17T15:42:35Z",
       "fix": "medium",
       "fix_reasons": [
@@ -1169,29 +1076,6 @@
       "repo": "cloudstack",
       "title": "Volume download fails with Permission denied after patching the SSVM",
       "url": "https://github.com/apache/cloudstack/issues/14726"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-17T13:51:10Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "label:bug"
-      ],
-      "labels": [
-        "bug"
-      ],
-      "linked_pr": false,
-      "number": 14721,
-      "org": "apache",
-      "repo": "cloudstack",
-      "title": "[Hardening] F-05: Sensitive Data Passed via HTTP GET Request.",
-      "url": "https://github.com/apache/cloudstack/issues/14721"
     },
     {
       "acceptance": "medium",
@@ -2289,6 +2173,28 @@
       "assignees": [],
       "author_association": "CONTRIBUTOR",
       "comments": 0,
+      "created_at": "2026-11-18T13:58:04Z",
+      "fix": "high",
+      "fix_reasons": [
+        "title:fails",
+        "body>6000"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 17032,
+      "org": "apache",
+      "repo": "grails-core",
+      "title": "Data services: a GString `@Query` or `@Cypher` fails to compile when Java in the same source set uses the service",
+      "url": "https://github.com/apache/grails-core/issues/17032"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
       "created_at": "2026-11-18T13:14:07Z",
       "fix": "medium",
       "fix_reasons": [
@@ -2485,81 +2391,6 @@
       "repo": "gravitino",
       "title": "[Bug report] TMS compaction: hierarchical schema table_identifier is not translated for Spark CALL",
       "url": "https://github.com/apache/gravitino/issues/15048"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "jiangxt2"
-      ],
-      "author_association": "COLLABORATOR",
-      "comments": 0,
-      "created_at": "2026-11-17T13:50:28Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "subtask"
-      ],
-      "linked_pr": false,
-      "number": 15033,
-      "org": "apache",
-      "repo": "gravitino",
-      "title": "[Subtask] Support additional Doris data types in Gravitino Spark batch reads",
-      "url": "https://github.com/apache/gravitino/issues/15033"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "jiangxt2"
-      ],
-      "author_association": "COLLABORATOR",
-      "comments": 0,
-      "created_at": "2026-11-17T13:50:16Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "subtask"
-      ],
-      "linked_pr": false,
-      "number": 15032,
-      "org": "apache",
-      "repo": "gravitino",
-      "title": "[Subtask] Support native Doris batch reads in the Spark connector",
-      "url": "https://github.com/apache/gravitino/issues/15032"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "jiangxt2"
-      ],
-      "author_association": "COLLABORATOR",
-      "comments": 0,
-      "created_at": "2026-11-17T13:50:05Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "subtask"
-      ],
-      "linked_pr": true,
-      "number": 15031,
-      "org": "apache",
-      "repo": "gravitino",
-      "title": "[Subtask] Improve and validate Doris query and partitioned-read support in the Spark connector",
-      "url": "https://github.com/apache/gravitino/issues/15031"
     },
     {
       "acceptance": "medium",
@@ -6758,27 +6589,6 @@
       "url": "https://github.com/cloudflare/kitesurf/issues/158"
     },
     {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-17T13:48:52Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 157,
-      "org": "cloudflare",
-      "repo": "kitesurf",
-      "title": "fetch saved by a startup module stays pending after page load",
-      "url": "https://github.com/cloudflare/kitesurf/issues/157"
-    },
-    {
       "acceptance": "blocked",
       "acceptance_reasons": [
         "linked_pr"
@@ -7252,7 +7062,7 @@
       ],
       "assignees": [],
       "author_association": "NONE",
-      "comments": 2,
+      "comments": 3,
       "created_at": "2026-11-18T10:25:00Z",
       "fix": "medium",
       "fix_reasons": [
@@ -7487,10 +7297,9 @@
       "url": "https://github.com/CycloneDX/cyclonedx-property-taxonomy/issues/219"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
-        "default",
-        "maintainer-filed"
+        "linked_pr"
       ],
       "assignees": [],
       "author_association": "MEMBER",
@@ -7500,8 +7309,10 @@
       "fix_reasons": [
         "title:rfc"
       ],
-      "labels": [],
-      "linked_pr": false,
+      "labels": [
+        "CDX 2.0"
+      ],
+      "linked_pr": true,
       "number": 1229,
       "org": "CycloneDX",
       "repo": "specification",
@@ -8300,7 +8111,7 @@
       ],
       "assignees": [],
       "author_association": "NONE",
-      "comments": 0,
+      "comments": 1,
       "created_at": "2026-11-18T08:28:34Z",
       "fix": "medium",
       "fix_reasons": [
@@ -9287,9 +9098,9 @@
   ],
   "orgs": [
     {
-      "issues": 270,
+      "issues": 263,
       "org": "apache",
-      "repos": 85,
+      "repos": 83,
       "status": "ok"
     },
     {
@@ -9311,7 +9122,7 @@
       "status": "ok"
     },
     {
-      "issues": 53,
+      "issues": 52,
       "org": "cloudflare",
       "repos": 18,
       "status": "ok"
@@ -9331,6 +9142,6 @@
   ],
   "partial": false,
   "schema_version": 1,
-  "verified_at": "2026-11-18T13:48:33Z",
-  "window_start": "2026-11-17T13:48:33Z"
+  "verified_at": "2026-11-18T13:58:07Z",
+  "window_start": "2026-11-17T13:58:07Z"
 }
