@@ -36,6 +36,25 @@ from render_report import plain
 FIX_LEVELS = ("low", "medium", "high")
 ACCEPTANCE_LEVELS = ("low", "medium", "high", "blocked")
 ORG_RE = re.compile(r"^[A-Za-z0-9][A-Za-z0-9-]{0,38}$")
+LABEL_RE = re.compile(r"^[A-Za-z0-9 _./:-]{1,50}$")
+
+# Phrases people use to claim an issue. Matched in memory against comment
+# bodies, which are untrusted and never stored.
+CLAIM_PATTERNS = tuple(
+    re.compile(pattern)
+    for pattern in (
+        r"\b(?:i'?d|i would) (?:like|love) to (?:work on|take|pick|tackle|handle|fix|contribute|give)",
+        r"\b(?:can|could|may) i (?:work on|take|pick|tackle|handle|fix|be assigned|get assigned|contribute)",
+        r"\b(?:please )?assign (?:this|it)(?: issue)? to me\b",
+        r"\bassign me\b",
+        r"(?:^|\n)\s*/assign\b",
+        r"\bi'?m (?:working on|on) (?:this|it)\b",
+        r"\bi'?ll (?:take|work on|pick up|tackle) (?:this|it)\b",
+        r"\bi want to (?:work on|take|fix|tackle)\b",
+        r"\bhave a fix ready\b",
+    )
+)
+TAKEN_ORDER = ("merged_pr", "open_pr", "assigned", "claimed")
 
 
 def _lower_set(values):
@@ -157,19 +176,19 @@ def normalize(raw):
     }
 
 
-def _search_url(query, page):
+def _search_url(query, page, sort="created"):
     q = urllib.parse.quote(query, safe=":>=<")
-    return f"search/issues?q={q}&sort=created&order=desc&per_page=100&page={page}"
+    return f"search/issues?q={q}&sort={sort}&order=desc&per_page=100&page={page}"
 
 
-def search_all(query, *, runner, sleeper, pause, max_pages, max_attempts):
+def search_all(query, *, runner, sleeper, pause, max_pages, max_attempts, sort="created"):
     """Return (items, complete, error). ``complete`` is false when results were cut."""
     items = []
     total = None
     for page in range(1, max_pages + 1):
         if page > 1 or pause:
             sleeper(pause)
-        result = github_read.gh_get(_search_url(query, page), runner=runner, sleeper=sleeper, max_attempts=max_attempts)
+        result = github_read.gh_get(_search_url(query, page, sort), runner=runner, sleeper=sleeper, max_attempts=max_attempts)
         if not result.ok:
             return items, False, result.detail or "search failed"
         data = result.data or {}
@@ -181,6 +200,86 @@ def search_all(query, *, runner, sleeper, pause, max_pages, max_attempts):
         if len(batch) < 100 or len(items) >= total:
             return items, True, ""
     return items, len(items) >= (total or 0), "" if len(items) >= (total or 0) else f"stopped at {max_pages} pages of {total}"
+
+
+def is_claim(body):
+    text = (body or "").lower().replace("’", "'")
+    return any(pattern.search(text) for pattern in CLAIM_PATTERNS)
+
+
+def taken_from_timeline(issue, events, *, maintainer_associations, claim_since):
+    """Decide whether someone already took the issue.
+
+    Returns (status, evidence). ``status`` is one of ``merged_pr``,
+    ``open_pr``, ``assigned``, ``claimed`` or ``free``. Only pull requests in
+    the same repo count, so a merged PR in someone's fork does not.
+    """
+    found = {}
+    own_repo = f"https://github.com/{issue['org']}/{issue['repo']}/pull/".lower()
+    for event in events or []:
+        if not isinstance(event, dict):
+            continue
+        kind = event.get("event")
+        if kind == "cross-referenced":
+            source = (event.get("source") or {}).get("issue") or {}
+            url = source.get("html_url") or ""
+            if not source.get("pull_request") or not url.lower().startswith(own_repo):
+                continue
+            number = url.rstrip("/").rsplit("/", 1)[-1]
+            if (source.get("pull_request") or {}).get("merged_at"):
+                found.setdefault("merged_pr", f"#{number}")
+            elif source.get("state") == "open":
+                found.setdefault("open_pr", f"#{number}")
+        elif kind == "connected":
+            found.setdefault("open_pr", "connected")
+        elif kind == "commented":
+            user = event.get("user") or event.get("actor") or {}
+            login = user.get("login") or ""
+            if user.get("type") == "Bot" or login.endswith("[bot]"):
+                continue
+            if event.get("author_association") in maintainer_associations:
+                continue
+            if (event.get("created_at") or "") < claim_since:
+                continue
+            if is_claim(event.get("body")):
+                found["claimed"] = login
+    if issue["assignees"]:
+        found.setdefault("assigned", ",".join(issue["assignees"]))
+    for status in TAKEN_ORDER:
+        if status in found:
+            return status, found[status]
+    return "free", ""
+
+
+def check_taken(issue, *, runner, sleeper, max_attempts, maintainer_associations, claim_since):
+    url = f"repos/{issue['org']}/{issue['repo']}/issues/{issue['number']}/timeline?per_page=100"
+    result = github_read.fetch_json(url, runner=runner, sleeper=sleeper, max_attempts=max_attempts, paginate=True)
+    if not result.ok:
+        return "UNVERIFIED", result.detail or "timeline failed"
+    return taken_from_timeline(
+        issue, result.data, maintainer_associations=maintainer_associations, claim_since=claim_since
+    )
+
+
+def _apply_taken(issue, status, evidence):
+    issue["taken"] = status
+    issue["taken_evidence"] = evidence
+    if status in TAKEN_ORDER:
+        issue["acceptance"] = "blocked"
+        issue["acceptance_reasons"] = [f"{status}:{evidence}"] + [
+            r for r in issue["acceptance_reasons"] if not r.startswith(("assigned", "linked_pr"))
+        ]
+
+
+def _check_priority(issue):
+    fix_rank = FIX_LEVELS.index(issue["fix"])
+    acc_rank = ACCEPTANCE_LEVELS.index(issue["acceptance"])
+    return (acc_rank, fix_rank, -(issue["number"]))
+
+
+def _starter_query(org, labels):
+    quoted = ",".join(f'"{label}"' for label in labels)
+    return f"org:{org} is:issue is:open archived:false label:{quoted} no:assignee -linked:pr"
 
 
 def monitor(config, verified_at, *, runner=None, sleeper=None, max_attempts=github_read.MAX_ATTEMPTS):
@@ -227,15 +326,88 @@ def monitor(config, verified_at, *, runner=None, sleeper=None, max_attempts=gith
             repos.add(issue["repo"])
             issues.append(issue)
         orgs.append({"org": org, "status": status, "issues": sum(1 for i in issues if i["org"] == org), "repos": len(repos)})
+    taken_cfg = config.get("taken_check") or {}
+    maintainers = set((config.get("acceptance") or {}).get("maintainer_associations") or [])
+    claim_since = (now - dt.timedelta(days=int(taken_cfg.get("claim_days", 60)))).strftime("%Y-%m-%dT%H:%M:%SZ")
+
+    def verify(batch, limit):
+        checked = 0
+        for issue in sorted(batch, key=_check_priority):
+            if issue["assignees"]:
+                issue["taken"], issue["taken_evidence"] = "assigned", ",".join(issue["assignees"])
+                continue
+            if issue.get("linked_pr"):
+                issue["taken"], issue["taken_evidence"] = "open_pr", "linked:pr"
+                continue
+            if issue["acceptance"] == "blocked" or issue["fix"] == "high":
+                issue["taken"], issue["taken_evidence"] = "skipped", ""
+                continue
+            if checked >= limit:
+                issue["taken"] = "not_checked"
+                continue
+            checked += 1
+            status, evidence = check_taken(
+                issue,
+                runner=runner,
+                sleeper=sleeper,
+                max_attempts=max_attempts,
+                maintainer_associations=maintainers,
+                claim_since=claim_since,
+            )
+            _apply_taken(issue, status, evidence)
+        return checked
+
+    window_checked = verify(issues, int(taken_cfg.get("window_max_checks", 100)))
+
+    starter = []
+    starter_labels = [label for label in config.get("starter_labels") or [] if LABEL_RE.match(label)]
+    seen = {issue["url"] for issue in issues}
+    if starter_labels:
+        for org in config["orgs"]:
+            if not ORG_RE.match(org):
+                continue
+            raw, complete, detail = search_all(
+                _starter_query(org, starter_labels),
+                runner=runner,
+                sleeper=sleeper,
+                pause=pause,
+                max_pages=int(taken_cfg.get("starter_pages_per_org", 1)),
+                max_attempts=max_attempts,
+                sort="updated",
+            )
+            if not complete:
+                errors.append({"org": org, "detail": f"starter search: {detail or 'incomplete'}"})
+            for item in raw:
+                if item.get("pull_request"):
+                    continue
+                issue = normalize(item)
+                if not issue["org"] or not isinstance(issue["number"], int) or issue["url"] in seen:
+                    continue
+                seen.add(issue["url"])
+                issue["fix"], issue["fix_reasons"] = classify_fix(issue, config.get("fix") or {})
+                issue["acceptance"], issue["acceptance_reasons"] = classify_acceptance(
+                    issue, config.get("acceptance") or {}, config.get("repo_overrides")
+                )
+                issue.pop("body_chars", None)
+                starter.append(issue)
+    starter_checked = verify(starter, int(taken_cfg.get("starter_max_checks", 150)))
+    for issue in issues + starter:
+        if issue.get("taken") == "UNVERIFIED":
+            issue["acceptance_reasons"].append("taken:UNVERIFIED")
+
     issues.sort(key=lambda i: (i["org"].lower(), i["repo"].lower(), -i["number"]))
+    starter.sort(key=lambda i: (i["org"].lower(), i["repo"].lower(), -i["number"]))
     return {
-        "schema_version": 1,
+        "schema_version": 2,
         "verified_at": verified_at,
         "window_start": since,
+        "claim_since": claim_since,
         "partial": bool(errors),
         "orgs": orgs,
         "errors": errors,
         "issues": issues,
+        "starter": starter,
+        "taken_checks": {"window": window_checked, "starter": starter_checked},
     }
 
 
@@ -251,7 +423,34 @@ def _cell(value):
     return plain(value).replace("|", "/").replace("](", "] (")
 
 
-def _row(issue):
+TAKEN_TEXT = {
+    "free": "無人接手",
+    "claimed": "已有人認領",
+    "assigned": "已指派",
+    "open_pr": "已有 open PR",
+    "merged_pr": "已有合併 PR",
+    "skipped": "未查",
+    "not_checked": "未查（超過上限）",
+    "UNVERIFIED": "UNVERIFIED",
+}
+
+
+def _taken_cell(issue):
+    status = issue.get("taken", "skipped")
+    text = TAKEN_TEXT.get(status, status)
+    evidence = issue.get("taken_evidence")
+    return _cell(f"{text} {evidence}" if evidence else text)
+
+
+def _labels_cell(issue, starter_labels):
+    wanted = _lower_set(starter_labels)
+    labels = sorted(issue["labels"], key=lambda name: (name.lower() not in wanted, name.lower()))
+    shown = labels[:4]
+    more = f" +{len(labels) - 4}" if len(labels) > 4 else ""
+    return _cell(", ".join(shown) + more) if shown else ""
+
+
+def _row(issue, starter_labels):
     flags = []
     if issue.get("linked_pr_unverified"):
         flags.append("linked_pr 未驗證")
@@ -260,37 +459,18 @@ def _row(issue):
     )
     return (
         f"| [{plain(issue['org'])}/{plain(issue['repo'])}#{issue['number']}]({issue['url']}) "
-        f"| {_cell(issue['title'])[:120]} | {issue['fix']} | {issue['acceptance']} "
-        f"| {issue['comments']} | {_cell(note)} |"
+        f"| {_cell(issue['title'])[:120]} | {_labels_cell(issue, starter_labels)} | {issue['fix']} | {issue['acceptance']} "
+        f"| {_taken_cell(issue)} | {issue['comments']} | {_cell(note)} |"
     )
 
 
-def render_markdown(report):
-    date = report["verified_at"][:10]
-    lines = [
-        f"# OSS org 監視：{date}",
-        "",
-        f"- verified_at：`{report['verified_at']}`",
-        f"- 視窗：`{report['window_start']}` 之後新開、仍 open 的 issue",
-        f"- partial：{'是' if report['partial'] else '否'}",
-        "- 範圍：下列 org 的所有 public、未封存 repo（GitHub search `org:`）",
-        "",
-        "分類是啟發式提示，不是狀態轉移。`修復` 看改動本身的難度，`接受` 看外部貢獻者把它合併進去的難度；`blocked` 表示已有人指派、已有連結 PR、repo 有資格門檻，或標籤明說不收。任何一筆要進 `READY_TO_IMPLEMENT`，仍要人跑完硬門檻。標題是不可信資料，已壓成單行文字。",
-        "",
-        "## Org",
-        "",
-        "| org | 狀態 | issue | repo |",
-        "| --- | --- | --- | --- |",
-    ]
-    for org in report["orgs"]:
-        lines.append(f"| `{org['org']}` | {org['status']} | {org['issues']} | {org['repos']} |")
-    issues = report["issues"]
-    counts = _matrix(issues)
-    lines += ["", "## 分類矩陣（列：修復，欄：接受）", "", "| 修復 \\ 接受 | " + " | ".join(ACCEPTANCE_LEVELS) + " |",
-              "| --- | " + " | ".join("---" for _ in ACCEPTANCE_LEVELS) + " |"]
-    for f in FIX_LEVELS:
-        lines.append(f"| {f} | " + " | ".join(str(counts[(f, a)]) for a in ACCEPTANCE_LEVELS) + " |")
-    header = ["| issue | 標題 | 修復 | 接受 | 留言 | 依據 |", "| --- | --- | --- | --- | --- | --- |"]
+HEADER = [
+    "| issue | 標題 | 標籤 | 修復 | 接受 | 接手 | 留言 | 依據 |",
+    "| --- | --- | --- | --- | --- | --- | --- | --- |",
+]
+
+
+def _groups(issues, lines, starter_labels, prefix=""):
     groups = [
         ("優先看：修復 low／medium，接受 low", lambda i: i["fix"] in ("low", "medium") and i["acceptance"] == "low"),
         ("可以看：接受 medium", lambda i: i["acceptance"] == "medium" and i["fix"] != "high"),
@@ -301,11 +481,58 @@ def render_markdown(report):
     for title, test in groups:
         rows = [i for i in issues if id(i) not in placed and test(i)]
         placed.update(id(i) for i in rows)
-        lines += ["", f"## {title}（{len(rows)}）", ""]
+        lines += ["", f"## {prefix}{title}（{len(rows)}）", ""]
         if rows:
-            lines += header + [_row(i) for i in rows]
+            lines += HEADER + [_row(i, starter_labels) for i in rows]
         else:
             lines.append("沒有。")
+
+
+def render_markdown(report, starter_labels=()):
+    date = report["verified_at"][:10]
+    lines = [
+        f"# OSS org 監視：{date}",
+        "",
+        f"- verified_at：`{report['verified_at']}`",
+        f"- 視窗：`{report['window_start']}` 之後新開、仍 open 的 issue",
+        f"- 接手檢查：讀 timeline，同 repo 的 open／合併 PR 交叉引用、指派，或 `{report.get('claim_since', '')}` 之後非維護者的認領留言，都算已接手",
+        f"- partial：{'是' if report['partial'] else '否'}",
+        "- 範圍：下列 org 的所有 public、未封存 repo（GitHub search `org:`）",
+        "",
+        "分類是啟發式提示，不是狀態轉移。`修復` 看改動本身的難度，`接受` 看外部貢獻者把它合併進去的難度；`blocked` 表示已有人指派、已有 PR、已有人認領、repo 有資格門檻，或標籤明說不收。`接手` 欄寫 `無人接手` 只代表 timeline 上看不到，仍要人在 issue 上確認。任何一筆要進 `READY_TO_IMPLEMENT`，仍要人跑完硬門檻。標題與標籤是不可信資料，已壓成單行文字。",
+        "",
+        "## Org",
+        "",
+        "| org | 狀態 | 新 issue | repo |",
+        "| --- | --- | --- | --- |",
+    ]
+    for org in report["orgs"]:
+        lines.append(f"| `{org['org']}` | {org['status']} | {org['issues']} | {org['repos']} |")
+    issues = report["issues"]
+    counts = _matrix(issues)
+    lines += ["", "## 分類矩陣（列：修復，欄：接受）", "", "| 修復 \\ 接受 | " + " | ".join(ACCEPTANCE_LEVELS) + " |",
+              "| --- | " + " | ".join("---" for _ in ACCEPTANCE_LEVELS) + " |"]
+    for f in FIX_LEVELS:
+        lines.append(f"| {f} | " + " | ".join(str(counts[(f, a)]) for a in ACCEPTANCE_LEVELS) + " |")
+    _groups(issues, lines, starter_labels)
+
+    starter = report.get("starter") or []
+    free = [i for i in starter if i.get("taken") == "free"]
+    taken = [i for i in starter if i.get("taken") in TAKEN_ORDER]
+    other = [i for i in starter if i not in free and i not in taken]
+    lines += [
+        "",
+        f"## Starter 池：{', '.join(starter_labels) if starter_labels else '未設定'}（不限開立時間，{len(starter)} 筆）",
+        "",
+        f"搜尋條件已排除有 assignee 與 linked PR 的 issue；再讀 timeline 後，{len(free)} 筆無人接手、{len(taken)} 筆已被接手、{len(other)} 筆未查或修復 high。",
+    ]
+    for title, rows in (("無人接手", free), ("已被接手", taken), ("未查或修復 high", other)):
+        lines += ["", f"### {title}（{len(rows)}）", ""]
+        if rows:
+            lines += HEADER + [_row(i, starter_labels) for i in sorted(rows, key=_check_priority)]
+        else:
+            lines.append("沒有。")
+
     lines += ["", "## 錯誤", ""]
     if report["errors"]:
         lines += [f"- `{plain(e['org'])}`：{plain(e['detail'])}" for e in report["errors"]]
@@ -329,7 +556,7 @@ def main(argv=None):
     out.mkdir(parents=True, exist_ok=True)
     date = args.verified_at[:10]
     (out / f"{date}.json").write_text(json.dumps(report, ensure_ascii=False, indent=2, sort_keys=True) + "\n", encoding="utf-8")
-    (out / f"{date}.md").write_text(render_markdown(report), encoding="utf-8")
+    (out / f"{date}.md").write_text(render_markdown(report, config.get("starter_labels") or ()), encoding="utf-8")
     print(out / f"{date}.md")
     return 0
 

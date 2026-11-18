@@ -123,17 +123,26 @@ class MonitorTests(unittest.TestCase):
             calls.append(args)
             self.assertEqual(args[:5], ["gh", "api", "--include", "--method", "GET"])
             query = urllib.parse.unquote(args[5])
+            if "/timeline" in query:
+                return _proc([])
+            if "no:assignee" in query:
+                return _proc({"total_count": 0, "incomplete_results": False, "items": []})
             if "linked:pr" in query:
                 return _proc({"total_count": 1, "incomplete_results": False, "items": [main[1]]})
             return _proc({"total_count": 3, "incomplete_results": False, "items": main})
 
         report = org_monitor.monitor(self._config(), "2026-11-18T01:00:00Z", runner=runner, sleeper=lambda _s: None)
-        self.assertEqual(len(calls), 2)
+        searches = [c for c in calls if "/timeline" not in c[5]]
+        timelines = [c for c in calls if "/timeline" in c[5]]
+        self.assertEqual(len(searches), 3)
+        self.assertEqual(len(timelines), 1)  # #2 is blocked by its linked PR, so only #3 is checked
         self.assertIn("org:acme is:issue is:open archived:false created:>=2026-11-17T01:00:00Z", urllib.parse.unquote(calls[0][5]))
         self.assertFalse(report["partial"])
         by_number = {i["number"]: i for i in report["issues"]}
         self.assertEqual(sorted(by_number), [2, 3])
         self.assertEqual((by_number[3]["fix"], by_number[3]["acceptance"]), ("low", "low"))
+        self.assertEqual(by_number[3]["taken"], "free")
+        self.assertEqual(by_number[2]["taken"], "open_pr")
         self.assertEqual(by_number[2]["acceptance"], "blocked")
         self.assertTrue(by_number[2]["linked_pr"])
         dumped = json.dumps(report) + org_monitor.render_markdown(report)
@@ -146,6 +155,8 @@ class MonitorTests(unittest.TestCase):
 
         def runner(args):
             query = urllib.parse.unquote(args[5])
+            if "/timeline" in query:
+                return _proc([])
             if "linked:pr" in query:
                 return _proc({"total_count": 0, "incomplete_results": False, "items": []})
             state["main"] += 1
@@ -183,17 +194,91 @@ class MonitorTests(unittest.TestCase):
         self.assertNotIn("](https://evil)", row)
         self.assertNotIn("`rm", row)
         self.assertNotIn("<script>", row)
-        self.assertEqual(row.count("|"), 7)
+        self.assertEqual(row.count("|"), 9)
 
     def test_cli_writes_dated_files(self):
         with tempfile.TemporaryDirectory() as tmp:
             config = Path(tmp) / "c.json"
             cfg = self._config()
             cfg["orgs"] = []
+            cfg["starter_labels"] = []
             config.write_text(json.dumps(cfg), encoding="utf-8")
             org_monitor.main(["--config", str(config), "--verified-at", "2026-11-18T01:00:00Z", "--out-dir", tmp])
             self.assertTrue((Path(tmp) / "2026-11-18.md").exists())
             self.assertTrue((Path(tmp) / "2026-11-18.json").exists())
+
+
+class TakenTests(unittest.TestCase):
+    MAINT = {"MEMBER", "OWNER", "COLLABORATOR"}
+    SINCE = "2026-09-19T00:00:00Z"
+
+    def _taken(self, events, **issue):
+        return org_monitor.taken_from_timeline(
+            _issue(**issue), events, maintainer_associations=self.MAINT, claim_since=self.SINCE
+        )
+
+    @staticmethod
+    def _xref(url, state="open", merged=None):
+        return {"event": "cross-referenced", "source": {"issue": {
+            "html_url": url, "state": state, "pull_request": {"merged_at": merged}}}}
+
+    @staticmethod
+    def _comment(body, *, login="dev", assoc="NONE", at="2026-11-10T00:00:00Z", bot=False):
+        return {"event": "commented", "body": body, "created_at": at, "author_association": assoc,
+                "user": {"login": login, "type": "Bot" if bot else "User"}}
+
+    def test_free_when_nothing_found(self):
+        self.assertEqual(self._taken([self._comment("Same here, +1")]), ("free", ""))
+
+    def test_open_and_merged_prs_in_same_repo(self):
+        self.assertEqual(self._taken([self._xref("https://github.com/acme/widget/pull/9")]), ("open_pr", "#9"))
+        merged = self._xref("https://github.com/acme/widget/pull/7", state="closed", merged="2026-11-01T00:00:00Z")
+        self.assertEqual(self._taken([self._xref("https://github.com/acme/widget/pull/9"), merged]), ("merged_pr", "#7"))
+
+    def test_ignores_closed_prs_forks_and_issues(self):
+        events = [
+            self._xref("https://github.com/acme/widget/pull/5", state="closed"),
+            self._xref("https://github.com/someone/widget/pull/1", state="closed", merged="2026-11-01T00:00:00Z"),
+            {"event": "cross-referenced", "source": {"issue": {"html_url": "https://github.com/acme/widget/issues/4", "state": "open"}}},
+        ]
+        self.assertEqual(self._taken(events), ("free", ""))
+
+    def test_claim_comments(self):
+        for body in ("Hi! I would like to take this one.", "Can I work on this?", "/assign", "I\u2019d like to work on this",
+                     "Please assign this to me", "I'm working on this", "Have a fix ready."):
+            self.assertEqual(self._taken([self._comment(body)]), ("claimed", "dev"), body)
+
+    def test_claim_ignores_maintainers_bots_and_old_comments(self):
+        events = [
+            self._comment("I'd like to work on this", assoc="MEMBER"),
+            self._comment("I'd like to work on this", login="ci[bot]", bot=True),
+            self._comment("I'd like to work on this", at="2025-01-01T00:00:00Z"),
+        ]
+        self.assertEqual(self._taken(events), ("free", ""))
+
+    def test_assignee_and_priority(self):
+        self.assertEqual(self._taken([], assignees=["bob"]), ("assigned", "bob"))
+        events = [self._comment("can i take this?"), self._xref("https://github.com/acme/widget/pull/9")]
+        self.assertEqual(self._taken(events, assignees=["bob"]), ("open_pr", "#9"))
+
+    def test_taken_makes_acceptance_blocked(self):
+        issue = dict(_issue(labels=["good first issue"]), fix="low", fix_reasons=[], acceptance="low", acceptance_reasons=["label:good first issue"])
+        org_monitor._apply_taken(issue, "claimed", "dev")
+        self.assertEqual(issue["acceptance"], "blocked")
+        self.assertEqual(issue["acceptance_reasons"][0], "claimed:dev")
+
+    def test_starter_query_and_timeline_failure(self):
+        query = org_monitor._starter_query("acme", ["good first issue", "help wanted"])
+        self.assertEqual(query, 'org:acme is:issue is:open archived:false label:"good first issue","help wanted" no:assignee -linked:pr')
+
+        def runner(args):
+            return _proc({"message": "nope"}, status=403)
+
+        status, _detail = org_monitor.check_taken(
+            _issue(), runner=runner, sleeper=lambda _s: None, max_attempts=1,
+            maintainer_associations=self.MAINT, claim_since=self.SINCE,
+        )
+        self.assertEqual(status, "UNVERIFIED")
 
 
 if __name__ == "__main__":

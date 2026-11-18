@@ -1,5 +1,5 @@
 {
-  "schema_version": 1,
+  "schema_version": 2,
   "orgs": [
     "apache",
     "open-telemetry",
@@ -12,20 +12,152 @@
   "window_days": 1,
   "max_pages_per_org": 5,
   "search_pause_seconds": 2.5,
+  "starter_labels": [
+    "good first issue",
+    "good-first-issue",
+    "help wanted",
+    "help-wanted",
+    "beginner",
+    "first-timers-only",
+    "up-for-grabs",
+    "contributions welcome",
+    "E-easy",
+    "difficulty/easy"
+  ],
+  "taken_check": {
+    "claim_days": 60,
+    "window_max_checks": 100,
+    "starter_pages_per_org": 1,
+    "starter_max_checks": 150
+  },
   "fix": {
-    "low_labels": ["good first issue", "good-first-issue", "beginner", "easy", "trivial", "documentation", "docs", "type/docs", "kind/documentation", "typo", "size/xs", "size/s"],
-    "high_labels": ["enhancement", "feature", "feature request", "feature-request", "kind/feature", "type/feature", "epic", "proposal", "rfc", "design", "breaking change", "breaking-change", "architecture", "performance", "size/l", "size/xl"],
-    "medium_labels": ["bug", "kind/bug", "type/bug", "regression", "crash"],
-    "low_title_words": ["typo", "docs", "documentation", "readme", "spelling", "broken link", "dead link", "misspell"],
-    "high_title_words": ["[feature", "feat:", "feature request", "rfc", "proposal", "support for", "add support", "redesign", "refactor", "migrate", "rewrite", "epic"],
-    "medium_title_words": ["bug", "crash", "panic", "regression", "error", "fails", "failure", "broken", "incorrect", "wrong", "exception"],
+    "low_labels": [
+      "good first issue",
+      "good-first-issue",
+      "beginner",
+      "easy",
+      "trivial",
+      "documentation",
+      "docs",
+      "type/docs",
+      "kind/documentation",
+      "typo",
+      "size/xs",
+      "size/s"
+    ],
+    "high_labels": [
+      "enhancement",
+      "feature",
+      "feature request",
+      "feature-request",
+      "kind/feature",
+      "type/feature",
+      "epic",
+      "proposal",
+      "rfc",
+      "design",
+      "breaking change",
+      "breaking-change",
+      "architecture",
+      "performance",
+      "size/l",
+      "size/xl"
+    ],
+    "medium_labels": [
+      "bug",
+      "kind/bug",
+      "type/bug",
+      "regression",
+      "crash"
+    ],
+    "low_title_words": [
+      "typo",
+      "docs",
+      "documentation",
+      "readme",
+      "spelling",
+      "broken link",
+      "dead link",
+      "misspell"
+    ],
+    "high_title_words": [
+      "[feature",
+      "feat:",
+      "feature request",
+      "rfc",
+      "proposal",
+      "support for",
+      "add support",
+      "redesign",
+      "refactor",
+      "migrate",
+      "rewrite",
+      "epic"
+    ],
+    "medium_title_words": [
+      "bug",
+      "crash",
+      "panic",
+      "regression",
+      "error",
+      "fails",
+      "failure",
+      "broken",
+      "incorrect",
+      "wrong",
+      "exception"
+    ],
     "long_body_chars": 6000
   },
   "acceptance": {
-    "blocked_labels": ["in-house", "maintainer-only", "wontfix", "won't fix", "invalid", "duplicate", "not planned", "do-not-merge", "do not merge", "on hold", "on-hold", "blocked"],
-    "low_labels": ["good first issue", "good-first-issue", "help wanted", "help-wanted", "accepted", "triage/accepted", "confirmed", "ready", "status/accepted", "contributions welcome", "up-for-grabs"],
-    "high_labels": ["needs-triage", "needs triage", "triage", "needs-discussion", "needs discussion", "discussion", "question", "proposal", "rfc", "waiting-for-maintainer", "needs-maintainer", "needs design", "needs-design", "awaiting maintainer"],
-    "maintainer_associations": ["MEMBER", "OWNER", "COLLABORATOR"]
+    "blocked_labels": [
+      "in-house",
+      "maintainer-only",
+      "wontfix",
+      "won't fix",
+      "invalid",
+      "duplicate",
+      "not planned",
+      "do-not-merge",
+      "do not merge",
+      "on hold",
+      "on-hold",
+      "blocked"
+    ],
+    "low_labels": [
+      "good first issue",
+      "good-first-issue",
+      "help wanted",
+      "help-wanted",
+      "accepted",
+      "triage/accepted",
+      "confirmed",
+      "ready",
+      "status/accepted",
+      "contributions welcome",
+      "up-for-grabs"
+    ],
+    "high_labels": [
+      "needs-triage",
+      "needs triage",
+      "triage",
+      "needs-discussion",
+      "needs discussion",
+      "discussion",
+      "question",
+      "proposal",
+      "rfc",
+      "waiting-for-maintainer",
+      "needs-maintainer",
+      "needs design",
+      "needs-design",
+      "awaiting maintainer"
+    ],
+    "maintainer_associations": [
+      "MEMBER",
+      "OWNER",
+      "COLLABORATOR"
+    ]
   },
   "repo_overrides": {
     "cloudflare/workers-sdk": {
