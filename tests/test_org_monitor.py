@@ -134,7 +134,7 @@ class MonitorTests(unittest.TestCase):
         report = org_monitor.monitor(self._config(), "2026-11-18T01:00:00Z", runner=runner, sleeper=lambda _s: None)
         searches = [c for c in calls if "/timeline" not in c[5]]
         timelines = [c for c in calls if "/timeline" in c[5]]
-        self.assertEqual(len(searches), 3)
+        self.assertEqual(len(searches), 4)  # main, linked:pr, PR mentions of #3, starter pool
         self.assertEqual(len(timelines), 1)  # #2 is blocked by its linked PR, so only #3 is checked
         self.assertIn("org:acme is:issue is:open archived:false created:>=2026-11-17T01:00:00Z", urllib.parse.unquote(calls[0][5]))
         self.assertFalse(report["partial"])
@@ -155,8 +155,8 @@ class MonitorTests(unittest.TestCase):
 
         def runner(args):
             query = urllib.parse.unquote(args[5])
-            if "/timeline" in query:
-                return _proc([])
+            if "/timeline" in query or "is:pr" in query:
+                return _proc([] if "/timeline" in query else {"total_count": 0, "items": []})
             if "linked:pr" in query:
                 return _proc({"total_count": 0, "incomplete_results": False, "items": []})
             state["main"] += 1
@@ -266,6 +266,69 @@ class TakenTests(unittest.TestCase):
         org_monitor._apply_taken(issue, "claimed", "dev")
         self.assertEqual(issue["acceptance"], "blocked")
         self.assertEqual(issue["acceptance_reasons"][0], "claimed:dev")
+
+    REAL_CLAIMS = (
+        # go-contrib#10320 body
+        "I can open a PR with this fix and regression test.",
+        # iceberg-go#2633 body
+        "I already reproduced this issue locally and working on a fix for this.",
+        # iceberg-go#2629 comment (missing "to")
+        "@badalprasadsingh I would like pick up this issue.",
+        # iceberg-go#2629 body
+        "Lets not let this block v0.8.0 RC, **Status** : will try to pick this up",
+        # airflow#77240 issue template
+        "### Are you willing to submit PR?\n\n- [x] Yes I am willing to submit a PR!",
+        # iceberg-go#2416 comment
+        "Before I open the PR, I'd like to check what NotStartsWith should do with a NULL value.",
+    )
+    NOT_CLAIMS = (
+        # python-contrib#5353 template answer
+        "### Would you like to implement a fix?\n\nNo",
+        # unchecked airflow template box
+        "### Are you willing to submit PR?\n\n- [ ] Yes I am willing to submit a PR!",
+        "The fix is already in main, see the linked commit.",
+        "Thanks for the report, the working group will discuss it.",
+    )
+
+    def test_real_claim_phrases(self):
+        for text in self.REAL_CLAIMS:
+            self.assertTrue(org_monitor.is_claim(text), text)
+        for text in self.NOT_CLAIMS:
+            self.assertFalse(org_monitor.is_claim(text), text)
+
+    def _runner(self, timeline, pr_items):
+        def runner(args):
+            url = urllib.parse.unquote(args[5])
+            if "/timeline" in url:
+                return _proc(timeline)
+            return _proc({"total_count": len(pr_items), "incomplete_results": False, "items": pr_items})
+        return runner
+
+    def _check(self, issue, timeline=(), pr_items=()):
+        return org_monitor.check_taken(
+            issue, runner=self._runner(list(timeline), list(pr_items)), sleeper=lambda _s: None, max_attempts=1,
+            maintainer_associations=self.MAINT, claim_since=self.SINCE,
+        )
+
+    def test_body_claim_by_reporter(self):
+        issue = _issue(number=2633, author="Shruthirdy", self_claim=True)
+        self.assertEqual(self._check(issue), ("claimed", "Shruthirdy(body)"))
+
+    def test_open_pr_that_names_the_issue(self):
+        # parquet-java#3866 is titled "GH-3969: ..."; trivy-style "Fixes #3147" in the body also counts.
+        prs = [
+            {"number": 3866, "title": "GH-3969: Fix leading CLI --conf", "body": "", "pull_request": {}},
+        ]
+        self.assertEqual(self._check(_issue(number=3969), pr_items=prs), ("open_pr", "#3866"))
+        prs = [{"number": 9, "title": "fix", "body": "Fixes #3147.", "pull_request": {}}]
+        self.assertEqual(self._check(_issue(number=3147), pr_items=prs), ("open_pr", "#9"))
+
+    def test_pr_mention_must_match_the_whole_number(self):
+        prs = [
+            {"number": 9, "title": "fix #31470", "body": "see #3147x", "pull_request": {}},
+            {"number": 10, "title": "issue #3147 itself", "body": ""},  # an issue, not a PR
+        ]
+        self.assertEqual(self._check(_issue(number=3147), pr_items=prs), ("free", ""))
 
     def test_starter_query_and_timeline_failure(self):
         query = org_monitor._starter_query("acme", ["good first issue", "help wanted"])

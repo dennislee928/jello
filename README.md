@@ -114,7 +114,7 @@ python3 scripts/scan.py --root . --baseline reports/state/baseline.json \
   - `修復`：`low`、`medium`、`high`，看標籤（如 `good first issue`、`documentation` 屬 low；`enhancement`、`proposal` 屬 high）、標題關鍵字與內文長度
   - `接受`：`low`、`medium`、`high`、`blocked`。已指派、已有連結 PR、標了 `in-house`／`wontfix` 等，或 repo 有資格門檻，一律 `blocked`；`help wanted`、`accepted` 屬 low；`needs-triage`、`question` 屬 high；維護者自己開的 issue 不會是 low
 - 產出：`reports/daily/<YYYY-MM-DD>.md` 與 `.json`，依「優先看／可以看／難／不收」分組，附分類矩陣與每筆的依據
-- 接手檢查：可做的 issue 會再讀一次 timeline。同 repo 的 open 或已合併 PR 交叉引用、指派，或 60 天內非維護者的認領留言（如「I'd like to work on」「assign me」「/assign」），都算已接手，接受難度改成 `blocked`，`接手` 欄寫出依據。上限是新 issue 200 筆、starter 池 250 筆
+- 接手檢查：可做的 issue 會再讀一次 timeline。同 repo 的 open 或已合併 PR 交叉引用、指派，或 60 天內非維護者的認領留言（如「I'd like to work on」「assign me」「/assign」）；回報者在 issue 內文自己認領（如「working on a fix」「I can open a PR」、勾選「willing to submit a PR」）；或有 open PR 的標題或內文提到這個編號（`#n`、`GH-n`），都算已接手，接受難度改成 `blocked`，`接手` 欄寫出依據。上限是新 issue 200 筆、starter 池 250 筆
 - Starter 池：每個 org 另外搜尋標了 `config/org-monitor.json` 裡 `starter_labels`（`good first issue`、`help wanted` 等）、無 assignee、無 linked PR 的 open issue，不限開立時間，取最近更新的 100 筆，再做接手檢查；分成「無人接手／已被接手／未查」三組。每筆都列出標籤
 - 跑完後由 `github-actions[bot]` 把當天的 `reports/daily/<YYYY-MM-DD>.md` 與 `.json` commit 並推到 `main`，只會動這兩個檔案（規則見 `AGENTS.md`）。同一份也放進 job summary 和 artifact `oss-monitor-<YYYY-MM-DD>`（保留 90 天）
 - job 權限是 `contents: write`（頂層仍是 `contents: read`），checkout 不保留 credential；掃描只送 GET，不對上游寫入、不通知

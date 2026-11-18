@@ -52,6 +52,13 @@ CLAIM_PATTERNS = tuple(
         r"\bi'?ll (?:take|work on|pick up|tackle) (?:this|it)\b",
         r"\bi want to (?:work on|take|fix|tackle)\b",
         r"\bhave a fix ready\b",
+        r"\bworking on (?:a |the )?fix\b",
+        r"\bwill try to pick (?:this |it )?up\b",
+        r"\b(?:would|'d) like (?:to )?pick (?:this |it )?up\b",
+        r"\bbefore i open (?:a|the) pr\b",
+        r"\bi can open a pr\b",
+        r"\[x\] yes i am willing to submit a pr",
+        r"\balready (?:fixed|reproduced)\b[^.\n]{0,80}\b(?:working on|fix)\b",
     )
 )
 TAKEN_ORDER = ("merged_pr", "open_pr", "assigned", "claimed")
@@ -171,7 +178,9 @@ def normalize(raw):
         "author_association": raw.get("author_association") or "",
         "comments": raw.get("comments") or 0,
         "created_at": raw.get("created_at"),
+        "author": (raw.get("user") or {}).get("login") or "",
         "body_chars": len(body),
+        "self_claim": is_claim(body),
         "linked_pr": False,
     }
 
@@ -251,14 +260,42 @@ def taken_from_timeline(issue, events, *, maintainer_associations, claim_since):
     return "free", ""
 
 
-def check_taken(issue, *, runner, sleeper, max_attempts, maintainer_associations, claim_since):
+def mentioning_pr(issue, items):
+    """Return the first open PR whose title or body names this issue (``#n`` or ``GH-n``)."""
+    pattern = re.compile(rf"(?:#|GH-){issue['number']}(?![0-9A-Za-z_])", re.IGNORECASE)
+    for item in items or []:
+        if not isinstance(item, dict) or "pull_request" not in item:
+            continue
+        if pattern.search(f"{item.get('title') or ''}\n{item.get('body') or ''}"):
+            return f"#{item.get('number')}"
+    return None
+
+
+def check_taken(issue, *, runner, sleeper, max_attempts, maintainer_associations, claim_since, pr_pause=0.0):
+    """Timeline first, then the issue body, then open PRs that mention the issue number."""
     url = f"repos/{issue['org']}/{issue['repo']}/issues/{issue['number']}/timeline?per_page=100"
     result = github_read.fetch_json(url, runner=runner, sleeper=sleeper, max_attempts=max_attempts, paginate=True)
     if not result.ok:
         return "UNVERIFIED", result.detail or "timeline failed"
-    return taken_from_timeline(
+    status, evidence = taken_from_timeline(
         issue, result.data, maintainer_associations=maintainer_associations, claim_since=claim_since
     )
+    if status != "free":
+        return status, evidence
+    if issue.get("self_claim"):
+        return "claimed", f"{issue.get('author') or 'author'}(body)"
+    if pr_pause:
+        sleeper(pr_pause)
+    query = urllib.parse.quote(f"repo:{issue['org']}/{issue['repo']} is:pr is:open {issue['number']}", safe=":")
+    found = github_read.gh_get(
+        f"search/issues?q={query}&per_page=20", runner=runner, sleeper=sleeper, max_attempts=max_attempts
+    )
+    if not found.ok:
+        return "UNVERIFIED", f"pr search: {found.detail or 'failed'}"
+    pr = mentioning_pr(issue, (found.data or {}).get("items"))
+    if pr:
+        return "open_pr", pr
+    return "free", ""
 
 
 def _apply_taken(issue, status, evidence):
@@ -353,6 +390,7 @@ def monitor(config, verified_at, *, runner=None, sleeper=None, max_attempts=gith
                 max_attempts=max_attempts,
                 maintainer_associations=maintainers,
                 claim_since=claim_since,
+                pr_pause=pause,
             )
             _apply_taken(issue, status, evidence)
         return checked
@@ -500,7 +538,7 @@ def render_markdown(report, starter_labels=()):
         "",
         f"- verified_at：`{report['verified_at']}`",
         f"- 視窗：`{report['window_start']}` 之後新開、仍 open 的 issue",
-        f"- 接手檢查：讀 timeline，同 repo 的 open／合併 PR 交叉引用、指派，或 `{report.get('claim_since', '')}` 之後非維護者的認領留言，都算已接手",
+        f"- 接手檢查：讀 timeline，同 repo 的 open／合併 PR 交叉引用、指派，或 `{report.get('claim_since', '')}` 之後非維護者的認領留言；再看 issue 內文有沒有回報者自己認領；最後搜尋標題或內文提到這個編號（`#n`、`GH-n`）的 open PR。任何一項成立都算已接手",
         f"- partial：{'是' if report['partial'] else '否'}",
         "- 範圍：下列 org 的所有 public、未封存 repo（GitHub search `org:`）",
         "",
