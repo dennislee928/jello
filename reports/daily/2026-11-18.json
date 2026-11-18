@@ -1,16 +1,8 @@
 {
-  "claim_since": "2026-09-19T14:19:42Z",
+  "claim_since": "2026-09-19T14:24:03Z",
   "errors": [
     {
-      "detail": "starter search: stopped at 1 pages of 1110",
-      "org": "apache"
-    },
-    {
-      "detail": "starter search: stopped at 1 pages of 592",
-      "org": "open-telemetry"
-    },
-    {
-      "detail": "starter search: stopped at 1 pages of 113",
+      "detail": "starter search: HTTP 403",
       "org": "CycloneDX"
     }
   ],
@@ -59,7 +51,8 @@
       "number": 36,
       "org": "apache",
       "repo": "accumulo-docker",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Modernize Accumulo's containerization tools to be vendor-neutral",
       "url": "https://github.com/apache/accumulo-docker/issues/36"
     },
@@ -676,7 +669,8 @@
       "number": 538,
       "org": "apache",
       "repo": "arrow-js",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "The file reader accepts two non-delta DictionaryBatches for one id, and the column values change with no error",
       "url": "https://github.com/apache/arrow-js/issues/538"
     },
@@ -698,7 +692,8 @@
       "number": 537,
       "org": "apache",
       "repo": "arrow-js",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "The IPC writer writes no new dictionary when two batches share the first dictionary chunk, and the second batch reads back wrong",
       "url": "https://github.com/apache/arrow-js/issues/537"
     },
@@ -720,7 +715,8 @@
       "number": 536,
       "org": "apache",
       "repo": "arrow-js",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "The stream reader reads a RecordBatch whose dictionary was never sent: each value becomes null, with no error",
       "url": "https://github.com/apache/arrow-js/issues/536"
     },
@@ -742,7 +738,8 @@
       "number": 535,
       "org": "apache",
       "repo": "arrow-js",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "tableFromIPC reads a stream cut inside a message prefix as a complete stream, with no error",
       "url": "https://github.com/apache/arrow-js/issues/535"
     },
@@ -788,7 +785,8 @@
       "number": 909,
       "org": "apache",
       "repo": "arrow-rs-object-store",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "RUSTSEC-2026-0543: chrono is unmaintained",
       "url": "https://github.com/apache/arrow-rs-object-store/issues/909"
     },
@@ -988,7 +986,8 @@
       "number": 765,
       "org": "apache",
       "repo": "camel-karaf",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Feature 'xml-specs-api' use dependency=true",
       "url": "https://github.com/apache/camel-karaf/issues/765"
     },
@@ -1245,7 +1244,8 @@
       "number": 2047,
       "org": "apache",
       "repo": "cordova-android",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Cordova backbutton fires when dismissing the keyboard on Xiaomi devices",
       "url": "https://github.com/apache/cordova-android/issues/2047"
     },
@@ -1267,7 +1267,8 @@
       "number": 1322,
       "org": "apache",
       "repo": "curator",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Additional functionality for InterProcessMultiLock",
       "url": "https://github.com/apache/curator/issues/1322"
     },
@@ -1759,13 +1760,15 @@
       "number": 352,
       "org": "apache",
       "repo": "datafusion-spark",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "regexp_extract: guard 32-bit offset limits for large inputs",
       "url": "https://github.com/apache/datafusion-spark/issues/352"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "open_pr:#345",
         "default",
         "maintainer-filed"
       ],
@@ -1782,13 +1785,15 @@
       "number": 349,
       "org": "apache",
       "repo": "datafusion-spark",
-      "taken": "not_checked",
+      "taken": "open_pr",
+      "taken_evidence": "#345",
       "title": "Decide how functions handle dictionary and run-end-encoded arguments",
       "url": "https://github.com/apache/datafusion-spark/issues/349"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "open_pr:#328",
         "default",
         "maintainer-filed"
       ],
@@ -1805,7 +1810,8 @@
       "number": 347,
       "org": "apache",
       "repo": "datafusion-spark",
-      "taken": "not_checked",
+      "taken": "open_pr",
+      "taken_evidence": "#328",
       "title": "[Bug] contains rejects floating-point, decimal and timestamp arguments that Spark casts to a string",
       "url": "https://github.com/apache/datafusion-spark/issues/347"
     },
@@ -1853,7 +1859,8 @@
       "number": 343,
       "org": "apache",
       "repo": "datafusion-spark",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "[Bug] pmod returns 0 instead of -0.0 when the float remainder is -0.0",
       "url": "https://github.com/apache/datafusion-spark/issues/343"
     },
@@ -1876,7 +1883,8 @@
       "number": 385,
       "org": "apache",
       "repo": "datasketches-rust",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Improve HLL performance for grouped distinct counts",
       "url": "https://github.com/apache/datasketches-rust/issues/385"
     },
@@ -2283,30 +2291,6 @@
       "taken_evidence": "linked:pr",
       "title": "[client] Implement consumer group Admin APIs",
       "url": "https://github.com/apache/fluss/issues/5266"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "open_pr:#5247",
-        "default"
-      ],
-      "assignees": [],
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-17T14:21:57Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 5265,
-      "org": "apache",
-      "repo": "fluss",
-      "taken": "open_pr",
-      "taken_evidence": "#5247",
-      "title": "[flink] Design: autoscaling the tiering job with the Flink Kubernetes Operator",
-      "url": "https://github.com/apache/fluss/issues/5265"
     },
     {
       "acceptance": "blocked",
@@ -2720,7 +2704,8 @@
       "number": 5,
       "org": "apache",
       "repo": "gravitino-mcp-gateway",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "[Subtask] Release 0.1.0",
       "url": "https://github.com/apache/gravitino-mcp-gateway/issues/5"
     },
@@ -2744,7 +2729,8 @@
       "number": 4,
       "org": "apache",
       "repo": "gravitino-mcp-gateway",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "[Subtask] Add CI",
       "url": "https://github.com/apache/gravitino-mcp-gateway/issues/4"
     },
@@ -2768,7 +2754,8 @@
       "number": 3,
       "org": "apache",
       "repo": "gravitino-mcp-gateway",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "[Subtask] Move the code to the repository root",
       "url": "https://github.com/apache/gravitino-mcp-gateway/issues/3"
     },
@@ -2821,6 +2808,29 @@
       "taken_evidence": "",
       "title": "[EPIC] MCP Gateway: import and first release",
       "url": "https://github.com/apache/gravitino-mcp-gateway/issues/1"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-18T14:21:27Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 1819,
+      "org": "apache",
+      "repo": "hamilton",
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "SQLite cache keeps the original data version after a forced recomputation",
+      "url": "https://github.com/apache/hamilton/issues/1819"
     },
     {
       "acceptance": "blocked",
@@ -4572,7 +4582,8 @@
       "number": 2166,
       "org": "apache",
       "repo": "magpie",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "fix(dev): check-family-plugins hook skips 13 files it copies into plugins",
       "url": "https://github.com/apache/magpie/issues/2166"
     },
@@ -4597,7 +4608,8 @@
       "number": 1813,
       "org": "apache",
       "repo": "maven-dependency-plugin",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "get-classpath IT expects the Maven 3.10/4 classpath order and fails on Maven 3.9",
       "url": "https://github.com/apache/maven-dependency-plugin/issues/1813"
     },
@@ -4622,7 +4634,8 @@
       "number": 1140,
       "org": "apache",
       "repo": "maven-doxia",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "DOCTYPE entities with a plain-text value render as empty text",
       "url": "https://github.com/apache/maven-doxia/issues/1140"
     },
@@ -4731,8 +4744,9 @@
       "url": "https://github.com/apache/nuttx/issues/21970"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "open_pr:#1587",
         "default"
       ],
       "assignees": [],
@@ -4748,7 +4762,8 @@
       "number": 1593,
       "org": "apache",
       "repo": "opennlp",
-      "taken": "not_checked",
+      "taken": "open_pr",
+      "taken_evidence": "#1587",
       "title": "BilouCodec.decode handles some invalid tag sequences differently from BioCodec",
       "url": "https://github.com/apache/opennlp/issues/1593"
     },
@@ -4781,8 +4796,32 @@
       "url": "https://github.com/apache/opennlp/issues/1588"
     },
     {
-      "acceptance": "high",
+      "acceptance": "medium",
       "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-18T14:20:07Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 2741,
+      "org": "apache",
+      "repo": "orc",
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Support .jsonl files in orc-tools convert",
+      "url": "https://github.com/apache/orc/issues/2741"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#224",
         "label:needs-triage",
         "maintainer-filed"
       ],
@@ -4801,7 +4840,8 @@
       "number": 225,
       "org": "apache",
       "repo": "ossie-converters",
-      "taken": "not_checked",
+      "taken": "open_pr",
+      "taken_evidence": "#224",
       "title": "Converters disagree on whether expression.sql or a tagged ANSI_SQL entry wins",
       "url": "https://github.com/apache/ossie-converters/issues/225"
     },
@@ -5234,7 +5274,8 @@
       "number": 705,
       "org": "apache",
       "repo": "pekko-connectors-kafka",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Run transactional consumer actors on a dedicated dispatcher so revoke draining cannot starve the producer",
       "url": "https://github.com/apache/pekko-connectors-kafka/issues/705"
     },
@@ -5528,7 +5569,8 @@
       "number": 1497,
       "org": "apache",
       "repo": "rocketmq-clients",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Python client retry/backoff defects: wrong attempt=0 handling, float-to-int64 crashes, unbounded nack retries, ignored exponential policy, no producer backoff",
       "url": "https://github.com/apache/rocketmq-clients/issues/1497"
     },
@@ -6197,7 +6239,8 @@
       "number": 14249,
       "org": "apache",
       "repo": "skywalking",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "[Bug] The trace filter query results are inconsistent with the first displayed span.",
       "url": "https://github.com/apache/skywalking/issues/14249"
     },
@@ -6441,7 +6484,8 @@
       "number": 1870,
       "org": "apache",
       "repo": "tooling-trusted-releases",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Trusted publishing track",
       "url": "https://github.com/apache/tooling-trusted-releases/issues/1870"
     },
@@ -6466,7 +6510,8 @@
       "number": 1868,
       "org": "apache",
       "repo": "tooling-trusted-releases",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Allow to configure additional recipients for resolve vote page",
       "url": "https://github.com/apache/tooling-trusted-releases/issues/1868"
     },
@@ -6562,7 +6607,8 @@
       "number": 395,
       "org": "aquasecurity",
       "repo": "terraform-provider-aquasec",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Bug: aquasec_scanner_group returns 404 Not Found on Aqua SaaS",
       "url": "https://github.com/aquasecurity/terraform-provider-aquasec/issues/395"
     },
@@ -6634,9 +6680,33 @@
       "number": 494,
       "org": "aquasecurity",
       "repo": "vuln-list-update",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "alma: AlmaLinux 10 data lost 308 el10 advisories and got el8/el9 advisories",
       "url": "https://github.com/aquasecurity/vuln-list-update/issues/494"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-18T14:20:19Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 2910,
+      "org": "cloudflare",
+      "repo": "agents",
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "`claudeCode()` default model `claude-sonnet-4-5` retires on 30 Nov 2026",
+      "url": "https://github.com/cloudflare/agents/issues/2910"
     },
     {
       "acceptance": "blocked",
@@ -6684,7 +6754,8 @@
       "number": 161,
       "org": "cloudflare",
       "repo": "agents-starter",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "API call creates duplicate strings, causing errors. API response returns duplicated strings",
       "url": "https://github.com/cloudflare/agents-starter/issues/161"
     },
@@ -6706,7 +6777,8 @@
       "number": 675,
       "org": "cloudflare",
       "repo": "cf",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Include the official cf-cli skill in the cf npm package",
       "url": "https://github.com/cloudflare/cf/issues/675"
     },
@@ -6791,6 +6863,29 @@
         "default"
       ],
       "assignees": [],
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-18T14:21:32Z",
+      "fix": "high",
+      "fix_reasons": [
+        "title:support for"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 1214,
+      "org": "cloudflare",
+      "repo": "cloudflare-os",
+      "taken": "skipped",
+      "taken_evidence": "",
+      "title": "Support for self-hosted / on-premise deployment on open source infrastructure (Kubernetes, S3-compatible storage, etc.)",
+      "url": "https://github.com/cloudflare/cloudflare-os/issues/1214"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
       "author_association": "CONTRIBUTOR",
       "comments": 0,
       "created_at": "2026-11-17T18:52:31Z",
@@ -6803,7 +6898,8 @@
       "number": 1208,
       "org": "cloudflare",
       "repo": "cloudflare-os",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Slack gatekeeper denies every Slack Connect channel on a non-Enterprise workspace install",
       "url": "https://github.com/cloudflare/cloudflare-os/issues/1208"
     },
@@ -6854,8 +6950,9 @@
       "url": "https://github.com/cloudflare/cloudflare-os/issues/1198"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "open_pr:#1804",
         "default"
       ],
       "assignees": [],
@@ -6871,7 +6968,8 @@
       "number": 1803,
       "org": "cloudflare",
       "repo": "cloudflared",
-      "taken": "not_checked",
+      "taken": "open_pr",
+      "taken_evidence": "#1804",
       "title": "💡 Allow embedding: OverrideProxy on Orchestrator and Observer.Close",
       "url": "https://github.com/cloudflare/cloudflared/issues/1803"
     },
@@ -6893,7 +6991,8 @@
       "number": 161,
       "org": "cloudflare",
       "repo": "developer-platform",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Workers Builds auto-delete leaves the deployment-specific Preview URL returning Error 1101",
       "url": "https://github.com/cloudflare/developer-platform/issues/161"
     },
@@ -6916,7 +7015,8 @@
       "number": 125,
       "org": "cloudflare",
       "repo": "forge",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "`cf` needs a distinct flag name for the excluded recipient's body account",
       "url": "https://github.com/cloudflare/forge/issues/125"
     },
@@ -6965,7 +7065,8 @@
       "number": 171,
       "org": "cloudflare",
       "repo": "kitesurf",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Microsoft sign-in page stays blank: Knockout binding throws \"$page is not defined\"",
       "url": "https://github.com/cloudflare/kitesurf/issues/171"
     },
@@ -6989,7 +7090,8 @@
       "number": 170,
       "org": "cloudflare",
       "repo": "kitesurf",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Common symbols (arrows, check mark, small triangles) render as empty boxes",
       "url": "https://github.com/cloudflare/kitesurf/issues/170"
     },
@@ -7013,7 +7115,8 @@
       "number": 169,
       "org": "cloudflare",
       "repo": "kitesurf",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "<base href> is ignored when fetching stylesheets and images",
       "url": "https://github.com/cloudflare/kitesurf/issues/169"
     },
@@ -7035,7 +7138,8 @@
       "number": 168,
       "org": "cloudflare",
       "repo": "kitesurf",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Korean renders as tofu: CJK fallback font has no Hangul",
       "url": "https://github.com/cloudflare/kitesurf/issues/168"
     },
@@ -7057,7 +7161,8 @@
       "number": 167,
       "org": "cloudflare",
       "repo": "kitesurf",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "printToPDF text layer is wrong for Arabic, CJK, ligatures and RTL",
       "url": "https://github.com/cloudflare/kitesurf/issues/167"
     },
@@ -7081,7 +7186,8 @@
       "number": 166,
       "org": "cloudflare",
       "repo": "kitesurf",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "macOS 27: proc-macro dylibs fail to load (dyld: mis-aligned LINKEDIT string pool) → E0463 in Bazel build",
       "url": "https://github.com/cloudflare/kitesurf/issues/166"
     },
@@ -7103,7 +7209,8 @@
       "number": 165,
       "org": "cloudflare",
       "repo": "kitesurf",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Retired page isolates stay alive until the CDP connection closes",
       "url": "https://github.com/cloudflare/kitesurf/issues/165"
     },
@@ -7125,7 +7232,8 @@
       "number": 164,
       "org": "cloudflare",
       "repo": "kitesurf",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Runtime.evaluate takes ~5–10 ms even when no page timer is pending",
       "url": "https://github.com/cloudflare/kitesurf/issues/164"
     },
@@ -7149,7 +7257,8 @@
       "number": 159,
       "org": "cloudflare",
       "repo": "kitesurf",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Under `pnpm run dev`, every outbound request carries `CF-Worker: kitesurf-local.example.com`, and sites that block \"example.com\" (e.g. webkit.org) return 403",
       "url": "https://github.com/cloudflare/kitesurf/issues/159"
     },
@@ -7243,7 +7352,8 @@
       "number": 1133,
       "org": "cloudflare",
       "repo": "pingora",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "RUSTSEC-2026-0543: chrono is unmaintained",
       "url": "https://github.com/cloudflare/pingora/issues/1133"
     },
@@ -7894,7 +8004,8 @@
       "number": 1146,
       "org": "CycloneDX",
       "repo": "cyclonedx-dotnet",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Improve License Name Generation for NuGet PackageLicenseFile Licenses",
       "url": "https://github.com/CycloneDX/cyclonedx-dotnet/issues/1146"
     },
@@ -7916,7 +8027,8 @@
       "number": 219,
       "org": "CycloneDX",
       "repo": "cyclonedx-property-taxonomy",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Request to reserve and add the `healthineers` namespace",
       "url": "https://github.com/CycloneDX/cyclonedx-property-taxonomy/issues/219"
     },
@@ -7995,8 +8107,9 @@
       "url": "https://github.com/open-telemetry/community/issues/3846"
     },
     {
-      "acceptance": "high",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "open_pr:#53129",
         "label:needs triage"
       ],
       "assignees": [],
@@ -8016,7 +8129,8 @@
       "number": 53295,
       "org": "open-telemetry",
       "repo": "opentelemetry-collector-contrib",
-      "taken": "not_checked",
+      "taken": "open_pr",
+      "taken_evidence": "#53129",
       "title": "[receiver/azuremonitor] Batch API returns zeros from wrong-region endpoints",
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53295"
     },
@@ -8607,7 +8721,8 @@
       "number": 8157,
       "org": "open-telemetry",
       "repo": "opentelemetry-dotnet",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "[bug] PeriodicExportingMetricReader sometimes exports twice 1–2 ms apart when the wait returns early",
       "url": "https://github.com/open-telemetry/opentelemetry-dotnet/issues/8157"
     },
@@ -8654,7 +8769,8 @@
       "number": 1839,
       "org": "open-telemetry",
       "repo": "opentelemetry-go-compile-instrumentation",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Document that make -j16 doesn't speed up otelc builds",
       "url": "https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation/issues/1839"
     },
@@ -8735,7 +8851,8 @@
       "number": 1819,
       "org": "open-telemetry",
       "repo": "opentelemetry-go-compile-instrumentation",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "bug(instrumentation/net/http): server spans take the outer ServeMux pattern when a nested router matches the request",
       "url": "https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation/issues/1819"
     },
@@ -8761,7 +8878,8 @@
       "number": 1818,
       "org": "open-telemetry",
       "repo": "opentelemetry-go-compile-instrumentation",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "bug(pkg/runtime): spans still in the batch span processor are lost when the program exits without a signal flush",
       "url": "https://github.com/open-telemetry/opentelemetry-go-compile-instrumentation/issues/1818"
     },
@@ -8836,13 +8954,15 @@
       "number": 21337,
       "org": "open-telemetry",
       "repo": "opentelemetry-java-instrumentation",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "No SERVER span or http.server.request.duration metric created on SpringBoot WebFlux project when http/2 is enabled",
       "url": "https://github.com/open-telemetry/opentelemetry-java-instrumentation/issues/21337"
     },
     {
-      "acceptance": "high",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#7297",
         "label:triage"
       ],
       "assignees": [],
@@ -8861,17 +8981,19 @@
       "number": 7335,
       "org": "open-telemetry",
       "repo": "opentelemetry-js",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#7297",
       "title": "Cannot find module '@grpc/grpc-js' in standalone builds",
       "url": "https://github.com/open-telemetry/opentelemetry-js/issues/7335"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
+        "assigned"
       ],
-      "assignees": [],
+      "assignees": [
+        "chirag-gupta7"
+      ],
       "author_association": "MEMBER",
       "comments": 1,
       "created_at": "2026-11-18T13:36:03Z",
@@ -8886,7 +9008,8 @@
       "number": 1629,
       "org": "open-telemetry",
       "repo": "opentelemetry-kotlin",
-      "taken": "not_checked",
+      "taken": "assigned",
+      "taken_evidence": "chirag-gupta7",
       "title": "Move Ktor out of exporters-otlp",
       "url": "https://github.com/open-telemetry/opentelemetry-kotlin/issues/1629"
     },
@@ -9033,7 +9156,8 @@
       "number": 186,
       "org": "open-telemetry",
       "repo": "opentelemetry-zig",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "otlp: signal-specific `OTEL_EXPORTER_OTLP_{TRACES,METRICS,LOGS}_*` options are ignored, except for the endpoint",
       "url": "https://github.com/open-telemetry/opentelemetry-zig/issues/186"
     },
@@ -9061,29 +9185,6 @@
       "taken_evidence": "",
       "title": "Blog email announcements come from \"workspace admin\"",
       "url": "https://github.com/open-telemetry/opentelemetry.io/issues/12710"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-17T14:23:19Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 12709,
-      "org": "open-telemetry",
-      "repo": "opentelemetry.io",
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "REEVESCHARLES",
-      "url": "https://github.com/open-telemetry/opentelemetry.io/issues/12709"
     },
     {
       "acceptance": "medium",
@@ -9316,13 +9417,15 @@
       "number": 719,
       "org": "open-telemetry",
       "repo": "semantic-conventions-genai",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Model async (background) inference as a single inference operation",
       "url": "https://github.com/open-telemetry/semantic-conventions-genai/issues/719"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "open_pr:#718",
         "default"
       ],
       "assignees": [],
@@ -9338,7 +9441,8 @@
       "number": 717,
       "org": "open-telemetry",
       "repo": "semantic-conventions-genai",
-      "taken": "not_checked",
+      "taken": "open_pr",
+      "taken_evidence": "#718",
       "title": "Add provider pages for the Gemini API and Vertex AI",
       "url": "https://github.com/open-telemetry/semantic-conventions-genai/issues/717"
     },
@@ -9360,7 +9464,8 @@
       "number": 532,
       "org": "open-telemetry",
       "repo": "shared-workflows",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "PR dashboard result looks incorrect",
       "url": "https://github.com/open-telemetry/shared-workflows/issues/532"
     },
@@ -9383,7 +9488,8 @@
       "number": 1917,
       "org": "open-telemetry",
       "repo": "weaver",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "registry mcp doesn't report loading and conversion warnings",
       "url": "https://github.com/open-telemetry/weaver/issues/1917"
     },
@@ -9590,8 +9696,9 @@
       "url": "https://github.com/OWASP/cve-lite-cli/issues/1708"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#1711",
         "default"
       ],
       "assignees": [],
@@ -9609,7 +9716,8 @@
       "number": 1707,
       "org": "OWASP",
       "repo": "cve-lite-cli",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#1711",
       "title": "[Bug] npm within-range fix offers a still-vulnerable version when the advisory has no fixed version",
       "url": "https://github.com/OWASP/cve-lite-cli/issues/1707"
     },
@@ -9708,7 +9816,8 @@
       "number": 110,
       "org": "OWASP",
       "repo": "Honeypot-Project",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "[Bug] STIX 2.1 bundles are a disconnected object graph: dangling created_by_ref, orphaned AttackPatterns and non-deterministic technique IDs",
       "url": "https://github.com/OWASP/Honeypot-Project/issues/110"
     },
@@ -9833,15 +9942,25 @@
       "url": "https://github.com/OWASP/www-project-mcp-top-10/issues/75"
     }
   ],
+  "notes": [
+    {
+      "detail": "starter 池只取最近更新的 100 筆（stopped at 1 pages of 1110）",
+      "org": "apache"
+    },
+    {
+      "detail": "starter 池只取最近更新的 100 筆（stopped at 1 pages of 591）",
+      "org": "open-telemetry"
+    }
+  ],
   "orgs": [
     {
-      "issues": 265,
+      "issues": 266,
       "org": "apache",
-      "repos": 82,
+      "repos": 84,
       "status": "ok"
     },
     {
-      "issues": 56,
+      "issues": 55,
       "org": "open-telemetry",
       "repos": 21,
       "status": "ok"
@@ -9859,7 +9978,7 @@
       "status": "ok"
     },
     {
-      "issues": 50,
+      "issues": 52,
       "org": "cloudflare",
       "repos": 18,
       "status": "ok"
@@ -9959,7 +10078,8 @@
       "number": 40543,
       "org": "apache",
       "repo": "airflow",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "control state of individual taskflow in mapped task-group",
       "url": "https://github.com/apache/airflow/issues/40543"
     },
@@ -10020,8 +10140,9 @@
       "url": "https://github.com/apache/airflow/issues/21900"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "open_pr:#77077",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -10041,7 +10162,8 @@
       "number": 16031,
       "org": "apache",
       "repo": "airflow",
-      "taken": "not_checked",
+      "taken": "open_pr",
+      "taken_evidence": "#77077",
       "title": "More examples for docker-compose",
       "url": "https://github.com/apache/airflow/issues/16031"
     },
@@ -10074,8 +10196,9 @@
       "url": "https://github.com/apache/amoro/issues/4497"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "claimed:Majid-Tayebi",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -10096,7 +10219,8 @@
       "number": 8984,
       "org": "apache",
       "repo": "apisix",
-      "taken": "not_checked",
+      "taken": "claimed",
+      "taken_evidence": "Majid-Tayebi",
       "title": "docs: improve docs for APISIX's gRPC support",
       "url": "https://github.com/apache/apisix/issues/8984"
     },
@@ -10123,13 +10247,15 @@
       "number": 45722,
       "org": "apache",
       "repo": "arrow",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "[C++] StructBuilder should have UnsafeAppend methods",
       "url": "https://github.com/apache/arrow/issues/45722"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#46992",
         "label:good-first-issue",
         "maintainer-filed"
       ],
@@ -10150,7 +10276,8 @@
       "number": 37065,
       "org": "apache",
       "repo": "arrow",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#46992",
       "title": "[C++][Parquet] Provide std::optional-based APIs for statistics",
       "url": "https://github.com/apache/arrow/issues/37065"
     },
@@ -10242,8 +10369,9 @@
       "url": "https://github.com/apache/arrow/issues/27905"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#405",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -10263,13 +10391,15 @@
       "number": 404,
       "org": "apache",
       "repo": "asyncband",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#405",
       "title": "Reduce the cost of upgrading a held UpgradableRwLock read guard",
       "url": "https://github.com/apache/asyncband/issues/404"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "open_pr:#416",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -10289,13 +10419,15 @@
       "number": 402,
       "org": "apache",
       "repo": "asyncband",
-      "taken": "not_checked",
+      "taken": "open_pr",
+      "taken_evidence": "#416",
       "title": "Reduce unbounded MPMC broadcast publish and receive overhead",
       "url": "https://github.com/apache/asyncband/issues/402"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#407",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -10315,7 +10447,8 @@
       "number": 401,
       "org": "apache",
       "repo": "asyncband",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#407",
       "title": "Improve bounded MPSC throughput for inline 1 KiB messages",
       "url": "https://github.com/apache/asyncband/issues/401"
     },
@@ -10341,7 +10474,8 @@
       "number": 396,
       "org": "apache",
       "repo": "asyncband",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Tracking issue for Asyncband primitive performance improvements",
       "url": "https://github.com/apache/asyncband/issues/396"
     },
@@ -10374,8 +10508,9 @@
       "url": "https://github.com/apache/asyncband/issues/324"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "claimed:rokadepiyush49-rgb",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -10399,7 +10534,8 @@
       "number": 18597,
       "org": "apache",
       "repo": "beam",
-      "taken": "not_checked",
+      "taken": "claimed",
+      "taken_evidence": "rokadepiyush49-rgb",
       "title": "De-javafy the Python Metrics API",
       "url": "https://github.com/apache/beam/issues/18597"
     },
@@ -10428,13 +10564,15 @@
       "number": 18303,
       "org": "apache",
       "repo": "beam",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Clean DeprecationWarning from SDK/tests",
       "url": "https://github.com/apache/beam/issues/18303"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "claimed:rokadepiyush49-rgb",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -10457,7 +10595,8 @@
       "number": 18123,
       "org": "apache",
       "repo": "beam",
-      "taken": "not_checked",
+      "taken": "claimed",
+      "taken_evidence": "rokadepiyush49-rgb",
       "title": "py DataflowRunner should warn if the stagingLocation has a TTL",
       "url": "https://github.com/apache/beam/issues/18123"
     },
@@ -10486,13 +10625,15 @@
       "number": 18011,
       "org": "apache",
       "repo": "beam",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "All runners should support ProfilingOptions",
       "url": "https://github.com/apache/beam/issues/18011"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "open_pr:#687",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -10511,13 +10652,15 @@
       "number": 735,
       "org": "apache",
       "repo": "burr",
-      "taken": "not_checked",
+      "taken": "open_pr",
+      "taken_evidence": "#687",
       "title": "Builder: node types with specific implementations",
       "url": "https://github.com/apache/burr/issues/735"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#749",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -10539,7 +10682,8 @@
       "number": 715,
       "org": "apache",
       "repo": "burr",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#749",
       "title": "Release process automation and maturity",
       "url": "https://github.com/apache/burr/issues/715"
     },
@@ -10967,8 +11111,9 @@
       "url": "https://github.com/apache/datafusion-spark/issues/200"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "claimed:w1shlark",
         "default"
       ],
       "assignees": [],
@@ -10988,7 +11133,8 @@
       "number": 49106,
       "org": "apache",
       "repo": "doris",
-      "taken": "not_checked",
+      "taken": "claimed",
+      "taken_evidence": "w1shlark",
       "title": "[Enhancement] Inconsistent rowcount in `SHOW DATA` command across sessions",
       "url": "https://github.com/apache/doris/issues/49106"
     },
@@ -11042,7 +11188,8 @@
       "number": 20909,
       "org": "apache",
       "repo": "druid",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Flaky test: IngestionSmokeTest.test_runIndexTask_andKillData (KubernetesClusterDockerTest)",
       "url": "https://github.com/apache/druid/issues/20909"
     },
@@ -11068,7 +11215,8 @@
       "number": 20906,
       "org": "apache",
       "repo": "druid",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Wrong implementation of MSQ credential masking leaves S3 credentials unmasked in stored SQL",
       "url": "https://github.com/apache/druid/issues/20906"
     },
@@ -11094,7 +11242,8 @@
       "number": 20872,
       "org": "apache",
       "repo": "druid",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "CI infra: GitHub-hosted runner shuts down or loses communication mid-job",
       "url": "https://github.com/apache/druid/issues/20872"
     },
@@ -11121,13 +11270,15 @@
       "number": 3820,
       "org": "apache",
       "repo": "dubbo-go",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "[Bug]: Investigate dubbo-getty race reported by TestDubboProtocol_Refer",
       "url": "https://github.com/apache/dubbo-go/issues/3820"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#1032",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -11148,7 +11299,8 @@
       "number": 1017,
       "org": "apache",
       "repo": "fesod",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#1032",
       "title": "[Task] Implement more commonly used converter classes",
       "url": "https://github.com/apache/fesod/issues/1017"
     },
@@ -11179,8 +11331,9 @@
       "url": "https://github.com/apache/fesod/issues/22"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#375",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -11202,7 +11355,8 @@
       "number": 376,
       "org": "apache",
       "repo": "fineract-backoffice-ui",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#375",
       "title": "GLIM, GSIM and the centre collection sheet cannot be built — the backend refuses all three on PostgreSQL",
       "url": "https://github.com/apache/fineract-backoffice-ui/issues/376"
     },
@@ -11235,8 +11389,9 @@
       "url": "https://github.com/apache/fineract-loan-origination/issues/98"
     },
     {
-      "acceptance": "high",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "open_pr:#4032",
         "label:question"
       ],
       "assignees": [],
@@ -11255,7 +11410,8 @@
       "number": 3904,
       "org": "apache",
       "repo": "fory",
-      "taken": "not_checked",
+      "taken": "open_pr",
+      "taken_evidence": "#4032",
       "title": "[Question] Does Apache Fory support field validation inside *.fdl?",
       "url": "https://github.com/apache/fory/issues/3904"
     },
@@ -11345,8 +11501,9 @@
       "url": "https://github.com/apache/hugegraph-toolchain/issues/748"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "open_pr:#1106",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -11365,7 +11522,8 @@
       "number": 1101,
       "org": "apache",
       "repo": "iceberg-cpp",
-      "taken": "not_checked",
+      "taken": "open_pr",
+      "taken_evidence": "#1106",
       "title": "[CI] Improve dependency download reliability and Windows example build isolation",
       "url": "https://github.com/apache/iceberg-cpp/issues/1101"
     },
@@ -11534,8 +11692,9 @@
       "url": "https://github.com/apache/kyuubi/issues/4817"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "open_pr:#4468",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -11557,7 +11716,8 @@
       "number": 3600,
       "org": "apache",
       "repo": "logging-log4j2",
-      "taken": "not_checked",
+      "taken": "open_pr",
+      "taken_evidence": "#4468",
       "title": "[main] Add transitive `compileOnlyApi` dependencies",
       "url": "https://github.com/apache/logging-log4j2/issues/3600"
     },
@@ -11586,13 +11746,15 @@
       "number": 3423,
       "org": "apache",
       "repo": "logging-log4j2",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Log4J2: PatternLayout \"charset\" in documentation but forbidden by xml schema",
       "url": "https://github.com/apache/logging-log4j2/issues/3423"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#1819",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -11613,7 +11775,8 @@
       "number": 1823,
       "org": "apache",
       "repo": "magpie",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#1819",
       "title": "hook-manager: add a husky adapter",
       "url": "https://github.com/apache/magpie/issues/1823"
     },
@@ -11704,8 +11867,9 @@
       "url": "https://github.com/apache/mahout/issues/1468"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#3523",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -11729,7 +11893,8 @@
       "number": 3522,
       "org": "apache",
       "repo": "maka",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#3523",
       "title": "docs: verify every live document against the code, one subsystem at a time",
       "url": "https://github.com/apache/maka/issues/3522"
     },
@@ -11842,8 +12007,9 @@
       "url": "https://github.com/apache/netbeans/issues/3825"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "claimed:gyanend0736",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -11863,13 +12029,15 @@
       "number": 8704,
       "org": "apache",
       "repo": "pinot",
-      "taken": "not_checked",
+      "taken": "claimed",
+      "taken_evidence": "gyanend0736",
       "title": "Property based query testing",
       "url": "https://github.com/apache/pinot/issues/8704"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "claimed:gyanend0736",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -11889,7 +12057,8 @@
       "number": 5590,
       "org": "apache",
       "repo": "pinot",
-      "taken": "not_checked",
+      "taken": "claimed",
+      "taken_evidence": "gyanend0736",
       "title": "Generate cli for Pinot REST Api",
       "url": "https://github.com/apache/pinot/issues/5590"
     },
@@ -11949,8 +12118,9 @@
       "url": "https://github.com/apache/pulsar/issues/9462"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "open_pr:#13242",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -11972,7 +12142,8 @@
       "number": 13223,
       "org": "apache",
       "repo": "seatunnel",
-      "taken": "not_checked",
+      "taken": "open_pr",
+      "taken_evidence": "#13242",
       "title": "[Umbrella][Improve] Define and enforce replica capabilities for multi-table sinks",
       "url": "https://github.com/apache/seatunnel/issues/13223"
     },
@@ -12003,8 +12174,9 @@
       "url": "https://github.com/apache/seatunnel/issues/13217"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "open_pr:#13272",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -12024,13 +12196,15 @@
       "number": 13137,
       "org": "apache",
       "repo": "seatunnel",
-      "taken": "not_checked",
+      "taken": "open_pr",
+      "taken_evidence": "#13272",
       "title": "[Bug] [Zeta] Realtime queue instance count differs from task mapping after same-ID savepoint restore",
       "url": "https://github.com/apache/seatunnel/issues/13137"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#12804",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -12053,7 +12227,8 @@
       "number": 12809,
       "org": "apache",
       "repo": "seatunnel",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#12804",
       "title": "[Umbrella][Docs][Transform-V2] Rewrite the transform plugin documents to the connector documentation standard",
       "url": "https://github.com/apache/seatunnel/issues/12809"
     },
@@ -12083,8 +12258,9 @@
       "url": "https://github.com/apache/seatunnel/issues/12707"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#11095",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -12105,7 +12281,8 @@
       "number": 11007,
       "org": "apache",
       "repo": "seatunnel",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#11095",
       "title": "[Umbrella][Improve] Migrate Connector/Transform Validation to Declarative OptionRule — Claim & Tracking",
       "url": "https://github.com/apache/seatunnel/issues/11007"
     },
@@ -12193,8 +12370,9 @@
       "url": "https://github.com/apache/seatunnel/issues/10443"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "claimed:ryanmeowy",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -12214,7 +12392,8 @@
       "number": 10203,
       "org": "apache",
       "repo": "seatunnel",
-      "taken": "not_checked",
+      "taken": "claimed",
+      "taken_evidence": "ryanmeowy",
       "title": "[Feature][Connector-\bv2][MySQL] Support dynamic discovery of new tables for regex-based multi-table sync",
       "url": "https://github.com/apache/seatunnel/issues/10203"
     },
@@ -12239,7 +12418,8 @@
       "number": 686,
       "org": "apache",
       "repo": "seatunnel",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Who is Using SeaTunnel? ",
       "url": "https://github.com/apache/seatunnel/issues/686"
     },
@@ -12582,7 +12762,8 @@
       "number": 381,
       "org": "aquasecurity",
       "repo": "libbpfgo",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Check type cast results",
       "url": "https://github.com/aquasecurity/libbpfgo/issues/381"
     },
@@ -12999,7 +13180,8 @@
       "number": 14,
       "org": "aquasecurity",
       "repo": "trivy-java-db",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Missing artifacts",
       "url": "https://github.com/aquasecurity/trivy-java-db/issues/14"
     },
@@ -13102,7 +13284,8 @@
       "number": 30,
       "org": "aquasecurity",
       "repo": "trivy-plugin-referrer",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Not compatible with recent Trivy version",
       "url": "https://github.com/aquasecurity/trivy-plugin-referrer/issues/30"
     },
@@ -13179,7 +13362,8 @@
       "number": 4,
       "org": "cloudflare",
       "repo": "boring",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Fix the build script to include arm-specific tunnings",
       "url": "https://github.com/cloudflare/boring/issues/4"
     },
@@ -13389,7 +13573,8 @@
       "number": 423,
       "org": "cloudflare",
       "repo": "circl",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "enhancement request: implement KDF (SDHI and/or Naor-Reingold)",
       "url": "https://github.com/cloudflare/circl/issues/423"
     },
@@ -13521,7 +13706,8 @@
       "number": 8,
       "org": "cloudflare",
       "repo": "opaque-ts",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Consider using noble-curves for keygen",
       "url": "https://github.com/cloudflare/opaque-ts/issues/8"
     },
@@ -13651,13 +13837,15 @@
       "number": 1515,
       "org": "cloudflare",
       "repo": "vinext",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "`next/dynamic`: CSS imported by dynamically loaded components not applied",
       "url": "https://github.com/cloudflare/vinext/issues/1515"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#2887",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -13677,13 +13865,15 @@
       "number": 1503,
       "org": "cloudflare",
       "repo": "vinext",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#2887",
       "title": "Build: transitive externals resolve to wrong package version",
       "url": "https://github.com/cloudflare/vinext/issues/1503"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#1657",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -13703,7 +13893,8 @@
       "number": 1500,
       "org": "cloudflare",
       "repo": "vinext",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#1657",
       "title": "Webpack loaders that mutate `process.env` at build time not supported",
       "url": "https://github.com/cloudflare/vinext/issues/1500"
     },
@@ -13729,13 +13920,15 @@
       "number": 1488,
       "org": "cloudflare",
       "repo": "vinext",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Resume Data Cache (RDC) not consistent between static and dynamic renders",
       "url": "https://github.com/cloudflare/vinext/issues/1488"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#1666",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -13755,13 +13948,15 @@
       "number": 1487,
       "org": "cloudflare",
       "repo": "vinext",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#1666",
       "title": "App Router ISR: `revalidate` / `fetchCache` / `force-static` / `unstable_cache` do not produce stable values",
       "url": "https://github.com/cloudflare/vinext/issues/1487"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#1682",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -13781,13 +13976,15 @@
       "number": 1468,
       "org": "cloudflare",
       "repo": "vinext",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#1682",
       "title": "Pages Router: custom `_document` (`getInitialProps` / `renderPage` enhancers) not implemented",
       "url": "https://github.com/cloudflare/vinext/issues/1468"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#1848",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -13807,13 +14004,15 @@
       "number": 1453,
       "org": "cloudflare",
       "repo": "vinext",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#1848",
       "title": "App Router: `\"use cache\"` build-time, private, and route-handler revalidate broken",
       "url": "https://github.com/cloudflare/vinext/issues/1453"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#1716",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -13833,7 +14032,8 @@
       "number": 1359,
       "org": "cloudflare",
       "repo": "vinext",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#1716",
       "title": "PPR fallback shells (postpone/resume) not implemented",
       "url": "https://github.com/cloudflare/vinext/issues/1359"
     },
@@ -13865,2716 +14065,7 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "open_pr:#63",
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 6,
-      "created_at": "2025-04-14T20:37:49Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "MBOM",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 55,
-      "org": "CycloneDX",
-      "repo": "bom-examples",
-      "taken": "open_pr",
-      "taken_evidence": "#63",
-      "title": "Please create examples for MBOMs",
-      "url": "https://github.com/CycloneDX/bom-examples/issues/55"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 1,
-      "created_at": "2024-12-11T10:56:47Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 53,
-      "org": "CycloneDX",
-      "repo": "bom-examples",
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "Example for license texts",
-      "url": "https://github.com/CycloneDX/bom-examples/issues/53"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2024-11-21T19:58:04Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "OBOM",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 49,
-      "org": "CycloneDX",
-      "repo": "bom-examples",
-      "taken": "not_checked",
-      "title": "update OBOM example \"Decoupled\"",
-      "url": "https://github.com/CycloneDX/bom-examples/issues/49"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 3,
-      "created_at": "2024-07-08T05:43:47Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "SBOM",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 44,
-      "org": "CycloneDX",
-      "repo": "bom-examples",
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "Add CycloneDX SBOMs example for version supporting 1.5 and 1.6",
-      "url": "https://github.com/CycloneDX/bom-examples/issues/44"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 3,
-      "created_at": "2023-05-26T08:35:14Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "SBOM",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 38,
-      "org": "CycloneDX",
-      "repo": "bom-examples",
-      "taken": "not_checked",
-      "title": "Are there examples of SBOM where the \"component\" type is \"file\"?",
-      "url": "https://github.com/CycloneDX/bom-examples/issues/38"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 2,
-      "created_at": "2022-07-27T16:23:20Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "SBOM",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 33,
-      "org": "CycloneDX",
-      "repo": "bom-examples",
-      "taken": "not_checked",
-      "title": "Need v1.4 SBOM examples (with use of new v1.4 schema features, incl. JSF)",
-      "url": "https://github.com/CycloneDX/bom-examples/issues/33"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2021-12-19T17:47:23Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "SBOM",
-        "SaaSBOM",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 15,
-      "org": "CycloneDX",
-      "repo": "bom-examples",
-      "taken": "not_checked",
-      "title": "Add hybrid SBOM + SaaSBOM examples",
-      "url": "https://github.com/CycloneDX/bom-examples/issues/15"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 2,
-      "created_at": "2023-12-15T18:31:10Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 1,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-conda",
-      "taken": "not_checked",
-      "title": ":mega: looking for contributors",
-      "url": "https://github.com/CycloneDX/cyclonedx-conda/issues/1"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:good first issue"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 2,
-      "created_at": "2025-05-02T02:52:55Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "help wanted",
-        "ready for development"
-      ],
-      "linked_pr": false,
-      "number": 942,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-dotnet",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Unable to load projects in solution, when path contains a variable",
-      "url": "https://github.com/CycloneDX/cyclonedx-dotnet/issues/942"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 2,
-      "created_at": "2025-02-27T12:54:00Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "ready for development"
-      ],
-      "linked_pr": false,
-      "number": 932,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-dotnet",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Include other dependencies than package references",
-      "url": "https://github.com/CycloneDX/cyclonedx-dotnet/issues/932"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 9,
-      "created_at": "2024-11-19T14:00:43Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "ready for development"
-      ],
-      "linked_pr": false,
-      "number": 916,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-dotnet",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Question: Is there a reason why there is no command line option to sign the generated sbom-file using a given key?",
-      "url": "https://github.com/CycloneDX/cyclonedx-dotnet/issues/916"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 1,
-      "created_at": "2023-12-28T16:32:29Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "help wanted",
-        "ready for development"
-      ],
-      "linked_pr": false,
-      "number": 801,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-dotnet",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Detect output format from output filename if provided",
-      "url": "https://github.com/CycloneDX/cyclonedx-dotnet/issues/801"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 1,
-      "created_at": "2025-11-13T19:22:59Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 20,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-esbuild",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "perf: use caching when searchig for package manifests",
-      "url": "https://github.com/CycloneDX/cyclonedx-esbuild/issues/20"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 6,
-      "created_at": "2025-11-12T18:32:47Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 16,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-esbuild",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "render property `cdx:reproducible`",
-      "url": "https://github.com/CycloneDX/cyclonedx-esbuild/issues/16"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 1,
-      "created_at": "2025-11-12T18:31:34Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 15,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-esbuild",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "feat: have \"formulation\" as part of the BOM - MBOM",
-      "url": "https://github.com/CycloneDX/cyclonedx-esbuild/issues/15"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2024-03-20T15:22:47Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:documentation"
-      ],
-      "labels": [
-        "documentation",
-        "good first issue",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 7,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-esbuild",
-      "taken": "not_checked",
-      "title": "docs: describe use cases",
-      "url": "https://github.com/CycloneDX/cyclonedx-esbuild/issues/7"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 6,
-      "created_at": "2022-02-08T15:06:13Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 21,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-go",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Investigate how to best get rid of slice pointers",
-      "url": "https://github.com/CycloneDX/cyclonedx-go/issues/21"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:good first issue"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 2,
-      "created_at": "2024-09-25T13:05:36Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "good first issue"
-      ],
-      "linked_pr": false,
-      "number": 528,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-gomod",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "update created tools section to v1.6",
-      "url": "https://github.com/CycloneDX/cyclonedx-gomod/issues/528"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 2,
-      "created_at": "2025-06-27T15:39:07Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 637,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-gradle-plugin",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Support for iOS Dependencies in Kotlin Multiplatform Project",
-      "url": "https://github.com/CycloneDX/cyclonedx-gradle-plugin/issues/637"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:good first issue"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 3,
-      "created_at": "2024-04-08T07:03:13Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:good first issue"
-      ],
-      "labels": [
-        "good first issue"
-      ],
-      "linked_pr": false,
-      "number": 416,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-gradle-plugin",
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "Should default config include test scope? ",
-      "url": "https://github.com/CycloneDX/cyclonedx-gradle-plugin/issues/416"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 8,
-      "created_at": "2023-10-11T21:01:36Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:bug",
-        "body>6000"
-      ],
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 349,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-gradle-plugin",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Gradle 8.4: org.xml.sax.SAXNotRecognizedException: Property 'http://javax.xml.XMLConstants/property/accessExternalSchema' is not recognized.",
-      "url": "https://github.com/CycloneDX/cyclonedx-gradle-plugin/issues/349"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 7,
-      "created_at": "2020-12-11T21:16:45Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "label:bug"
-      ],
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 87,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-gradle-plugin",
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "BOM generation does not honor overridden dependency versions",
-      "url": "https://github.com/CycloneDX/cyclonedx-gradle-plugin/issues/87"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 1,
-      "created_at": "2023-01-18T22:58:32Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "hacktoberfest",
-        "help wanted",
-        "schema 1.2"
-      ],
-      "linked_pr": false,
-      "number": 418,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-javascript-library",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Add support for services",
-      "url": "https://github.com/CycloneDX/cyclonedx-javascript-library/issues/418"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2023-01-18T22:58:21Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "hacktoberfest",
-        "help wanted",
-        "schema 1.1"
-      ],
-      "linked_pr": false,
-      "number": 417,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-javascript-library",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Add support for component pedigree",
-      "url": "https://github.com/CycloneDX/cyclonedx-javascript-library/issues/417"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 2,
-      "created_at": "2022-09-18T10:39:47Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "hacktoberfest",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 231,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-javascript-library",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "prevent information loss on downgrade",
-      "url": "https://github.com/CycloneDX/cyclonedx-javascript-library/issues/231"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2022-06-07T22:12:34Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "idea"
-      ],
-      "linked_pr": false,
-      "number": 61,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-javascript-library",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "support deno",
-      "url": "https://github.com/CycloneDX/cyclonedx-javascript-library/issues/61"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2022-06-03T06:12:35Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "QA",
-        "hacktoberfest",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 51,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-javascript-library",
-      "taken": "not_checked",
-      "title": "test: have tests running in web-browsers, running CI/CT",
-      "url": "https://github.com/CycloneDX/cyclonedx-javascript-library/issues/51"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 6,
-      "created_at": "2022-04-15T19:17:08Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "build process",
-        "enhancement",
-        "help wanted",
-        "javascript"
-      ],
-      "linked_pr": false,
-      "number": 18,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-javascript-library",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "[IDEA] distribute as all module types {`CJS`,`ESM`,`UMD`,`AMD`}",
-      "url": "https://github.com/CycloneDX/cyclonedx-javascript-library/issues/18"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "open_pr:#682",
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 3,
-      "created_at": "2025-11-20T10:01:59Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "help wanted",
-        "waiting for feedback"
-      ],
-      "linked_pr": false,
-      "number": 632,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-maven-plugin",
-      "taken": "open_pr",
-      "taken_evidence": "#682",
-      "title": "Generated boms are always of type \"library\" allthough <projectType>application</projectType> is configured",
-      "url": "https://github.com/CycloneDX/cyclonedx-maven-plugin/issues/632"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 4,
-      "created_at": "2025-07-24T16:51:48Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 610,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-maven-plugin",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Feature: License overrides",
-      "url": "https://github.com/CycloneDX/cyclonedx-maven-plugin/issues/610"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 7,
-      "created_at": "2023-09-12T14:31:32Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 398,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-maven-plugin",
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "\"False positives\" in SBOM when building OSGi bundle with maven-bundle-plugin",
-      "url": "https://github.com/CycloneDX/cyclonedx-maven-plugin/issues/398"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 2,
-      "created_at": "2023-09-11T17:30:13Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 395,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-maven-plugin",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Is it possible to aggregate a bom generated from other tools?",
-      "url": "https://github.com/CycloneDX/cyclonedx-maven-plugin/issues/395"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "merged_pr:#304",
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "CONTRIBUTOR",
-      "comments": 2,
-      "created_at": "2023-03-07T01:09:19Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "label:bug"
-      ],
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 305,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-maven-plugin",
-      "taken": "merged_pr",
-      "taken_evidence": "#304",
-      "title": "\"[WARNING] Unknown keyword additionalItems\" when validating generated json",
-      "url": "https://github.com/CycloneDX/cyclonedx-maven-plugin/issues/305"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 45,
-      "created_at": "2021-10-29T08:28:32Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 137,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-maven-plugin",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Cyclonedx sbom for tycho dependencies",
-      "url": "https://github.com/CycloneDX/cyclonedx-maven-plugin/issues/137"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 4,
-      "created_at": "2025-01-24T07:23:59Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 1259,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-node-npm",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "[FEATURE] library mode",
-      "url": "https://github.com/CycloneDX/cyclonedx-node-npm/issues/1259"
-    },
-    {
-      "acceptance": "high",
-      "acceptance_reasons": [
-        "label:question"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 7,
-      "created_at": "2024-03-01T14:14:18Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "question"
-      ],
-      "linked_pr": false,
-      "number": 1155,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-node-npm",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "feat: Only fetching first level of dependencies",
-      "url": "https://github.com/CycloneDX/cyclonedx-node-npm/issues/1155"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 2,
-      "created_at": "2025-12-07T09:48:41Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "hacktoberfest",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 448,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-node-yarn",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "feat: detail runtime dependencies",
-      "url": "https://github.com/CycloneDX/cyclonedx-node-yarn/issues/448"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 1,
-      "created_at": "2025-01-29T14:45:25Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 257,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-node-yarn",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "feat: yarn workspace support",
-      "url": "https://github.com/CycloneDX/cyclonedx-node-yarn/issues/257"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 1,
-      "created_at": "2025-01-24T07:38:28Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "CycloneDX 1.7",
-        "enhancement",
-        "help wanted",
-        "idea"
-      ],
-      "linked_pr": false,
-      "number": 252,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-node-yarn",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "[FEATURE] library mode",
-      "url": "https://github.com/CycloneDX/cyclonedx-node-yarn/issues/252"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 3,
-      "created_at": "2025-01-11T19:25:51Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "hacktoberfest",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 246,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-node-yarn",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "feat: Support external manifests",
-      "url": "https://github.com/CycloneDX/cyclonedx-node-yarn/issues/246"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 3,
-      "created_at": "2024-10-29T12:56:36Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "hacktoberfest",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 192,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-node-yarn",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "feat: account yarn's applied \"compat\" patches in SBOM results",
-      "url": "https://github.com/CycloneDX/cyclonedx-node-yarn/issues/192"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 1,
-      "created_at": "2024-06-20T09:36:11Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "label:bug"
-      ],
-      "labels": [
-        "bug",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 133,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-node-yarn",
-      "taken": "not_checked",
-      "title": "[BUG] unexpected package version expression causes crash",
-      "url": "https://github.com/CycloneDX/cyclonedx-node-yarn/issues/133"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2024-06-03T09:34:20Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:good first issue"
-      ],
-      "labels": [
-        "good first issue",
-        "hacktoberfest",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 129,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-node-yarn",
-      "taken": "not_checked",
-      "title": "feat: set devDependencies `component.scope` to `excluded`",
-      "url": "https://github.com/CycloneDX/cyclonedx-node-yarn/issues/129"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2024-03-27T10:43:51Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "hacktoberfest",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 51,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-node-yarn",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "add property to dev components",
-      "url": "https://github.com/CycloneDX/cyclonedx-node-yarn/issues/51"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2025-05-13T11:53:12Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 558,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-php-composer",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "[FEATURE] library mode",
-      "url": "https://github.com/CycloneDX/cyclonedx-php-composer/issues/558"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2024-12-01T11:55:48Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 508,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-php-composer",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "gather license evidence",
-      "url": "https://github.com/CycloneDX/cyclonedx-php-composer/issues/508"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2024-04-29T12:42:13Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "hacktoberfest",
-        "help wanted",
-        "schema 1.6"
-      ],
-      "linked_pr": false,
-      "number": 480,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-php-composer",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "feat: `component.tags` based on composer keywords",
-      "url": "https://github.com/CycloneDX/cyclonedx-php-composer/issues/480"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2024-02-08T12:33:20Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "hacktoberfest",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 461,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-php-composer",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "feat: set dev-dependencies `component.scope` to `excluded`",
-      "url": "https://github.com/CycloneDX/cyclonedx-php-composer/issues/461"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2023-11-12T08:26:39Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "hacktoberfest",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 435,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-php-composer",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "feat: document platform dependencies",
-      "url": "https://github.com/CycloneDX/cyclonedx-php-composer/issues/435"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2023-11-12T08:17:18Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "hacktoberfest",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 434,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-php-composer",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "feat: dependency graph with virtual packages",
-      "url": "https://github.com/CycloneDX/cyclonedx-php-composer/issues/434"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2023-08-20T07:01:07Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "hacktoberfest"
-      ],
-      "linked_pr": false,
-      "number": 396,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-php-composer",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "render property `cdx:reproducible`",
-      "url": "https://github.com/CycloneDX/cyclonedx-php-composer/issues/396"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 7,
-      "created_at": "2021-12-06T08:20:48Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "help wanted",
-        "idea"
-      ],
-      "linked_pr": false,
-      "number": 164,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-php-composer",
-      "taken": "not_checked",
-      "title": "have a `.phar` released ",
-      "url": "https://github.com/CycloneDX/cyclonedx-php-composer/issues/164"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 1,
-      "created_at": "2025-08-06T08:11:34Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "hacktoberfest",
-        "help wanted",
-        "schema 1.2"
-      ],
-      "linked_pr": false,
-      "number": 545,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-php-library",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "feat: support services",
-      "url": "https://github.com/CycloneDX/cyclonedx-php-library/issues/545"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 2,
-      "created_at": "2024-06-24T15:06:32Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:good first issue"
-      ],
-      "labels": [
-        "bug",
-        "good first issue",
-        "hacktoberfest",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 451,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-php-library",
-      "taken": "not_checked",
-      "title": "[XML] properly handle `normalizedString` & `token`",
-      "url": "https://github.com/CycloneDX/cyclonedx-php-library/issues/451"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2023-08-12T11:24:28Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:good first issue"
-      ],
-      "labels": [
-        "good first issue",
-        "hacktoberfest",
-        "help wanted",
-        "schema 1.5"
-      ],
-      "linked_pr": false,
-      "number": 339,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-php-library",
-      "taken": "not_checked",
-      "title": "support `metadata.lifecycles`",
-      "url": "https://github.com/CycloneDX/cyclonedx-php-library/issues/339"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2023-03-05T18:28:15Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "hacktoberfest",
-        "help wanted",
-        "schema 1.1"
-      ],
-      "linked_pr": false,
-      "number": 242,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-php-library",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Add support for `License.text`",
-      "url": "https://github.com/CycloneDX/cyclonedx-php-library/issues/242"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2025-01-13T07:43:31Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "TLN-registry",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 118,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-property-taxonomy",
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "[IDEA] Request to Register New Namespace: stackops",
-      "url": "https://github.com/CycloneDX/cyclonedx-property-taxonomy/issues/118"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 4,
-      "created_at": "2023-07-12T14:23:09Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 67,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-property-taxonomy",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Add country of origin to HBOM spec",
-      "url": "https://github.com/CycloneDX/cyclonedx-property-taxonomy/issues/67"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 16,
-      "created_at": "2025-01-05T11:59:18Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "source: poetry"
-      ],
-      "linked_pr": false,
-      "number": 839,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-python",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "feat: support poetry v2",
-      "url": "https://github.com/CycloneDX/cyclonedx-python/issues/839"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2024-08-13T15:32:16Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "source: pdm"
-      ],
-      "linked_pr": false,
-      "number": 777,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-python",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "feat: improve PDM reports reading lock and only report production dependencies",
-      "url": "https://github.com/CycloneDX/cyclonedx-python/issues/777"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 1,
-      "created_at": "2024-02-08T13:06:50Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "hacktoberfest",
-        "help wanted",
-        "source: pipenv",
-        "source: poetry"
-      ],
-      "linked_pr": false,
-      "number": 675,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-python",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "feat: mark dev-dependencies `component.scope` as \"excluded\"",
-      "url": "https://github.com/CycloneDX/cyclonedx-python/issues/675"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 1,
-      "created_at": "2024-01-06T21:52:33Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "hacktoberfest",
-        "help wanted",
-        "source: hatch"
-      ],
-      "linked_pr": false,
-      "number": 645,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-python",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "feat: support `hatch` ecosystem",
-      "url": "https://github.com/CycloneDX/cyclonedx-python/issues/645"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 5,
-      "created_at": "2022-05-18T10:07:39Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "source: requirements"
-      ],
-      "linked_pr": false,
-      "number": 354,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-python",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "SPDX license info from `requirements.txt`",
-      "url": "https://github.com/CycloneDX/cyclonedx-python/issues/354"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 1,
-      "created_at": "2025-11-17T09:53:40Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "schema 1.5"
-      ],
-      "linked_pr": false,
-      "number": 913,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-python-lib",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "[FEAT] Add support for Component data field",
-      "url": "https://github.com/CycloneDX/cyclonedx-python-lib/issues/913"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 2,
-      "created_at": "2025-10-23T13:35:43Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "schema 1.7"
-      ],
-      "linked_pr": false,
-      "number": 903,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-python-lib",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "[TRACKING] Complete support for CycloneDX v1.7",
-      "url": "https://github.com/CycloneDX/cyclonedx-python-lib/issues/903"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 2,
-      "created_at": "2025-07-16T14:19:05Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 851,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-python-lib",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "[FEAT]  Add support for XML Signatures",
-      "url": "https://github.com/CycloneDX/cyclonedx-python-lib/issues/851"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 2,
-      "created_at": "2024-10-07T13:13:44Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "schema 1.6"
-      ],
-      "linked_pr": false,
-      "number": 696,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-python-lib",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "[TRACKING] Complete support for CycloneDX v1.6",
-      "url": "https://github.com/CycloneDX/cyclonedx-python-lib/issues/696"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2024-06-14T10:18:19Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "hacktoberfest",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 633,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-python-lib",
-      "taken": "not_checked",
-      "title": ":mega: Call for contribution",
-      "url": "https://github.com/CycloneDX/cyclonedx-python-lib/issues/633"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "COLLABORATOR",
-      "comments": 3,
-      "created_at": "2024-04-08T08:19:31Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "schema 1.4"
-      ],
-      "linked_pr": false,
-      "number": 581,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-python-lib",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "[TRACKING]  Complete support for CycloneDX v1.4",
-      "url": "https://github.com/CycloneDX/cyclonedx-python-lib/issues/581"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "COLLABORATOR",
-      "comments": 1,
-      "created_at": "2024-04-03T13:26:03Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "schema 1.5"
-      ],
-      "linked_pr": false,
-      "number": 578,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-python-lib",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "[TRACKING] Complete support for CycloneDX v1.5",
-      "url": "https://github.com/CycloneDX/cyclonedx-python-lib/issues/578"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 5,
-      "created_at": "2023-06-28T10:02:27Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:documentation"
-      ],
-      "labels": [
-        "documentation",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 396,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-python-lib",
-      "taken": "not_checked",
-      "title": "[DOCS] showcases, examples & general docs improvements ",
-      "url": "https://github.com/CycloneDX/cyclonedx-python-lib/issues/396"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 2,
-      "created_at": "2024-03-22T09:29:02Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 30,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-ruby-gem",
-      "taken": "not_checked",
-      "title": ":mega: Looking for contributors and maintainers",
-      "url": "https://github.com/CycloneDX/cyclonedx-ruby-gem/issues/30"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 2,
-      "created_at": "2022-09-28T07:14:56Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 19,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-ruby-gem",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Add support for metadata information",
-      "url": "https://github.com/CycloneDX/cyclonedx-ruby-gem/issues/19"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2020-05-27T10:09:23Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 13,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-ruby-gem",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Add support for dependency graph introduced in v1.2 of the spec",
-      "url": "https://github.com/CycloneDX/cyclonedx-ruby-gem/issues/13"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2025-11-13T19:24:03Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 1474,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-webpack-plugin",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "perf: use caching when searchig for package manifests",
-      "url": "https://github.com/CycloneDX/cyclonedx-webpack-plugin/issues/1474"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2025-06-03T12:31:48Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 1395,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-webpack-plugin",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Option to Suppress or Control Log Output (e.g., \"skipped Component from PkgPath\")",
-      "url": "https://github.com/CycloneDX/cyclonedx-webpack-plugin/issues/1395"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2025-01-29T16:47:20Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "title:regression"
-      ],
-      "labels": [
-        "QA",
-        "help wanted",
-        "rainy-day"
-      ],
-      "linked_pr": false,
-      "number": 1357,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-webpack-plugin",
-      "taken": "not_checked",
-      "title": "tests: regression for duplicate build-system entries",
-      "url": "https://github.com/CycloneDX/cyclonedx-webpack-plugin/issues/1357"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2024-06-17T20:02:21Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "CI",
-        "CT",
-        "QA",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 1292,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-webpack-plugin",
-      "taken": "not_checked",
-      "title": "CI/CT for windows for typing reasons",
-      "url": "https://github.com/CycloneDX/cyclonedx-webpack-plugin/issues/1292"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 1,
-      "created_at": "2023-11-09T11:54:57Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "hacktoberfest",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 1235,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-webpack-plugin",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "feat: File-type components and hashes",
-      "url": "https://github.com/CycloneDX/cyclonedx-webpack-plugin/issues/1235"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2023-08-20T07:00:28Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "hacktoberfest",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 1201,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-webpack-plugin",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "render property `cdx:reproducible`",
-      "url": "https://github.com/CycloneDX/cyclonedx-webpack-plugin/issues/1201"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 1,
-      "created_at": "2023-07-05T09:18:31Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "idea",
-        "schema 1.5"
-      ],
-      "linked_pr": false,
-      "number": 1019,
-      "org": "CycloneDX",
-      "repo": "cyclonedx-webpack-plugin",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "feat: have \"formulation\" as part of the BOM - MBOM",
-      "url": "https://github.com/CycloneDX/cyclonedx-webpack-plugin/issues/1019"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 7,
-      "created_at": "2025-02-06T09:49:07Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "help wanted",
-        "t: MBOM",
-        "t: OBOM",
-        "t: SBOM",
-        "t: VDR+VEX"
-      ],
-      "linked_pr": false,
-      "number": 29,
-      "org": "CycloneDX",
-      "repo": "guides",
-      "taken": "not_checked",
-      "title": "[CDX1.7]  guide for \"component.isExternal\"",
-      "url": "https://github.com/CycloneDX/guides/issues/29"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 2,
-      "created_at": "2024-02-22T22:19:06Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:good first issue"
-      ],
-      "labels": [
-        "good first issue",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 20,
-      "org": "CycloneDX",
-      "repo": "guides",
-      "taken": "not_checked",
-      "title": "update guide on `metadata.manufacturer`  & `metadata.component.manufacturer`",
-      "url": "https://github.com/CycloneDX/guides/issues/20"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2024-02-22T22:16:21Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:good first issue"
-      ],
-      "labels": [
-        "good first issue",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 19,
-      "org": "CycloneDX",
-      "repo": "guides",
-      "taken": "not_checked",
-      "title": "add to guide: `component.author` & `component.manufacturer`",
-      "url": "https://github.com/CycloneDX/guides/issues/19"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "CONTRIBUTOR",
-      "comments": 2,
-      "created_at": "2026-01-09T16:42:31Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 143,
-      "org": "CycloneDX",
-      "repo": "sbom-utility",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Explore support for SPDX 3.x validation and conformance with JSON-LD",
-      "url": "https://github.com/CycloneDX/sbom-utility/issues/143"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 3,
-      "created_at": "2025-06-12T13:04:47Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "working as designed"
-      ],
-      "linked_pr": false,
-      "number": 131,
-      "org": "CycloneDX",
-      "repo": "sbom-utility",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "SBOM Utility passing SBOM with unexpected WITH clause",
-      "url": "https://github.com/CycloneDX/sbom-utility/issues/131"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 3,
-      "created_at": "2024-12-24T15:06:48Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "bug",
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 115,
-      "org": "CycloneDX",
-      "repo": "sbom-utility",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Utility is passing an SBOM with an invalid iri-reference",
-      "url": "https://github.com/CycloneDX/sbom-utility/issues/115"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "CONTRIBUTOR",
-      "comments": 2,
-      "created_at": "2024-05-08T21:09:05Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted",
-        "priority-high"
-      ],
-      "linked_pr": false,
-      "number": 92,
-      "org": "CycloneDX",
-      "repo": "sbom-utility",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Support for both the v1.5 component evidence `identity` and the v1.6 array of `componentIdentityEvidence`",
-      "url": "https://github.com/CycloneDX/sbom-utility/issues/92"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2024-05-08T19:57:05Z",
-      "fix": "high",
-      "fix_reasons": [
-        "title:support for"
-      ],
-      "labels": [
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 91,
-      "org": "CycloneDX",
-      "repo": "sbom-utility",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Add support for \"legacy\" and new `Tool` structure introduced in CycloneDX v1.5",
-      "url": "https://github.com/CycloneDX/sbom-utility/issues/91"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:good first issue"
-      ],
-      "assignees": [],
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2024-04-08T13:27:05Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 82,
-      "org": "CycloneDX",
-      "repo": "sbom-utility",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Support SPDX in the \"patch\" command",
-      "url": "https://github.com/CycloneDX/sbom-utility/issues/82"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:good first issue"
-      ],
-      "assignees": [],
-      "author_association": "CONTRIBUTOR",
-      "comments": 2,
-      "created_at": "2024-04-01T17:08:40Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 79,
-      "org": "CycloneDX",
-      "repo": "sbom-utility",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "TODO: Change Formulation and ModelCard schemas to use pointers",
-      "url": "https://github.com/CycloneDX/sbom-utility/issues/79"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:good first issue"
-      ],
-      "assignees": [],
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2023-07-31T20:07:01Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 51,
-      "org": "CycloneDX",
-      "repo": "sbom-utility",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Testcase: Need new test case for new \"Creation Tools\" object",
-      "url": "https://github.com/CycloneDX/sbom-utility/issues/51"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:good first issue"
-      ],
-      "assignees": [],
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2023-07-26T17:43:41Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "good first issue",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 49,
-      "org": "CycloneDX",
-      "repo": "sbom-utility",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Testcase: Need test for new complex \"licenseChoice\" schema defn.",
-      "url": "https://github.com/CycloneDX/sbom-utility/issues/49"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "CONTRIBUTOR",
-      "comments": 5,
-      "created_at": "2023-06-08T13:04:05Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 37,
-      "org": "CycloneDX",
-      "repo": "sbom-utility",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Enhancement: Summarize \"duplicate components\" schema error",
-      "url": "https://github.com/CycloneDX/sbom-utility/issues/37"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2025-05-06T20:36:53Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "format: XML",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 641,
-      "org": "CycloneDX",
-      "repo": "specification",
-      "taken": "not_checked",
-      "title": "CycloneDX 2.0 - SPIKE: Investigate .xsd auto generation from JSON Schema",
-      "url": "https://github.com/CycloneDX/specification/issues/641"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "CONTRIBUTOR",
-      "comments": 2,
-      "created_at": "2025-02-24T15:02:33Z",
-      "fix": "high",
-      "fix_reasons": [
-        "title:[feature"
-      ],
-      "labels": [
-        "help wanted",
-        "proposed core enhancement"
-      ],
-      "linked_pr": false,
-      "number": 605,
-      "org": "CycloneDX",
-      "repo": "specification",
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "[FEATURE]: Support multiple `analysis` element per `vulnerability`",
-      "url": "https://github.com/CycloneDX/specification/issues/605"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 4,
-      "created_at": "2024-07-11T05:40:51Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:documentation"
-      ],
-      "labels": [
-        "CDX 2.0",
-        "defect",
-        "documentation",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 492,
-      "org": "CycloneDX",
-      "repo": "specification",
-      "taken": "not_checked",
-      "title": "Grammar and style check",
-      "url": "https://github.com/CycloneDX/specification/issues/492"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author_association": "MEMBER",
-      "comments": 2,
-      "created_at": "2023-04-05T22:50:39Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "cap: ai/ml",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 206,
-      "org": "CycloneDX",
-      "repo": "specification",
-      "taken": "not_checked",
-      "title": "Expand upon ML explainability",
-      "url": "https://github.com/CycloneDX/specification/issues/206"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 1,
-      "created_at": "2023-01-04T17:08:21Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "help wanted",
-        "proposed core enhancement"
-      ],
-      "linked_pr": false,
-      "number": 173,
-      "org": "CycloneDX",
-      "repo": "specification",
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "Enhance metadata with richer description of custom code",
-      "url": "https://github.com/CycloneDX/specification/issues/173"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:help wanted"
-      ],
-      "assignees": [],
-      "author_association": "NONE",
-      "comments": 8,
-      "created_at": "2022-08-10T10:33:46Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "help wanted",
-        "proposed core enhancement"
-      ],
-      "linked_pr": false,
-      "number": 155,
-      "org": "CycloneDX",
-      "repo": "specification",
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "Feature suggestion: Adding Sigstore support to the standard",
-      "url": "https://github.com/CycloneDX/specification/issues/155"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
+        "claimed:Yash990-bit",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -16594,7 +14085,8 @@
       "number": 2234,
       "org": "open-telemetry",
       "repo": "opentelemetry-android",
-      "taken": "not_checked",
+      "taken": "claimed",
+      "taken_evidence": "Yash990-bit",
       "title": "Consider abstraction for handling errors",
       "url": "https://github.com/open-telemetry/opentelemetry-android/issues/2234"
     },
@@ -17556,8 +15048,9 @@
       "url": "https://github.com/open-telemetry/opentelemetry-ebpf-profiler/issues/1810"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#751",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -17577,7 +15070,8 @@
       "number": 636,
       "org": "open-telemetry",
       "repo": "opentelemetry-ecosystem-explorer",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#751",
       "title": "Make the Explorer information accessible to agents",
       "url": "https://github.com/open-telemetry/opentelemetry-ecosystem-explorer/issues/636"
     },
@@ -18611,6 +16105,34 @@
       "url": "https://github.com/open-telemetry/opentelemetry-go-contrib/issues/10203"
     },
     {
+      "acceptance": "low",
+      "acceptance_reasons": [
+        "label:good first issue"
+      ],
+      "assignees": [],
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-04T17:31:50Z",
+      "fix": "low",
+      "fix_reasons": [
+        "label:documentation"
+      ],
+      "labels": [
+        "contribfest",
+        "documentation",
+        "good first issue",
+        "help wanted"
+      ],
+      "linked_pr": false,
+      "number": 10202,
+      "org": "open-telemetry",
+      "repo": "opentelemetry-go-contrib",
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Correct X-Ray Lambda option type names",
+      "url": "https://github.com/open-telemetry/opentelemetry-go-contrib/issues/10202"
+    },
+    {
       "acceptance": "medium",
       "acceptance_reasons": [
         "label:good first issue",
@@ -18633,13 +16155,15 @@
       "number": 2540,
       "org": "open-telemetry",
       "repo": "opentelemetry-helm-charts",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "[opentelemetry-collector] kubernetesObjects and kubernetesEvents presets still use the deprecated k8sobjects receiver name",
       "url": "https://github.com/open-telemetry/opentelemetry-helm-charts/issues/2540"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "claimed:rashmeetchhabra12",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -18659,13 +16183,15 @@
       "number": 1311,
       "org": "open-telemetry",
       "repo": "opentelemetry-kotlin",
-      "taken": "not_checked",
+      "taken": "claimed",
+      "taken_evidence": "rashmeetchhabra12",
       "title": "Improve Baggage percent-decoding",
       "url": "https://github.com/open-telemetry/opentelemetry-kotlin/issues/1311"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#1103",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -18685,13 +16211,15 @@
       "number": 923,
       "org": "open-telemetry",
       "repo": "opentelemetry-kotlin",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#1103",
       "title": "Configuration: LogRecordExporter",
       "url": "https://github.com/open-telemetry/opentelemetry-kotlin/issues/923"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#1099",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -18711,7 +16239,8 @@
       "number": 921,
       "org": "open-telemetry",
       "repo": "opentelemetry-kotlin",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#1099",
       "title": "Configuration: BatchLogRecordProcessor",
       "url": "https://github.com/open-telemetry/opentelemetry-kotlin/issues/921"
     },
@@ -18843,7 +16372,8 @@
       "number": 2695,
       "org": "open-telemetry",
       "repo": "opentelemetry-ruby-contrib",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Grape README doesn't document `install_rack`",
       "url": "https://github.com/open-telemetry/opentelemetry-ruby-contrib/issues/2695"
     },
@@ -18896,7 +16426,8 @@
       "number": 2693,
       "org": "open-telemetry",
       "repo": "opentelemetry-ruby-contrib",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Sinatra README doesn't document `install_rack`",
       "url": "https://github.com/open-telemetry/opentelemetry-ruby-contrib/issues/2693"
     },
@@ -18923,7 +16454,8 @@
       "number": 2691,
       "org": "open-telemetry",
       "repo": "opentelemetry-ruby-contrib",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "graphql README doesn't document `legacy_tracing`",
       "url": "https://github.com/open-telemetry/opentelemetry-ruby-contrib/issues/2691"
     },
@@ -18950,7 +16482,8 @@
       "number": 2690,
       "org": "open-telemetry",
       "repo": "opentelemetry-ruby-contrib",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "PG README doesn't document `propagator`",
       "url": "https://github.com/open-telemetry/opentelemetry-ruby-contrib/issues/2690"
     },
@@ -18977,7 +16510,8 @@
       "number": 2689,
       "org": "open-telemetry",
       "repo": "opentelemetry-ruby-contrib",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Que README doesn't document `trace_poller`",
       "url": "https://github.com/open-telemetry/opentelemetry-ruby-contrib/issues/2689"
     },
@@ -19004,7 +16538,8 @@
       "number": 2688,
       "org": "open-telemetry",
       "repo": "opentelemetry-ruby-contrib",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "redis README doesn't document `trace_root_spans`",
       "url": "https://github.com/open-telemetry/opentelemetry-ruby-contrib/issues/2688"
     },
@@ -19031,7 +16566,8 @@
       "number": 2687,
       "org": "open-telemetry",
       "repo": "opentelemetry-ruby-contrib",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Excon README doesn't document `untraced_hosts`",
       "url": "https://github.com/open-telemetry/opentelemetry-ruby-contrib/issues/2687"
     },
@@ -19058,7 +16594,8 @@
       "number": 2686,
       "org": "open-telemetry",
       "repo": "opentelemetry-ruby-contrib",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Rack README missing config options",
       "url": "https://github.com/open-telemetry/opentelemetry-ruby-contrib/issues/2686"
     },
@@ -19085,7 +16622,8 @@
       "number": 2685,
       "org": "open-telemetry",
       "repo": "opentelemetry-ruby-contrib",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Resque README does not document config options",
       "url": "https://github.com/open-telemetry/opentelemetry-ruby-contrib/issues/2685"
     },
@@ -19112,7 +16650,8 @@
       "number": 2684,
       "org": "open-telemetry",
       "repo": "opentelemetry-ruby-contrib",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "mysql2 README missing config options",
       "url": "https://github.com/open-telemetry/opentelemetry-ruby-contrib/issues/2684"
     },
@@ -19139,7 +16678,8 @@
       "number": 2683,
       "org": "open-telemetry",
       "repo": "opentelemetry-ruby-contrib",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "sidekiq README does not document config options",
       "url": "https://github.com/open-telemetry/opentelemetry-ruby-contrib/issues/2683"
     },
@@ -19462,7 +17002,8 @@
       "number": 392,
       "org": "ossf",
       "repo": "allstar",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Update operator.md permissions required",
       "url": "https://github.com/ossf/allstar/issues/392"
     },
@@ -19515,7 +17056,8 @@
       "number": 328,
       "org": "ossf",
       "repo": "allstar",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Clarify that allstar must be able to access the .allstar repo",
       "url": "https://github.com/ossf/allstar/issues/328"
     },
@@ -19700,7 +17242,8 @@
       "number": 704,
       "org": "ossf",
       "repo": "best-practices-badge",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Report bug in #702 to Rails",
       "url": "https://github.com/ossf/best-practices-badge/issues/704"
     },
@@ -19780,7 +17323,8 @@
       "number": 445,
       "org": "ossf",
       "repo": "best-practices-badge",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Improve /project_stats display on landscape small screen",
       "url": "https://github.com/ossf/best-practices-badge/issues/445"
     },
@@ -19831,7 +17375,8 @@
       "number": 43,
       "org": "ossf",
       "repo": "DevRel-community",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Community \"conference-in-a-box\" kit for OpenSSF talks",
       "url": "https://github.com/ossf/DevRel-community/issues/43"
     },
@@ -19932,7 +17477,8 @@
       "number": 30,
       "org": "ossf",
       "repo": "fuzz-introspector",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Umbrella issue: Projects failing",
       "url": "https://github.com/ossf/fuzz-introspector/issues/30"
     },
@@ -20037,8 +17583,9 @@
       "url": "https://github.com/ossf/Memory-Safety/issues/54"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "open_pr:#479",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -20057,7 +17604,8 @@
       "number": 254,
       "org": "ossf",
       "repo": "oss-crs",
-      "taken": "not_checked",
+      "taken": "open_pr",
+      "taken_evidence": "#479",
       "title": "Integrate Anthropic's Defending Code Harness",
       "url": "https://github.com/ossf/oss-crs/issues/254"
     },
@@ -20330,8 +17878,9 @@
       "url": "https://github.com/ossf/scorecard/issues/1174"
     },
     {
-      "acceptance": "high",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#1017",
         "label:needs discussion"
       ],
       "assignees": [],
@@ -20352,7 +17901,8 @@
       "number": 1024,
       "org": "ossf",
       "repo": "scorecard",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#1017",
       "title": "BUG: contributor checks does not validate number of companies per contributor",
       "url": "https://github.com/ossf/scorecard/issues/1024"
     },
@@ -20674,7 +18224,8 @@
       "number": 16,
       "org": "ossf",
       "repo": "wg-endusers",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Create blog to publicise the end user group",
       "url": "https://github.com/ossf/wg-endusers/issues/16"
     },
@@ -20698,7 +18249,8 @@
       "number": 9,
       "org": "ossf",
       "repo": "wg-endusers",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Threat model an abstract enterprise supply chain",
       "url": "https://github.com/ossf/wg-endusers/issues/9"
     },
@@ -20722,7 +18274,8 @@
       "number": 8,
       "org": "ossf",
       "repo": "wg-endusers",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Update  the Technical Charter for Endusers-wg",
       "url": "https://github.com/ossf/wg-endusers/issues/8"
     },
@@ -20753,8 +18306,9 @@
       "url": "https://github.com/ossf/wg-orbit/issues/31"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "claimed:bhushan4work",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -20775,13 +18329,15 @@
       "number": 157,
       "org": "OWASP",
       "repo": "API-Security",
-      "taken": "not_checked",
+      "taken": "claimed",
+      "taken_evidence": "bhushan4work",
       "title": "Translate new GUID/authorization note to Persian (Farsi) (API1:2023)",
       "url": "https://github.com/OWASP/API-Security/issues/157"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#3466",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -20801,13 +18357,15 @@
       "number": 3405,
       "org": "OWASP",
       "repo": "cornucopia",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#3466",
       "title": "Create scenarios for the EoP game",
       "url": "https://github.com/OWASP/cornucopia/issues/3405"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#3384",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -20828,13 +18386,15 @@
       "number": 583,
       "org": "OWASP",
       "repo": "cornucopia",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#3384",
       "title": "Ensure the converter can create print-ready proofs for print-on-demand jobs",
       "url": "https://github.com/OWASP/cornucopia/issues/583"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#306",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -20856,13 +18416,15 @@
       "number": 281,
       "org": "OWASP",
       "repo": "cornucopia",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#306",
       "title": "Add German translations",
       "url": "https://github.com/OWASP/cornucopia/issues/281"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "open_pr:#1593",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -20882,13 +18444,15 @@
       "number": 1590,
       "org": "OWASP",
       "repo": "cve-lite-cli",
-      "taken": "not_checked",
+      "taken": "open_pr",
+      "taken_evidence": "#1593",
       "title": "Within-range advice says 'install', which does not move a pinned child",
       "url": "https://github.com/OWASP/cve-lite-cli/issues/1590"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "claimed:coder-Yash886",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -20908,13 +18472,15 @@
       "number": 1464,
       "org": "OWASP",
       "repo": "cve-lite-cli",
-      "taken": "not_checked",
+      "taken": "claimed",
+      "taken_evidence": "coder-Yash886",
       "title": "research: Rust (Cargo) support",
       "url": "https://github.com/OWASP/cve-lite-cli/issues/1464"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "claimed:bhushan4work",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -20934,13 +18500,15 @@
       "number": 1463,
       "org": "OWASP",
       "repo": "cve-lite-cli",
-      "taken": "not_checked",
+      "taken": "claimed",
+      "taken_evidence": "bhushan4work",
       "title": "research: Go modules support",
       "url": "https://github.com/OWASP/cve-lite-cli/issues/1463"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "claimed:coder-Yash886",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -20960,7 +18528,8 @@
       "number": 1462,
       "org": "OWASP",
       "repo": "cve-lite-cli",
-      "taken": "not_checked",
+      "taken": "claimed",
+      "taken_evidence": "coder-Yash886",
       "title": "research: Java (Maven and Gradle) support",
       "url": "https://github.com/OWASP/cve-lite-cli/issues/1462"
     },
@@ -20986,7 +18555,8 @@
       "number": 1461,
       "org": "OWASP",
       "repo": "cve-lite-cli",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "research: .NET (NuGet) support",
       "url": "https://github.com/OWASP/cve-lite-cli/issues/1461"
     },
@@ -21011,7 +18581,8 @@
       "number": 33,
       "org": "OWASP",
       "repo": "Docker-Security",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "PDF generation: Replacement for gitbook-cli (and maybe calibre)?",
       "url": "https://github.com/OWASP/Docker-Security/issues/33"
     },
@@ -21036,7 +18607,8 @@
       "number": 31,
       "org": "OWASP",
       "repo": "Docker-Security",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Fix or replace gitbook (in Dockerfile)",
       "url": "https://github.com/OWASP/Docker-Security/issues/31"
     },
@@ -21061,7 +18633,8 @@
       "number": 14,
       "org": "OWASP",
       "repo": "Docker-Security",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Image Scanning in D02",
       "url": "https://github.com/OWASP/Docker-Security/issues/14"
     },
@@ -21088,7 +18661,8 @@
       "number": 119,
       "org": "OWASP",
       "repo": "glue",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Document ZAP",
       "url": "https://github.com/OWASP/glue/issues/119"
     },
@@ -21115,7 +18689,8 @@
       "number": 118,
       "org": "OWASP",
       "repo": "glue",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Document how to write a filter.",
       "url": "https://github.com/OWASP/glue/issues/118"
     },
@@ -21141,7 +18716,8 @@
       "number": 113,
       "org": "OWASP",
       "repo": "glue",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Add dummy task ",
       "url": "https://github.com/OWASP/glue/issues/113"
     },
@@ -21204,8 +18780,9 @@
       "url": "https://github.com/OWASP/NodeGoat/issues/159"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "open_pr:#237",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -21228,7 +18805,8 @@
       "number": 158,
       "org": "OWASP",
       "repo": "NodeGoat",
-      "taken": "not_checked",
+      "taken": "open_pr",
+      "taken_evidence": "#237",
       "title": "Migration to bcrypt",
       "url": "https://github.com/OWASP/NodeGoat/issues/158"
     },
@@ -21257,7 +18835,8 @@
       "number": 153,
       "org": "OWASP",
       "repo": "NodeGoat",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Upgrade dependencies",
       "url": "https://github.com/OWASP/NodeGoat/issues/153"
     },
@@ -21404,13 +18983,15 @@
       "number": 73,
       "org": "OWASP",
       "repo": "OWASP-Hunting",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Payload files on main contain exact duplicate entries within the same file",
       "url": "https://github.com/OWASP/OWASP-Hunting/issues/73"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "claimed:joshuamelendez92-ctrl",
         "label:good first issue",
         "maintainer-filed"
       ],
@@ -21430,7 +19011,8 @@
       "number": 4,
       "org": "OWASP",
       "repo": "OWASP-Top-10-Neocloud-and-AI-Data-Center-Security-Risks",
-      "taken": "not_checked",
+      "taken": "claimed",
+      "taken_evidence": "joshuamelendez92-ctrl",
       "title": "Add a glossary of framework terms",
       "url": "https://github.com/OWASP/OWASP-Top-10-Neocloud-and-AI-Data-Center-Security-Risks/issues/4"
     },
@@ -21511,7 +19093,8 @@
       "number": 575,
       "org": "OWASP",
       "repo": "SecurityShepherd",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Create OWASP API Top Ten Level Tickets",
       "url": "https://github.com/OWASP/SecurityShepherd/issues/575"
     },
@@ -21623,7 +19206,8 @@
       "number": 333,
       "org": "OWASP",
       "repo": "SecurityShepherd",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Investigate creating API challenges",
       "url": "https://github.com/OWASP/SecurityShepherd/issues/333"
     },
@@ -21649,7 +19233,8 @@
       "number": 331,
       "org": "OWASP",
       "repo": "SecurityShepherd",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Investigate adding JWT challenges",
       "url": "https://github.com/OWASP/SecurityShepherd/issues/331"
     },
@@ -21733,7 +19318,8 @@
       "number": 972,
       "org": "OWASP",
       "repo": "threat-dragon",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Two undo/redo methods do not join up",
       "url": "https://github.com/OWASP/threat-dragon/issues/972"
     },
@@ -21850,8 +19436,9 @@
       "url": "https://github.com/OWASP/threat-dragon/issues/361"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#250",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -21870,7 +19457,8 @@
       "number": 201,
       "org": "OWASP",
       "repo": "wrongsecrets",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#250",
       "title": "create a secrets detection testbed branch with revoked credentials",
       "url": "https://github.com/OWASP/wrongsecrets/issues/201"
     },
@@ -21895,7 +19483,8 @@
       "number": 37,
       "org": "OWASP",
       "repo": "wrongsecrets",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "Possible new ideas for challenges",
       "url": "https://github.com/OWASP/wrongsecrets/issues/37"
     },
@@ -21953,8 +19542,9 @@
       "url": "https://github.com/OWASP/www-project-api-security-testing-framework/issues/127"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "merged_pr:#55",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -21973,7 +19563,8 @@
       "number": 49,
       "org": "OWASP",
       "repo": "www-project-citizen-development-top10-security-risks",
-      "taken": "not_checked",
+      "taken": "merged_pr",
+      "taken_evidence": "#55",
       "title": "Add product-specific examples",
       "url": "https://github.com/OWASP/www-project-citizen-development-top10-security-risks/issues/49"
     },
@@ -22054,7 +19645,8 @@
       "number": 172,
       "org": "OWASP",
       "repo": "www-project-machine-learning-security-top-10",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "chore(admin): assign owner(s) for ML10 Model Poisoning",
       "url": "https://github.com/OWASP/www-project-machine-learning-security-top-10/issues/172"
     },
@@ -22080,7 +19672,8 @@
       "number": 171,
       "org": "OWASP",
       "repo": "www-project-machine-learning-security-top-10",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "chore(admin): assign owner(s) for ML09 Output Integrity Attack",
       "url": "https://github.com/OWASP/www-project-machine-learning-security-top-10/issues/171"
     },
@@ -22106,7 +19699,8 @@
       "number": 170,
       "org": "OWASP",
       "repo": "www-project-machine-learning-security-top-10",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "chore(admin): assign owner(s) for ML08 Model Skewing",
       "url": "https://github.com/OWASP/www-project-machine-learning-security-top-10/issues/170"
     },
@@ -22132,7 +19726,8 @@
       "number": 167,
       "org": "OWASP",
       "repo": "www-project-machine-learning-security-top-10",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "chore(admin): assign owner(s) for ML05 Model Theft",
       "url": "https://github.com/OWASP/www-project-machine-learning-security-top-10/issues/167"
     },
@@ -22158,7 +19753,8 @@
       "number": 166,
       "org": "OWASP",
       "repo": "www-project-machine-learning-security-top-10",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "chore(admin): assign owner(s) for ML04 Membership Inference Attack",
       "url": "https://github.com/OWASP/www-project-machine-learning-security-top-10/issues/166"
     },
@@ -22184,7 +19780,8 @@
       "number": 165,
       "org": "OWASP",
       "repo": "www-project-machine-learning-security-top-10",
-      "taken": "not_checked",
+      "taken": "free",
+      "taken_evidence": "",
       "title": "chore(admin): assign owner(s) for ML03 Model Inversion Attack",
       "url": "https://github.com/OWASP/www-project-machine-learning-security-top-10/issues/165"
     },
@@ -22666,9 +20263,9 @@
     }
   ],
   "taken_checks": {
-    "starter": 150,
-    "window": 100
+    "starter": 250,
+    "window": 161
   },
-  "verified_at": "2026-11-18T14:19:42Z",
-  "window_start": "2026-11-17T14:19:42Z"
+  "verified_at": "2026-11-18T14:24:03Z",
+  "window_start": "2026-11-17T14:24:03Z"
 }
