@@ -30,3 +30,13 @@ DRAFT
 - 建議 `#3117` 的方向，因為 issue 的期望就是「operator 的報告與 Trivy 一致」
 - 測試：在 `pkg/plugins/trivy/testdata/fixture` 加一筆 `SeveritySource` 為空、`Severity: HIGH` 的 fixture，斷言報告裡是 `HIGH`；`SeveritySource` 有值的 case 結果要不變
 - 命令：`go test ./pkg/vulnerabilityreport/... ./pkg/plugins/trivy/...`、`make lint`（以 repo 的 Makefile 為準）
+
+## 接手時的認領留言要點（只在條件成立時用，由人撰寫）
+
+使用條件：`#3117` 與 `#3026` 都已關閉或作者明說不做，而且 issue 沒有 assignee。條件不成立時不要留。
+
+1. 開頭說明你看到 `#3117`、`#3026` 已關閉（附連結），想接手這件
+2. 根因一句話：`pkg/vulnerabilityreport/io.go` 的 `GetVulnerabilitiesFromScanResult` 在 `SeveritySource` 為空時取 `VendorSeverity[""]`，結果變成 `UNKNOWN`
+3. 預計做法：改用 Trivy 已算好的 `sr.Severity`，與 Trivy CLI 一致（issue 的建議）；並問維護者是否偏好「先查 vendor、查不到才退回 `Severity`」的版本
+4. 測試：在 `pkg/plugins/trivy/testdata/fixture` 加一筆 `SeveritySource` 為空的 fixture
+5. 請維護者指派或回覆同意後再開 PR；提醒自己要簽 CLA
