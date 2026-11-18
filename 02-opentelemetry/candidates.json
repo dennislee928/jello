@@ -200,6 +200,43 @@
     {
       "acceptance_score": null,
       "assignees": [],
+      "blocking_dependencies": [
+        "not reproduced yet",
+        "maintainer agreement on the direction (python-contrib AGENTS.md)"
+      ],
+      "confidence": "medium",
+      "duplicate_prs": [],
+      "evidence_path": "reports/evidence/recheck-2026-11-18-five-issues.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 5353,
+      "issue_updated_at": "2026-11-18T15:00:15Z",
+      "kind": "issue",
+      "labels": [],
+      "last_verified_at": "2026-11-18T16:00:05Z",
+      "maintainer_signals": [
+        "dennislee928 commented on 2026-11-18T15:00:15Z proposing str(exc) in LoggingHandler and StructlogProcessor; no maintainer reply yet",
+        "AGENTS.md: implementation direction must be agreed on the issue first; no AI-written comments"
+      ],
+      "next_action": "等維護者回覆方向；本機先重現兩處。方向談定後才實作。",
+      "org": "open-telemetry",
+      "repo": "opentelemetry-python-contrib",
+      "score_rationale": "尚未重現，不給分。外部 PR 合併率 34/50 只是 proxy。",
+      "skills_match": [
+        "Python",
+        "telemetry"
+      ],
+      "sources": [
+        "https://github.com/open-telemetry/opentelemetry-python-contrib/issues/5353"
+      ],
+      "status": "DISCOVERED",
+      "title": "logging: exception.message is the exception's first argument, not its message",
+      "url": "https://github.com/open-telemetry/opentelemetry-python-contrib/issues/5353"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
       "blocking_dependencies": [],
       "confidence": "unknown",
       "duplicate_prs": [],
@@ -235,7 +272,7 @@
   ],
   "directory": "02-opentelemetry",
   "errors": [],
-  "last_verified_at": "2026-11-17T15:32:44Z",
+  "last_verified_at": "2026-11-18T16:00:05Z",
   "partial": false,
   "schema_version": 1
 }
