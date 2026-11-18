@@ -26,3 +26,13 @@ DRAFT
 - 修法方向：在 `Main.java` 把 `--conf` 交給 Hadoop 之前，先保留下來，並在讀完 `--config-file` 之後才套用，讓明確指定的屬性優先。細節以 `#3866` 的審查結果為準，不另起爐灶
 - 測試：照 issue 的步驟寫。Avro 檔有一個 `uuid` 邏輯型別的 string 欄位，`writer.properties` 設 `parquet.avro.write-parquet-uuid=false`，CLI 帶 `--conf parquet.avro.write-parquet-uuid=true`，斷言輸出的 schema 是 `FIXED_LEN_BYTE_ARRAY` 的 UUID
 - 命令：`mvn -pl parquet-cli -am test -Dtest=ConfigurationCliTest`
+
+## 接手時的認領留言要點（只在條件成立時用，由人撰寫）
+
+使用條件：`#3866` 被關閉且沒有合併，作者也沒有再開新 PR。條件不成立時不要留，改去 review `#3866`。
+
+1. 開頭說明 `#3866` 已關閉（附連結與關閉原因），想接手這件
+2. 根因一句話：Hadoop 的 `GenericOptionsParser` 在 Parquet 的參數解析之前就吃掉了開頭的 `--conf`，所以明確指定的屬性沒有蓋過 `--config-file`
+3. 預計做法：沿用 `#3866` 被 review 認可的部分；若它被關是因為做法問題，先問維護者偏好的方向
+4. 測試：照 issue 的 UUID 步驟寫 CLI 測試，斷言 schema 是 `FIXED_LEN_BYTE_ARRAY` 的 UUID
+5. PR 標題用 `GH-3969:` 開頭
