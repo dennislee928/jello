@@ -26,3 +26,12 @@ DRAFT
 - 修法：`key, value, ok := strings.Cut(strings.TrimSpace(part), kvDelimiter)`。最後一段原本的 `TrimSpace` 可以保留或移除，結果相同
 - 測試：照 issue 的 4 組 header 寫成 table test，放進 `propagator_test.go`，斷言 `IsValid()` 與 `IsSampled()`；修改前後兩組要分別失敗、通過
 - 其他：CHANGELOG `Fixed` 段加一行，以 PR 編號結尾；跑 `make precommit`
+
+## 接手時的認領留言要點（只在條件成立時用，由人撰寫，OTel 不收 AI 撰寫的留言）
+
+使用條件：code owner 已同意做法、回報者 `yuminn-k` 長時間沒開 PR，而且回報者回覆同意讓出。條件不成立時不要留。
+
+1. 先問 `yuminn-k` 是否還打算做；在對方回覆之前不要接手
+2. 對方同意讓出後，說明要接手，並沿用 issue 裡的重現測試與一行修法（`strings.Cut(strings.TrimSpace(part), kvDelimiter)`），不另做分析
+3. 說明會補 table test（issue 的 4 組 header）與 CHANGELOG `Fixed` 一行，並跑 `make precommit`
+4. 揭露有 AI 協助（OTel GenAI 政策），留言本身用自己的話寫
