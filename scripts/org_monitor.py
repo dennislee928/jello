@@ -360,6 +360,7 @@ def monitor(config, verified_at, *, runner=None, sleeper=None, max_attempts=gith
     window_checked = verify(issues, int(taken_cfg.get("window_max_checks", 100)))
 
     starter = []
+    notes = []
     starter_labels = [label for label in config.get("starter_labels") or [] if LABEL_RE.match(label)]
     seen = {issue["url"] for issue in issues}
     if starter_labels:
@@ -376,7 +377,10 @@ def monitor(config, verified_at, *, runner=None, sleeper=None, max_attempts=gith
                 sort="updated",
             )
             if not complete:
-                errors.append({"org": org, "detail": f"starter search: {detail or 'incomplete'}"})
+                if detail.startswith("stopped at"):
+                    notes.append({"org": org, "detail": f"starter 池只取最近更新的 {len(raw)} 筆（{detail}）"})
+                else:
+                    errors.append({"org": org, "detail": f"starter search: {detail or 'incomplete'}"})
             for item in raw:
                 if item.get("pull_request"):
                     continue
@@ -405,6 +409,7 @@ def monitor(config, verified_at, *, runner=None, sleeper=None, max_attempts=gith
         "partial": bool(errors),
         "orgs": orgs,
         "errors": errors,
+        "notes": notes,
         "issues": issues,
         "starter": starter,
         "taken_checks": {"window": window_checked, "starter": starter_checked},
@@ -533,6 +538,10 @@ def render_markdown(report, starter_labels=()):
         else:
             lines.append("沒有。")
 
+    if report.get("notes"):
+        lines += ["", "## 註記", ""] + [f"- `{plain(n['org'])}`：{plain(n['detail'])}" for n in report["notes"]]
+    checks = report.get("taken_checks") or {}
+    lines += ["", f"接手檢查共讀了 {checks.get('window', 0)} + {checks.get('starter', 0)} 個 timeline。"]
     lines += ["", "## 錯誤", ""]
     if report["errors"]:
         lines += [f"- `{plain(e['org'])}`：{plain(e['detail'])}" for e in report["errors"]]

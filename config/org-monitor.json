@@ -26,9 +26,9 @@
   ],
   "taken_check": {
     "claim_days": 60,
-    "window_max_checks": 100,
+    "window_max_checks": 200,
     "starter_pages_per_org": 1,
-    "starter_max_checks": 150
+    "starter_max_checks": 250
   },
   "fix": {
     "low_labels": [

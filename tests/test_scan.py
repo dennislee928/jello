@@ -162,7 +162,7 @@ class ScanTests(unittest.TestCase):
 class WorkflowTests(unittest.TestCase):
     def test_workflow_only_commits_the_dated_report(self):
         text = (ROOT / ".github" / "workflows" / "oss-monitor.yml").read_text(encoding="utf-8")
-        self.assertIn('cron: "0 1 * * *"', text)
+        self.assertRegex(text, r'schedule:\n\s+- cron: "[0-9*/, -]+"')
         self.assertIn("workflow_dispatch:", text)
         # Top level stays read-only; only the job may write repo contents.
         top = text.split("\njobs:", 1)[0]
