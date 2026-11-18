@@ -280,6 +280,12 @@ class TakenTests(unittest.TestCase):
         "### Are you willing to submit PR?\n\n- [x] Yes I am willing to submit a PR!",
         # iceberg-go#2416 comment
         "Before I open the PR, I'd like to check what NotStartsWith should do with a NULL value.",
+        # airflow#77243: template answer kept without a checkbox
+        "### Are you willing to submit PR?\n\nYes I am willing to submit a PR!",
+        # cloudflare/agents#2910
+        "Happy to open a PR if that helps.",
+        # rocketmq-clients#1497
+        "This PR fixes all nine with unit tests.",
     )
     NOT_CLAIMS = (
         # python-contrib#5353 template answer

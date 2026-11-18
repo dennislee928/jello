@@ -58,6 +58,10 @@ CLAIM_PATTERNS = tuple(
         r"\bbefore i open (?:a|the) pr\b",
         r"\bi can open a pr\b",
         r"\[x\] yes i am willing to submit a pr",
+        # The template answer without a checkbox, as rendered when the option was kept.
+        r"(?:^|\n)\s*yes i am willing to submit a pr",
+        r"\bhappy to (?:open|send|submit) a pr\b",
+        r"\bthis pr fixes\b",
         r"\balready (?:fixed|reproduced)\b[^.\n]{0,80}\b(?:working on|fix)\b",
     )
 )
