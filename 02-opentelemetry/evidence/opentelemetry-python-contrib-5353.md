@@ -1,6 +1,6 @@
 # 證據：open-telemetry/opentelemetry-python-contrib #5353
 
-- status：`READY_FOR_HUMAN_PR`（只做 logging）
+- status：`PR_OPEN`（[#5357](https://github.com/open-telemetry/opentelemetry-python-contrib/pull/5357)，只做 logging）
 - last_verified_at：`2026-11-19T12:48:30Z`
 - 外部 checkout：`/Users/dennis/Desktop/upstream-src/open-telemetry/opentelemetry-python-contrib`（`git clone --filter=blob:none`）
 - base：`main` `ced050a9`（`2026-11-19` 從 `7a554d4e` rebase 過來）
@@ -17,6 +17,7 @@
 | `2026-11-18T16:40:00Z` | `REPRODUCED` | 新測試在未修改的 `7a554d4e` 上，兩個套件各連跑 3 次都失敗 |
 | `2026-11-19T10:30:10Z` | `READY_TO_IMPLEMENT` | 維護者 `xrmx`：「please open a PR for logging instrumentaton first and once merged go with the structlog one」；issue 指派給 `dennislee928` |
 | `2026-11-19T12:48:30Z` | `READY_FOR_HUMAN_PR` | logging 的修改後測試、lint、ruff、typecheck、towncrier 預覽都通過；交給人 |
+| `2026-11-19T13:10:51Z` | `PR_OPEN` | 人開了 #5357（head `643d9ab8`，作者 `dennislee928`）。changelog fragment 仍是 `5353.fixed`，要改成 `5357.fixed` |
 
 硬門檻：維護者已在 issue 上同意，並指定先做 logging、合併後再做 structlog。structlog 的測試改動已經從這個分支拿掉，留待下一個 PR。
 

@@ -243,9 +243,9 @@
         "dennislee928"
       ],
       "blocking_dependencies": [
-        "human writes the PR description per the template and ticks Authorship (python-contrib AGENTS.md)",
-        "rename .changelog/5353.fixed to the PR number after opening the PR",
-        "structlog change waits until the logging PR is merged"
+        "rename .changelog/5353.fixed to 5357.fixed",
+        "maintainer review",
+        "structlog change waits until this PR merges"
       ],
       "confidence": "high",
       "duplicate_prs": [],
@@ -257,12 +257,12 @@
       "issue_updated_at": "2026-11-18T15:00:15Z",
       "kind": "issue",
       "labels": [],
-      "last_verified_at": "2026-11-19T12:48:30Z",
+      "last_verified_at": "2026-11-19T13:10:51Z",
       "maintainer_signals": [
         "xrmx (2026-11-19): open a PR for the logging instrumentation first, then structlog once merged",
         "issue assigned to dennislee928"
       ],
-      "next_action": "人讀 diff、寫 PR 描述、fork、推送、開 PR；changelog fragment 改成 PR 編號。合併後再做 structlog。",
+      "next_action": "人把 changelog fragment 改名為 5357.fixed 並推送；等 review，回覆由人自己寫；合併後再開 structlog 的 PR。",
       "org": "open-telemetry",
       "repo": "opentelemetry-python-contrib",
       "score_rationale": "acceptance 4：維護者已同意並指派，改動一行加測試。impact 2：OSError 類例外的 exception.message 會改成正確的值；不主張使用量。",
@@ -271,9 +271,10 @@
         "telemetry"
       ],
       "sources": [
-        "https://github.com/open-telemetry/opentelemetry-python-contrib/issues/5353"
+        "https://github.com/open-telemetry/opentelemetry-python-contrib/issues/5353",
+        "https://github.com/open-telemetry/opentelemetry-python-contrib/pull/5357"
       ],
-      "status": "READY_FOR_HUMAN_PR",
+      "status": "PR_OPEN",
       "title": "logging: exception.message is the exception's first argument, not its message",
       "url": "https://github.com/open-telemetry/opentelemetry-python-contrib/issues/5353"
     },
@@ -315,7 +316,7 @@
   ],
   "directory": "02-opentelemetry",
   "errors": [],
-  "last_verified_at": "2026-11-19T12:56:14Z",
+  "last_verified_at": "2026-11-19T13:10:51Z",
   "partial": false,
   "schema_version": 1
 }
