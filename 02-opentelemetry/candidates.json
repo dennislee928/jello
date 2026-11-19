@@ -198,6 +198,46 @@
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/52631"
     },
     {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "code-owner agreement on the issue (collector-contrib AGENTS.md)",
+        "first-time contributors may have one ready PR until #53246 merges, so open as draft"
+      ],
+      "confidence": "medium",
+      "duplicate_prs": [],
+      "evidence_path": "reports/evidence/opportunities-2026-11-19.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 53341,
+      "issue_updated_at": "2026-11-19T00:27:00Z",
+      "kind": "issue",
+      "labels": [
+        "bug",
+        "receiver/datadog",
+        "waiting-for-code-owners"
+      ],
+      "last_verified_at": "2026-11-19T12:56:14Z",
+      "maintainer_signals": [
+        "only the code-owner ping bot has commented; label waiting-for-code-owners"
+      ],
+      "next_action": "人照 plans/collector-contrib-53341-fix-plan.md 的大綱留言；code owner 同意後再重現與實作，先開 draft。",
+      "org": "open-telemetry",
+      "repo": "opentelemetry-collector-contrib",
+      "score_rationale": "尚未重現，不給分。",
+      "skills_match": [
+        "Go",
+        "telemetry"
+      ],
+      "sources": [
+        "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53341"
+      ],
+      "status": "DISCOVERED",
+      "title": "[receiver/datadog] Null point value in /api/v1/series causes a handler panic",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53341"
+    },
+    {
       "acceptance_score": 4,
       "assignees": [
         "dennislee928"
@@ -275,7 +315,7 @@
   ],
   "directory": "02-opentelemetry",
   "errors": [],
-  "last_verified_at": "2026-11-19T12:48:30Z",
+  "last_verified_at": "2026-11-19T12:56:14Z",
   "partial": false,
   "schema_version": 1
 }
