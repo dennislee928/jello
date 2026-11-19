@@ -7,7 +7,7 @@ DRAFT
 ## 現況
 
 - `dennislee928` 已在 `2026-11-18T15:00:15Z` 留言認領，請維護者指派或同意，並說明打算把兩處的 `str(value.args[0])` 改成 `str(exc)`
-- 維護者還沒回覆，issue 也還沒有 assignee
+- `2026-11-19T10:30:10Z` 維護者 `xrmx` 回覆：先開 logging 的 PR，合併後再做 structlog；issue 已指派給 `dennislee928`。問題 1（拆不拆 PR）已有答案：拆
 - `AGENTS.md` 要求實作方向先在 issue 上談定，所以在維護者回覆前不送 PR
 
 ## 維護者回覆後，追加留言可以涵蓋的事實

@@ -2,7 +2,7 @@
 
 - base：`main` `7a554d4e`（`2026-11-18`）
 - 外部 checkout：`/Users/dennis/Desktop/upstream-src/open-telemetry/opentelemetry-python-contrib`
-- 前提：維護者在 issue 上同意方向，之後才送 PR（`AGENTS.md`）。本機可以先重現、先準備
+- 狀態（`2026-11-19`）：維護者 `xrmx` 同意，要求**先做 logging**、合併後再做 structlog；logging 已實作，交付檔 `plans/python-contrib-5353-pr-draft.md`
 
 ## 根因
 
