@@ -1,7 +1,250 @@
 {
-  "claim_since": "2026-09-23T01:49:37Z",
+  "claim_since": "2026-09-23T09:07:17Z",
   "errors": [],
   "issues": [
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "zihaozeng0021",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T04:15:22Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "label:bug"
+      ],
+      "labels": [
+        "bug"
+      ],
+      "linked_pr": false,
+      "number": 2624,
+      "org": "apache",
+      "repo": "age",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "List predicates over relationship or node value lists in WHERE fail planning with XX000 \"no relation entry for relid\"",
+      "url": "https://github.com/apache/age/issues/2624"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "zihaozeng0021",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T04:14:45Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "label:bug"
+      ],
+      "labels": [
+        "bug"
+      ],
+      "linked_pr": false,
+      "number": 2623,
+      "org": "apache",
+      "repo": "age",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Property access on a list value raises XX000 \"array index must resolve to an integer value\"",
+      "url": "https://github.com/apache/age/issues/2623"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "zihaozeng0021",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T04:14:17Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "label:bug"
+      ],
+      "labels": [
+        "bug"
+      ],
+      "linked_pr": false,
+      "number": 2622,
+      "org": "apache",
+      "repo": "age",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "MATCH directly after OPTIONAL MATCH is rejected with \"MATCH cannot follow OPTIONAL MATCH\"",
+      "url": "https://github.com/apache/age/issues/2622"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "zihaozeng0021",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T04:03:03Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "label:bug"
+      ],
+      "labels": [
+        "bug"
+      ],
+      "linked_pr": false,
+      "number": 2621,
+      "org": "apache",
+      "repo": "age",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "MERGE pattern with the same variable at both ends (self-loop) is rejected with \"multiple labels for variable ... are not supported\"",
+      "url": "https://github.com/apache/age/issues/2621"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "zihaozeng0021",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T04:02:05Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "label:bug"
+      ],
+      "labels": [
+        "bug"
+      ],
+      "linked_pr": false,
+      "number": 2620,
+      "org": "apache",
+      "repo": "age",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "MERGE re-executes ON CREATE for an entity created earlier in the same query (ON MATCH never fires)",
+      "url": "https://github.com/apache/age/issues/2620"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "zihaozeng0021",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T04:01:21Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "label:bug"
+      ],
+      "labels": [
+        "bug"
+      ],
+      "linked_pr": false,
+      "number": 2619,
+      "org": "apache",
+      "repo": "age",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "MERGE full pattern with property maps does not match pre-existing nodes and duplicates them",
+      "url": "https://github.com/apache/age/issues/2619"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "zihaozeng0021",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T04:00:33Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "label:bug"
+      ],
+      "labels": [
+        "bug"
+      ],
+      "linked_pr": false,
+      "number": 2618,
+      "org": "apache",
+      "repo": "age",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Leading OPTIONAL MATCH drops the input row when the pattern has no match",
+      "url": "https://github.com/apache/age/issues/2618"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "zihaozeng0021",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T03:59:01Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "label:bug"
+      ],
+      "labels": [
+        "bug"
+      ],
+      "linked_pr": false,
+      "number": 2617,
+      "org": "apache",
+      "repo": "age",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "DELETE / DETACH DELETE of a collect()-list element fails with \"unexpected Node for cypher_clause\"",
+      "url": "https://github.com/apache/age/issues/2617"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "zihaozeng0021",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T03:58:00Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "label:bug"
+      ],
+      "labels": [
+        "bug"
+      ],
+      "linked_pr": false,
+      "number": 2616,
+      "org": "apache",
+      "repo": "age",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Chained MATCH rebinding a variable bound to zero rows errors with \"argument 1 must not be null\"",
+      "url": "https://github.com/apache/age/issues/2616"
+    },
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
@@ -84,6 +327,37 @@
       "taken_evidence": "",
       "title": "Allow organizing bookmarks into custom lists/collections",
       "url": "https://github.com/apache/answer/issues/1682"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#55703",
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "kou",
+      "author_association": "MEMBER",
+      "comments": 0,
+      "created_at": "2026-11-22T05:45:29Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "Component: C++",
+        "Component: Parquet",
+        "Type: enhancement"
+      ],
+      "linked_pr": false,
+      "number": 55715,
+      "org": "apache",
+      "repo": "arrow",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "#55703",
+      "title": "[C++][Parquet] ParquetFileReader::Close() doesn't release pre-buffered data",
+      "url": "https://github.com/apache/arrow/issues/55715"
     },
     {
       "acceptance": "blocked",
@@ -242,30 +516,86 @@
       "url": "https://github.com/apache/arrow/issues/55708"
     },
     {
-      "acceptance": "blocked",
+      "acceptance": "medium",
       "acceptance_reasons": [
-        "open_pr:#55702",
         "default"
       ],
       "assignees": [],
-      "author": "sohailshk",
-      "author_association": "NONE",
-      "comments": 1,
-      "created_at": "2026-11-21T04:03:12Z",
-      "fix": "medium",
+      "author": "Rich-T-kid",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T05:14:44Z",
+      "fix": "high",
       "fix_reasons": [
-        "default"
+        "label:performance"
+      ],
+      "labels": [
+        "performance"
+      ],
+      "linked_pr": false,
+      "number": 12398,
+      "org": "apache",
+      "repo": "arrow-rs",
+      "self_claim": false,
+      "taken": "skipped",
+      "taken_evidence": "",
+      "title": "Append gathered bits without an intermediate BooleanBuffer",
+      "url": "https://github.com/apache/arrow-rs/issues/12398"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "assigned"
+      ],
+      "assignees": [
+        "Phoenix500526"
+      ],
+      "author": "Phoenix500526",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T04:33:36Z",
+      "fix": "high",
+      "fix_reasons": [
+        "title:refactor"
       ],
       "labels": [],
-      "linked_pr": false,
-      "number": 55700,
+      "linked_pr": true,
+      "number": 12396,
       "org": "apache",
-      "repo": "arrow",
+      "repo": "arrow-rs",
+      "self_claim": false,
+      "taken": "assigned",
+      "taken_evidence": "Phoenix500526",
+      "title": "Refactor arrow-string tests with rstest",
+      "url": "https://github.com/apache/arrow-rs/issues/12396"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#12353",
+        "default"
+      ],
+      "assignees": [],
+      "author": "Jefffrey",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T04:32:52Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "label:bug"
+      ],
+      "labels": [
+        "bug"
+      ],
+      "linked_pr": false,
+      "number": 12395,
+      "org": "apache",
+      "repo": "arrow-rs",
       "self_claim": false,
       "taken": "open_pr",
-      "taken_evidence": "#55702",
-      "title": "[Python] Table.to_pandas() converts a replaced non-string column to strings with pandas 3 when the pandas metadata describes it as a string column",
-      "url": "https://github.com/apache/arrow/issues/55700"
+      "taken_evidence": "#12353",
+      "title": "Mapbuilder can create invalid arrays via safe api",
+      "url": "https://github.com/apache/arrow-rs/issues/12395"
     },
     {
       "acceptance": "blocked",
@@ -296,26 +626,25 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "open_pr:#12350",
-        "default"
+        "linked_pr"
       ],
       "assignees": [],
       "author": "VaibhaveS",
       "author_association": "NONE",
-      "comments": 0,
+      "comments": 1,
       "created_at": "2026-11-21T17:15:36Z",
       "fix": "medium",
       "fix_reasons": [
         "title:panic"
       ],
       "labels": [],
-      "linked_pr": false,
+      "linked_pr": true,
       "number": 12391,
       "org": "apache",
       "repo": "arrow-rs",
       "self_claim": false,
       "taken": "open_pr",
-      "taken_evidence": "#12350",
+      "taken_evidence": "linked:pr",
       "title": "Parquet content-defined chunking hashes values it does not write for some list columns, and panics on list views",
       "url": "https://github.com/apache/arrow-rs/issues/12391"
     },
@@ -669,31 +998,110 @@
       "url": "https://github.com/apache/arrow-rs-object-store/issues/912"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
-        "default",
-        "maintainer-filed"
+        "linked_pr"
       ],
       "assignees": [],
-      "author": "tisonkun",
-      "author_association": "MEMBER",
+      "author": "singhpratech",
+      "author_association": "NONE",
       "comments": 0,
-      "created_at": "2026-11-21T05:37:51Z",
+      "created_at": "2026-11-22T02:15:13Z",
       "fix": "high",
       "fix_reasons": [
-        "default",
-        "body>6000"
+        "title:support for"
       ],
       "labels": [],
-      "linked_pr": false,
-      "number": 445,
+      "linked_pr": true,
+      "number": 225,
       "org": "apache",
-      "repo": "asyncband",
+      "repo": "arrow-swift",
       "self_claim": false,
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Tracking issue: pre-1.0 synchronization substrate, cancellation, and channel roadmap",
-      "url": "https://github.com/apache/asyncband/issues/445"
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Add support for the null type",
+      "url": "https://github.com/apache/arrow-swift/issues/225"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "singhpratech",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T02:12:16Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 223,
+      "org": "apache",
+      "repo": "arrow-swift",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "ArrowWriter does not write a conforming Arrow file",
+      "url": "https://github.com/apache/arrow-swift/issues/223"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "anishmehta24",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T08:14:22Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:bug"
+      ],
+      "labels": [
+        "P2",
+        "python"
+      ],
+      "linked_pr": true,
+      "number": 41559,
+      "org": "apache",
+      "repo": "beam",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "[Bug]: Weighted ApproximateQuantiles depends on the scale of the weights",
+      "url": "https://github.com/apache/beam/issues/41559"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "anishmehta24",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T08:02:02Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:bug"
+      ],
+      "labels": [
+        "P3",
+        "python"
+      ],
+      "linked_pr": true,
+      "number": 41557,
+      "org": "apache",
+      "repo": "beam",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "[Bug]: Duration.to_proto() builds an invalid proto for negative durations",
+      "url": "https://github.com/apache/beam/issues/41557"
     },
     {
       "acceptance": "medium",
@@ -753,170 +1161,6 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
-      "author": "squakez",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T07:28:12Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:good first issue"
-      ],
-      "labels": [
-        "area/test",
-        "good first issue"
-      ],
-      "linked_pr": true,
-      "number": 6984,
-      "org": "apache",
-      "repo": "camel-k",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "Add an e2e test to cover https metrics scraping",
-      "url": "https://github.com/apache/camel-k/issues/6984"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:good first issue"
-      ],
-      "assignees": [],
-      "author": "kartikgoel598",
-      "author_association": "NONE",
-      "comments": 1,
-      "created_at": "2026-11-21T04:38:07Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:good first issue"
-      ],
-      "labels": [
-        "good first issue",
-        "kind/bug"
-      ],
-      "linked_pr": false,
-      "number": 6983,
-      "org": "apache",
-      "repo": "camel-k",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "Container trait: defaultContainerRunAsNonRoot should default to true",
-      "url": "https://github.com/apache/camel-k/issues/6983"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "davsclaus"
-      ],
-      "author": "davsclaus",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T21:49:09Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 3335,
-      "org": "apache",
-      "repo": "camel-kamelets",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "davsclaus",
-      "title": "New soap-source and soap-action Kamelets: expose a WSDL as a SOAP facade, and call a SOAP service, without generated classes",
-      "url": "https://github.com/apache/camel-kamelets/issues/3335"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "davsclaus"
-      ],
-      "author": "davsclaus",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T21:36:36Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 3334,
-      "org": "apache",
-      "repo": "camel-kamelets",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "davsclaus",
-      "title": "New aws-eventbridge-source Kamelet, the pair of aws-eventbridge-sink",
-      "url": "https://github.com/apache/camel-kamelets/issues/3334"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "davsclaus"
-      ],
-      "author": "davsclaus",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T21:36:21Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 3332,
-      "org": "apache",
-      "repo": "camel-kamelets",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "davsclaus",
-      "title": "New smb-source and smb-sink Kamelets (Windows / Samba file shares)",
-      "url": "https://github.com/apache/camel-kamelets/issues/3332"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "davsclaus"
-      ],
-      "author": "davsclaus",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T21:36:18Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 3331,
-      "org": "apache",
-      "repo": "camel-kamelets",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "davsclaus",
-      "title": "New kafka-share-source Kamelet (Kafka share groups, KIP-932)",
-      "url": "https://github.com/apache/camel-kamelets/issues/3331"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
         "assigned"
       ],
       "assignees": [
@@ -940,33 +1184,6 @@
       "taken_evidence": "davsclaus",
       "title": "New jms-apache-activemq-source and jms-apache-activemq-sink Kamelets (ActiveMQ Classic)",
       "url": "https://github.com/apache/camel-kamelets/issues/3329"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "davsclaus"
-      ],
-      "author": "davsclaus",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T21:36:11Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 3328,
-      "org": "apache",
-      "repo": "camel-kamelets",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "davsclaus",
-      "title": "New csv-deserialize-action and csv-serialize-action Kamelets",
-      "url": "https://github.com/apache/camel-kamelets/issues/3328"
     },
     {
       "acceptance": "medium",
@@ -1025,31 +1242,6 @@
       "taken_evidence": "hsluoyz",
       "title": "Version 3.11.0 doesn't match version on Go proxy",
       "url": "https://github.com/apache/casbin/issues/1780"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author": "yookibooki",
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-21T08:49:56Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "title:fails"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 242,
-      "org": "apache",
-      "repo": "casbin-gateway",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "install.sh: no dependency check — desktop app fails on missing libwebkit2gtk-4.1",
-      "url": "https://github.com/apache/casbin-gateway/issues/242"
     },
     {
       "acceptance": "blocked",
@@ -1209,6 +1401,34 @@
       "url": "https://github.com/apache/comdev-site/issues/258"
     },
     {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "2010YOUY01",
+      "author_association": "MEMBER",
+      "comments": 0,
+      "created_at": "2026-11-22T08:58:34Z",
+      "fix": "high",
+      "fix_reasons": [
+        "label:enhancement"
+      ],
+      "labels": [
+        "enhancement"
+      ],
+      "linked_pr": false,
+      "number": 27649,
+      "org": "apache",
+      "repo": "datafusion",
+      "self_claim": false,
+      "taken": "skipped",
+      "taken_evidence": "",
+      "title": "ci: Allow merging PRs that only fail fuzz tests",
+      "url": "https://github.com/apache/datafusion/issues/27649"
+    },
+    {
       "acceptance": "blocked",
       "acceptance_reasons": [
         "open_pr:#25456",
@@ -1233,142 +1453,6 @@
       "taken_evidence": "#25456",
       "title": "PushDownFilter copies a projected expression into every OR branch of the predicate",
       "url": "https://github.com/apache/datafusion/issues/27631"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "asolimando"
-      ],
-      "author": "asolimando",
-      "author_association": "MEMBER",
-      "comments": 1,
-      "created_at": "2026-11-21T04:41:51Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 27629,
-      "org": "apache",
-      "repo": "datafusion",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "asolimando",
-      "title": "Join statistics report Inexact(0) rows when an input is known to be empty",
-      "url": "https://github.com/apache/datafusion/issues/27629"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "claimed:kartik00052",
-        "default"
-      ],
-      "assignees": [],
-      "author": "hcrosse",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-21T03:01:16Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "Prolific Author"
-      ],
-      "linked_pr": false,
-      "number": 27628,
-      "org": "apache",
-      "repo": "datafusion",
-      "self_claim": false,
-      "taken": "claimed",
-      "taken_evidence": "kartik00052",
-      "title": "`PruningPredicate` does not prune `NULL` conjuncts",
-      "url": "https://github.com/apache/datafusion/issues/27628"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
-      "author": "hcrosse",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T02:48:21Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "Prolific Author"
-      ],
-      "linked_pr": true,
-      "number": 27626,
-      "org": "apache",
-      "repo": "datafusion",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "`FilterExec` caps rather than scales `null_count`, exploding `HashJoinExec` cardinality",
-      "url": "https://github.com/apache/datafusion/issues/27626"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author": "hcrosse",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T02:30:20Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "Prolific Author"
-      ],
-      "linked_pr": false,
-      "number": 27625,
-      "org": "apache",
-      "repo": "datafusion",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "`FilterExec` `OR` selectivity falls below its own `IS NOT NULL` branch",
-      "url": "https://github.com/apache/datafusion/issues/27625"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author": "hcrosse",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T02:26:49Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "Prolific Author"
-      ],
-      "linked_pr": false,
-      "number": 27624,
-      "org": "apache",
-      "repo": "datafusion",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "`FileScanConfig::statistics()` ignores pushed down filters when `parquet.pushdown_filters = true`",
-      "url": "https://github.com/apache/datafusion/issues/27624"
     },
     {
       "acceptance": "blocked",
@@ -1474,7 +1558,7 @@
       "labels": [
         "requires-triage"
       ],
-      "linked_pr": false,
+      "linked_pr": true,
       "number": 7734,
       "org": "apache",
       "repo": "datafusion-comet",
@@ -1487,34 +1571,6 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "open_pr:#7733",
-        "default"
-      ],
-      "assignees": [],
-      "author": "dwsmith1983",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T14:46:00Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "title:error"
-      ],
-      "labels": [
-        "requires-triage"
-      ],
-      "linked_pr": false,
-      "number": 7732,
-      "org": "apache",
-      "repo": "datafusion-comet",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "#7733",
-      "title": "Native Iceberg reads pass a location with credentials to iceberg-rust, whose errors print it",
-      "url": "https://github.com/apache/datafusion-comet/issues/7732"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
         "assigned"
       ],
       "assignees": [
@@ -1523,23 +1579,49 @@
       "author": "dwsmith1983",
       "author_association": "CONTRIBUTOR",
       "comments": 1,
-      "created_at": "2026-11-21T06:00:14Z",
+      "created_at": "2026-11-21T14:46:00Z",
       "fix": "medium",
       "fix_reasons": [
-        "default"
+        "title:error"
       ],
       "labels": [
         "requires-triage"
       ],
       "linked_pr": true,
-      "number": 7727,
+      "number": 7732,
       "org": "apache",
       "repo": "datafusion-comet",
       "self_claim": false,
       "taken": "assigned",
       "taken_evidence": "dwsmith1983",
-      "title": "CI (fork) check takes hours to show a fork rerun's result",
-      "url": "https://github.com/apache/datafusion-comet/issues/7727"
+      "title": "Native Iceberg reads pass a location with credentials to iceberg-rust, whose errors print it",
+      "url": "https://github.com/apache/datafusion-comet/issues/7732"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "truongle1501",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T04:45:33Z",
+      "fix": "high",
+      "fix_reasons": [
+        "default",
+        "body>6000"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 136,
+      "org": "apache",
+      "repo": "datafusion-iceberg",
+      "self_claim": true,
+      "taken": "skipped",
+      "taken_evidence": "",
+      "title": "SQL feature should not be required for entire workspace",
+      "url": "https://github.com/apache/datafusion-iceberg/issues/136"
     },
     {
       "acceptance": "blocked",
@@ -1623,58 +1705,33 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
-      "author": "raghav-reglobe",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T07:30:56Z",
-      "fix": "high",
-      "fix_reasons": [
-        "title:[feature"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 70831,
-      "org": "apache",
-      "repo": "doris",
-      "self_claim": true,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "[Feature] (auth) COUNT(*) for a user who holds SELECT on some columns of a table, as in MySQL and PostgreSQL",
-      "url": "https://github.com/apache/doris/issues/70831"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "claimed:jiuker(body)",
+        "merged_pr:#15741",
         "default"
       ],
       "assignees": [],
-      "author": "jiuker",
+      "author": "walnut-tom",
       "author_association": "NONE",
       "comments": 0,
-      "created_at": "2026-11-21T01:59:08Z",
+      "created_at": "2026-11-22T04:16:34Z",
       "fix": "medium",
       "fix_reasons": [
         "title:bug"
       ],
       "labels": [],
       "linked_pr": false,
-      "number": 556,
+      "number": 16597,
       "org": "apache",
-      "repo": "doris-operator",
-      "self_claim": true,
-      "taken": "claimed",
-      "taken_evidence": "jiuker(body)",
-      "title": "[Bug] Decoupling helm charts and Dockerfile command",
-      "url": "https://github.com/apache/doris-operator/issues/556"
+      "repo": "dubbo",
+      "self_claim": false,
+      "taken": "merged_pr",
+      "taken_evidence": "#15741",
+      "title": "[Bug] Dubbo 3.3.7 managed Fastjson2 fails to decode collection fields with TYPED_ANY",
+      "url": "https://github.com/apache/dubbo/issues/16597"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
-        "default"
+        "linked_pr"
       ],
       "assignees": [],
       "author": "AsperforMias",
@@ -1686,20 +1743,20 @@
         "default"
       ],
       "labels": [],
-      "linked_pr": false,
+      "linked_pr": true,
       "number": 1649,
       "org": "apache",
       "repo": "dubbo-admin",
       "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
       "title": "Editing a tag rule in the UI form drops the addresses of its tags",
       "url": "https://github.com/apache/dubbo-admin/issues/1649"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
-        "default"
+        "linked_pr"
       ],
       "assignees": [],
       "author": "AsperforMias",
@@ -1711,19 +1768,20 @@
         "default"
       ],
       "labels": [],
-      "linked_pr": false,
+      "linked_pr": true,
       "number": 1648,
       "org": "apache",
       "repo": "dubbo-admin",
       "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
       "title": "Condition rules cannot be created from the UI",
       "url": "https://github.com/apache/dubbo-admin/issues/1648"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "open_pr:#3860",
         "default"
       ],
       "assignees": [],
@@ -1741,8 +1799,8 @@
       "org": "apache",
       "repo": "dubbo-go",
       "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
+      "taken": "open_pr",
+      "taken_evidence": "#3860",
       "title": "[Bug]: Metrics aggregation settings have no effect",
       "url": "https://github.com/apache/dubbo-go/issues/3858"
     },
@@ -1924,31 +1982,6 @@
       "url": "https://github.com/apache/dubbo-go/issues/3848"
     },
     {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author": "dodjdnh",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T01:59:28Z",
-      "fix": "high",
-      "fix_reasons": [
-        "title:[feature"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 3841,
-      "org": "apache",
-      "repo": "dubbo-go",
-      "self_claim": false,
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "[Feature]: Support Optional Histogram Exemplars and Trace-Correlated Post-Invoke AccessLog",
-      "url": "https://github.com/apache/dubbo-go/issues/3841"
-    },
-    {
       "acceptance": "blocked",
       "acceptance_reasons": [
         "linked_pr"
@@ -1972,31 +2005,6 @@
       "taken_evidence": "linked:pr",
       "title": "[flink] Undo recovery deletes or reverts rows written by other clients to an aggregation table",
       "url": "https://github.com/apache/fluss/issues/5330"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
-      "author": "github-actions[bot]",
-      "author_association": "NONE",
-      "comments": 1,
-      "created_at": "2026-11-21T04:06:53Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 5328,
-      "org": "apache",
-      "repo": "fluss",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "[test] Unstable test FlinkSourceEnumeratorTest.testBatchPartitionFilterOnlyGeneratesMatchingPartitionSplits",
-      "url": "https://github.com/apache/fluss/issues/5328"
     },
     {
       "acceptance": "medium",
@@ -2126,27 +2134,28 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "linked_pr"
+        "open_pr:#17095",
+        "default"
       ],
       "assignees": [],
-      "author": "LuciferYang",
+      "author": "matrei",
       "author_association": "CONTRIBUTOR",
       "comments": 0,
-      "created_at": "2026-11-21T06:56:44Z",
+      "created_at": "2026-11-22T08:50:36Z",
       "fix": "medium",
       "fix_reasons": [
         "default"
       ],
       "labels": [],
-      "linked_pr": true,
-      "number": 13706,
+      "linked_pr": false,
+      "number": 17124,
       "org": "apache",
-      "repo": "gluten",
+      "repo": "grails-core",
       "self_claim": false,
       "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "[VL] Pandas UDFs fail with \"Cannot retain a released vector\" on partitions with more than one batch",
-      "url": "https://github.com/apache/gluten/issues/13706"
+      "taken_evidence": "#17095",
+      "title": "The cleanup of an asynchronous worker can still touch a recycled request",
+      "url": "https://github.com/apache/grails-core/issues/17124"
     },
     {
       "acceptance": "blocked",
@@ -2261,119 +2270,6 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "open_pr:#17060",
-        "default",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author": "borinquenkid",
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2026-11-21T04:05:33Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "label:bug"
-      ],
-      "labels": [
-        "bug"
-      ],
-      "linked_pr": false,
-      "number": 17110,
-      "org": "apache",
-      "repo": "grails-core",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "#17060",
-      "title": "A where query subquery that compares an association of the enclosing alias, written first, with its own id keeps every row",
-      "url": "https://github.com/apache/grails-core/issues/17110"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author": "borinquenkid",
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2026-11-21T03:52:11Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 17109,
-      "org": "apache",
-      "repo": "grails-core",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "Split AbstractDetachedCriteria into smaller parts without changing behaviour",
-      "url": "https://github.com/apache/grails-core/issues/17109"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "open_pr:#17054",
-        "default",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author": "borinquenkid",
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2026-11-21T02:55:50Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "label:bug"
-      ],
-      "labels": [
-        "bug"
-      ],
-      "linked_pr": false,
-      "number": 17108,
-      "org": "apache",
-      "repo": "grails-core",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "#17054",
-      "title": "The total of a paged criteria with a distinct or an aggregate projection is the number of rows",
-      "url": "https://github.com/apache/grails-core/issues/17108"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "open_pr:#17054",
-        "default",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author": "borinquenkid",
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2026-11-21T02:55:48Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "label:bug"
-      ],
-      "labels": [
-        "bug"
-      ],
-      "linked_pr": false,
-      "number": 17107,
-      "org": "apache",
-      "repo": "grails-core",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "#17054",
-      "title": "The total of a paged where query or DetachedCriteria grouped by a property is the number of rows, not the groups",
-      "url": "https://github.com/apache/grails-core/issues/17107"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
         "assigned"
       ],
       "assignees": [
@@ -2433,6 +2329,36 @@
         "assigned"
       ],
       "assignees": [
+        "Adalennis"
+      ],
+      "author": "Adalennis",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T08:45:36Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:bug"
+      ],
+      "labels": [
+        "P3",
+        "Transforms"
+      ],
+      "linked_pr": false,
+      "number": 9635,
+      "org": "apache",
+      "repo": "hop",
+      "self_claim": false,
+      "taken": "assigned",
+      "taken_evidence": "Adalennis",
+      "title": "[Bug]: Column exists always returns N when a fixed table name and a schema are set",
+      "url": "https://github.com/apache/hop/issues/9635"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "assigned"
+      ],
+      "assignees": [
         "bamaer"
       ],
       "author": "bamaer",
@@ -2477,7 +2403,7 @@
         "Actions",
         "P2"
       ],
-      "linked_pr": false,
+      "linked_pr": true,
       "number": 9630,
       "org": "apache",
       "repo": "hop",
@@ -2520,183 +2446,778 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "assigned"
+        "linked_pr"
       ],
-      "assignees": [
-        "nadment"
-      ],
-      "author": "nadment",
+      "assignees": [],
+      "author": "yihua",
       "author_association": "CONTRIBUTOR",
       "comments": 0,
-      "created_at": "2026-11-21T13:45:20Z",
-      "fix": "high",
+      "created_at": "2026-11-22T06:05:51Z",
+      "fix": "medium",
       "fix_reasons": [
-        "title:[feature"
+        "default"
       ],
       "labels": [
-        "Hop Gui",
-        "P3",
-        "awaiting triage"
+        "area:sql",
+        "priority:medium",
+        "type:bug"
       ],
       "linked_pr": true,
-      "number": 9625,
+      "number": 20859,
       "org": "apache",
-      "repo": "hop",
+      "repo": "hudi",
       "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "nadment",
-      "title": "[Feature Request]: Execution Information perspective: search box above the tree, and the same behaviour for all search boxes",
-      "url": "https://github.com/apache/hop/issues/9625"
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Spark SQL MERGE INTO refuses a source key of another integral type than the record key",
+      "url": "https://github.com/apache/hudi/issues/20859"
     },
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "assigned"
+        "linked_pr"
       ],
-      "assignees": [
-        "bamaer"
-      ],
-      "author": "bamaer",
+      "assignees": [],
+      "author": "yihua",
       "author_association": "CONTRIBUTOR",
       "comments": 1,
-      "created_at": "2026-11-21T05:46:38Z",
-      "fix": "high",
+      "created_at": "2026-11-22T05:58:48Z",
+      "fix": "medium",
       "fix_reasons": [
-        "title:[feature"
+        "default"
       ],
       "labels": [
-        "Marketplace",
-        "P2"
-      ],
-      "linked_pr": false,
-      "number": 9615,
-      "org": "apache",
-      "repo": "hop",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "bamaer",
-      "title": "[Feature Request]: Activate pending marketplace changes before Hop starts",
-      "url": "https://github.com/apache/hop/issues/9615"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "bamaer"
-      ],
-      "author": "bamaer",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-21T05:46:35Z",
-      "fix": "high",
-      "fix_reasons": [
-        "title:[feature"
-      ],
-      "labels": [
-        "Marketplace",
-        "P2"
-      ],
-      "linked_pr": false,
-      "number": 9614,
-      "org": "apache",
-      "repo": "hop",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "bamaer",
-      "title": "[Feature Request]: Remove a shared lib/core jar when no installed marketplace plugin needs it any more",
-      "url": "https://github.com/apache/hop/issues/9614"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "bamaer"
-      ],
-      "author": "bamaer",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-21T05:46:33Z",
-      "fix": "high",
-      "fix_reasons": [
-        "title:[feature"
-      ],
-      "labels": [
-        "Marketplace",
-        "P2"
-      ],
-      "linked_pr": false,
-      "number": 9613,
-      "org": "apache",
-      "repo": "hop",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "bamaer",
-      "title": "[Feature Request]: Update and roll back marketplace plugins from the CLI, the GUI and apply",
-      "url": "https://github.com/apache/hop/issues/9613"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "bamaer"
-      ],
-      "author": "bamaer",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-21T05:46:30Z",
-      "fix": "high",
-      "fix_reasons": [
-        "title:[feature"
-      ],
-      "labels": [
-        "Marketplace",
-        "P2"
-      ],
-      "linked_pr": false,
-      "number": 9612,
-      "org": "apache",
-      "repo": "hop",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "bamaer",
-      "title": "[Feature Request]: hop marketplace verify and reinstall",
-      "url": "https://github.com/apache/hop/issues/9612"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "bamaer"
-      ],
-      "author": "bamaer",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-21T05:46:27Z",
-      "fix": "high",
-      "fix_reasons": [
-        "title:[feature"
-      ],
-      "labels": [
-        "Marketplace",
-        "P2"
+        "area:sql",
+        "priority:high",
+        "type:bug"
       ],
       "linked_pr": true,
-      "number": 9611,
+      "number": 20856,
       "org": "apache",
-      "repo": "hop",
+      "repo": "hudi",
       "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "bamaer",
-      "title": "[Feature Request]: Marketplace install receipts record a checksum per file and what each install replaced",
-      "url": "https://github.com/apache/hop/issues/9611"
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "MERGE INTO on a merge-on-read table silently ignores WHEN MATCHED conditions on target columns",
+      "url": "https://github.com/apache/hudi/issues/20856"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T05:37:52Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:reader",
+        "area:sql",
+        "priority:high",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20853,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "A cached view of a merge-on-read table misses rows written by a later DELETE, UPDATE or MERGE INTO",
+      "url": "https://github.com/apache/hudi/issues/20853"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#20852",
+        "default"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T05:09:20Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:index",
+        "priority:high",
+        "type:bug"
+      ],
+      "linked_pr": false,
+      "number": 20848,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "#20852",
+      "title": "Global record level index loses track of a row when insert writes a key that already exists in another file group",
+      "url": "https://github.com/apache/hudi/issues/20848"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T05:09:18Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:error"
+      ],
+      "labels": [
+        "area:index",
+        "area:metadata-table",
+        "priority:medium",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20847,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Insert with a repeated record key under the record level index fails late with an unclear error",
+      "url": "https://github.com/apache/hudi/issues/20847"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T05:08:23Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:sql",
+        "priority:high",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20845,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Spark SQL MERGE INTO does not fail when several source rows match one target row",
+      "url": "https://github.com/apache/hudi/issues/20845"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T04:32:00Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:sql",
+        "priority:low",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20842,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Spark SQL DELETE with an always-false condition writes an empty commit",
+      "url": "https://github.com/apache/hudi/issues/20842"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T04:31:58Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:sql",
+        "priority:medium",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20841,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Spark SQL UPDATE, DELETE and MERGE INTO accept conditions the write cannot evaluate per record",
+      "url": "https://github.com/apache/hudi/issues/20841"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T04:25:13Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:sql",
+        "priority:medium",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20839,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Spark SQL UPDATE and MERGE INTO fail on assignments to nested fields",
+      "url": "https://github.com/apache/hudi/issues/20839"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T04:23:19Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:sql",
+        "area:writer",
+        "engine:spark",
+        "issue:data-corruption",
+        "priority:critical",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20837,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "MERGE INTO with a global index writes unreadable rows into small file groups",
+      "url": "https://github.com/apache/hudi/issues/20837"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T04:23:06Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:sql",
+        "priority:high",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20836,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Spark SQL MERGE INTO accepts an ON condition without the record key and matches on the source column of that name",
+      "url": "https://github.com/apache/hudi/issues/20836"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T04:18:40Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:sql",
+        "engine:spark",
+        "issue:data-corruption",
+        "priority:high",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20833,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Spark SQL MERGE INTO update of a partition column leaves the record in its old partition",
+      "url": "https://github.com/apache/hudi/issues/20833"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T04:04:55Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:fails"
+      ],
+      "labels": [
+        "area:sql",
+        "engine:spark",
+        "priority:medium",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20831,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Spark SQL MERGE INTO fails or skips the update when the source reads the target table",
+      "url": "https://github.com/apache/hudi/issues/20831"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T03:49:31Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:sql",
+        "engine:spark",
+        "issue:data-consistency",
+        "priority:medium",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20829,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Spark SQL MERGE INTO silently ignores WHEN NOT MATCHED BY SOURCE on a Hudi table",
+      "url": "https://github.com/apache/hudi/issues/20829"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T03:48:56Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:schema",
+        "area:sql",
+        "priority:medium",
+        "type:bug"
+      ],
+      "linked_pr": false,
+      "number": 20828,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Spark SQL does not keep or enforce NOT NULL constraints on Hudi table columns",
+      "url": "https://github.com/apache/hudi/issues/20828"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T03:48:53Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:sql",
+        "priority:high",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20827,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Spark SQL MERGE INTO does not apply the first matched clause that holds",
+      "url": "https://github.com/apache/hudi/issues/20827"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T03:48:51Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:fails"
+      ],
+      "labels": [
+        "area:sql",
+        "priority:medium",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20826,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Spark SQL time travel on a non-Hudi table fails when the Hudi session extension is enabled",
+      "url": "https://github.com/apache/hudi/issues/20826"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T03:44:54Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:sql",
+        "engine:spark",
+        "issue:data-consistency",
+        "priority:high",
+        "type:bug"
+      ],
+      "linked_pr": false,
+      "number": 20825,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Spark SQL writes TIMESTAMP partition paths in the JVM time zone instead of the session time zone",
+      "url": "https://github.com/apache/hudi/issues/20825"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T03:36:25Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:exception"
+      ],
+      "labels": [
+        "area:schema",
+        "area:sql",
+        "engine:spark",
+        "priority:high",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20824,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "ALTER TABLE RENAME COLUMN and DROP COLUMN fail with MissingSchemaFieldException under schema on read",
+      "url": "https://github.com/apache/hudi/issues/20824"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T03:36:22Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:reader",
+        "engine:spark",
+        "priority:medium",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20823,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Spark DataFrame read returns an empty string for a null partition value when filtering on p = ''",
+      "url": "https://github.com/apache/hudi/issues/20823"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T02:43:33Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:sql",
+        "engine:spark",
+        "issue:data-consistency",
+        "priority:medium",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20819,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Spark SQL MERGE INTO with only insert clauses can lose an insert when source rows share a record key",
+      "url": "https://github.com/apache/hudi/issues/20819"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T02:33:40Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:sql",
+        "engine:spark",
+        "issue:data-consistency",
+        "priority:high",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20818,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Spark SQL MERGE INTO without an update clause ignores the matched target records",
+      "url": "https://github.com/apache/hudi/issues/20818"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T02:27:57Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:sql",
+        "priority:medium",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20817,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Spark SQL truncates TIMESTAMP partition values to whole seconds in the partition path",
+      "url": "https://github.com/apache/hudi/issues/20817"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T02:27:54Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:fails"
+      ],
+      "labels": [
+        "area:sql",
+        "priority:high",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20816,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Spark SQL write of a sub-second TIMESTAMP partition value fails with \"Invalid format\" on the row paths",
+      "url": "https://github.com/apache/hudi/issues/20816"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T02:26:48Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:reader",
+        "priority:high",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20814,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "A delete of a record key leaves the other rows with that key in a file group",
+      "url": "https://github.com/apache/hudi/issues/20814"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "yihua",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T02:01:01Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:metadata-table",
+        "area:writer",
+        "priority:high",
+        "type:bug"
+      ],
+      "linked_pr": true,
+      "number": 20812,
+      "org": "apache",
+      "repo": "hudi",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "fix(metadata): metadata table writes fail on executors where the write handle interns the metadata schema first",
+      "url": "https://github.com/apache/hudi/issues/20812"
     },
     {
       "acceptance": "blocked",
@@ -2725,6 +3246,33 @@
       "taken_evidence": "#439",
       "title": "[Bug] describe the main problem",
       "url": "https://github.com/apache/hugegraph-ai/issues/437"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "2162174202-sudo",
+      "author_association": "NONE",
+      "comments": 1,
+      "created_at": "2026-11-22T02:46:12Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "label:bug"
+      ],
+      "labels": [
+        "bug"
+      ],
+      "linked_pr": true,
+      "number": 19087,
+      "org": "apache",
+      "repo": "iceberg",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "[Flink] Filter pushdown of DOUBLE <= DECIMAL literal throws ValidationException: Invalid value for conversion to type double (java.math.BigDecimal)",
+      "url": "https://github.com/apache/iceberg/issues/19087"
     },
     {
       "acceptance": "medium",
@@ -2955,31 +3503,6 @@
       "url": "https://github.com/apache/iceberg-rust/issues/3743"
     },
     {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author": "zyl71",
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-21T08:45:25Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 3742,
-      "org": "apache",
-      "repo": "iceberg-rust",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "Ignore entry for RUSTSEC-2026-0381 no longer matches anything (`webpki-roots` 0.26.11 is listed as unaffected)",
-      "url": "https://github.com/apache/iceberg-rust/issues/3742"
-    },
-    {
       "acceptance": "blocked",
       "acceptance_reasons": [
         "assigned"
@@ -3039,10 +3562,161 @@
       "url": "https://github.com/apache/iggy/issues/5020"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "WangzJi",
+      "author_association": "MEMBER",
+      "comments": 0,
+      "created_at": "2026-11-22T04:12:35Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 8358,
+      "org": "apache",
+      "repo": "incubator-seata",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "feature: add opt-in push mode for AT AsyncCommitting two-phase cleanup pipeline",
+      "url": "https://github.com/apache/incubator-seata/issues/8358"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "WangzJi",
+      "author_association": "MEMBER",
+      "comments": 0,
+      "created_at": "2026-11-22T04:12:34Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 8357,
+      "org": "apache",
+      "repo": "incubator-seata",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "optimize: upgrade fallback recovery scanner to continuous keyset paging and pipeline dispatch",
+      "url": "https://github.com/apache/incubator-seata/issues/8357"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "WangzJi",
+      "author_association": "MEMBER",
+      "comments": 0,
+      "created_at": "2026-11-22T04:12:32Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 8356,
+      "org": "apache",
+      "repo": "incubator-seata",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "feature: add two-phase cleanup pipeline core components (bounded queue, recovery-rpc pool, batch cleaner, resource semaphore)",
+      "url": "https://github.com/apache/incubator-seata/issues/8356"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "WangzJi",
+      "author_association": "MEMBER",
+      "comments": 0,
+      "created_at": "2026-11-22T04:12:30Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 8355,
+      "org": "apache",
+      "repo": "incubator-seata",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "optimize: support composite keyset pagination (gmt_modified, xid) for global session recovery scanning",
+      "url": "https://github.com/apache/incubator-seata/issues/8355"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "WangzJi",
+      "author_association": "MEMBER",
+      "comments": 0,
+      "created_at": "2026-11-22T04:12:28Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 8354,
+      "org": "apache",
+      "repo": "incubator-seata",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "optimize: support batch deletion of global transactions in db and redis stores",
+      "url": "https://github.com/apache/incubator-seata/issues/8354"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#8359",
         "default",
         "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "WangzJi",
+      "author_association": "MEMBER",
+      "comments": 0,
+      "created_at": "2026-11-22T04:11:12Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 8353,
+      "org": "apache",
+      "repo": "incubator-seata",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "#8359",
+      "title": "[Tracking] TC two-phase transaction cleanup pipeline optimization",
+      "url": "https://github.com/apache/incubator-seata/issues/8353"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
       ],
       "assignees": [],
       "author": "WangzJi",
@@ -3051,130 +3725,45 @@
       "created_at": "2026-11-21T18:13:36Z",
       "fix": "high",
       "fix_reasons": [
-        "title:bug",
+        "default",
         "body>6000"
       ],
       "labels": [],
-      "linked_pr": false,
+      "linked_pr": true,
       "number": 8351,
       "org": "apache",
       "repo": "incubator-seata",
       "self_claim": false,
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "[Bug] Parallel seata-server tests flake with Netty bind exit 255 and shared Redis key races",
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "bugfix: Parallel seata-server tests flake with Netty bind exit 255 and shared Redis key races",
       "url": "https://github.com/apache/incubator-seata/issues/8351"
     },
     {
-      "acceptance": "high",
-      "acceptance_reasons": [
-        "label:waiting-for-maintainer"
-      ],
-      "assignees": [],
-      "author": "ashitpatel",
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-21T07:09:34Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "waiting-for-maintainer"
-      ],
-      "linked_pr": false,
-      "number": 4512,
-      "org": "apache",
-      "repo": "logging-log4j2",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "[1.2 bridge] callAppenders can throw NPE when removeAllAppenders runs concurrently",
-      "url": "https://github.com/apache/logging-log4j2/issues/4512"
-    },
-    {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "linked_pr"
+        "open_pr:#7165",
+        "default"
       ],
       "assignees": [],
-      "author": "Kaap10",
-      "author_association": "MEMBER",
-      "comments": 1,
-      "created_at": "2026-11-21T05:51:41Z",
-      "fix": "high",
+      "author": "faga295",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T06:53:16Z",
+      "fix": "medium",
       "fix_reasons": [
-        "label:enhancement"
+        "title:bug"
       ],
-      "labels": [
-        "enhancement",
-        "family:release-management"
-      ],
-      "linked_pr": true,
-      "number": 2215,
+      "labels": [],
+      "linked_pr": false,
+      "number": 7158,
       "org": "apache",
-      "repo": "magpie",
+      "repo": "maka",
       "self_claim": false,
       "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "feat(release-management): live vote-tally band mod for active release voting",
-      "url": "https://github.com/apache/magpie/issues/2215"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "merged_pr:#7114",
-        "default"
-      ],
-      "assignees": [],
-      "author": "UncertaintyDeterminesYou4ndMe",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T04:04:49Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "label:bug"
-      ],
-      "labels": [
-        "bug"
-      ],
-      "linked_pr": false,
-      "number": 7112,
-      "org": "apache",
-      "repo": "maka",
-      "self_claim": false,
-      "taken": "merged_pr",
-      "taken_evidence": "#7114",
-      "title": "bug(agent): one MCP call with an unknown result retires the connection and fails every later request",
-      "url": "https://github.com/apache/maka/issues/7112"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "merged_pr:#7113",
-        "default"
-      ],
-      "assignees": [],
-      "author": "UncertaintyDeterminesYou4ndMe",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-21T03:36:59Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "label:bug"
-      ],
-      "labels": [
-        "bug"
-      ],
-      "linked_pr": false,
-      "number": 7111,
-      "org": "apache",
-      "repo": "maka",
-      "self_claim": false,
-      "taken": "merged_pr",
-      "taken_evidence": "#7113",
-      "title": "bug(agent): a conversation fails on every turn once the summary after a context overflow fails",
-      "url": "https://github.com/apache/maka/issues/7111"
+      "taken_evidence": "#7165",
+      "title": "bug(desktop): terminal stops following output without user scrolling",
+      "url": "https://github.com/apache/maka/issues/7158"
     },
     {
       "acceptance": "medium",
@@ -3229,6 +3818,56 @@
       "taken_evidence": "",
       "title": "Win 11, Java 25, Maven 3.9.16/4.0.0-SNAPSHOT: A lot of failing ITs (Failures: 18, Errors: 90)",
       "url": "https://github.com/apache/maven-surefire/issues/3628"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "xhh233",
+      "author_association": "NONE",
+      "comments": 4,
+      "created_at": "2026-11-22T06:42:31Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 4108,
+      "org": "apache",
+      "repo": "nuttx-apps",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "system/cle: overlong line executed as a truncated command at EOL",
+      "url": "https://github.com/apache/nuttx-apps/issues/4108"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "xhh233",
+      "author_association": "NONE",
+      "comments": 3,
+      "created_at": "2026-11-22T06:42:17Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 4107,
+      "org": "apache",
+      "repo": "nuttx-apps",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "system/readline: overlong NSH line runs as a truncated prefix",
+      "url": "https://github.com/apache/nuttx-apps/issues/4107"
     },
     {
       "acceptance": "medium",
@@ -3313,8 +3952,7 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "claimed:Minty-cyber",
-        "label:needs-triage"
+        "linked_pr"
       ],
       "assignees": [],
       "author": "christianeu-db",
@@ -3328,20 +3966,20 @@
       "labels": [
         "needs-triage"
       ],
-      "linked_pr": false,
+      "linked_pr": true,
       "number": 789,
       "org": "apache",
       "repo": "ossie",
       "self_claim": false,
-      "taken": "claimed",
-      "taken_evidence": "Minty-cyber",
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
       "title": "expander: The metric's expression replaces AGG(m) without parentheses",
       "url": "https://github.com/apache/ossie/issues/789"
     },
     {
-      "acceptance": "high",
+      "acceptance": "blocked",
       "acceptance_reasons": [
-        "label:needs-triage"
+        "linked_pr"
       ],
       "assignees": [],
       "author": "christianeu-db",
@@ -3355,20 +3993,20 @@
       "labels": [
         "needs-triage"
       ],
-      "linked_pr": false,
+      "linked_pr": true,
       "number": 788,
       "org": "apache",
       "repo": "ossie",
       "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
       "title": "expander: In a join, a measure over a column named k reads the row-identity key instead",
       "url": "https://github.com/apache/ossie/issues/788"
     },
     {
-      "acceptance": "high",
+      "acceptance": "blocked",
       "acceptance_reasons": [
-        "label:needs-triage"
+        "linked_pr"
       ],
       "assignees": [],
       "author": "christianeu-db",
@@ -3382,20 +4020,20 @@
       "labels": [
         "needs-triage"
       ],
-      "linked_pr": false,
+      "linked_pr": true,
       "number": 787,
       "org": "apache",
       "repo": "ossie",
       "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
       "title": "expander: A CTE with the same name as a view is replaced by the view, so the query reads the wrong relation:",
       "url": "https://github.com/apache/ossie/issues/787"
     },
     {
-      "acceptance": "high",
+      "acceptance": "blocked",
       "acceptance_reasons": [
-        "label:needs-triage"
+        "linked_pr"
       ],
       "assignees": [],
       "author": "christianeu-db",
@@ -3409,13 +4047,13 @@
       "labels": [
         "needs-triage"
       ],
-      "linked_pr": false,
+      "linked_pr": true,
       "number": 786,
       "org": "apache",
       "repo": "ossie",
       "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
       "title": "expander: A SELECT DISTINCT that passes a measure through gives a wrong answer instead of an error",
       "url": "https://github.com/apache/ossie/issues/786"
     },
@@ -3473,6 +4111,134 @@
       "taken_evidence": "",
       "title": "Validation: non-blocking portability report for a document",
       "url": "https://github.com/apache/ossie/issues/783"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#262",
+        "label:needs-triage"
+      ],
+      "assignees": [],
+      "author": "Ostrzyciel",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T08:27:35Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "needs-triage"
+      ],
+      "linked_pr": false,
+      "number": 261,
+      "org": "apache",
+      "repo": "ossie-converters",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "#262",
+      "title": "ontology: Add Ossie<>RDFS converters",
+      "url": "https://github.com/apache/ossie-converters/issues/261"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "zhangyue19921010",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T06:11:42Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:bug"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 11344,
+      "org": "apache",
+      "repo": "paimon",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "[Bug] Reader failover can advance consumer progress past restored splits",
+      "url": "https://github.com/apache/paimon/issues/11344"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "zhangyue19921010",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T05:15:41Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:bug"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 11341,
+      "org": "apache",
+      "repo": "paimon",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "[Bug] Concurrent JDBC catalog renames can deadlock on local lock stripes",
+      "url": "https://github.com/apache/paimon/issues/11341"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "JustinBinber",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T04:17:40Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:bug"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 11338,
+      "org": "apache",
+      "repo": "paimon",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "[Bug] Spark Data Evolution MERGE drops newly added columns from inserted rows",
+      "url": "https://github.com/apache/paimon/issues/11338"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "Zouxxyy",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T03:43:02Z",
+      "fix": "high",
+      "fix_reasons": [
+        "title:[feature"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 11337,
+      "org": "apache",
+      "repo": "paimon",
+      "self_claim": false,
+      "taken": "skipped",
+      "taken_evidence": "",
+      "title": "[Feature] FLOAT/DOUBLE NaN comparison and pruning roadmap",
+      "url": "https://github.com/apache/paimon/issues/11337"
     },
     {
       "acceptance": "blocked",
@@ -3577,88 +4343,40 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "linked_pr"
+        "merged_pr:#1491",
+        "default"
       ],
       "assignees": [],
       "author": "JingsongLi",
       "author_association": "CONTRIBUTOR",
       "comments": 0,
-      "created_at": "2026-11-21T16:20:33Z",
+      "created_at": "2026-11-22T03:02:30Z",
       "fix": "medium",
       "fix_reasons": [
         "default"
       ],
       "labels": [],
-      "linked_pr": true,
-      "number": 1488,
+      "linked_pr": false,
+      "number": 1490,
       "org": "apache",
       "repo": "paimon-rust",
       "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "[core] Hybrid rank fusion differs from vector Top-K for signed zero scores",
-      "url": "https://github.com/apache/paimon-rust/issues/1488"
+      "taken": "merged_pr",
+      "taken_evidence": "#1491",
+      "title": "Align Data Evolution vector global indexes with Java centroid and MultiVector support",
+      "url": "https://github.com/apache/paimon-rust/issues/1490"
     },
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
-      "author": "JingsongLi",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T15:53:26Z",
-      "fix": "medium",
-      "fix_reasons": [
+        "claimed:Subham-KRLX(body)",
         "default"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 1485,
-      "org": "apache",
-      "repo": "paimon-rust",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "Raw vector reranking validates rows excluded by candidate filters",
-      "url": "https://github.com/apache/paimon-rust/issues/1485"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
-      "author": "JeonDaehong",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T15:12:23Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "title:bug"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 1482,
-      "org": "apache",
-      "repo": "paimon-rust",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "[Bug] Lookup compaction of wide tables fails: decoded payload is charged once per column",
-      "url": "https://github.com/apache/paimon-rust/issues/1482"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "linked_pr"
       ],
       "assignees": [],
       "author": "Subham-KRLX",
       "author_association": "CONTRIBUTOR",
-      "comments": 4,
-      "created_at": "2026-11-21T04:48:47Z",
+      "comments": 1,
+      "created_at": "2026-11-22T05:09:16Z",
       "fix": "medium",
       "fix_reasons": [
         "label:bug"
@@ -3666,15 +4384,91 @@
       "labels": [
         "bug"
       ],
-      "linked_pr": true,
-      "number": 6174,
+      "linked_pr": false,
+      "number": 6182,
       "org": "apache",
       "repo": "polaris",
+      "self_claim": true,
+      "taken": "claimed",
+      "taken_evidence": "Subham-KRLX(body)",
+      "title": "CLI: polaris find reports the parent namespace as a match for a qualified search",
+      "url": "https://github.com/apache/polaris/issues/6182"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#27452",
+        "default"
+      ],
+      "assignees": [],
+      "author": "void-ptr974",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T07:01:20Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:bug"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 27696,
+      "org": "apache",
+      "repo": "pulsar",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "#27452",
+      "title": "[Bug] Java AUTO_CONSUME multi-topic consumer cannot decode messages from a newly added partition",
+      "url": "https://github.com/apache/pulsar/issues/27696"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "void-ptr974",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T07:01:10Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:bug"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 27695,
+      "org": "apache",
+      "repo": "pulsar",
       "self_claim": false,
       "taken": "open_pr",
       "taken_evidence": "linked:pr",
-      "title": "CLI: tables summarize stops early when REST metadata fields are omitted",
-      "url": "https://github.com/apache/polaris/issues/6174"
+      "title": "[Bug] Java multi-topic consumer can discard a replacement partition consumer’s messages during seek",
+      "url": "https://github.com/apache/pulsar/issues/27695"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "void-ptr974",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T06:59:36Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:bug"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 27694,
+      "org": "apache",
+      "repo": "pulsar",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "[Bug] Java Exclusive and Failover consumers skip messages from partitions added after redelivery",
+      "url": "https://github.com/apache/pulsar/issues/27694"
     },
     {
       "acceptance": "medium",
@@ -3732,6 +4526,85 @@
         "linked_pr"
       ],
       "assignees": [],
+      "author": "fangm0137",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T08:44:17Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:bug"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 11556,
+      "org": "apache",
+      "repo": "rocketmq",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "[Bug] mqadmin printMsgByQueue stops scanning after an unmatched pull batch",
+      "url": "https://github.com/apache/rocketmq/issues/11556"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "fangm0137",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T07:24:57Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "module/doc"
+      ],
+      "linked_pr": true,
+      "number": 11553,
+      "org": "apache",
+      "repo": "rocketmq",
+      "self_claim": true,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Clarify resetOffsetByTime timestamps and show how to verify an offset reset",
+      "url": "https://github.com/apache/rocketmq/issues/11553"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "stevecoots",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T07:15:56Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "type/enhancement"
+      ],
+      "linked_pr": true,
+      "number": 11552,
+      "org": "apache",
+      "repo": "rocketmq",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "[Enhancement] Add unit tests for transaction flags in MessageSysFlag",
+      "url": "https://github.com/apache/rocketmq/issues/11552"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
       "author": "Metastarx",
       "author_association": "CONTRIBUTOR",
       "comments": 0,
@@ -3750,6 +4623,31 @@
       "taken_evidence": "linked:pr",
       "title": "container/src/main/java/org/apache/rocketmq/container/InnerBrokerController.java:57 - ephemeral broker ports are advertised as port 0",
       "url": "https://github.com/apache/rocketmq/issues/11549"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "qingli9374",
+      "author_association": "NONE",
+      "comments": 1,
+      "created_at": "2026-11-22T03:28:25Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:bug"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 13,
+      "org": "apache",
+      "repo": "rocketmq-ai",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "[Bug] sendMessageStreaming can lose a response before listener registration",
+      "url": "https://github.com/apache/rocketmq-ai/issues/13"
     },
     {
       "acceptance": "blocked",
@@ -3804,27 +4702,25 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "open_pr:#13393",
-        "default",
-        "maintainer-filed"
+        "linked_pr"
       ],
       "assignees": [],
       "author": "SEPURI-SAI-KRISHNA",
       "author_association": "COLLABORATOR",
-      "comments": 3,
+      "comments": 4,
       "created_at": "2026-11-21T11:13:25Z",
       "fix": "medium",
       "fix_reasons": [
         "title:bug"
       ],
       "labels": [],
-      "linked_pr": false,
+      "linked_pr": true,
       "number": 13384,
       "org": "apache",
       "repo": "seatunnel",
       "self_claim": true,
       "taken": "open_pr",
-      "taken_evidence": "#13393",
+      "taken_evidence": "linked:pr",
       "title": "[Bug][Transform-V2] SQL WHERE on a CDC stream leaves rows that stop matching in upsert sinks",
       "url": "https://github.com/apache/seatunnel/issues/13384"
     },
@@ -3862,49 +4758,49 @@
         "linked_pr"
       ],
       "assignees": [],
-      "author": "FurkhanShaikh",
-      "author_association": "CONTRIBUTOR",
+      "author": "paleolimbot",
+      "author_association": "MEMBER",
       "comments": 0,
-      "created_at": "2026-11-21T03:59:07Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "title:fails"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 3570,
-      "org": "apache",
-      "repo": "sedona",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "ST_AsGeoJSON throws NullPointerException for POINT EMPTY, and the GeoJSON reader fails on empty geometries written by PostGIS",
-      "url": "https://github.com/apache/sedona/issues/3570"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
-      "author": "FurkhanShaikh",
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-21T05:12:20Z",
+      "created_at": "2026-11-22T02:48:57Z",
       "fix": "medium",
       "fix_reasons": [
         "default"
       ],
       "labels": [],
       "linked_pr": true,
-      "number": 1599,
+      "number": 1601,
       "org": "apache",
       "repo": "sedona-db",
       "self_claim": false,
       "taken": "open_pr",
       "taken_evidence": "linked:pr",
-      "title": "ST_IsEmpty returns false for a multi-geometry or collection whose members are all empty",
-      "url": "https://github.com/apache/sedona-db/issues/1599"
+      "title": "The empty check in ST_IsClosed performs repeated recursive work",
+      "url": "https://github.com/apache/sedona-db/issues/1601"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "zephyr45",
+      "author_association": "NONE",
+      "comments": 1,
+      "created_at": "2026-11-22T06:43:56Z",
+      "fix": "high",
+      "fix_reasons": [
+        "title:proposal"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 8543,
+      "org": "apache",
+      "repo": "shenyu",
+      "self_claim": false,
+      "taken": "skipped",
+      "taken_evidence": "",
+      "title": "[Proposal] Bound WebSocket slow consumers with session-owned cleanup",
+      "url": "https://github.com/apache/shenyu/issues/8543"
     },
     {
       "acceptance": "blocked",
@@ -3912,24 +4808,24 @@
         "linked_pr"
       ],
       "assignees": [],
-      "author": "hysyoi",
+      "author": "YuStriving",
       "author_association": "NONE",
       "comments": 0,
-      "created_at": "2026-11-21T07:29:20Z",
+      "created_at": "2026-11-22T02:51:14Z",
       "fix": "medium",
       "fix_reasons": [
-        "default"
+        "title:bug"
       ],
       "labels": [],
       "linked_pr": true,
-      "number": 40534,
+      "number": 8541,
       "org": "apache",
-      "repo": "shardingsphere",
+      "repo": "shenyu",
       "self_claim": false,
       "taken": "open_pr",
       "taken_evidence": "linked:pr",
-      "title": "AuthenticatorFactory silently falls back to the default authenticator under the Turkish locale",
-      "url": "https://github.com/apache/shardingsphere/issues/40534"
+      "title": "[BUG] Cached gRPC client misses upstream changes after repeated discovery updates",
+      "url": "https://github.com/apache/shenyu/issues/8541"
     },
     {
       "acceptance": "blocked",
@@ -3984,52 +4880,110 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "linked_pr"
+        "assigned"
       ],
-      "assignees": [],
-      "author": "SEPURI-SAI-KRISHNA",
-      "author_association": "CONTRIBUTOR",
+      "assignees": [
+        "Matthew-DWM"
+      ],
+      "author": "Matthew-DWM",
+      "author_association": "NONE",
       "comments": 1,
-      "created_at": "2026-11-21T05:16:45Z",
+      "created_at": "2026-11-22T05:57:11Z",
       "fix": "medium",
       "fix_reasons": [
         "default"
       ],
       "labels": [],
-      "linked_pr": true,
-      "number": 46426,
+      "linked_pr": false,
+      "number": 9625,
       "org": "apache",
-      "repo": "superset",
+      "repo": "texera",
       "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "Table reports ignore the small number format of time comparison columns",
-      "url": "https://github.com/apache/superset/issues/46426"
+      "taken": "assigned",
+      "taken_evidence": "Matthew-DWM",
+      "title": "JVM large binary accepts incomplete S3 references",
+      "url": "https://github.com/apache/texera/issues/9625"
     },
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "linked_pr"
+        "assigned"
       ],
-      "assignees": [],
-      "author": "SEPURI-SAI-KRISHNA",
+      "assignees": [
+        "aglinxinyuan"
+      ],
+      "author": "aglinxinyuan",
       "author_association": "CONTRIBUTOR",
       "comments": 1,
-      "created_at": "2026-11-21T04:35:35Z",
+      "created_at": "2026-11-22T03:48:58Z",
       "fix": "medium",
       "fix_reasons": [
         "default"
       ],
       "labels": [],
       "linked_pr": true,
-      "number": 46423,
+      "number": 9622,
       "org": "apache",
-      "repo": "superset",
+      "repo": "texera",
       "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "MCP get_chart_data Excel export turns text that starts with = into a formula",
-      "url": "https://github.com/apache/superset/issues/46423"
+      "taken": "assigned",
+      "taken_evidence": "aglinxinyuan",
+      "title": "Share Python storage, RPC, and table test fixtures in pyamber",
+      "url": "https://github.com/apache/texera/issues/9622"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "assigned"
+      ],
+      "assignees": [
+        "aglinxinyuan"
+      ],
+      "author": "aglinxinyuan",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T03:46:04Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 9621,
+      "org": "apache",
+      "repo": "texera",
+      "self_claim": false,
+      "taken": "assigned",
+      "taken_evidence": "aglinxinyuan",
+      "title": "Remove unused frontend environment file, asset placeholder, and dead service members",
+      "url": "https://github.com/apache/texera/issues/9621"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "assigned"
+      ],
+      "assignees": [
+        "Matthew-DWM"
+      ],
+      "author": "Matthew-DWM",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T02:14:24Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:fails"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 9619,
+      "org": "apache",
+      "repo": "texera",
+      "self_claim": false,
+      "taken": "assigned",
+      "taken_evidence": "Matthew-DWM",
+      "title": "CSV (old) fails with Stream closed after reading to EOF",
+      "url": "https://github.com/apache/texera/issues/9619"
     },
     {
       "acceptance": "blocked",
@@ -4221,87 +5175,6 @@
       "url": "https://github.com/apache/texera/issues/9605"
     },
     {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "bobbai00"
-      ],
-      "author": "bobbai00",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-21T08:08:04Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 9602,
-      "org": "apache",
-      "repo": "texera",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "bobbai00",
-      "title": "Lower the agent's default step limit",
-      "url": "https://github.com/apache/texera/issues/9602"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "Ma77Ball"
-      ],
-      "author": "Ma77Ball",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-21T05:28:04Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 9600,
-      "org": "apache",
-      "repo": "texera",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "Ma77Ball",
-      "title": "Extract the duplicated numeric-type guard in aggregations",
-      "url": "https://github.com/apache/texera/issues/9600"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "aglinxinyuan"
-      ],
-      "author": "aglinxinyuan",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-21T02:01:19Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 9598,
-      "org": "apache",
-      "repo": "texera",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "aglinxinyuan",
-      "title": "Remove unused ScalaTest mixins and test helper defaults in platform services",
-      "url": "https://github.com/apache/texera/issues/9598"
-    },
-    {
       "acceptance": "medium",
       "acceptance_reasons": [
         "default",
@@ -4356,29 +5229,59 @@
       "url": "https://github.com/apache/tooling-trusted-releases/issues/1885"
     },
     {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "assigned"
+      ],
+      "assignees": [
+        "ben-reitz"
+      ],
+      "author": "tm0h",
+      "author_association": "NONE",
+      "comments": 2,
+      "created_at": "2026-11-22T08:07:09Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "details required to debug"
+      ],
+      "linked_pr": false,
+      "number": 2930,
+      "org": "cloudflare",
+      "repo": "agents",
+      "self_claim": false,
+      "taken": "assigned",
+      "taken_evidence": "ben-reitz",
+      "title": "Root alarm and facet keepAlive can wait on cross-object RPCs for minutes with no timeout",
+      "url": "https://github.com/cloudflare/agents/issues/2930"
+    },
+    {
       "acceptance": "medium",
       "acceptance_reasons": [
         "default"
       ],
       "assignees": [],
-      "author": "cursor[bot]",
+      "author": "yukiharada1228",
       "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-21T04:06:48Z",
-      "fix": "medium",
+      "comments": 1,
+      "created_at": "2026-11-22T06:02:47Z",
+      "fix": "high",
       "fix_reasons": [
-        "default"
+        "default",
+        "body>6000"
       ],
       "labels": [],
       "linked_pr": false,
-      "number": 22,
+      "number": 695,
       "org": "cloudflare",
-      "repo": "awesome-agents",
+      "repo": "ai",
       "self_claim": false,
-      "taken": "free",
+      "taken": "skipped",
       "taken_evidence": "",
-      "title": "Add Screwtape.ai — agent spend guardrails MCP (x402 buy)",
-      "url": "https://github.com/cloudflare/awesome-agents/issues/22"
+      "title": "Workers AI Gemma auto tool parser converts generated bare null into string \"null\" (also \"None\")",
+      "url": "https://github.com/cloudflare/ai/issues/695"
     },
     {
       "acceptance": "medium",
@@ -4479,6 +5382,43 @@
       "taken_evidence": "",
       "title": "Failed runner attempts leave their Sandbox running, and each retry starts another",
       "url": "https://github.com/cloudflare/ci/issues/24"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "assigned"
+      ],
+      "assignees": [
+        "GregBrimble",
+        "MattieTK",
+        "WalshyDev",
+        "irvinebroque",
+        "korinne",
+        "vy-ton"
+      ],
+      "author": "gmitch215",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T06:13:56Z",
+      "fix": "low",
+      "fix_reasons": [
+        "label:documentation"
+      ],
+      "labels": [
+        "content:edit",
+        "documentation",
+        "effort:high",
+        "product:workers"
+      ],
+      "linked_pr": false,
+      "number": 35527,
+      "org": "cloudflare",
+      "repo": "cloudflare-docs",
+      "self_claim": false,
+      "taken": "assigned",
+      "taken_evidence": "GregBrimble,MattieTK,WalshyDev,irvinebroque,korinne,vy-ton",
+      "title": "Workers limits page says 128 MB isolate limit includes WebAssembly memory, but DO are killed well above it",
+      "url": "https://github.com/cloudflare/cloudflare-docs/issues/35527"
     },
     {
       "acceptance": "blocked",
@@ -4624,35 +5564,29 @@
       "url": "https://github.com/cloudflare/cloudflare-docs/issues/35521"
     },
     {
-      "acceptance": "blocked",
+      "acceptance": "medium",
       "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "danielegm",
-        "xmflsct"
-      ],
-      "author": "LeaderOFGnomes",
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-21T08:10:56Z",
-      "fix": "medium",
-      "fix_reasons": [
         "default"
       ],
-      "labels": [
-        "effort:very-high",
-        "product:waf"
+      "assignees": [],
+      "author": "jayque350",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T03:11:29Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:fails"
       ],
+      "labels": [],
       "linked_pr": false,
-      "number": 35520,
+      "number": 1264,
       "org": "cloudflare",
-      "repo": "cloudflare-docs",
+      "repo": "cloudflare-os",
       "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "danielegm,xmflsct",
-      "title": "Lists API: document how a list is identified as \"CrowdSec-managed\" (the 24-hour bulk-operation limit)",
-      "url": "https://github.com/cloudflare/cloudflare-docs/issues/35520"
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "git push permanently fails with \"root commit not known to the destination\" after re-connecting a resource — onRemote proof is never re-established for the new gatekeeper ID",
+      "url": "https://github.com/cloudflare/cloudflare-os/issues/1264"
     },
     {
       "acceptance": "blocked",
@@ -4705,29 +5639,82 @@
       "url": "https://github.com/cloudflare/foundations/issues/319"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
+        "claimed:been-there-done-that(body)",
         "default"
       ],
       "assignees": [],
-      "author": "liady",
+      "author": "been-there-done-that",
       "author_association": "NONE",
       "comments": 0,
-      "created_at": "2026-11-21T02:55:44Z",
+      "created_at": "2026-11-22T07:55:01Z",
       "fix": "medium",
       "fix_reasons": [
-        "title:crash"
+        "default"
       ],
       "labels": [],
       "linked_pr": false,
-      "number": 197,
+      "number": 1143,
       "org": "cloudflare",
-      "repo": "kitesurf",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "XMLSerializer exists but has no serializeToString, so pages that feature-detect it crash",
-      "url": "https://github.com/cloudflare/kitesurf/issues/197"
+      "repo": "pingora",
+      "self_claim": true,
+      "taken": "claimed",
+      "taken_evidence": "been-there-done-that(body)",
+      "title": "HTTP/1 body writer: Content-Length bodies are not flushed until the last byte, so slow downloads stall",
+      "url": "https://github.com/cloudflare/pingora/issues/1143"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "claimed:been-there-done-that(body)",
+        "default"
+      ],
+      "assignees": [],
+      "author": "been-there-done-that",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T07:54:59Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 1142,
+      "org": "cloudflare",
+      "repo": "pingora",
+      "self_claim": true,
+      "taken": "claimed",
+      "taken_evidence": "been-there-done-that(body)",
+      "title": "HTTP/1.1 proxy: upgraded (WebSocket) tunnel closes right after the 101 when the pre-upgrade body end marker is read late",
+      "url": "https://github.com/cloudflare/pingora/issues/1142"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "claimed:chikof(body)",
+        "default"
+      ],
+      "assignees": [],
+      "author": "chikof",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T05:47:24Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 1141,
+      "org": "cloudflare",
+      "repo": "pingora",
+      "self_claim": true,
+      "taken": "claimed",
+      "taken_evidence": "chikof(body)",
+      "title": "rustls counterpart of upstream_tls_verify_callback",
+      "url": "https://github.com/cloudflare/pingora/issues/1141"
     },
     {
       "acceptance": "medium",
@@ -4735,24 +5722,75 @@
         "default"
       ],
       "assignees": [],
-      "author": "liady",
+      "author": "chikof",
       "author_association": "NONE",
       "comments": 0,
-      "created_at": "2026-11-21T02:55:43Z",
+      "created_at": "2026-11-22T05:47:23Z",
       "fix": "medium",
       "fix_reasons": [
         "default"
       ],
       "labels": [],
       "linked_pr": false,
-      "number": 196,
+      "number": 1140,
       "org": "cloudflare",
-      "repo": "kitesurf",
+      "repo": "pingora",
       "self_claim": false,
       "taken": "free",
       "taken_evidence": "",
-      "title": "attachShadow() throws on a host whose shadow root is declarative",
-      "url": "https://github.com/cloudflare/kitesurf/issues/196"
+      "title": "HTTP/2 responses that end in trailers never reach response_body_filter with end_of_stream = true",
+      "url": "https://github.com/cloudflare/pingora/issues/1140"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "claimed:chikof(body)",
+        "default"
+      ],
+      "assignees": [],
+      "author": "chikof",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T05:47:22Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 1139,
+      "org": "cloudflare",
+      "repo": "pingora",
+      "self_claim": true,
+      "taken": "claimed",
+      "taken_evidence": "chikof(body)",
+      "title": "No way to set an upgraded tunnel's read timeout, or end it from the application",
+      "url": "https://github.com/cloudflare/pingora/issues/1139"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "huynhcongdac",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T07:56:33Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 167,
+      "org": "cloudflare",
+      "repo": "security-audit-skill",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "1",
+      "url": "https://github.com/cloudflare/security-audit-skill/issues/167"
     },
     {
       "acceptance": "blocked",
@@ -4854,6 +5892,61 @@
       "taken_evidence": "",
       "title": "Template proposal: onebrain-agent-template (Think agent with a team knowledge base)",
       "url": "https://github.com/cloudflare/templates/issues/1208"
+    },
+    {
+      "acceptance": "high",
+      "acceptance_reasons": [
+        "label:needs-triage"
+      ],
+      "assignees": [],
+      "author": "iam-sandeep-s",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T06:23:57Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "label:kind/bug"
+      ],
+      "labels": [
+        "kind/bug",
+        "needs-triage"
+      ],
+      "linked_pr": false,
+      "number": 7478,
+      "org": "cloudflare",
+      "repo": "terraform-provider-cloudflare",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "cloudflare_zero_trust_access_policy reports in-place update on no-op plan due to reusable and updated_at in v5.29.0",
+      "url": "https://github.com/cloudflare/terraform-provider-cloudflare/issues/7478"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "ask-bonk[bot]",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T08:03:51Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "nextjs-tracking"
+      ],
+      "linked_pr": false,
+      "number": 4818,
+      "org": "cloudflare",
+      "repo": "vinext",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "next/image: support experimental safe image optimization",
+      "url": "https://github.com/cloudflare/vinext/issues/4818"
     },
     {
       "acceptance": "medium",
@@ -4963,6 +6056,56 @@
       "taken_evidence": "",
       "title": "[bug]: http-message-sig accepts a Decimal `created`/`expires` and re-serializes it as an Integer in the signature base",
       "url": "https://github.com/cloudflare/web-bot-auth/issues/203"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "gmitch215",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T06:10:56Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 8805,
+      "org": "cloudflare",
+      "repo": "workerd",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "DO storage reset on the first event of a fresh object when an alarm is moved to now + 1 ms during a CPU-heavy event",
+      "url": "https://github.com/cloudflare/workerd/issues/8805"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "eng-cc",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T02:31:43Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 8801,
+      "org": "cloudflare",
+      "repo": "workerd",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Intermittent SIGSEGV in Linux x86_64 release binary inside Abseil UnwindImpl during TCMalloc allocation sampling",
+      "url": "https://github.com/cloudflare/workerd/issues/8801"
     },
     {
       "acceptance": "medium",
@@ -5167,6 +6310,36 @@
       "url": "https://github.com/cloudflare/workers-sdk/issues/17104"
     },
     {
+      "acceptance": "high",
+      "acceptance_reasons": [
+        "label:needs triage"
+      ],
+      "assignees": [],
+      "author": "Bharat0522",
+      "author_association": "NONE",
+      "comments": 1,
+      "created_at": "2026-11-22T03:58:07Z",
+      "fix": "high",
+      "fix_reasons": [
+        "label:bug",
+        "body>6000"
+      ],
+      "labels": [
+        "bug",
+        "needs triage",
+        "receiver/hostmetrics"
+      ],
+      "linked_pr": false,
+      "number": 53432,
+      "org": "open-telemetry",
+      "repo": "opentelemetry-collector-contrib",
+      "self_claim": false,
+      "taken": "skipped",
+      "taken_evidence": "",
+      "title": "[receiver/hostmetrics] Filesystem scraper triggers automounts and reports them twice when include_virtual_filesystems is true",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53432"
+    },
+    {
       "acceptance": "medium",
       "acceptance_reasons": [
         "default"
@@ -5227,31 +6400,6 @@
         "default"
       ],
       "assignees": [],
-      "author": "github-actions[bot]",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T14:47:13Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 53426,
-      "org": "open-telemetry",
-      "repo": "opentelemetry-collector-contrib",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "Workflow failed: load-tests (#59087)",
-      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53426"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
       "author": "hmmftg",
       "author_association": "CONTRIBUTOR",
       "comments": 0,
@@ -5279,24 +6427,52 @@
         "default"
       ],
       "assignees": [],
-      "author": "github-actions[bot]",
-      "author_association": "CONTRIBUTOR",
+      "author": "thompson-tomo",
+      "author_association": "NONE",
       "comments": 0,
-      "created_at": "2026-11-22T01:32:11Z",
-      "fix": "medium",
+      "created_at": "2026-11-22T07:24:32Z",
+      "fix": "high",
       "fix_reasons": [
+        "label:enhancement"
+      ],
+      "labels": [
+        "enhancement"
+      ],
+      "linked_pr": false,
+      "number": 3239,
+      "org": "open-telemetry",
+      "repo": "opentelemetry-java-contrib",
+      "self_claim": false,
+      "taken": "skipped",
+      "taken_evidence": "",
+      "title": "Capture AWS Lambda instance id",
+      "url": "https://github.com/open-telemetry/opentelemetry-java-contrib/issues/3239"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
         "default"
+      ],
+      "assignees": [],
+      "author": "qinkangdeid",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T04:03:06Z",
+      "fix": "high",
+      "fix_reasons": [
+        "default",
+        "body>6000"
       ],
       "labels": [],
       "linked_pr": false,
-      "number": 21420,
+      "number": 21422,
       "org": "open-telemetry",
       "repo": "opentelemetry-java-instrumentation",
       "self_claim": false,
-      "taken": "free",
+      "taken": "skipped",
       "taken_evidence": "",
-      "title": "Workflow failed: Publish fake backend images for smoke tests (#225)",
-      "url": "https://github.com/open-telemetry/opentelemetry-java-instrumentation/issues/21420"
+      "title": "java-http-client: context injection is silently dropped when the request already has a propagation header in a different case (e.g. `Traceparent`)",
+      "url": "https://github.com/open-telemetry/opentelemetry-java-instrumentation/issues/21422"
     },
     {
       "acceptance": "blocked",
@@ -5436,32 +6612,6 @@
       "url": "https://github.com/open-telemetry/opentelemetry-zig/issues/194"
     },
     {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author": "agagniere",
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2026-11-21T07:48:38Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 193,
-      "org": "open-telemetry",
-      "repo": "opentelemetry-zig",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "Export the types needed to use observable instruments",
-      "url": "https://github.com/open-telemetry/opentelemetry-zig/issues/193"
-    },
-    {
       "acceptance": "blocked",
       "acceptance_reasons": [
         "open_pr:#4781",
@@ -5520,6 +6670,34 @@
     {
       "acceptance": "medium",
       "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "YaoYingLong",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T05:45:37Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "area:rocketmq",
+        "triage:needs-triage"
+      ],
+      "linked_pr": false,
+      "number": 4361,
+      "org": "open-telemetry",
+      "repo": "semantic-conventions",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Add LiteTopic and priority message types to RocketMQ semantic conventions",
+      "url": "https://github.com/open-telemetry/semantic-conventions/issues/4361"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
         "default",
         "maintainer-filed"
       ],
@@ -5551,6 +6729,31 @@
         "default"
       ],
       "assignees": [],
+      "author": "retz8",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T02:57:02Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 1923,
+      "org": "open-telemetry",
+      "repo": "weaver",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "live-check reports a dependency attribute as missing when only a span refinement references it",
+      "url": "https://github.com/open-telemetry/weaver/issues/1923"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
       "author": "cristiandenicola",
       "author_association": "NONE",
       "comments": 0,
@@ -5569,56 +6772,6 @@
       "taken_evidence": "",
       "title": "live-check ignores the requirement levels of a metric refinement",
       "url": "https://github.com/open-telemetry/weaver/issues/1921"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author": "JonasAAA",
-      "author_association": "NONE",
-      "comments": 1,
-      "created_at": "2026-11-21T06:40:21Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 213,
-      "org": "ossf",
-      "repo": "secure-sw-dev-fundamentals",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "Doesn't work well on mobile",
-      "url": "https://github.com/ossf/secure-sw-dev-fundamentals/issues/213"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
-      "author": "cvas22",
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-21T08:33:49Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "title:wrong"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 234,
-      "org": "ossf",
-      "repo": "security-insights",
-      "self_claim": true,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "cue2openapi keeps CUE escapes in regex patterns, so Email, URL and SchemaVersion patterns are wrong in openapi.yaml",
-      "url": "https://github.com/ossf/security-insights/issues/234"
     },
     {
       "acceptance": "medium",
@@ -5677,9 +6830,66 @@
         "default"
       ],
       "assignees": [],
+      "author": "kentzjh-cmd",
+      "author_association": "NONE",
+      "comments": 1,
+      "created_at": "2026-11-22T07:17:44Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "ACK_WAITING",
+        "HELP_WANTED",
+        "UPDATE_CS"
+      ],
+      "linked_pr": false,
+      "number": 3025,
+      "org": "OWASP",
+      "repo": "CheatSheetSeries",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Update: Secure_Cloud_Architecture_Cheat_Sheet",
+      "url": "https://github.com/OWASP/CheatSheetSeries/issues/3025"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "Skeletor-Pirate",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T04:19:28Z",
+      "fix": "high",
+      "fix_reasons": [
+        "label:enhancement"
+      ],
+      "labels": [
+        "bug",
+        "enhancement"
+      ],
+      "linked_pr": false,
+      "number": 1766,
+      "org": "OWASP",
+      "repo": "cve-lite-cli",
+      "self_claim": false,
+      "taken": "skipped",
+      "taken_evidence": "",
+      "title": "fix: exit 0 when --prod-only empties every multi-folder project",
+      "url": "https://github.com/OWASP/cve-lite-cli/issues/1766"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
       "author": "prx-my",
       "author_association": "CONTRIBUTOR",
-      "comments": 0,
+      "comments": 5,
       "created_at": "2026-11-21T21:07:42Z",
       "fix": "medium",
       "fix_reasons": [
@@ -5878,32 +7088,28 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "assigned"
+        "claimed:Jeon1691(body)",
+        "default"
       ],
-      "assignees": [
-        "Nachiket-Roy"
-      ],
-      "author": "sonukapoor",
-      "author_association": "COLLABORATOR",
-      "comments": 3,
-      "created_at": "2026-11-21T06:41:13Z",
-      "fix": "high",
+      "assignees": [],
+      "author": "Jeon1691",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T07:06:31Z",
+      "fix": "medium",
       "fix_reasons": [
-        "title:refactor"
+        "title:bug"
       ],
-      "labels": [
-        "help wanted",
-        "refactor"
-      ],
+      "labels": [],
       "linked_pr": false,
-      "number": 1753,
+      "number": 4043,
       "org": "OWASP",
-      "repo": "cve-lite-cli",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "Nachiket-Roy",
-      "title": "refactor: share the empty-scan handling between the first scan and the --fix rescan",
-      "url": "https://github.com/OWASP/cve-lite-cli/issues/1753"
+      "repo": "mastg",
+      "self_claim": true,
+      "taken": "claimed",
+      "taken_evidence": "Jeon1691(body)",
+      "title": "[Bug] MASTG-DEMO-0045 run.sh references a missing radare2 script",
+      "url": "https://github.com/OWASP/mastg/issues/4043"
     },
     {
       "acceptance": "blocked",
@@ -6066,11 +7272,11 @@
   ],
   "notes": [
     {
-      "detail": "starter 池只取最近更新的 100 筆（stopped at 1 pages of 1108）",
+      "detail": "starter 池只取最近更新的 100 筆（stopped at 1 pages of 1104）",
       "org": "apache"
     },
     {
-      "detail": "starter 池只取最近更新的 100 筆（stopped at 1 pages of 560）",
+      "detail": "starter 池只取最近更新的 100 筆（stopped at 1 pages of 558）",
       "org": "open-telemetry"
     },
     {
@@ -6080,15 +7286,15 @@
   ],
   "orgs": [
     {
-      "issues": 162,
+      "issues": 193,
       "org": "apache",
-      "repos": 54,
+      "repos": 55,
       "status": "ok"
     },
     {
-      "issues": 15,
+      "issues": 17,
       "org": "open-telemetry",
-      "repos": 8,
+      "repos": 9,
       "status": "ok"
     },
     {
@@ -6098,21 +7304,21 @@
       "status": "ok"
     },
     {
-      "issues": 3,
+      "issues": 1,
       "org": "ossf",
-      "repos": 3,
+      "repos": 1,
       "status": "ok"
     },
     {
-      "issues": 30,
+      "issues": 40,
       "org": "cloudflare",
-      "repos": 16,
+      "repos": 19,
       "status": "ok"
     },
     {
-      "issues": 15,
+      "issues": 17,
       "org": "OWASP",
-      "repos": 6,
+      "repos": 8,
       "status": "ok"
     },
     {
@@ -6550,6 +7756,68 @@
     {
       "acceptance": "medium",
       "acceptance_reasons": [
+        "label:good first issue",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "tisonkun",
+      "author_association": "MEMBER",
+      "comments": 6,
+      "created_at": "2026-09-21T05:57:36Z",
+      "fix": "high",
+      "fix_reasons": [
+        "label:enhancement"
+      ],
+      "labels": [
+        "enhancement",
+        "good first issue",
+        "help wanted"
+      ],
+      "linked_pr": false,
+      "number": 324,
+      "org": "apache",
+      "repo": "asyncband",
+      "self_claim": false,
+      "taken": "skipped",
+      "taken_evidence": "",
+      "title": "Explore object pool recycling diagnostics and check timing",
+      "url": "https://github.com/apache/asyncband/issues/324"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "label:good first issue",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "kennknowles",
+      "author_association": "MEMBER",
+      "comments": 1,
+      "created_at": "2022-06-03T16:09:00Z",
+      "fix": "low",
+      "fix_reasons": [
+        "label:good first issue"
+      ],
+      "labels": [
+        "P3",
+        "core",
+        "good first issue",
+        "improvement",
+        "python"
+      ],
+      "linked_pr": false,
+      "number": 18011,
+      "org": "apache",
+      "repo": "beam",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "All runners should support ProfilingOptions",
+      "url": "https://github.com/apache/beam/issues/18011"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -6633,6 +7901,34 @@
       "taken_evidence": "",
       "title": "Object/Blob store capabilities",
       "url": "https://github.com/apache/burr/issues/467"
+    },
+    {
+      "acceptance": "low",
+      "acceptance_reasons": [
+        "label:good first issue"
+      ],
+      "assignees": [],
+      "author": "kartikgoel598",
+      "author_association": "NONE",
+      "comments": 2,
+      "created_at": "2026-11-21T04:38:07Z",
+      "fix": "low",
+      "fix_reasons": [
+        "label:good first issue"
+      ],
+      "labels": [
+        "good first issue",
+        "kind/bug"
+      ],
+      "linked_pr": false,
+      "number": 6983,
+      "org": "apache",
+      "repo": "camel-k",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Container trait: defaultContainerRunAsNonRoot should default to true",
+      "url": "https://github.com/apache/camel-k/issues/6983"
     },
     {
       "acceptance": "blocked",
@@ -6739,6 +8035,39 @@
       "assignees": [],
       "author": "andygrove",
       "author_association": "MEMBER",
+      "comments": 4,
+      "created_at": "2026-10-14T13:55:48Z",
+      "fix": "high",
+      "fix_reasons": [
+        "label:enhancement"
+      ],
+      "labels": [
+        "area:expressions",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "rust",
+        "tech debt"
+      ],
+      "linked_pr": false,
+      "number": 6984,
+      "org": "apache",
+      "repo": "datafusion-comet",
+      "self_claim": false,
+      "taken": "skipped",
+      "taken_evidence": "",
+      "title": "Reuse hash_list_primitive! for string/binary list elements and factor out map-entry hashing loops",
+      "url": "https://github.com/apache/datafusion-comet/issues/6984"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "label:good first issue",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "andygrove",
+      "author_association": "MEMBER",
       "comments": 1,
       "created_at": "2026-11-15T17:31:17Z",
       "fix": "high",
@@ -6768,64 +8097,6 @@
       "assignees": [],
       "author": "andygrove",
       "author_association": "MEMBER",
-      "comments": 1,
-      "created_at": "2026-11-15T17:31:04Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "good first issue"
-      ],
-      "linked_pr": false,
-      "number": 234,
-      "org": "apache",
-      "repo": "datafusion-spark",
-      "self_claim": false,
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Implement Spark-compatible `timestamp_seconds`",
-      "url": "https://github.com/apache/datafusion-spark/issues/234"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author": "andygrove",
-      "author_association": "MEMBER",
-      "comments": 1,
-      "created_at": "2026-11-15T17:29:28Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "good first issue"
-      ],
-      "linked_pr": false,
-      "number": 207,
-      "org": "apache",
-      "repo": "datafusion-spark",
-      "self_claim": false,
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Implement Spark-compatible `lower` / `lcase`",
-      "url": "https://github.com/apache/datafusion-spark/issues/207"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author": "andygrove",
-      "author_association": "MEMBER",
       "comments": 2,
       "created_at": "2026-11-15T17:29:25Z",
       "fix": "high",
@@ -6845,35 +8116,6 @@
       "taken_evidence": "",
       "title": "Implement Spark-compatible `upper` / `ucase`",
       "url": "https://github.com/apache/datafusion-spark/issues/206"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author": "andygrove",
-      "author_association": "MEMBER",
-      "comments": 1,
-      "created_at": "2026-11-15T17:29:21Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "good first issue"
-      ],
-      "linked_pr": false,
-      "number": 205,
-      "org": "apache",
-      "repo": "datafusion-spark",
-      "self_claim": false,
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Implement Spark-compatible `substring_index`",
-      "url": "https://github.com/apache/datafusion-spark/issues/205"
     },
     {
       "acceptance": "blocked",
@@ -8566,7 +9808,7 @@
       "assignees": [],
       "author": "corgy-w",
       "author_association": "CONTRIBUTOR",
-      "comments": 11,
+      "comments": 12,
       "created_at": "2026-11-10T16:23:20Z",
       "fix": "high",
       "fix_reasons": [
@@ -8827,6 +10069,33 @@
       "url": "https://github.com/apache/seatunnel/issues/10203"
     },
     {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "label:help wanted",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "CalvinKirs",
+      "author_association": "MEMBER",
+      "comments": 60,
+      "created_at": "2021-11-17T10:58:56Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "help wanted"
+      ],
+      "linked_pr": false,
+      "number": 686,
+      "org": "apache",
+      "repo": "seatunnel",
+      "self_claim": false,
+      "taken": "not_checked",
+      "title": "Who is Using SeaTunnel? ",
+      "url": "https://github.com/apache/seatunnel/issues/686"
+    },
+    {
       "acceptance": "low",
       "acceptance_reasons": [
         "label:help-wanted"
@@ -8912,34 +10181,6 @@
       "taken_evidence": "#1972",
       "title": "Add the missing Wicket markup tags to the user guide",
       "url": "https://github.com/apache/wicket/issues/1960"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "claimed:Ritesh17rb",
-        "label:good first issue"
-      ],
-      "assignees": [],
-      "author": "dashorst",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-19T14:20:04Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:good first issue"
-      ],
-      "labels": [
-        "good first issue"
-      ],
-      "linked_pr": false,
-      "number": 1954,
-      "org": "apache",
-      "repo": "wicket",
-      "self_claim": false,
-      "taken": "claimed",
-      "taken_evidence": "Ritesh17rb",
-      "title": "Hide the MultiFileUploadField caption when no files are selected",
-      "url": "https://github.com/apache/wicket/issues/1954"
     },
     {
       "acceptance": "blocked",
@@ -13006,8 +14247,7 @@
       "org": "CycloneDX",
       "repo": "cyclonedx-webpack-plugin",
       "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
+      "taken": "not_checked",
       "title": "tests: regression for duplicate build-system entries",
       "url": "https://github.com/CycloneDX/cyclonedx-webpack-plugin/issues/1357"
     },
@@ -14732,38 +15972,6 @@
       "url": "https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation/issues/4113"
     },
     {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:good first issue"
-      ],
-      "assignees": [],
-      "author": "MrAlias",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-04T17:32:53Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:documentation"
-      ],
-      "labels": [
-        "component:obi",
-        "contribfest",
-        "documentation",
-        "go",
-        "good first issue",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 4112,
-      "org": "open-telemetry",
-      "repo": "opentelemetry-ebpf-instrumentation",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "Document TCP health server defaults and bind behavior",
-      "url": "https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation/issues/4112"
-    },
-    {
       "acceptance": "blocked",
       "acceptance_reasons": [
         "merged_pr:#1806",
@@ -15577,35 +16785,6 @@
       "url": "https://github.com/open-telemetry/opentelemetry-go/issues/9383"
     },
     {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:good first issue"
-      ],
-      "assignees": [],
-      "author": "MrAlias",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-04T17:21:40Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:good first issue"
-      ],
-      "labels": [
-        "contribfest",
-        "good first issue",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 9382,
-      "org": "open-telemetry",
-      "repo": "opentelemetry-go",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "Show the kept and removed results of Set.Filter",
-      "url": "https://github.com/open-telemetry/opentelemetry-go/issues/9382"
-    },
-    {
       "acceptance": "blocked",
       "acceptance_reasons": [
         "claimed:mo-hamedaziz",
@@ -15635,6 +16814,68 @@
       "taken_evidence": "mo-hamedaziz",
       "title": "Name MeterProvider correctly in the runtime option documentation",
       "url": "https://github.com/open-telemetry/opentelemetry-go-contrib/issues/10199"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "claimed:givemehat",
+        "label:good first issue"
+      ],
+      "assignees": [],
+      "author": "MrAlias",
+      "author_association": "CONTRIBUTOR",
+      "comments": 2,
+      "created_at": "2026-11-04T17:31:09Z",
+      "fix": "low",
+      "fix_reasons": [
+        "label:documentation"
+      ],
+      "labels": [
+        "contribfest",
+        "documentation",
+        "good first issue",
+        "help wanted"
+      ],
+      "linked_pr": false,
+      "number": 10198,
+      "org": "open-telemetry",
+      "repo": "opentelemetry-go-contrib",
+      "self_claim": false,
+      "taken": "claimed",
+      "taken_evidence": "givemehat",
+      "title": "Describe GinFilter using its actual argument type",
+      "url": "https://github.com/open-telemetry/opentelemetry-go-contrib/issues/10198"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "claimed:givemehat",
+        "label:good first issue"
+      ],
+      "assignees": [],
+      "author": "MrAlias",
+      "author_association": "CONTRIBUTOR",
+      "comments": 2,
+      "created_at": "2026-11-04T17:30:49Z",
+      "fix": "low",
+      "fix_reasons": [
+        "label:documentation"
+      ],
+      "labels": [
+        "contribfest",
+        "documentation",
+        "good first issue",
+        "help wanted"
+      ],
+      "linked_pr": false,
+      "number": 10196,
+      "org": "open-telemetry",
+      "repo": "opentelemetry-go-contrib",
+      "self_claim": false,
+      "taken": "claimed",
+      "taken_evidence": "givemehat",
+      "title": "Repair Filter and WithMeterProvider wording in otelgrpc",
+      "url": "https://github.com/open-telemetry/opentelemetry-go-contrib/issues/10196"
     },
     {
       "acceptance": "blocked",
@@ -18161,14 +19402,14 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "claimed:bhushan4work",
+        "claimed:satvik310706",
         "label:good first issue",
         "maintainer-filed"
       ],
       "assignees": [],
       "author": "ErezYalon",
       "author_association": "MEMBER",
-      "comments": 1,
+      "comments": 2,
       "created_at": "2026-08-25T07:36:10Z",
       "fix": "low",
       "fix_reasons": [
@@ -18185,7 +19426,7 @@
       "repo": "API-Security",
       "self_claim": false,
       "taken": "claimed",
-      "taken_evidence": "bhushan4work",
+      "taken_evidence": "satvik310706",
       "title": "Translate new GUID/authorization note to Persian (Farsi) (API1:2023)",
       "url": "https://github.com/OWASP/API-Security/issues/157"
     },
@@ -19682,36 +20923,6 @@
       "author": "shsingh",
       "author_association": "COLLABORATOR",
       "comments": 0,
-      "created_at": "2023-10-30T05:01:07Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "documentation/cheatsheets",
-        "enhancement",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 157,
-      "org": "OWASP",
-      "repo": "www-project-machine-learning-security-top-10",
-      "self_claim": false,
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "feat(docs): create a cheatsheet for ML09 Output Integrity Attack",
-      "url": "https://github.com/OWASP/www-project-machine-learning-security-top-10/issues/157"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:help wanted",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author": "shsingh",
-      "author_association": "COLLABORATOR",
-      "comments": 0,
       "created_at": "2023-10-30T05:00:45Z",
       "fix": "high",
       "fix_reasons": [
@@ -20155,8 +21366,8 @@
   ],
   "taken_checks": {
     "starter": 250,
-    "window": 96
+    "window": 104
   },
-  "verified_at": "2026-11-22T01:49:37Z",
-  "window_start": "2026-11-21T01:49:37Z"
+  "verified_at": "2026-11-22T09:07:17Z",
+  "window_start": "2026-11-21T09:07:17Z"
 }
