@@ -1,7 +1,32 @@
 {
-  "claim_since": "2026-09-23T17:31:00Z",
+  "claim_since": "2026-09-23T23:00:23Z",
   "errors": [],
   "issues": [
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "mattrpav",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T17:40:59Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 2886,
+      "org": "apache",
+      "repo": "activemq",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "ConsumerInfo will need start|stop flag in v13",
+      "url": "https://github.com/apache/activemq/issues/2886"
+    },
     {
       "acceptance": "medium",
       "acceptance_reasons": [
@@ -272,6 +297,34 @@
       "url": "https://github.com/apache/airflow/issues/77467"
     },
     {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#55731",
+        "default"
+      ],
+      "assignees": [],
+      "author": "bvolpato",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T19:55:55Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "Component: C++"
+      ],
+      "linked_pr": false,
+      "number": 55730,
+      "org": "apache",
+      "repo": "arrow",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "#55731",
+      "title": "[C++] Vectorize primitive Filter with 64-bit word-level branchless compaction",
+      "url": "https://github.com/apache/arrow/issues/55730"
+    },
+    {
       "acceptance": "medium",
       "acceptance_reasons": [
         "default"
@@ -328,100 +381,6 @@
       "taken_evidence": "thisisnic",
       "title": "[R] ExtensionType$WrapArray() does not check the type of the storage array",
       "url": "https://github.com/apache/arrow/issues/55721"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "thisisnic"
-      ],
-      "author": "thisisnic",
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2026-11-21T18:14:28Z",
-      "fix": "low",
-      "fix_reasons": [
-        "title:docs"
-      ],
-      "labels": [
-        "Component: Documentation",
-        "Component: R",
-        "Type: enhancement"
-      ],
-      "linked_pr": false,
-      "number": 55713,
-      "org": "apache",
-      "repo": "arrow",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "thisisnic",
-      "title": "[R][Docs] Add an article on working with nested data (struct and list columns)",
-      "url": "https://github.com/apache/arrow/issues/55713"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "thisisnic"
-      ],
-      "author": "thisisnic",
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2026-11-21T18:13:36Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "Component: C++",
-        "Component: Parquet",
-        "Component: R",
-        "Type: bug"
-      ],
-      "linked_pr": false,
-      "number": 55712,
-      "org": "apache",
-      "repo": "arrow",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "thisisnic",
-      "title": "[R][C++][Parquet] FileReader::ReadColumn() reads out of bounds for a field index past the last field when the file has nested columns",
-      "url": "https://github.com/apache/arrow/issues/55712"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "open_pr:#55714",
-        "default",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author": "mapleFU",
-      "author_association": "MEMBER",
-      "comments": 1,
-      "created_at": "2026-11-21T17:40:02Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "Component: C++",
-        "Component: Parquet",
-        "Type: enhancement"
-      ],
-      "linked_pr": false,
-      "number": 55711,
-      "org": "apache",
-      "repo": "arrow",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "#55714",
-      "title": "[C++][Parquet] More ALP benchmarking for different input data",
-      "url": "https://github.com/apache/arrow/issues/55711"
     },
     {
       "acceptance": "medium",
@@ -507,32 +466,6 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "claimed:ajoakim(body)",
-        "default"
-      ],
-      "assignees": [],
-      "author": "ajoakim",
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-21T18:27:21Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 12393,
-      "org": "apache",
-      "repo": "arrow-rs",
-      "self_claim": true,
-      "taken": "claimed",
-      "taken_evidence": "ajoakim(body)",
-      "title": "parquet: column chunk min/max statistics pin the whole per-write buffer for FixedLenByteArray / Decimal128 values",
-      "url": "https://github.com/apache/arrow-rs/issues/12393"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
         "linked_pr"
       ],
       "assignees": [],
@@ -605,6 +538,63 @@
       "taken_evidence": "",
       "title": "Tighten watch::{Sender, Receiver} cross-thread bounds to T: Send + Sync before 1.0",
       "url": "https://github.com/apache/asyncband/issues/456"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "Thanatos9404",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T17:58:11Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:bug"
+      ],
+      "labels": [
+        "P2",
+        "python"
+      ],
+      "linked_pr": true,
+      "number": 41568,
+      "org": "apache",
+      "repo": "beam",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "[Bug]: Top.Of(n).without_defaults() still outputs [] for an empty input in the global window",
+      "url": "https://github.com/apache/beam/issues/41568"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "Thanatos9404",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T17:55:28Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:bug"
+      ],
+      "labels": [
+        "P2",
+        "io",
+        "python"
+      ],
+      "linked_pr": true,
+      "number": 41567,
+      "org": "apache",
+      "repo": "beam",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "[Bug]: Python file-based sinks read glob characters in the output path as a pattern and delete unrelated files",
+      "url": "https://github.com/apache/beam/issues/41567"
     },
     {
       "acceptance": "blocked",
@@ -731,61 +721,6 @@
         "default"
       ],
       "assignees": [],
-      "author": "github-actions[bot]",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T22:16:38Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "title:regression"
-      ],
-      "labels": [
-        "awaiting triage",
-        "perf-alert"
-      ],
-      "linked_pr": false,
-      "number": 41553,
-      "org": "apache",
-      "repo": "beam",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "\n  Performance Regression or Improvement: pytorch_image_classification_benchmarks-resnet152-GPU-mean_inference_batch_latency_micro_secs:mean_inference_batch_latency_micro_secs\n",
-      "url": "https://github.com/apache/beam/issues/41553"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "ManvithPanyam"
-      ],
-      "author": "ManvithPanyam",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-21T17:33:06Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "title:bug"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 41551,
-      "org": "apache",
-      "repo": "beam",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "ManvithPanyam",
-      "title": "[Bug]: DataFrame and Series xs(drop_level=False) can reorder MultiIndex levels",
-      "url": "https://github.com/apache/beam/issues/41551"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
       "author": "davsclaus",
       "author_association": "CONTRIBUTOR",
       "comments": 0,
@@ -806,6 +741,33 @@
       "taken_evidence": "",
       "title": "New SOAP web service examples with the soap-source and soap-action Kamelets (Camel 4.24)",
       "url": "https://github.com/apache/camel-jbang-examples/issues/144"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "assigned"
+      ],
+      "assignees": [
+        "davsclaus"
+      ],
+      "author": "davsclaus",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T19:20:33Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 3362,
+      "org": "apache",
+      "repo": "camel-kamelets",
+      "self_claim": false,
+      "taken": "assigned",
+      "taken_evidence": "davsclaus",
+      "title": "New ai-tool-source Kamelet: offer a flow as a tool for AI agents and MCP clients",
+      "url": "https://github.com/apache/camel-kamelets/issues/3362"
     },
     {
       "acceptance": "medium",
@@ -867,6 +829,400 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "bhouse-nexthop",
+      "author_association": "COLLABORATOR",
+      "comments": 0,
+      "created_at": "2026-11-22T22:25:39Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 14776,
+      "org": "apache",
+      "repo": "cloudstack",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "KVM: run the rolling maintenance hooks on plain host maintenance, plus a stage once the host is empty",
+      "url": "https://github.com/apache/cloudstack/issues/14776"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#14775",
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "bhouse-nexthop",
+      "author_association": "COLLABORATOR",
+      "comments": 0,
+      "created_at": "2026-11-22T21:49:48Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:fails"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 14774,
+      "org": "apache",
+      "repo": "cloudstack",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "#14775",
+      "title": "CKS add-node leaves the node's firewall rule behind when node validation fails",
+      "url": "https://github.com/apache/cloudstack/issues/14774"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#14773",
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "bhouse-nexthop",
+      "author_association": "COLLABORATOR",
+      "comments": 0,
+      "created_at": "2026-11-22T21:21:13Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 14772,
+      "org": "apache",
+      "repo": "cloudstack",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "#14773",
+      "title": "validate-cks-node does not check net.ipv4.ip_forward",
+      "url": "https://github.com/apache/cloudstack/issues/14772"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#14771",
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "bhouse-nexthop",
+      "author_association": "COLLABORATOR",
+      "comments": 0,
+      "created_at": "2026-11-22T21:18:37Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 14770,
+      "org": "apache",
+      "repo": "cloudstack",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "#14771",
+      "title": "Snapshot lookup by zone ignores the zone in its fallback (stray semicolon)",
+      "url": "https://github.com/apache/cloudstack/issues/14770"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#14769",
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "bhouse-nexthop",
+      "author_association": "COLLABORATOR",
+      "comments": 0,
+      "created_at": "2026-11-22T20:51:27Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 14768,
+      "org": "apache",
+      "repo": "cloudstack",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "#14769",
+      "title": "CKS: nodes join with a never-expiring token derived from the cluster UUID and skip CA verification",
+      "url": "https://github.com/apache/cloudstack/issues/14768"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "bhouse-nexthop",
+      "author_association": "COLLABORATOR",
+      "comments": 0,
+      "created_at": "2026-11-22T20:34:08Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 14766,
+      "org": "apache",
+      "repo": "cloudstack",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Merge of 4.22 into main left Boolean.getBoolean and a non-zone use.https.to.upload lookup",
+      "url": "https://github.com/apache/cloudstack/issues/14766"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#14765",
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "bhouse-nexthop",
+      "author_association": "COLLABORATOR",
+      "comments": 0,
+      "created_at": "2026-11-22T20:31:36Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 14764,
+      "org": "apache",
+      "repo": "cloudstack",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "#14765",
+      "title": "CKS: the cloud controller manager never initialises cluster nodes",
+      "url": "https://github.com/apache/cloudstack/issues/14764"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "bhouse-nexthop",
+      "author_association": "COLLABORATOR",
+      "comments": 0,
+      "created_at": "2026-11-22T20:22:25Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 14762,
+      "org": "apache",
+      "repo": "cloudstack",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "CKS: spread control, etcd and worker nodes across hosts by default",
+      "url": "https://github.com/apache/cloudstack/issues/14762"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "bhouse-nexthop",
+      "author_association": "COLLABORATOR",
+      "comments": 0,
+      "created_at": "2026-11-22T20:19:58Z",
+      "fix": "high",
+      "fix_reasons": [
+        "title:migrate"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 14759,
+      "org": "apache",
+      "repo": "cloudstack",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Change disk offering migrates and resizes a volume twice on main",
+      "url": "https://github.com/apache/cloudstack/issues/14759"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#14758",
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "bhouse-nexthop",
+      "author_association": "COLLABORATOR",
+      "comments": 0,
+      "created_at": "2026-11-22T19:17:16Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 14757,
+      "org": "apache",
+      "repo": "cloudstack",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "#14758",
+      "title": "KVM: unhelpful \"Can't find strategy to move data\" when live migrating a VM with volumes on RBD",
+      "url": "https://github.com/apache/cloudstack/issues/14757"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#14756",
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "bhouse-nexthop",
+      "author_association": "COLLABORATOR",
+      "comments": 0,
+      "created_at": "2026-11-22T19:01:18Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 14755,
+      "org": "apache",
+      "repo": "cloudstack",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "#14756",
+      "title": "CKS: validate-cks-node merges missing package names into one string on Debian/Ubuntu",
+      "url": "https://github.com/apache/cloudstack/issues/14755"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "bhouse-nexthop",
+      "author_association": "COLLABORATOR",
+      "comments": 0,
+      "created_at": "2026-11-22T18:47:15Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 14753,
+      "org": "apache",
+      "repo": "cloudstack",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "CKS: add the out-of-service taint to a node whose VM is down",
+      "url": "https://github.com/apache/cloudstack/issues/14753"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "bhouse-nexthop",
+      "author_association": "COLLABORATOR",
+      "comments": 0,
+      "created_at": "2026-11-22T18:44:38Z",
+      "fix": "high",
+      "fix_reasons": [
+        "title:migrate"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 14751,
+      "org": "apache",
+      "repo": "cloudstack",
+      "self_claim": false,
+      "taken": "skipped",
+      "taken_evidence": "",
+      "title": "resizeVolume with automigrate throws NullPointerException when the migration returns no volume",
+      "url": "https://github.com/apache/cloudstack/issues/14751"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#14750",
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "bhouse-nexthop",
+      "author_association": "COLLABORATOR",
+      "comments": 0,
+      "created_at": "2026-11-22T18:43:57Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 14749,
+      "org": "apache",
+      "repo": "cloudstack",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "#14750",
+      "title": "changeOfferingForVolume does not reject the same custom offering and size (GiB/bytes mix-up)",
+      "url": "https://github.com/apache/cloudstack/issues/14749"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#14748",
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "bhouse-nexthop",
+      "author_association": "COLLABORATOR",
+      "comments": 0,
+      "created_at": "2026-11-22T18:43:44Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 14747,
+      "org": "apache",
+      "repo": "cloudstack",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "#14748",
+      "title": "CKS: project role created by an older version is never given new allowlisted APIs",
+      "url": "https://github.com/apache/cloudstack/issues/14747"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
         "open_pr:#14745",
         "default",
         "maintainer-filed"
@@ -892,30 +1248,29 @@
       "url": "https://github.com/apache/cloudstack/issues/14744"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
-        "default",
-        "maintainer-filed"
+        "linked_pr"
       ],
       "assignees": [],
       "author": "bhouse-nexthop",
-      "author_association": "COLLABORATOR",
+      "author_association": "NONE",
       "comments": 0,
-      "created_at": "2026-11-21T21:00:13Z",
-      "fix": "high",
+      "created_at": "2026-11-22T18:05:04Z",
+      "fix": "medium",
       "fix_reasons": [
-        "title:migrate"
+        "default"
       ],
       "labels": [],
-      "linked_pr": false,
-      "number": 14742,
+      "linked_pr": true,
+      "number": 117,
       "org": "apache",
-      "repo": "cloudstack",
+      "repo": "cloudstack-kubernetes-provider",
       "self_claim": false,
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Host maintenance sends migrated VMs back to their last host, skipping the allocator",
-      "url": "https://github.com/apache/cloudstack/issues/14742"
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "deployment.yaml: CCM can't start on a fresh cluster",
+      "url": "https://github.com/apache/cloudstack-kubernetes-provider/issues/117"
     },
     {
       "acceptance": "blocked",
@@ -943,85 +1298,6 @@
       "taken_evidence": "cottage14",
       "title": "website-add 'working groups' page",
       "url": "https://github.com/apache/comdev-site/issues/262"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author": "cottage14",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T19:24:04Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 260,
-      "org": "apache",
-      "repo": "comdev-site",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "Update links to videos on speakers/slides.md",
-      "url": "https://github.com/apache/comdev-site/issues/260"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:good first issue"
-      ],
-      "assignees": [],
-      "author": "cottage14",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T19:21:22Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:good first issue"
-      ],
-      "labels": [
-        "good first issue"
-      ],
-      "linked_pr": false,
-      "number": 259,
-      "org": "apache",
-      "repo": "comdev-site",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "Replace 'Feathercast' with name more connected to the current branding",
-      "url": "https://github.com/apache/comdev-site/issues/259"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:good first issue"
-      ],
-      "assignees": [],
-      "author": "cottage14",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T18:51:35Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:good first issue"
-      ],
-      "labels": [
-        "good first issue"
-      ],
-      "linked_pr": false,
-      "number": 258,
-      "org": "apache",
-      "repo": "comdev-site",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "Add example reports to pmc/reporting.md",
-      "url": "https://github.com/apache/comdev-site/issues/258"
     },
     {
       "acceptance": "medium",
@@ -1110,29 +1386,62 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "assigned"
+        "open_pr:#7716",
+        "default",
+        "maintainer-filed"
       ],
-      "assignees": [
-        "andygrove"
-      ],
-      "author": "andygrove",
+      "assignees": [],
+      "author": "sunchao",
       "author_association": "MEMBER",
       "comments": 0,
-      "created_at": "2026-11-22T01:11:40Z",
+      "created_at": "2026-11-22T21:43:42Z",
       "fix": "medium",
       "fix_reasons": [
-        "default"
+        "label:bug"
       ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 2908,
+      "labels": [
+        "bug",
+        "requires-triage"
+      ],
+      "linked_pr": false,
+      "number": 7748,
       "org": "apache",
-      "repo": "datafusion-ballista",
+      "repo": "datafusion-comet",
       "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "andygrove",
-      "title": "Research: exchange reuse encodes stages with the session's codec, not the scheduler's override codec, so embedders' stages are never shared",
-      "url": "https://github.com/apache/datafusion-ballista/issues/2908"
+      "taken": "open_pr",
+      "taken_evidence": "#7716",
+      "title": "Decimal scales below -128 wrap during Arrow type conversion for folded literals and input columns",
+      "url": "https://github.com/apache/datafusion-comet/issues/7748"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#7715",
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "sunchao",
+      "author_association": "MEMBER",
+      "comments": 0,
+      "created_at": "2026-11-22T21:17:59Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "label:bug"
+      ],
+      "labels": [
+        "bug",
+        "requires-triage"
+      ],
+      "linked_pr": false,
+      "number": 7747,
+      "org": "apache",
+      "repo": "datafusion-comet",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "#7715",
+      "title": "Native Parquet scan panics reading a top-level Arrow dictionary of millisecond timestamps",
+      "url": "https://github.com/apache/datafusion-comet/issues/7747"
     },
     {
       "acceptance": "medium",
@@ -1164,35 +1473,6 @@
     {
       "acceptance": "medium",
       "acceptance_reasons": [
-        "default",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author": "andygrove",
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2026-11-21T18:14:59Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "requires-triage"
-      ],
-      "linked_pr": false,
-      "number": 7738,
-      "org": "apache",
-      "repo": "datafusion-comet",
-      "self_claim": false,
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Comet Native Executors: recompute results lost with a cluster executor",
-      "url": "https://github.com/apache/datafusion-comet/issues/7738"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
         "default"
       ],
       "assignees": [],
@@ -1215,6 +1495,60 @@
       "taken_evidence": "",
       "title": "SQL feature should not be required for entire workspace",
       "url": "https://github.com/apache/datafusion-iceberg/issues/136"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "assigned"
+      ],
+      "assignees": [
+        "eahmad-fhz"
+      ],
+      "author": "eahmad-fhz",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T17:38:17Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "label:type/bug"
+      ],
+      "labels": [
+        "type/bug"
+      ],
+      "linked_pr": false,
+      "number": 9430,
+      "org": "apache",
+      "repo": "devlake",
+      "self_claim": true,
+      "taken": "assigned",
+      "taken_evidence": "eahmad-fhz",
+      "title": "[Bug][Bitbucket] Bitbucket ignores the updated_on filter on /pipelines, so every run appends all pipelines to the raw table and Extract Pipelines grows without bound",
+      "url": "https://github.com/apache/devlake/issues/9430"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "matanper",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T21:47:10Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:bug"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 70850,
+      "org": "apache",
+      "repo": "doris",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "[Bug] (arrow-flight) A query's own failure is treated as an early close, so other result endpoints report \"stream closed before EOF\" instead of the real error",
+      "url": "https://github.com/apache/doris/issues/70850"
     },
     {
       "acceptance": "medium",
@@ -1321,56 +1655,6 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
-      "author": "AsperforMias",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T19:43:48Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 1649,
-      "org": "apache",
-      "repo": "dubbo-admin",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "Editing a tag rule in the UI form drops the addresses of its tags",
-      "url": "https://github.com/apache/dubbo-admin/issues/1649"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
-      "author": "AsperforMias",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T19:42:53Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 1648,
-      "org": "apache",
-      "repo": "dubbo-admin",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "Condition rules cannot be created from the UI",
-      "url": "https://github.com/apache/dubbo-admin/issues/1648"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
         "open_pr:#3864",
         "default"
       ],
@@ -1397,134 +1681,7 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "open_pr:#3860",
-        "default"
-      ],
-      "assignees": [],
-      "author": "AsperforMias",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T19:42:17Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "title:bug"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 3858,
-      "org": "apache",
-      "repo": "dubbo-go",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "#3860",
-      "title": "[Bug]: Metrics aggregation settings have no effect",
-      "url": "https://github.com/apache/dubbo-go/issues/3858"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author": "AsperforMias",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T19:41:27Z",
-      "fix": "high",
-      "fix_reasons": [
-        "title:[feature"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 3857,
-      "org": "apache",
-      "repo": "dubbo-go",
-      "self_claim": false,
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "[Feature]: Metrics for retries and cluster-level failures on the consumer side",
-      "url": "https://github.com/apache/dubbo-go/issues/3857"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author": "AsperforMias",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T19:40:55Z",
-      "fix": "high",
-      "fix_reasons": [
-        "title:[feature"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 3856,
-      "org": "apache",
-      "repo": "dubbo-go",
-      "self_claim": false,
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "[Feature]: Export metrics over OTLP",
-      "url": "https://github.com/apache/dubbo-go/issues/3856"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author": "AsperforMias",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T19:40:20Z",
-      "fix": "high",
-      "fix_reasons": [
-        "title:[feature"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 3855,
-      "org": "apache",
-      "repo": "dubbo-go",
-      "self_claim": false,
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "[Feature]: Deprecate the jaeger trace exporter in favor of OTLP",
-      "url": "https://github.com/apache/dubbo-go/issues/3855"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author": "AsperforMias",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T19:34:53Z",
-      "fix": "high",
-      "fix_reasons": [
-        "title:[feature"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 3854,
-      "org": "apache",
-      "repo": "dubbo-go",
-      "self_claim": false,
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "[Feature]: Observe Triple streaming calls on the consumer side for the whole stream",
-      "url": "https://github.com/apache/dubbo-go/issues/3854"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "claimed:schizophrenicmaniac",
-        "default"
+        "linked_pr"
       ],
       "assignees": [],
       "author": "yqtian-se",
@@ -1539,13 +1696,13 @@
         "en",
         "pending"
       ],
-      "linked_pr": false,
+      "linked_pr": true,
       "number": 21859,
       "org": "apache",
       "repo": "echarts",
       "self_claim": false,
-      "taken": "claimed",
-      "taken_evidence": "schizophrenicmaniac",
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
       "title": "[Bug] Polar bar label rotation is computed from the previous layout after setOption",
       "url": "https://github.com/apache/echarts/issues/21859"
     },
@@ -1700,6 +1857,31 @@
       "author": "LuciferYang",
       "author_association": "CONTRIBUTOR",
       "comments": 0,
+      "created_at": "2026-11-22T18:42:59Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 13720,
+      "org": "apache",
+      "repo": "gluten",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "[VL] Native Delta 3.3 partitioned writes fail with concurrent output writers or presorted string partitions",
+      "url": "https://github.com/apache/gluten/issues/13720"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "LuciferYang",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
       "created_at": "2026-11-22T15:44:45Z",
       "fix": "medium",
       "fix_reasons": [
@@ -1715,6 +1897,195 @@
       "taken_evidence": "",
       "title": "[VL] Storage-partitioned join fails with None.get when a runtime filter removes every partition on Spark 3.4/3.5",
       "url": "https://github.com/apache/gluten/issues/13719"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#16895",
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "borinquenkid",
+      "author_association": "MEMBER",
+      "comments": 0,
+      "created_at": "2026-11-22T18:13:20Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 17135,
+      "org": "apache",
+      "repo": "grails-core",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "#16895",
+      "title": "where: a subquery inside an association block does not follow the connection of the query that holds it",
+      "url": "https://github.com/apache/grails-core/issues/17135"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "open_pr:#16895",
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "borinquenkid",
+      "author_association": "MEMBER",
+      "comments": 0,
+      "created_at": "2026-11-22T18:13:19Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 17134,
+      "org": "apache",
+      "repo": "grails-core",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "#16895",
+      "title": "where: the aggregate functions are not defined in the closure of Entity.connection.where",
+      "url": "https://github.com/apache/grails-core/issues/17134"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "merged_pr:#16963",
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "borinquenkid",
+      "author_association": "MEMBER",
+      "comments": 0,
+      "created_at": "2026-11-22T18:00:13Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 17133,
+      "org": "apache",
+      "repo": "grails-core",
+      "self_claim": false,
+      "taken": "merged_pr",
+      "taken_evidence": "#16963",
+      "title": "NavigableMapConfig: the Javadoc of WINDOWS_NAME_ORDER should name the JDK comparator it mirrors",
+      "url": "https://github.com/apache/grails-core/issues/17133"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "merged_pr:#16968",
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "borinquenkid",
+      "author_association": "MEMBER",
+      "comments": 0,
+      "created_at": "2026-11-22T17:59:29Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 17132,
+      "org": "apache",
+      "repo": "grails-core",
+      "self_claim": false,
+      "taken": "merged_pr",
+      "taken_evidence": "#16968",
+      "title": "Spring Security ACL: GeneratedAclDomainsSpec depends on the working directory and does not pin the aclClass comparison",
+      "url": "https://github.com/apache/grails-core/issues/17132"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "merged_pr:#16972",
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "borinquenkid",
+      "author_association": "MEMBER",
+      "comments": 0,
+      "created_at": "2026-11-22T17:59:28Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 17131,
+      "org": "apache",
+      "repo": "grails-core",
+      "self_claim": false,
+      "taken": "merged_pr",
+      "taken_evidence": "#16972",
+      "title": "Spring Security: SecurityTagLib should read the active flag the way the plugin does, and the inactive behaviour of the negative tags belongs in the release notes",
+      "url": "https://github.com/apache/grails-core/issues/17131"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "merged_pr:#16972",
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "borinquenkid",
+      "author_association": "MEMBER",
+      "comments": 0,
+      "created_at": "2026-11-22T17:59:27Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 17130,
+      "org": "apache",
+      "repo": "grails-core",
+      "self_claim": false,
+      "taken": "merged_pr",
+      "taken_evidence": "#16972",
+      "title": "Spring Security ACL: the sec:permitted and sec:notPermitted tags fail when the plugin is inactive",
+      "url": "https://github.com/apache/grails-core/issues/17130"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "merged_pr:#16981",
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "borinquenkid",
+      "author_association": "MEMBER",
+      "comments": 0,
+      "created_at": "2026-11-22T17:59:25Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:error"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 17129,
+      "org": "apache",
+      "repo": "grails-core",
+      "self_claim": false,
+      "taken": "merged_pr",
+      "taken_evidence": "#16981",
+      "title": "MongoDB: shorten the index creation ERROR line and quiet the test output of grails-data-mongodb-core",
+      "url": "https://github.com/apache/grails-core/issues/17129"
     },
     {
       "acceptance": "blocked",
@@ -1772,60 +2143,6 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "open_pr:#16931",
-        "default",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author": "borinquenkid",
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2026-11-21T22:56:10Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 17113,
-      "org": "apache",
-      "repo": "grails-core",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "#16931",
-      "title": "H5 criteria: an association block on a self-referencing association is joined with a left join and asks for nothing",
-      "url": "https://github.com/apache/grails-core/issues/17113"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "open_pr:#17009",
-        "default",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author": "borinquenkid",
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2026-11-21T21:49:56Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 17112,
-      "org": "apache",
-      "repo": "grails-core",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "#17009",
-      "title": "In-memory store: a criteria block on a to-one association mapped under another key matches nothing",
-      "url": "https://github.com/apache/grails-core/issues/17112"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
         "linked_pr"
       ],
       "assignees": [],
@@ -1847,33 +2164,6 @@
       "taken_evidence": "linked:pr",
       "title": "AvailableThreadGauge ignores running tasks and can exceed the total thread count",
       "url": "https://github.com/apache/helix/issues/3214"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "Duansg"
-      ],
-      "author": "Duansg",
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2026-11-21T18:59:37Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "title:bug"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 4574,
-      "org": "apache",
-      "repo": "hertzbeat",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "Duansg",
-      "title": "[BUG] HTTP default parsing fails the whole metric when a field is null, an array or an object",
-      "url": "https://github.com/apache/hertzbeat/issues/4574"
     },
     {
       "acceptance": "blocked",
@@ -2028,126 +2318,6 @@
       "taken_evidence": "hansva",
       "title": "[Task]: Move gRPC out of hop-core",
       "url": "https://github.com/apache/hop/issues/9639"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "hansva"
-      ],
-      "author": "hansva",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-22T13:00:09Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "P2",
-        "Transforms"
-      ],
-      "linked_pr": false,
-      "number": 9637,
-      "org": "apache",
-      "repo": "hop",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "hansva",
-      "title": "[Task]: Plugin packaging fixes found by checking each plugin on its own",
-      "url": "https://github.com/apache/hop/issues/9637"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "Adalennis"
-      ],
-      "author": "Adalennis",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-22T08:45:36Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "title:bug"
-      ],
-      "labels": [
-        "P3",
-        "Transforms"
-      ],
-      "linked_pr": false,
-      "number": 9635,
-      "org": "apache",
-      "repo": "hop",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "Adalennis",
-      "title": "[Bug]: Column exists always returns N when a fixed table name and a schema are set",
-      "url": "https://github.com/apache/hop/issues/9635"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "bamaer"
-      ],
-      "author": "bamaer",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-21T18:49:09Z",
-      "fix": "high",
-      "fix_reasons": [
-        "title:[feature"
-      ],
-      "labels": [
-        "P3",
-        "Workflows"
-      ],
-      "linked_pr": false,
-      "number": 9631,
-      "org": "apache",
-      "repo": "hop",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "bamaer",
-      "title": "[Feature Request]: Run Hop workflows as Apache Airflow DAGs",
-      "url": "https://github.com/apache/hop/issues/9631"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "bamaer"
-      ],
-      "author": "bamaer",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-21T18:48:58Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:documentation"
-      ],
-      "labels": [
-        "Documentation",
-        "P2"
-      ],
-      "linked_pr": false,
-      "number": 9629,
-      "org": "apache",
-      "repo": "hop",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "bamaer",
-      "title": "[Task]: Update the Apache Airflow how-to for Airflow 3",
-      "url": "https://github.com/apache/hop/issues/9629"
     },
     {
       "acceptance": "blocked",
@@ -3085,6 +3255,31 @@
       "url": "https://github.com/apache/iggy/issues/5027"
     },
     {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "Marcin-Pankowski",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T22:41:56Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 2427,
+      "org": "apache",
+      "repo": "incubator-kie-issues",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Kafka persistence: KafkaProcessInstances never closes RocksDB iterators (native memory leak, pod OOMKilled under load)",
+      "url": "https://github.com/apache/incubator-kie-issues/issues/2427"
+    },
+    {
       "acceptance": "blocked",
       "acceptance_reasons": [
         "linked_pr"
@@ -3367,32 +3562,6 @@
         "linked_pr"
       ],
       "assignees": [],
-      "author": "WangzJi",
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2026-11-21T18:13:36Z",
-      "fix": "high",
-      "fix_reasons": [
-        "default",
-        "body>6000"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 8351,
-      "org": "apache",
-      "repo": "incubator-seata",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "bugfix: Parallel seata-server tests flake with Netty bind exit 255 and shared Redis key races",
-      "url": "https://github.com/apache/incubator-seata/issues/8351"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
       "author": "Karman580",
       "author_association": "CONTRIBUTOR",
       "comments": 0,
@@ -3472,6 +3641,31 @@
         "linked_pr"
       ],
       "assignees": [],
+      "author": "ponziani",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T17:55:27Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 3151,
+      "org": "apache",
+      "repo": "karaf",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "karaf-maven-plugin assembly and verify goals ignore Maven offline mode (-o)",
+      "url": "https://github.com/apache/karaf/issues/3151"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
       "author": "DeviousDrops",
       "author_association": "CONTRIBUTOR",
       "comments": 0,
@@ -3492,31 +3686,86 @@
       "url": "https://github.com/apache/kvrocks/issues/3817"
     },
     {
-      "acceptance": "blocked",
+      "acceptance": "medium",
       "acceptance_reasons": [
-        "assigned"
+        "default"
       ],
-      "assignees": [
-        "FreeAndNil"
-      ],
-      "author": "FreeAndNil",
+      "assignees": [],
+      "author": "ramanathan1504",
       "author_association": "CONTRIBUTOR",
       "comments": 0,
-      "created_at": "2026-11-22T16:57:45Z",
+      "created_at": "2026-11-22T21:15:47Z",
       "fix": "medium",
       "fix_reasons": [
         "default"
       ],
       "labels": [],
-      "linked_pr": true,
-      "number": 372,
+      "linked_pr": false,
+      "number": 4519,
       "org": "apache",
-      "repo": "logging-log4net",
+      "repo": "logging-log4j2",
       "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "FreeAndNil",
-      "title": "LocalSyslogAppender lets an undefined NewLineHandling and other line breaks through raw",
-      "url": "https://github.com/apache/logging-log4net/issues/372"
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Java 9+ tests in `log4j-api-test` are skipped in every CI build",
+      "url": "https://github.com/apache/logging-log4j2/issues/4519"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "ppkarwasz",
+      "author_association": "MEMBER",
+      "comments": 0,
+      "created_at": "2026-11-22T19:52:23Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "port-to-2.25.x",
+        "port-to-2.26.x"
+      ],
+      "linked_pr": true,
+      "number": 4517,
+      "org": "apache",
+      "repo": "logging-log4j2",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "Truncate oversized UDP datagrams instead of dropping them",
+      "url": "https://github.com/apache/logging-log4j2/issues/4517"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "ppkarwasz",
+      "author_association": "MEMBER",
+      "comments": 0,
+      "created_at": "2026-11-22T17:53:27Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "legacy-1.2-bridge",
+        "port-done"
+      ],
+      "linked_pr": false,
+      "number": 4516,
+      "org": "apache",
+      "repo": "logging-log4j2",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Log4j 1 XML configuration creates appenders that no logger references",
+      "url": "https://github.com/apache/logging-log4j2/issues/4516"
     },
     {
       "acceptance": "blocked",
@@ -3529,21 +3778,21 @@
       "author": "FreeAndNil",
       "author_association": "CONTRIBUTOR",
       "comments": 0,
-      "created_at": "2026-11-22T16:57:42Z",
+      "created_at": "2026-11-22T20:16:07Z",
       "fix": "medium",
       "fix_reasons": [
-        "title:error"
+        "default"
       ],
       "labels": [],
       "linked_pr": true,
-      "number": 371,
+      "number": 375,
       "org": "apache",
       "repo": "logging-log4net",
       "self_claim": false,
       "taken": "assigned",
       "taken_evidence": "FreeAndNil",
-      "title": "RemoteSyslogAppender loses the record after an ICMP error",
-      "url": "https://github.com/apache/logging-log4net/issues/371"
+      "title": "XmlLayoutSchemaLog4J writes into the event's properties",
+      "url": "https://github.com/apache/logging-log4net/issues/375"
     },
     {
       "acceptance": "blocked",
@@ -3556,21 +3805,21 @@
       "author": "FreeAndNil",
       "author_association": "CONTRIBUTOR",
       "comments": 0,
-      "created_at": "2026-11-22T16:57:38Z",
+      "created_at": "2026-11-22T20:16:04Z",
       "fix": "medium",
       "fix_reasons": [
         "default"
       ],
       "labels": [],
       "linked_pr": true,
-      "number": 370,
+      "number": 374,
       "org": "apache",
       "repo": "logging-log4net",
       "self_claim": false,
       "taken": "assigned",
       "taken_evidence": "FreeAndNil",
-      "title": "Background senders wait per event when the queue is full and report the close summary twice",
-      "url": "https://github.com/apache/logging-log4net/issues/370"
+      "title": "TelnetAppender sends NUL raw",
+      "url": "https://github.com/apache/logging-log4net/issues/374"
     },
     {
       "acceptance": "medium",
@@ -3626,6 +3875,33 @@
       "taken_evidence": "",
       "title": "`PatternReplaceCharFilter` does not support lookaround expressions",
       "url": "https://github.com/apache/lucenenet/issues/1561"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "0z5a",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T18:26:56Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "label:bug"
+      ],
+      "labels": [
+        "bug"
+      ],
+      "linked_pr": true,
+      "number": 1590,
+      "org": "apache",
+      "repo": "mahout",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "[Bug][QDP] Segfault on CUDA tensor input with CUDA 13: CudaPointerAttributes is smaller than the runtime struct",
+      "url": "https://github.com/apache/mahout/issues/1590"
     },
     {
       "acceptance": "medium",
@@ -3738,26 +4014,27 @@
         "default"
       ],
       "assignees": [],
-      "author": "kerrykimbrough",
-      "author_association": "NONE",
-      "comments": 1,
-      "created_at": "2026-11-21T22:37:16Z",
+      "author": "errael",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T19:47:40Z",
       "fix": "medium",
       "fix_reasons": [
-        "label:bug"
+        "default"
       ],
       "labels": [
-        "bug"
+        "kind:bug",
+        "needs:triage"
       ],
       "linked_pr": false,
-      "number": 1364,
+      "number": 9823,
       "org": "apache",
-      "repo": "maven-site-plugin",
+      "repo": "netbeans",
       "self_claim": false,
       "taken": "free",
       "taken_evidence": "",
-      "title": "APT content files are ignored, not rendered",
-      "url": "https://github.com/apache/maven-site-plugin/issues/1364"
+      "title": "Many \"Project initialization requested\" `Notifications` during startup",
+      "url": "https://github.com/apache/netbeans/issues/9823"
     },
     {
       "acceptance": "medium",
@@ -3812,6 +4089,59 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "Xuanwo",
+      "author_association": "MEMBER",
+      "comments": 0,
+      "created_at": "2026-11-22T22:10:14Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 8743,
+      "org": "apache",
+      "repo": "opendal",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "bindings/haskell: multiple resource cleanup bugs across the Rust FFI boundary",
+      "url": "https://github.com/apache/opendal/issues/8743"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "github-actions[bot]",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T20:11:41Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "ci/live-service",
+        "ci/nightly"
+      ],
+      "linked_pr": false,
+      "number": 8714,
+      "org": "apache",
+      "repo": "opendal",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "[Nightly Live] behavior_live / core / ubuntu-latest / cos / cos",
+      "url": "https://github.com/apache/opendal/issues/8714"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
         "merged_pr:#8644",
         "default",
         "maintainer-filed"
@@ -3835,168 +4165,6 @@
       "taken_evidence": "#8644",
       "title": "Tracking issue for generating Java binding models and options from core",
       "url": "https://github.com/apache/opendal/issues/8650"
-    },
-    {
-      "acceptance": "high",
-      "acceptance_reasons": [
-        "label:needs-triage"
-      ],
-      "assignees": [],
-      "author": "christianeu-db",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T22:47:51Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "needs-triage"
-      ],
-      "linked_pr": false,
-      "number": 791,
-      "org": "apache",
-      "repo": "ossie",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "expander: A view that reads a view is expanded one level only",
-      "url": "https://github.com/apache/ossie/issues/791"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
-      "author": "christianeu-db",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-21T22:46:53Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "needs-triage"
-      ],
-      "linked_pr": true,
-      "number": 790,
-      "org": "apache",
-      "repo": "ossie",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "expander: a dataset with no metrics, such as a dimension, is only replaced by its source in a join",
-      "url": "https://github.com/apache/ossie/issues/790"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
-      "author": "christianeu-db",
-      "author_association": "CONTRIBUTOR",
-      "comments": 2,
-      "created_at": "2026-11-21T22:45:45Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "needs-triage"
-      ],
-      "linked_pr": true,
-      "number": 789,
-      "org": "apache",
-      "repo": "ossie",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "expander: The metric's expression replaces AGG(m) without parentheses",
-      "url": "https://github.com/apache/ossie/issues/789"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
-      "author": "christianeu-db",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T22:44:25Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "needs-triage"
-      ],
-      "linked_pr": true,
-      "number": 788,
-      "org": "apache",
-      "repo": "ossie",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "expander: In a join, a measure over a column named k reads the row-identity key instead",
-      "url": "https://github.com/apache/ossie/issues/788"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
-      "author": "christianeu-db",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T22:43:23Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "title:wrong"
-      ],
-      "labels": [
-        "needs-triage"
-      ],
-      "linked_pr": true,
-      "number": 787,
-      "org": "apache",
-      "repo": "ossie",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "expander: A CTE with the same name as a view is replaced by the view, so the query reads the wrong relation:",
-      "url": "https://github.com/apache/ossie/issues/787"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
-      "author": "christianeu-db",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T22:42:23Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "title:error"
-      ],
-      "labels": [
-        "needs-triage"
-      ],
-      "linked_pr": true,
-      "number": 786,
-      "org": "apache",
-      "repo": "ossie",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "expander: A SELECT DISTINCT that passes a measure through gives a wrong answer instead of an error",
-      "url": "https://github.com/apache/ossie/issues/786"
     },
     {
       "acceptance": "blocked",
@@ -4136,9 +4304,9 @@
       "url": "https://github.com/apache/ossie-converters/issues/261"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "blocked",
       "acceptance_reasons": [
-        "default"
+        "linked_pr"
       ],
       "assignees": [],
       "author": "LuciferYang",
@@ -4150,13 +4318,13 @@
         "title:bug"
       ],
       "labels": [],
-      "linked_pr": false,
+      "linked_pr": true,
       "number": 11351,
       "org": "apache",
       "repo": "paimon",
       "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
       "title": "[Bug] CREATE TABLE LIKE fails on Spark 4.2 and 4.3",
       "url": "https://github.com/apache/paimon/issues/11351"
     },
@@ -4318,6 +4486,31 @@
         "linked_pr"
       ],
       "assignees": [],
+      "author": "gitRasheed",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T21:30:21Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:wrong"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 3984,
+      "org": "apache",
+      "repo": "parquet-java",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "DeltaLengthByteArrayValuesReader silently returns wrong values on negative lengths",
+      "url": "https://github.com/apache/parquet-java/issues/3984"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
       "author": "Indian-boult",
       "author_association": "NONE",
       "comments": 0,
@@ -4389,6 +4582,31 @@
       "taken_evidence": "Subham-KRLX(body)",
       "title": "CLI: polaris find reports the parent namespace as a match for a qualified search",
       "url": "https://github.com/apache/polaris/issues/6182"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "ashitpatel",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T18:46:34Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 27699,
+      "org": "apache",
+      "repo": "pulsar",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Consumer.blockedConsumerOnUnackedMsgs can stick true with zero unacked (lock-free stale set stalls Exclusive consumers)",
+      "url": "https://github.com/apache/pulsar/issues/27699"
     },
     {
       "acceptance": "blocked",
@@ -4465,56 +4683,6 @@
       "taken_evidence": "",
       "title": "[Bug] Java Exclusive and Failover consumers skip messages from partitions added after redelivery",
       "url": "https://github.com/apache/pulsar/issues/27694"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author": "ashitpatel",
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-21T22:48:57Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 27691,
-      "org": "apache",
-      "repo": "pulsar",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "PulsarService.getHealthChecker() races closeAsync() (leaked checker)",
-      "url": "https://github.com/apache/pulsar/issues/27691"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author": "ashitpatel",
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-21T22:48:56Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 27690,
-      "org": "apache",
-      "repo": "pulsar",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "PulsarService.getClient() races closeAsync() (leaked / closed client)",
-      "url": "https://github.com/apache/pulsar/issues/27690"
     },
     {
       "acceptance": "blocked",
@@ -4701,31 +4869,6 @@
         "linked_pr"
       ],
       "assignees": [],
-      "author": "Metastarx",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T17:58:11Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 11549,
-      "org": "apache",
-      "repo": "rocketmq",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "container/src/main/java/org/apache/rocketmq/container/InnerBrokerController.java:57 - ephemeral broker ports are advertised as port 0",
-      "url": "https://github.com/apache/rocketmq/issues/11549"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
       "author": "qingli9374",
       "author_association": "NONE",
       "comments": 1,
@@ -4769,6 +4912,31 @@
       "taken_evidence": "linked:pr",
       "title": "The empty check in ST_IsClosed performs repeated recursive work",
       "url": "https://github.com/apache/sedona-db/issues/1601"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "shizn",
+      "author_association": "NONE",
+      "comments": 1,
+      "created_at": "2026-11-22T18:44:06Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 40541,
+      "org": "apache",
+      "repo": "shardingsphere",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "OSSInsight widgets in this repository stop updating on December 4, 2026",
+      "url": "https://github.com/apache/shardingsphere/issues/40541"
     },
     {
       "acceptance": "medium",
@@ -4819,6 +4987,33 @@
       "taken_evidence": "linked:pr",
       "title": "[BUG] Cached gRPC client misses upstream changes after repeated discovery updates",
       "url": "https://github.com/apache/shenyu/issues/8541"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "assigned"
+      ],
+      "assignees": [
+        "kunwp1"
+      ],
+      "author": "kunwp1",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T19:44:46Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 9627,
+      "org": "apache",
+      "repo": "texera",
+      "self_claim": false,
+      "taken": "assigned",
+      "taken_evidence": "kunwp1",
+      "title": "Final runtime statistics snapshot can be lost when an execution ends",
+      "url": "https://github.com/apache/texera/issues/9627"
     },
     {
       "acceptance": "blocked",
@@ -4980,6 +5175,90 @@
       "taken_evidence": "",
       "title": "Allow project tabs for semver projects to have variations for each version line",
       "url": "https://github.com/apache/tooling-trusted-releases/issues/1886"
+    },
+    {
+      "acceptance": "high",
+      "acceptance_reasons": [
+        "label:needs-triage"
+      ],
+      "assignees": [],
+      "author": "pinpinpoo",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T17:48:04Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:bug"
+      ],
+      "labels": [
+        "needs-triage",
+        "type: bug"
+      ],
+      "linked_pr": false,
+      "number": 21032,
+      "org": "apache",
+      "repo": "tvm",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "[Bug] [Relax] relax.transform.Gradient crashes on R.triu with InternalError: partials number != inputs number",
+      "url": "https://github.com/apache/tvm/issues/21032"
+    },
+    {
+      "acceptance": "high",
+      "acceptance_reasons": [
+        "label:needs-triage"
+      ],
+      "assignees": [],
+      "author": "pinpinpoo",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T17:38:08Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:bug"
+      ],
+      "labels": [
+        "needs-triage",
+        "type: bug"
+      ],
+      "linked_pr": false,
+      "number": 21031,
+      "org": "apache",
+      "repo": "tvm",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "[Bug] [Relax] BundleModelParams combined with LiftTransformParams and LazyTransformParams emits impure get_item inside DataflowBlock and fails well_formed",
+      "url": "https://github.com/apache/tvm/issues/21031"
+    },
+    {
+      "acceptance": "high",
+      "acceptance_reasons": [
+        "label:needs-triage"
+      ],
+      "assignees": [],
+      "author": "pinpinpoo",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T17:35:38Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:bug"
+      ],
+      "labels": [
+        "needs-triage",
+        "type: bug"
+      ],
+      "linked_pr": false,
+      "number": 21030,
+      "org": "apache",
+      "repo": "tvm",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "[Bug] [Relax] relax.transform.Gradient silently computes wrong gradient for R.cumsum(..., exclusive=True)",
+      "url": "https://github.com/apache/tvm/issues/21030"
     },
     {
       "acceptance": "high",
@@ -5177,6 +5456,34 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "alc0der",
+      "author_association": "NONE",
+      "comments": 1,
+      "created_at": "2026-11-22T21:28:26Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "label:bug"
+      ],
+      "labels": [
+        "bug",
+        "priority: high"
+      ],
+      "linked_pr": true,
+      "number": 3002,
+      "org": "cloudflare",
+      "repo": "agents",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "think: deliverNotice to a messenger thread fails on a cold agent — resolveDeliverySurface never initializes the Chat SDK instance",
+      "url": "https://github.com/cloudflare/agents/issues/3002"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
         "assigned"
       ],
       "assignees": [
@@ -5230,6 +5537,31 @@
       "url": "https://github.com/cloudflare/ai/issues/695"
     },
     {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "mburumaxwell",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T17:59:24Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:error"
+      ],
+      "labels": [],
+      "linked_pr": true,
+      "number": 262,
+      "org": "cloudflare",
+      "repo": "browser-run",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "\"Websocket error\" is logged with console.error every time browser.close() ends a session",
+      "url": "https://github.com/cloudflare/browser-run/issues/262"
+    },
+    {
       "acceptance": "medium",
       "acceptance_reasons": [
         "default"
@@ -5255,31 +5587,6 @@
       "url": "https://github.com/cloudflare/chanfana/issues/402"
     },
     {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
-      "author": "0z5a",
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-21T19:13:34Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 400,
-      "org": "cloudflare",
-      "repo": "chanfana",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "Hono path parameters with a regex pattern keep the pattern in the OpenAPI path",
-      "url": "https://github.com/cloudflare/chanfana/issues/400"
-    },
-    {
       "acceptance": "medium",
       "acceptance_reasons": [
         "default"
@@ -5303,6 +5610,81 @@
       "taken_evidence": "",
       "title": "Failed runner attempts leave their Sandbox running, and each retry starts another",
       "url": "https://github.com/cloudflare/ci/issues/24"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "assigned"
+      ],
+      "assignees": [
+        "ethulia",
+        "kathayl",
+        "kflansburg",
+        "mattrothenberg",
+        "mchenco",
+        "oiricaud",
+        "shridharathi",
+        "superhighfives",
+        "zeke"
+      ],
+      "author": "nowen-jask",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T22:39:35Z",
+      "fix": "low",
+      "fix_reasons": [
+        "title:docs"
+      ],
+      "labels": [
+        "effort:very-high",
+        "product:ai-gateway"
+      ],
+      "linked_pr": false,
+      "number": 35530,
+      "org": "cloudflare",
+      "repo": "cloudflare-docs",
+      "self_claim": false,
+      "taken": "assigned",
+      "taken_evidence": "ethulia,kathayl,kflansburg,mattrothenberg,mchenco,oiricaud,shridharathi,superhighfives,zeke",
+      "title": "AI Gateway docs: clarify payload-free image inference with the Workers binding and Logpush",
+      "url": "https://github.com/cloudflare/cloudflare-docs/issues/35530"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "assigned"
+      ],
+      "assignees": [
+        "GregBrimble",
+        "MattieTK",
+        "WalshyDev",
+        "irvinebroque",
+        "korinne",
+        "vy-ton"
+      ],
+      "author": "erikripple-dotcom",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T21:49:26Z",
+      "fix": "low",
+      "fix_reasons": [
+        "label:documentation"
+      ],
+      "labels": [
+        "content:edit",
+        "documentation",
+        "effort:high",
+        "product:workers"
+      ],
+      "linked_pr": false,
+      "number": 35529,
+      "org": "cloudflare",
+      "repo": "cloudflare-docs",
+      "self_claim": false,
+      "taken": "assigned",
+      "taken_evidence": "GregBrimble,MattieTK,WalshyDev,irvinebroque,korinne,vy-ton",
+      "title": "[Workers IaC] Document routing guarantees for the first SQLite Durable Object migration",
+      "url": "https://github.com/cloudflare/cloudflare-docs/issues/35529"
     },
     {
       "acceptance": "blocked",
@@ -5409,85 +5791,7 @@
     {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "GregBrimble",
-        "MattieTK",
-        "WalshyDev",
-        "irvinebroque",
-        "korinne",
-        "vy-ton"
-      ],
-      "author": "svaraborut",
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-21T22:16:44Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:documentation"
-      ],
-      "labels": [
-        "content:edit",
-        "documentation",
-        "effort:very-high",
-        "product:changelog",
-        "product:workers"
-      ],
-      "linked_pr": false,
-      "number": 35523,
-      "org": "cloudflare",
-      "repo": "cloudflare-docs",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "GregBrimble,MattieTK,WalshyDev,irvinebroque,korinne,vy-ton",
-      "title": "Confusing `workers_dev` and `preview_urls` behaviour documentation",
-      "url": "https://github.com/cloudflare/cloudflare-docs/issues/35523"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "ethulia",
-        "kflansburg",
-        "mattrothenberg",
-        "mchenco",
-        "oiricaud",
-        "rita3ko",
-        "shridharathi",
-        "superhighfives",
-        "zeke"
-      ],
-      "author": "tingdahl",
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-21T18:25:10Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:documentation"
-      ],
-      "labels": [
-        "content:edit",
-        "documentation",
-        "effort:medium",
-        "product:workers-ai"
-      ],
-      "linked_pr": false,
-      "number": 35521,
-      "org": "cloudflare",
-      "repo": "cloudflare-docs",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "ethulia,kflansburg,mattrothenberg,mchenco,oiricaud,rita3ko,shridharathi,superhighfives,zeke",
-      "title": "Incorrect information on apertus-v1.5-8b",
-      "url": "https://github.com/cloudflare/cloudflare-docs/issues/35521"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
+        "linked_pr"
       ],
       "assignees": [],
       "author": "Okabe-Junya",
@@ -5499,13 +5803,13 @@
         "default"
       ],
       "labels": [],
-      "linked_pr": false,
+      "linked_pr": true,
       "number": 4396,
       "org": "cloudflare",
       "repo": "cloudflare-go",
       "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
       "title": "Data race in internal/apijson encoder on concurrent first marshal",
       "url": "https://github.com/cloudflare/cloudflare-go/issues/4396"
     },
@@ -5584,31 +5888,6 @@
       "taken_evidence": "0z5a",
       "title": "Python SDK on 3.10: local evaluation ignores ISO timestamps whose fractional seconds aren't 3 or 6 digits",
       "url": "https://github.com/cloudflare/flagship/issues/63"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
-      "author": "0z5a",
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-21T20:21:53Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": true,
-      "number": 319,
-      "org": "cloudflare",
-      "repo": "foundations",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "settings: doc comments are dropped for fields with #[serde(rename)]",
-      "url": "https://github.com/cloudflare/foundations/issues/319"
     },
     {
       "acceptance": "medium",
@@ -5796,6 +6075,31 @@
         "default"
       ],
       "assignees": [],
+      "author": "nowen-jask",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T19:05:04Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 123,
+      "org": "cloudflare",
+      "repo": "realtimekit-web-examples",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "How does live Nova-3 finalize the last utterance on mute or leave?",
+      "url": "https://github.com/cloudflare/realtimekit-web-examples/issues/123"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
       "author": "huynhcongdac",
       "author_association": "NONE",
       "comments": 0,
@@ -5814,32 +6118,6 @@
       "taken_evidence": "",
       "title": "1",
       "url": "https://github.com/cloudflare/security-audit-skill/issues/167"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "open_pr:#166",
-        "default"
-      ],
-      "assignees": [],
-      "author": "Gernotti",
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-21T19:01:33Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 165,
-      "org": "cloudflare",
-      "repo": "security-audit-skill",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "#166",
-      "title": "Sandbox limits must fit the target runtime: a small per-file limit aborts .NET/PowerShell targets at startup",
-      "url": "https://github.com/cloudflare/security-audit-skill/issues/165"
     },
     {
       "acceptance": "blocked",
@@ -5868,31 +6146,6 @@
       "url": "https://github.com/cloudflare/speedtest/issues/181"
     },
     {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author": "TanishkKamra",
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-21T18:29:14Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 180,
-      "org": "cloudflare",
-      "repo": "speedtest",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "May an open-source Windows app use the `__down` and `__up` endpoints?",
-      "url": "https://github.com/cloudflare/speedtest/issues/180"
-    },
-    {
       "acceptance": "high",
       "acceptance_reasons": [
         "label:needs-triage"
@@ -5900,7 +6153,7 @@
       "assignees": [],
       "author": "iam-sandeep-s",
       "author_association": "NONE",
-      "comments": 0,
+      "comments": 1,
       "created_at": "2026-11-22T06:23:57Z",
       "fix": "medium",
       "fix_reasons": [
@@ -6009,63 +6262,6 @@
         "default"
       ],
       "assignees": [],
-      "author": "maxpain",
-      "author_association": "NONE",
-      "comments": 1,
-      "created_at": "2026-11-21T19:51:33Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "label:bug"
-      ],
-      "labels": [
-        "bug",
-        "fix: in progress"
-      ],
-      "linked_pr": false,
-      "number": 4815,
-      "org": "cloudflare",
-      "repo": "vinext",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "next/dynamic ssr: false waits 300 ms after a client navigation even when its module is already loaded (Next.js shows it at once)",
-      "url": "https://github.com/cloudflare/vinext/issues/4815"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "open_pr:#4816",
-        "default"
-      ],
-      "assignees": [],
-      "author": "maxpain",
-      "author_association": "NONE",
-      "comments": 2,
-      "created_at": "2026-11-21T19:51:32Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "label:bug"
-      ],
-      "labels": [
-        "bug",
-        "fix: ready"
-      ],
-      "linked_pr": false,
-      "number": 4814,
-      "org": "cloudflare",
-      "repo": "vinext",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "#4816",
-      "title": "App Router: shared layouts render again on navigation when a proxy overrides request headers, with workersCacheCdnAdapter, or after a full prefetch",
-      "url": "https://github.com/cloudflare/vinext/issues/4814"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
       "author": "klaemo",
       "author_association": "NONE",
       "comments": 0,
@@ -6134,6 +6330,31 @@
       "taken_evidence": "linked:pr",
       "title": "Intermittent SIGSEGV in Linux x86_64 release binary inside Abseil UnwindImpl during TCMalloc allocation sampling",
       "url": "https://github.com/cloudflare/workerd/issues/8801"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "repo:Vouch gate: only write-access users or people listed in .github/VOUCHED.td may open PRs"
+      ],
+      "assignees": [],
+      "author": "zeev-levavi",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T21:04:20Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 17124,
+      "org": "cloudflare",
+      "repo": "workers-sdk",
+      "self_claim": false,
+      "taken": "skipped",
+      "taken_evidence": "",
+      "title": "Browser Run remote binding reports TLS certificate name mismatch in wrangler dev",
+      "url": "https://github.com/cloudflare/workers-sdk/issues/17124"
     },
     {
       "acceptance": "blocked",
@@ -6210,6 +6431,114 @@
       "taken_evidence": "",
       "title": "fix(miniflare): README incorrectly lists simulated email sending as unsupported",
       "url": "https://github.com/cloudflare/workers-sdk/issues/17110"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "unlikelyzero",
+      "author_association": "NONE",
+      "comments": 1,
+      "created_at": "2026-11-22T22:56:29Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "receiver/github"
+      ],
+      "linked_pr": false,
+      "number": 53453,
+      "org": "open-telemetry",
+      "repo": "opentelemetry-collector-contrib",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "[receiver/github] cicd.pipeline.name on workflow_job spans is the job name, and the workflow name is missing",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53453"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "unlikelyzero",
+      "author_association": "NONE",
+      "comments": 1,
+      "created_at": "2026-11-22T22:56:24Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "receiver/github"
+      ],
+      "linked_pr": false,
+      "number": 53452,
+      "org": "open-telemetry",
+      "repo": "opentelemetry-collector-contrib",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "[receiver/github] Rejected and failed webhook deliveries are not recorded in receiver metrics",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53452"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "marcinsiennicki95",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T20:41:52Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "extension/observer/k8sobserver"
+      ],
+      "linked_pr": true,
+      "number": 53449,
+      "org": "open-telemetry",
+      "repo": "opentelemetry-collector-contrib",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "[extension/k8sobserver] Report ephemeral containers as pod.container endpoints",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53449"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "linked_pr"
+      ],
+      "assignees": [],
+      "author": "marcinsiennicki95",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-22T18:32:51Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [
+        "extension/observer/k8sobserver"
+      ],
+      "linked_pr": true,
+      "number": 53446,
+      "org": "open-telemetry",
+      "repo": "opentelemetry-collector-contrib",
+      "self_claim": false,
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
+      "title": "[extension/k8sobserver] Endpoints are never removed when the informer missed the delete event",
+      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53446"
     },
     {
       "acceptance": "blocked",
@@ -6414,60 +6743,33 @@
       "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53432"
     },
     {
-      "acceptance": "blocked",
+      "acceptance": "high",
       "acceptance_reasons": [
-        "linked_pr"
+        "label:needs triage"
       ],
       "assignees": [],
-      "author": "marcinsiennicki95",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-21T20:49:00Z",
+      "author": "dashpole",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T22:10:30Z",
       "fix": "high",
       "fix_reasons": [
-        "default",
-        "body>6000"
+        "label:enhancement"
       ],
       "labels": [
-        "receiver/receivercreator"
-      ],
-      "linked_pr": true,
-      "number": 53430,
-      "org": "open-telemetry",
-      "repo": "opentelemetry-collector-contrib",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "[receiver/receivercreator] One endpoint with invalid discovery annotations stops receivers from starting for other endpoints",
-      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53430"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "linked_pr"
-      ],
-      "assignees": [],
-      "author": "woeter69",
-      "author_association": "CONTRIBUTOR",
-      "comments": 0,
-      "created_at": "2026-11-21T18:49:04Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "label:bug"
-      ],
-      "labels": [
-        "bug",
+        "component:obi",
+        "enhancement",
         "needs triage"
       ],
-      "linked_pr": true,
-      "number": 53428,
+      "linked_pr": false,
+      "number": 4321,
       "org": "open-telemetry",
-      "repo": "opentelemetry-collector-contrib",
+      "repo": "opentelemetry-ebpf-instrumentation",
       "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "linked:pr",
-      "title": "[receiver/solace] Shutdown can return before the receiver worker starts",
-      "url": "https://github.com/open-telemetry/opentelemetry-collector-contrib/issues/53428"
+      "taken": "skipped",
+      "taken_evidence": "",
+      "title": "High baseline eBPF memory footprint (~450 MiB on a Go + Python host under default map sizes)",
+      "url": "https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation/issues/4321"
     },
     {
       "acceptance": "low",
@@ -6608,66 +6910,6 @@
       "url": "https://github.com/open-telemetry/opentelemetry-java-instrumentation/issues/21422"
     },
     {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "trask"
-      ],
-      "author": "trask",
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2026-11-21T19:14:02Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "needs triage"
-      ],
-      "linked_pr": false,
-      "number": 21404,
-      "org": "open-telemetry",
-      "repo": "opentelemetry-java-instrumentation",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "trask",
-      "title": "Include javaagent instrumentation test suites in `check` by default",
-      "url": "https://github.com/open-telemetry/opentelemetry-java-instrumentation/issues/21404"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "trask"
-      ],
-      "author": "trask",
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2026-11-21T18:46:54Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement",
-        "needs triage"
-      ],
-      "linked_pr": false,
-      "number": 21403,
-      "org": "open-telemetry",
-      "repo": "opentelemetry-java-instrumentation",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "trask",
-      "title": "Standardize telemetry catalog profiles for independent opt-ins",
-      "url": "https://github.com/open-telemetry/opentelemetry-java-instrumentation/issues/21403"
-    },
-    {
       "acceptance": "medium",
       "acceptance_reasons": [
         "default"
@@ -6770,9 +7012,9 @@
       "url": "https://github.com/open-telemetry/opentelemetry-ruby-contrib/issues/2718"
     },
     {
-      "acceptance": "low",
+      "acceptance": "blocked",
       "acceptance_reasons": [
-        "label:good first issue"
+        "linked_pr"
       ],
       "assignees": [],
       "author": "thompson-tomo",
@@ -6788,20 +7030,20 @@
         "help wanted",
         "instrumentation-racecar"
       ],
-      "linked_pr": false,
+      "linked_pr": true,
       "number": 2717,
       "org": "open-telemetry",
       "repo": "opentelemetry-ruby-contrib",
       "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
       "title": "Internalize the SymbolGetter",
       "url": "https://github.com/open-telemetry/opentelemetry-ruby-contrib/issues/2717"
     },
     {
-      "acceptance": "low",
+      "acceptance": "blocked",
       "acceptance_reasons": [
-        "label:help wanted"
+        "linked_pr"
       ],
       "assignees": [],
       "author": "thompson-tomo",
@@ -6816,13 +7058,13 @@
         "help wanted",
         "instrumentation-rack"
       ],
-      "linked_pr": false,
+      "linked_pr": true,
       "number": 2716,
       "org": "open-telemetry",
       "repo": "opentelemetry-ruby-contrib",
       "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
       "title": "Internalise the RackEnvGetter",
       "url": "https://github.com/open-telemetry/opentelemetry-ruby-contrib/issues/2716"
     },
@@ -6884,62 +7126,6 @@
       "url": "https://github.com/open-telemetry/opentelemetry-ruby-contrib/issues/2714"
     },
     {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "open_pr:#4781",
-        "default"
-      ],
-      "assignees": [],
-      "author": "p404",
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-21T17:38:09Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "triage:deciding"
-      ],
-      "linked_pr": false,
-      "number": 4874,
-      "org": "open-telemetry",
-      "repo": "otel-arrow",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "#4781",
-      "title": "Make test_child_index_iter_* tests independent of the order of equal sort keys",
-      "url": "https://github.com/open-telemetry/otel-arrow/issues/4874"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "open_pr:#4781",
-        "default"
-      ],
-      "assignees": [],
-      "author": "p404",
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-21T17:38:07Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "triage:deciding"
-      ],
-      "linked_pr": false,
-      "number": 4873,
-      "org": "open-telemetry",
-      "repo": "otel-arrow",
-      "self_claim": false,
-      "taken": "open_pr",
-      "taken_evidence": "#4781",
-      "title": "Reject OTAP batches with duplicate parent IDs instead of emitting their child rows twice",
-      "url": "https://github.com/open-telemetry/otel-arrow/issues/4873"
-    },
-    {
       "acceptance": "medium",
       "acceptance_reasons": [
         "default"
@@ -6999,34 +7185,6 @@
     {
       "acceptance": "medium",
       "acceptance_reasons": [
-        "default",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author": "lmolkova",
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2026-11-21T21:37:20Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [
-        "triage:needs-triage"
-      ],
-      "linked_pr": false,
-      "number": 4359,
-      "org": "open-telemetry",
-      "repo": "semantic-conventions",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "Rename `system.memory.linux.hugepages.*` to singular namespace",
-      "url": "https://github.com/open-telemetry/semantic-conventions/issues/4359"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
         "default"
       ],
       "assignees": [],
@@ -7050,35 +7208,9 @@
       "url": "https://github.com/open-telemetry/weaver/issues/1923"
     },
     {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author": "cristiandenicola",
-      "author_association": "NONE",
-      "comments": 0,
-      "created_at": "2026-11-21T21:57:13Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "default"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 1921,
-      "org": "open-telemetry",
-      "repo": "weaver",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "live-check ignores the requirement levels of a metric refinement",
-      "url": "https://github.com/open-telemetry/weaver/issues/1921"
-    },
-    {
       "acceptance": "blocked",
       "acceptance_reasons": [
-        "claimed:vikramsingh920(body)",
-        "default"
+        "linked_pr"
       ],
       "assignees": [],
       "author": "vikramsingh920",
@@ -7090,13 +7222,13 @@
         "default"
       ],
       "labels": [],
-      "linked_pr": false,
+      "linked_pr": true,
       "number": 539,
       "org": "ossf",
       "repo": "oss-crs",
       "self_claim": true,
-      "taken": "claimed",
-      "taken_evidence": "vikramsingh920(body)",
+      "taken": "open_pr",
+      "taken_evidence": "linked:pr",
       "title": "Add format validation and tests for docker_registry and version in CRS configs",
       "url": "https://github.com/ossf/oss-crs/issues/539"
     },
@@ -7134,50 +7266,28 @@
         "default"
       ],
       "assignees": [],
-      "author": "petere",
+      "author": "cryptostrapon",
       "author_association": "CONTRIBUTOR",
       "comments": 0,
-      "created_at": "2026-11-21T21:13:51Z",
-      "fix": "low",
-      "fix_reasons": [
-        "title:documentation"
-      ],
-      "labels": [],
-      "linked_pr": false,
-      "number": 1209,
-      "org": "ossf",
-      "repo": "wg-best-practices-os-developers",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "Secret Scanning documentation for GitHub is out of date",
-      "url": "https://github.com/ossf/wg-best-practices-os-developers/issues/1209"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author": "syedDS",
-      "author_association": "COLLABORATOR",
-      "comments": 0,
-      "created_at": "2026-11-21T21:54:02Z",
+      "created_at": "2026-11-22T17:36:43Z",
       "fix": "medium",
       "fix_reasons": [
         "default"
       ],
-      "labels": [],
+      "labels": [
+        "ACK_WAITING",
+        "HELP_WANTED",
+        "UPDATE_CS"
+      ],
       "linked_pr": false,
-      "number": 15,
+      "number": 3027,
       "org": "OWASP",
-      "repo": "Agentic-Evidence",
+      "repo": "CheatSheetSeries",
       "self_claim": false,
       "taken": "free",
       "taken_evidence": "",
-      "title": "Research: Mapping OWASP Agent Control Standard (ACS) hook decisions to Agentic Evidence records",
-      "url": "https://github.com/OWASP/Agentic-Evidence/issues/15"
+      "title": "Update: NPM Security Cheat Sheet",
+      "url": "https://github.com/OWASP/CheatSheetSeries/issues/3027"
     },
     {
       "acceptance": "medium",
@@ -7295,63 +7405,6 @@
       "url": "https://github.com/OWASP/cve-lite-cli/issues/1766"
     },
     {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "default"
-      ],
-      "assignees": [],
-      "author": "prx-my",
-      "author_association": "CONTRIBUTOR",
-      "comments": 5,
-      "created_at": "2026-11-21T21:07:42Z",
-      "fix": "medium",
-      "fix_reasons": [
-        "label:bug"
-      ],
-      "labels": [
-        "bug",
-        "ci"
-      ],
-      "linked_pr": false,
-      "number": 1765,
-      "org": "OWASP",
-      "repo": "cve-lite-cli",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "[Bug] Claims bot ignores a command that isn't on the first line of a comment",
-      "url": "https://github.com/OWASP/cve-lite-cli/issues/1765"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "assigned"
-      ],
-      "assignees": [
-        "Nachiket-Roy"
-      ],
-      "author": "Nachiket-Roy",
-      "author_association": "CONTRIBUTOR",
-      "comments": 7,
-      "created_at": "2026-11-21T18:31:55Z",
-      "fix": "high",
-      "fix_reasons": [
-        "label:enhancement"
-      ],
-      "labels": [
-        "enhancement"
-      ],
-      "linked_pr": true,
-      "number": 1763,
-      "org": "OWASP",
-      "repo": "cve-lite-cli",
-      "self_claim": false,
-      "taken": "assigned",
-      "taken_evidence": "Nachiket-Roy",
-      "title": "[Feature] Add `--strict` mode to enforce zero-tolerance security integrity and reject injection attempts",
-      "url": "https://github.com/OWASP/cve-lite-cli/issues/1763"
-    },
-    {
       "acceptance": "blocked",
       "acceptance_reasons": [
         "claimed:Jeon1691(body)",
@@ -7383,11 +7436,91 @@
         "assigned"
       ],
       "assignees": [
+        "vianmangal"
+      ],
+      "author": "vianmangal",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-22T20:24:54Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "title:fails"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 5875,
+      "org": "OWASP",
+      "repo": "Nest",
+      "self_claim": false,
+      "taken": "assigned",
+      "taken_evidence": "vianmangal",
+      "title": "Release image scan can pass when Trivy fails",
+      "url": "https://github.com/OWASP/Nest/issues/5875"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "arkid15r",
+      "author_association": "COLLABORATOR",
+      "comments": 1,
+      "created_at": "2026-11-22T19:34:50Z",
+      "fix": "high",
+      "fix_reasons": [
+        "label:enhancement"
+      ],
+      "labels": [
+        "enhancement"
+      ],
+      "linked_pr": false,
+      "number": 5874,
+      "org": "OWASP",
+      "repo": "Nest",
+      "self_claim": false,
+      "taken": "skipped",
+      "taken_evidence": "",
+      "title": "Multi-Language Support for Backend",
+      "url": "https://github.com/OWASP/Nest/issues/5874"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default"
+      ],
+      "assignees": [],
+      "author": "S-Unknown047",
+      "author_association": "NONE",
+      "comments": 0,
+      "created_at": "2026-11-22T20:47:07Z",
+      "fix": "high",
+      "fix_reasons": [
+        "title:proposal"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 1921,
+      "org": "OWASP",
+      "repo": "Nettacker",
+      "self_claim": false,
+      "taken": "skipped",
+      "taken_evidence": "",
+      "title": "Proposal: Add unauthenticated Docker Engine API exposure detection",
+      "url": "https://github.com/OWASP/Nettacker/issues/1921"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "assigned"
+      ],
+      "assignees": [
         "coder-Yash886"
       ],
       "author": "coder-Yash886",
       "author_association": "NONE",
-      "comments": 1,
+      "comments": 2,
       "created_at": "2026-11-22T13:11:42Z",
       "fix": "high",
       "fix_reasons": [
@@ -7541,7 +7674,33 @@
       "assignees": [],
       "author": "robvanderveer",
       "author_association": "COLLABORATOR",
-      "comments": 0,
+      "comments": 1,
+      "created_at": "2026-11-22T19:59:28Z",
+      "fix": "medium",
+      "fix_reasons": [
+        "default"
+      ],
+      "labels": [],
+      "linked_pr": false,
+      "number": 301,
+      "org": "OWASP",
+      "repo": "www-project-ai-security-and-privacy-guide",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Website issueL Since the Edit page info, we have the Github guidance at the beginning of every section in the pdf. Please remove.",
+      "url": "https://github.com/OWASP/www-project-ai-security-and-privacy-guide/issues/301"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "default",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "robvanderveer",
+      "author_association": "COLLABORATOR",
+      "comments": 1,
       "created_at": "2026-11-22T16:42:15Z",
       "fix": "medium",
       "fix_reasons": [
@@ -7567,7 +7726,7 @@
       "assignees": [],
       "author": "robvanderveer",
       "author_association": "COLLABORATOR",
-      "comments": 0,
+      "comments": 1,
       "created_at": "2026-11-22T10:27:06Z",
       "fix": "medium",
       "fix_reasons": [
@@ -7612,11 +7771,11 @@
   ],
   "notes": [
     {
-      "detail": "starter 池只取最近更新的 100 筆（stopped at 1 pages of 1097）",
+      "detail": "starter 池只取最近更新的 100 筆（stopped at 1 pages of 1093）",
       "org": "apache"
     },
     {
-      "detail": "starter 池只取最近更新的 100 筆（stopped at 1 pages of 556）",
+      "detail": "starter 池只取最近更新的 100 筆（stopped at 1 pages of 550）",
       "org": "open-telemetry"
     },
     {
@@ -7626,15 +7785,15 @@
   ],
   "orgs": [
     {
-      "issues": 190,
+      "issues": 201,
       "org": "apache",
-      "repos": 63,
+      "repos": 69,
       "status": "ok"
     },
     {
-      "issues": 31,
+      "issues": 28,
       "org": "open-telemetry",
-      "repos": 12,
+      "repos": 11,
       "status": "ok"
     },
     {
@@ -7644,19 +7803,19 @@
       "status": "ok"
     },
     {
-      "issues": 3,
+      "issues": 2,
       "org": "ossf",
-      "repos": 3,
+      "repos": 2,
       "status": "ok"
     },
     {
-      "issues": 38,
+      "issues": 36,
       "org": "cloudflare",
-      "repos": 18,
+      "repos": 19,
       "status": "ok"
     },
     {
-      "issues": 17,
+      "issues": 19,
       "org": "OWASP",
       "repos": 7,
       "status": "ok"
@@ -8035,36 +8194,6 @@
       "url": "https://github.com/apache/asyncband/issues/402"
     },
     {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "merged_pr:#407",
-        "label:good first issue",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author": "tisonkun",
-      "author_association": "MEMBER",
-      "comments": 1,
-      "created_at": "2026-11-03T09:52:22Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:good first issue"
-      ],
-      "labels": [
-        "good first issue",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 401,
-      "org": "apache",
-      "repo": "asyncband",
-      "self_claim": false,
-      "taken": "merged_pr",
-      "taken_evidence": "#407",
-      "title": "Improve bounded MPSC throughput for inline 1 KiB messages",
-      "url": "https://github.com/apache/asyncband/issues/401"
-    },
-    {
       "acceptance": "medium",
       "acceptance_reasons": [
         "label:good first issue",
@@ -8156,6 +8285,38 @@
       "taken_evidence": "rokadepiyush49-rgb",
       "title": "De-javafy the Python Metrics API",
       "url": "https://github.com/apache/beam/issues/18597"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "label:good first issue",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "kennknowles",
+      "author_association": "MEMBER",
+      "comments": 1,
+      "created_at": "2022-06-03T17:20:07Z",
+      "fix": "low",
+      "fix_reasons": [
+        "label:good first issue"
+      ],
+      "labels": [
+        "P3",
+        "core",
+        "good first issue",
+        "improvement",
+        "python"
+      ],
+      "linked_pr": false,
+      "number": 18303,
+      "org": "apache",
+      "repo": "beam",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Clean DeprecationWarning from SDK/tests",
+      "url": "https://github.com/apache/beam/issues/18303"
     },
     {
       "acceptance": "blocked",
@@ -8434,6 +8595,60 @@
       "url": "https://github.com/apache/cloudstack/issues/8219"
     },
     {
+      "acceptance": "low",
+      "acceptance_reasons": [
+        "label:good first issue"
+      ],
+      "assignees": [],
+      "author": "cottage14",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-21T19:21:22Z",
+      "fix": "low",
+      "fix_reasons": [
+        "label:good first issue"
+      ],
+      "labels": [
+        "good first issue"
+      ],
+      "linked_pr": false,
+      "number": 259,
+      "org": "apache",
+      "repo": "comdev-site",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Replace 'Feathercast' with name more connected to the current branding",
+      "url": "https://github.com/apache/comdev-site/issues/259"
+    },
+    {
+      "acceptance": "low",
+      "acceptance_reasons": [
+        "label:good first issue"
+      ],
+      "assignees": [],
+      "author": "cottage14",
+      "author_association": "CONTRIBUTOR",
+      "comments": 0,
+      "created_at": "2026-11-21T18:51:35Z",
+      "fix": "low",
+      "fix_reasons": [
+        "label:good first issue"
+      ],
+      "labels": [
+        "good first issue"
+      ],
+      "linked_pr": false,
+      "number": 258,
+      "org": "apache",
+      "repo": "comdev-site",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Add example reports to pmc/reporting.md",
+      "url": "https://github.com/apache/comdev-site/issues/258"
+    },
+    {
       "acceptance": "medium",
       "acceptance_reasons": [
         "label:good first issue",
@@ -8585,36 +8800,6 @@
       "taken_evidence": "#58635",
       "title": "[Good First Issue] Doris' Future",
       "url": "https://github.com/apache/doris/issues/17176"
-    },
-    {
-      "acceptance": "medium",
-      "acceptance_reasons": [
-        "label:contributions welcome",
-        "maintainer-filed"
-      ],
-      "assignees": [],
-      "author": "FrankChen021",
-      "author_association": "MEMBER",
-      "comments": 0,
-      "created_at": "2026-11-16T05:15:11Z",
-      "fix": "high",
-      "fix_reasons": [
-        "default",
-        "body>6000"
-      ],
-      "labels": [
-        "Contributions Welcome",
-        "Feature/Change Description"
-      ],
-      "linked_pr": false,
-      "number": 20912,
-      "org": "apache",
-      "repo": "druid",
-      "self_claim": false,
-      "taken": "skipped",
-      "taken_evidence": "",
-      "title": "Introduce HumanReadableDuration for time-duration configuration",
-      "url": "https://github.com/apache/druid/issues/20912"
     },
     {
       "acceptance": "medium",
@@ -8974,9 +9159,8 @@
       "url": "https://github.com/apache/hugegraph-toolchain/issues/748"
     },
     {
-      "acceptance": "blocked",
+      "acceptance": "medium",
       "acceptance_reasons": [
-        "merged_pr:#1106",
         "label:help wanted",
         "maintainer-filed"
       ],
@@ -8997,8 +9181,7 @@
       "org": "apache",
       "repo": "iceberg-cpp",
       "self_claim": false,
-      "taken": "merged_pr",
-      "taken_evidence": "#1106",
+      "taken": "not_checked",
       "title": "[CI] Improve dependency download reliability and Windows example build isolation",
       "url": "https://github.com/apache/iceberg-cpp/issues/1101"
     },
@@ -9483,34 +9666,113 @@
       "url": "https://github.com/apache/netbeans/issues/3825"
     },
     {
-      "acceptance": "medium",
+      "acceptance": "low",
       "acceptance_reasons": [
+        "label:good first issue"
+      ],
+      "assignees": [],
+      "author": "meteorgan",
+      "author_association": "CONTRIBUTOR",
+      "comments": 9,
+      "created_at": "2024-12-31T08:23:00Z",
+      "fix": "high",
+      "fix_reasons": [
+        "label:enhancement"
+      ],
+      "labels": [
+        "core",
+        "enhancement",
+        "good first issue",
+        "help wanted",
+        "services/azblob",
+        "services/cos",
+        "services/fs",
+        "services/http",
+        "services/oss",
+        "services/s3",
+        "services/swift",
+        "services/webdav"
+      ],
+      "linked_pr": false,
+      "number": 5486,
+      "org": "apache",
+      "repo": "opendal",
+      "self_claim": false,
+      "taken": "skipped",
+      "taken_evidence": "",
+      "title": "Tracking issues of RFC-5485:  Conditional Reader",
+      "url": "https://github.com/apache/opendal/issues/5486"
+    },
+    {
+      "acceptance": "blocked",
+      "acceptance_reasons": [
+        "merged_pr:#4881",
         "label:good first issue",
         "maintainer-filed"
       ],
       "assignees": [],
       "author": "Xuanwo",
       "author_association": "MEMBER",
-      "comments": 6,
-      "created_at": "2024-02-23T05:17:12Z",
+      "comments": 10,
+      "created_at": "2024-07-01T11:25:14Z",
       "fix": "low",
       "fix_reasons": [
         "label:good first issue"
       ],
       "labels": [
         "good first issue",
-        "help wanted",
-        "services/webdav"
+        "help wanted"
       ],
       "linked_pr": false,
-      "number": 4256,
+      "number": 4842,
       "org": "apache",
       "repo": "opendal",
       "self_claim": false,
-      "taken": "free",
+      "taken": "merged_pr",
+      "taken_evidence": "#4881",
+      "title": "Tracking issues of user metadata support",
+      "url": "https://github.com/apache/opendal/issues/4842"
+    },
+    {
+      "acceptance": "medium",
+      "acceptance_reasons": [
+        "label:good first issue",
+        "maintainer-filed"
+      ],
+      "assignees": [],
+      "author": "suyanhanx",
+      "author_association": "MEMBER",
+      "comments": 25,
+      "created_at": "2023-07-09T11:48:52Z",
+      "fix": "high",
+      "fix_reasons": [
+        "label:enhancement"
+      ],
+      "labels": [
+        "core",
+        "enhancement",
+        "good first issue",
+        "good first vibe",
+        "help wanted",
+        "services/azblob",
+        "services/b2",
+        "services/cos",
+        "services/gcs",
+        "services/gdrive",
+        "services/obs",
+        "services/onedrive",
+        "services/oss",
+        "services/s3"
+      ],
+      "linked_pr": false,
+      "number": 2611,
+      "org": "apache",
+      "repo": "opendal",
+      "self_claim": false,
+      "taken": "skipped",
       "taken_evidence": "",
-      "title": "WebDAV list not implement correctly",
-      "url": "https://github.com/apache/opendal/issues/4256"
+      "title": "Tracking issues of RFC: Object Versioning",
+      "url": "https://github.com/apache/opendal/issues/2611"
     },
     {
       "acceptance": "medium",
@@ -10014,7 +10276,7 @@
       "assignees": [],
       "author": "zhangshenghang",
       "author_association": "MEMBER",
-      "comments": 1,
+      "comments": 2,
       "created_at": "2026-11-19T07:28:17Z",
       "fix": "high",
       "fix_reasons": [
@@ -10282,7 +10544,7 @@
       "assignees": [],
       "author": "DanielLeens",
       "author_association": "CONTRIBUTOR",
-      "comments": 26,
+      "comments": 28,
       "created_at": "2026-10-09T13:40:11Z",
       "fix": "high",
       "fix_reasons": [
@@ -10592,34 +10854,6 @@
       "taken_evidence": "Ritesh17rb",
       "title": "Make the autocomplete's onselect handler work without eval",
       "url": "https://github.com/apache/wicket/issues/1948"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "claimed:Ritesh17rb",
-        "label:good first issue"
-      ],
-      "assignees": [],
-      "author": "dashorst",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
-      "created_at": "2026-11-19T14:19:43Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:good first issue"
-      ],
-      "labels": [
-        "good first issue"
-      ],
-      "linked_pr": false,
-      "number": 1947,
-      "org": "apache",
-      "repo": "wicket",
-      "self_claim": false,
-      "taken": "claimed",
-      "taken_evidence": "Ritesh17rb",
-      "title": "Stop the autocomplete from accumulating request parameters while typing",
-      "url": "https://github.com/apache/wicket/issues/1947"
     },
     {
       "acceptance": "low",
@@ -16362,6 +16596,70 @@
       "url": "https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation/issues/4112"
     },
     {
+      "acceptance": "low",
+      "acceptance_reasons": [
+        "label:good first issue"
+      ],
+      "assignees": [],
+      "author": "MrAlias",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-04T17:32:44Z",
+      "fix": "low",
+      "fix_reasons": [
+        "label:documentation"
+      ],
+      "labels": [
+        "component:obi",
+        "contribfest",
+        "documentation",
+        "go",
+        "good first issue",
+        "help wanted"
+      ],
+      "linked_pr": false,
+      "number": 4111,
+      "org": "open-telemetry",
+      "repo": "opentelemetry-ebpf-instrumentation",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Document the prefix for internal attribute keys",
+      "url": "https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation/issues/4111"
+    },
+    {
+      "acceptance": "low",
+      "acceptance_reasons": [
+        "label:good first issue"
+      ],
+      "assignees": [],
+      "author": "MrAlias",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-04T17:32:35Z",
+      "fix": "low",
+      "fix_reasons": [
+        "label:documentation"
+      ],
+      "labels": [
+        "component:obi",
+        "contribfest",
+        "documentation",
+        "go",
+        "good first issue",
+        "help wanted"
+      ],
+      "linked_pr": false,
+      "number": 4110,
+      "org": "open-telemetry",
+      "repo": "opentelemetry-ebpf-instrumentation",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Document the vendor prefix for internal metric declarations",
+      "url": "https://github.com/open-telemetry/opentelemetry-ebpf-instrumentation/issues/4110"
+    },
+    {
       "acceptance": "blocked",
       "acceptance_reasons": [
         "merged_pr:#1806",
@@ -16416,8 +16714,7 @@
       "org": "open-telemetry",
       "repo": "opentelemetry-ecosystem-explorer",
       "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
+      "taken": "not_checked",
       "title": "[V1] Readiness: Layout + Home",
       "url": "https://github.com/open-telemetry/opentelemetry-ecosystem-explorer/issues/1193"
     },
@@ -17010,35 +17307,6 @@
       "author": "MrAlias",
       "author_association": "CONTRIBUTOR",
       "comments": 1,
-      "created_at": "2026-11-04T17:22:01Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:good first issue"
-      ],
-      "labels": [
-        "contribfest",
-        "good first issue",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 9387,
-      "org": "open-telemetry",
-      "repo": "opentelemetry-go",
-      "self_claim": false,
-      "taken": "free",
-      "taken_evidence": "",
-      "title": "Show the valid partial result from baggage.Parse",
-      "url": "https://github.com/open-telemetry/opentelemetry-go/issues/9387"
-    },
-    {
-      "acceptance": "low",
-      "acceptance_reasons": [
-        "label:good first issue"
-      ],
-      "assignees": [],
-      "author": "MrAlias",
-      "author_association": "CONTRIBUTOR",
-      "comments": 1,
       "created_at": "2026-11-04T17:21:52Z",
       "fix": "low",
       "fix_reasons": [
@@ -17118,6 +17386,126 @@
       "url": "https://github.com/open-telemetry/opentelemetry-go/issues/9382"
     },
     {
+      "acceptance": "low",
+      "acceptance_reasons": [
+        "label:good first issue"
+      ],
+      "assignees": [],
+      "author": "MrAlias",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-04T17:21:36Z",
+      "fix": "low",
+      "fix_reasons": [
+        "label:good first issue"
+      ],
+      "labels": [
+        "contribfest",
+        "good first issue",
+        "help wanted"
+      ],
+      "linked_pr": false,
+      "number": 9381,
+      "org": "open-telemetry",
+      "repo": "opentelemetry-go",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Show duplicate-key precedence in attribute.NewSet",
+      "url": "https://github.com/open-telemetry/opentelemetry-go/issues/9381"
+    },
+    {
+      "acceptance": "low",
+      "acceptance_reasons": [
+        "label:good first issue"
+      ],
+      "assignees": [],
+      "author": "pgillich",
+      "author_association": "NONE",
+      "comments": 19,
+      "created_at": "2023-10-22T08:42:23Z",
+      "fix": "high",
+      "fix_reasons": [
+        "label:enhancement"
+      ],
+      "labels": [
+        "contribfest",
+        "documentation",
+        "enhancement",
+        "good first issue",
+        "help wanted"
+      ],
+      "linked_pr": false,
+      "number": 4658,
+      "org": "open-telemetry",
+      "repo": "opentelemetry-go",
+      "self_claim": false,
+      "taken": "skipped",
+      "taken_evidence": "",
+      "title": "Expose internal logging levels in SetLogger GoDoc",
+      "url": "https://github.com/open-telemetry/opentelemetry-go/issues/4658"
+    },
+    {
+      "acceptance": "low",
+      "acceptance_reasons": [
+        "label:good first issue"
+      ],
+      "assignees": [],
+      "author": "MrAlias",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-04T17:31:50Z",
+      "fix": "low",
+      "fix_reasons": [
+        "label:documentation"
+      ],
+      "labels": [
+        "contribfest",
+        "documentation",
+        "good first issue",
+        "help wanted"
+      ],
+      "linked_pr": false,
+      "number": 10202,
+      "org": "open-telemetry",
+      "repo": "opentelemetry-go-contrib",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Correct X-Ray Lambda option type names",
+      "url": "https://github.com/open-telemetry/opentelemetry-go-contrib/issues/10202"
+    },
+    {
+      "acceptance": "low",
+      "acceptance_reasons": [
+        "label:good first issue"
+      ],
+      "assignees": [],
+      "author": "MrAlias",
+      "author_association": "CONTRIBUTOR",
+      "comments": 1,
+      "created_at": "2026-11-04T17:31:40Z",
+      "fix": "low",
+      "fix_reasons": [
+        "label:documentation"
+      ],
+      "labels": [
+        "contribfest",
+        "documentation",
+        "good first issue",
+        "help wanted"
+      ],
+      "linked_pr": false,
+      "number": 10201,
+      "org": "open-telemetry",
+      "repo": "opentelemetry-go-contrib",
+      "self_claim": false,
+      "taken": "free",
+      "taken_evidence": "",
+      "title": "Correct type names in the Lambda instrumentation options table",
+      "url": "https://github.com/open-telemetry/opentelemetry-go-contrib/issues/10201"
+    },
+    {
       "acceptance": "blocked",
       "acceptance_reasons": [
         "claimed:mo-hamedaziz",
@@ -17147,68 +17535,6 @@
       "taken_evidence": "mo-hamedaziz",
       "title": "Name MeterProvider correctly in the runtime option documentation",
       "url": "https://github.com/open-telemetry/opentelemetry-go-contrib/issues/10199"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "claimed:givemehat",
-        "label:good first issue"
-      ],
-      "assignees": [],
-      "author": "MrAlias",
-      "author_association": "CONTRIBUTOR",
-      "comments": 2,
-      "created_at": "2026-11-04T17:31:09Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:documentation"
-      ],
-      "labels": [
-        "contribfest",
-        "documentation",
-        "good first issue",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 10198,
-      "org": "open-telemetry",
-      "repo": "opentelemetry-go-contrib",
-      "self_claim": false,
-      "taken": "claimed",
-      "taken_evidence": "givemehat",
-      "title": "Describe GinFilter using its actual argument type",
-      "url": "https://github.com/open-telemetry/opentelemetry-go-contrib/issues/10198"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "claimed:givemehat",
-        "label:good first issue"
-      ],
-      "assignees": [],
-      "author": "MrAlias",
-      "author_association": "CONTRIBUTOR",
-      "comments": 2,
-      "created_at": "2026-11-04T17:30:49Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:documentation"
-      ],
-      "labels": [
-        "contribfest",
-        "documentation",
-        "good first issue",
-        "help wanted"
-      ],
-      "linked_pr": false,
-      "number": 10196,
-      "org": "open-telemetry",
-      "repo": "opentelemetry-go-contrib",
-      "self_claim": false,
-      "taken": "claimed",
-      "taken_evidence": "givemehat",
-      "title": "Repair Filter and WithMeterProvider wording in otelgrpc",
-      "url": "https://github.com/open-telemetry/opentelemetry-go-contrib/issues/10196"
     },
     {
       "acceptance": "blocked",
@@ -17980,40 +18306,6 @@
       "taken_evidence": "#12703",
       "title": "[Docs]: Use gRPC capitalization in the performance-page description",
       "url": "https://github.com/open-telemetry/opentelemetry.io/issues/12531"
-    },
-    {
-      "acceptance": "blocked",
-      "acceptance_reasons": [
-        "claimed:1Andre-T",
-        "label:good first issue"
-      ],
-      "assignees": [],
-      "author": "MrAlias",
-      "author_association": "CONTRIBUTOR",
-      "comments": 3,
-      "created_at": "2026-11-04T17:28:39Z",
-      "fix": "low",
-      "fix_reasons": [
-        "label:docs"
-      ],
-      "labels": [
-        "contribfest",
-        "docs",
-        "e0-minutes",
-        "good first issue",
-        "help wanted",
-        "sig:obi",
-        "triage:accepted"
-      ],
-      "linked_pr": false,
-      "number": 12530,
-      "org": "open-telemetry",
-      "repo": "opentelemetry.io",
-      "self_claim": false,
-      "taken": "claimed",
-      "taken_evidence": "1Andre-T",
-      "title": "[Docs]: Clarify when eBPF map-size configuration takes effect",
-      "url": "https://github.com/open-telemetry/opentelemetry.io/issues/12530"
     },
     {
       "acceptance": "blocked",
@@ -21583,8 +21875,8 @@
   ],
   "taken_checks": {
     "starter": 250,
-    "window": 118
+    "window": 124
   },
-  "verified_at": "2026-11-22T17:31:00Z",
-  "window_start": "2026-11-21T17:31:00Z"
+  "verified_at": "2026-11-22T23:00:23Z",
+  "window_start": "2026-11-21T23:00:23Z"
 }
