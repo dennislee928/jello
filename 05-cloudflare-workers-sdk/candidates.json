@@ -16,9 +16,10 @@
       "issue_updated_at": null,
       "kind": "qualification",
       "labels": [],
-      "last_verified_at": "2026-11-13T16:55:05Z",
+      "last_verified_at": "2026-11-21T10:26:04Z",
       "maintainer_signals": [
-        "`dennislee928` 是否在 `.github/VOUCHED.td`：否。2026-11-13T16:55:05Z 重讀同一 blob `07e70847237830bfe929b0c7480e5e5a38a729ad`。"
+        "`dennislee928` 是否在 `.github/VOUCHED.td`：否。2026-11-13T16:55:05Z 重讀同一 blob `07e70847237830bfe929b0c7480e5e5a38a729ad`。",
+        "`dennislee928` 是否在 `.github/VOUCHED.td`：否。2026-11-21T10:26:04Z 重讀 main，blob `71500c67a8aa4c5b2364c7a97cb42e977b8edc47`。"
       ],
       "next_action": "Vouch 仍未通過。不選實作 issue。",
       "org": "cloudflare",
@@ -34,11 +35,55 @@
       "status": "BLOCKED",
       "title": "Vouch gate for dennislee928",
       "url": "https://github.com/cloudflare/workers-sdk/blob/main/.github/VOUCHED.td"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "dennislee928 is not in .github/VOUCHED.td (blob 71500c67a8aa4c5b2364c7a97cb42e977b8edc47)",
+        "changing destructive-confirm fallback under agents and adding secret delete -y is a maintainer product decision"
+      ],
+      "confidence": "medium",
+      "duplicate_prs": [],
+      "evidence_path": "05-cloudflare-workers-sdk/evidence/workers-sdk-17098.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": 3,
+      "issue_number": 17098,
+      "issue_updated_at": "2026-11-20T23:27:50Z",
+      "kind": "issue",
+      "labels": [],
+      "last_verified_at": "2026-11-21T10:26:04Z",
+      "maintainer_signals": [
+        "no assignee, no labels, no comments",
+        "timeline has only IssueTypeAdded, AddedToProjectV2 and ProjectV2ItemStatusChanged events",
+        "no cross-referenced PR found; that is not proof nobody is working on it",
+        "main dialogs.ts:27-38 confirm() defaults fallbackValue to true; d1/delete.ts:50, kv/index.ts:310, delete.ts:148, secret/index.ts:287 do not override it",
+        "detectAgent() is not used by any delete command",
+        "user/whoami.ts:40 documents non-zero exit only for --json"
+      ],
+      "next_action": "先處理 vouch；人決定是否用 05-cloudflare-workers-sdk/plans/17098-maintainer-draft.md 詢問維護者。本機重現延後到方向確定後。",
+      "org": "cloudflare",
+      "repo": "workers-sdk",
+      "score_rationale": "2026-11-21T10:26:04Z 在 main 核對程式碼，issue 描述屬實，沒找到重疊 PR。但 vouch 未通過，且需要維護者決定方向；硬門檻失敗，acceptance 不評。",
+      "skills_match": [
+        "TypeScript",
+        "Node CLI"
+      ],
+      "sources": [
+        "https://github.com/cloudflare/workers-sdk/issues/17098",
+        "https://github.com/cloudflare/workers-sdk/blob/main/packages/wrangler/src/dialogs.ts",
+        "https://github.com/cloudflare/workers-sdk/blob/main/packages/wrangler/src/utils/detect-agent.ts",
+        "https://github.com/cloudflare/workers-sdk/blob/main/.github/VOUCHED.td"
+      ],
+      "status": "BLOCKED",
+      "title": "Destructive confirmations default to \"yes\" when an AI agent runs Wrangler",
+      "url": "https://github.com/cloudflare/workers-sdk/issues/17098"
     }
   ],
   "directory": "05-cloudflare-workers-sdk",
   "errors": [],
-  "last_verified_at": "2026-11-13T16:42:51Z",
+  "last_verified_at": "2026-11-21T10:26:04Z",
   "partial": false,
   "schema_version": 1
 }

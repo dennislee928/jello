@@ -114,11 +114,59 @@
       "status": "DUPLICATE_OR_IN_PROGRESS",
       "title": "Cross-filter entry appears when clicking table cells even when cross-filtering is disabled at chart level",
       "url": "https://github.com/apache/superset/issues/46197"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping pull request #46425 by the issue author is already open"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [
+        {
+          "fixes_reference": true,
+          "number": 46425,
+          "org": "apache",
+          "overlap": "definite_duplicate",
+          "rationale": "PR 內文有 Fixes #46423，GraphQL closingIssuesReferences 為 [46423]。同一作者在 issue 開出約 30 分鐘後開 PR，改 get_chart_data.py 與 test_get_chart_data.py。",
+          "repo": "superset",
+          "url": "https://github.com/apache/superset/pull/46425"
+        }
+      ],
+      "evidence_path": "01-apache-superset/evidence/superset-46423.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 46423,
+      "issue_updated_at": "2026-11-21T05:06:01Z",
+      "kind": "issue",
+      "labels": [],
+      "last_verified_at": "2026-11-21T10:26:04Z",
+      "maintainer_signals": [
+        "PR 46425 is open, not draft, labeled size/M and doc",
+        "PR 46425 closes #46423 per closingIssuesReferences",
+        "issue and PR share the same author"
+      ],
+      "next_action": "已有修復 PR。停止實作，不建 =1+1 測試資料，只留去重紀錄。",
+      "org": "apache",
+      "repo": "superset",
+      "score_rationale": "2026-11-21T10:26:04Z 確認 #46425 open、非 draft，且以 Fixes #46423 關聯。已有人處理，不計實作分數。",
+      "skills_match": [
+        "Python",
+        "Superset MCP service"
+      ],
+      "sources": [
+        "https://github.com/apache/superset/issues/46423",
+        "https://github.com/apache/superset/pull/46425"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "MCP get_chart_data Excel export turns text that starts with = into a formula",
+      "url": "https://github.com/apache/superset/issues/46423"
     }
   ],
   "directory": "01-apache-superset",
   "errors": [],
-  "last_verified_at": "2026-11-14T10:24:51Z",
+  "last_verified_at": "2026-11-21T10:26:04Z",
   "partial": false,
   "schema_version": 1
 }

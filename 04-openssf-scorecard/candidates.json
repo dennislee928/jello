@@ -126,11 +126,59 @@
       "status": "DISCOVERED",
       "title": ":bug: Report unknown branch protection as not available",
       "url": "https://github.com/ossf/scorecard/pull/5455"
+    },
+    {
+      "acceptance_score": null,
+      "assignees": [],
+      "blocking_dependencies": [
+        "overlapping pull request #5487 by the issue author is already open"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [
+        {
+          "fixes_reference": true,
+          "number": 5487,
+          "org": "ossf",
+          "overlap": "definite_duplicate",
+          "rationale": "PR 內文有 Fixes #5486，GraphQL closingIssuesReferences 為 [5486]。同一作者在 issue 開出 11 秒後開 PR，改 clients/gitlabrepo/searchCommits.go 與 searchCommits_test.go。",
+          "repo": "scorecard",
+          "url": "https://github.com/ossf/scorecard/pull/5487"
+        }
+      ],
+      "evidence_path": "04-openssf-scorecard/evidence/scorecard-5486.md",
+      "github_state": "open",
+      "hard_gate_failed": true,
+      "impact_score": null,
+      "issue_number": 5486,
+      "issue_updated_at": "2026-11-18T22:38:33Z",
+      "kind": "issue",
+      "labels": [],
+      "last_verified_at": "2026-11-21T10:26:04Z",
+      "maintainer_signals": [
+        "PR 5487 is open and not draft",
+        "PR 5487 closes #5486 per closingIssuesReferences",
+        "issue author also has open GitLab PRs 5483, 5485, 5453, 5454; none touch searchCommits.go"
+      ],
+      "next_action": "已有修復 PR。停止實作，不做 GitLab fixture，只留去重紀錄。",
+      "org": "ossf",
+      "repo": "scorecard",
+      "score_rationale": "2026-11-21T10:26:04Z 確認 #5487 open、非 draft，且以 Fixes #5486 關聯。已有人處理，不計實作分數。",
+      "skills_match": [
+        "Go",
+        "GitLab API"
+      ],
+      "sources": [
+        "https://github.com/ossf/scorecard/issues/5486",
+        "https://github.com/ossf/scorecard/pull/5487"
+      ],
+      "status": "DUPLICATE_OR_IN_PROGRESS",
+      "title": "BUG: Panic (index out of range) in GitLab searchCommits on unregistered committer email",
+      "url": "https://github.com/ossf/scorecard/issues/5486"
     }
   ],
   "directory": "04-openssf-scorecard",
   "errors": [],
-  "last_verified_at": "2026-11-13T16:42:51Z",
+  "last_verified_at": "2026-11-21T10:26:04Z",
   "partial": false,
   "schema_version": 1
 }
