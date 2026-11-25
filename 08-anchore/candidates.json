@@ -1,0 +1,49 @@
+{
+  "candidates": [
+    {
+      "acceptance_score": 3,
+      "assignees": [],
+      "blocking_dependencies": [
+        "human signs off each commit (DCO, git commit -s) with a real user.name",
+        "human writes the PR description",
+        "human forks, pushes and opens the PR"
+      ],
+      "confidence": "high",
+      "duplicate_prs": [],
+      "evidence_path": "08-anchore/evidence/vunnel-1486.md",
+      "github_state": "open",
+      "hard_gate_failed": false,
+      "impact_score": 2,
+      "issue_number": 1486,
+      "issue_updated_at": "2026-11-25T14:34:33Z",
+      "kind": "issue",
+      "labels": [],
+      "last_verified_at": "2026-11-25T14:41:09Z",
+      "maintainer_signals": [
+        "no maintainer comment on the issue; only comment is the human's own claim (2026-11-25T14:34:32Z), unanswered",
+        "no PR references #1486 (search total_count 0); newest open PRs #1480, #1479, #1474 do not touch secureos",
+        "merged PRs are mostly from maintainers; external PRs #1479, #1480, #1458 still open"
+      ],
+      "next_action": "外部 checkout 分支 fix/secureos-apk-suffix-ordering 已備好修復與回歸測試（未 commit）。人設好真實 user.name，以 git commit -s 提交、自己寫 PR 描述，再 fork、推送、開 PR。",
+      "org": "anchore",
+      "repo": "vunnel",
+      "score_rationale": "acceptance 3：改動只在 secureos/parser.py 的比較邏輯加單元測試，現有快照不變；但外部 PR review 慢。impact 2：live secdb 已有 3.3.2_p1-r4，但目前沒有 CVE 被排反，屬潛在正確性問題；不主張使用量。硬門檻全部通過。",
+      "skills_match": [
+        "Python",
+        "security",
+        "parser"
+      ],
+      "sources": [
+        "https://github.com/anchore/vunnel/issues/1486"
+      ],
+      "status": "READY_FOR_HUMAN_PR",
+      "title": "secureos: _compare_apk_versions sorts APK _p and _rc suffixes lexicographically",
+      "url": "https://github.com/anchore/vunnel/issues/1486"
+    }
+  ],
+  "directory": "08-anchore",
+  "errors": [],
+  "last_verified_at": "2026-11-25T14:41:09Z",
+  "partial": false,
+  "schema_version": 1
+}

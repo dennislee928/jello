@@ -51,7 +51,9 @@ CLAIM_PATTERNS = tuple(
         r"\bi'?m (?:working on|on) (?:this|it)\b",
         r"\bi'?ll (?:take|work on|pick up|tackle) (?:this|it)\b",
         r"\bi want to (?:work on|take|fix|tackle)\b",
-        r"\bhave a fix ready\b",
+        # "I have a fix ready", "I have a fix and test for the GitHub one ready"
+        # (ossf/scorecard#5497). "do you have a fix ready?" is a question, not a claim.
+        r"(?<!you )(?<!they )\b(?:have|'ve) a (?:fix|patch)\b[^.?\n]{0,60}\bready\b",
         r"\bworking on (?:a |the )?fix\b",
         r"\bwill try to pick (?:this |it )?up\b",
         r"\b(?:would|'d) like (?:to )?pick (?:this |it )?up\b",

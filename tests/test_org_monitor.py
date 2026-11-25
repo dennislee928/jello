@@ -286,6 +286,8 @@ class TakenTests(unittest.TestCase):
         "Happy to open a PR if that helps.",
         # rocketmq-clients#1497
         "This PR fixes all nine with unit tests.",
+        # ossf/scorecard#5497
+        "I have a fix and test for the GitHub one ready and can do the other two as a follow-up",
     )
     NOT_CLAIMS = (
         # python-contrib#5353 template answer
@@ -294,6 +296,7 @@ class TakenTests(unittest.TestCase):
         "### Are you willing to submit PR?\n\n- [ ] Yes I am willing to submit a PR!",
         "The fix is already in main, see the linked commit.",
         "Thanks for the report, the working group will discuss it.",
+        "Do you have a fix ready? If not, we can look next week.",
     )
 
     def test_real_claim_phrases(self):

@@ -41,6 +41,7 @@ python3 scripts/scan.py --root . --baseline reports/state/baseline.json \
 | `05-cloudflare-workers-sdk` | `cloudflare/workers-sdk`（`main`） | 尚未選定 | `BLOCKED` | Vouch 資格未通過 |
 | `06-owasp` | `OWASP/cve-lite-cli`（`main`）、`CycloneDX/cyclonedx-go`（`master`） | `cyclonedx-go#291`、`#281`；`cve-lite-cli` | `READY_FOR_HUMAN_PR`；`DUPLICATE_OR_IN_PROGRESS` | cyclonedx-go 兩件等人開 PR（`plans/cyclonedx-go-*-pr-draft.md`），但上游從 9/7 之後就沒有合併；cve-lite-cli 的新 issue 都已有 PR、已關閉或標了 `in-house` |
 | `07-apache` | `apache/iceberg-go`（`main`）、`apache/airflow`（`main`） | `iceberg-go#2425`、`airflow#77244` | `DUPLICATE_OR_IN_PROGRESS`、`READY_FOR_HUMAN_PR` | `#2425` 已因 arrow-go 升級在 main 修好；`#77244` 等人開 PR（`plans/airflow-77244-pr-draft.md`） |
+| `08-anchore` | `anchore/vunnel`（`main`） | `vunnel#1486` | `READY_FOR_HUMAN_PR` | 等人以 DCO 提交、自己開 PR（`plans/vunnel-1486-pr-draft.md`）；`2026-11-25` 手動加入，未列進 `config/targets.json` |
 
 `open-telemetry/semantic-conventions` 只當交叉引用，不是掃描目標。CycloneDX 是 OWASP 專案，但 GitHub org 是 `CycloneDX`，所以放在 `06-owasp`。
 
